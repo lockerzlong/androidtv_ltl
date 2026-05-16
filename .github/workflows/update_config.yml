@@ -22,9 +22,9 @@ jobs:
           # 2. Cập nhật field "update" bằng jq
           jq ".update = \"$TIMESTAMP\"" config.json > temp.json
           
-          # 3. Thay thế content://tvlauncher.config/background thành background/timestamp trong chuỗi XML
-          # Dùng sed để tìm và thay thế trong file temp.json
-          sed -i "s|content://tvlauncher.config/background|content://tvlauncher.config/background/$TIMESTAMP|g" temp.json
+          # 3. Sử dụng Regex để tìm 'background' kèm theo bất kỳ số nào phía sau (nếu có) và thay bằng cái mới
+          # Regex: background(/([0-9/]*))? tìm 'background' và các cụm /số/số... phía sau
+          sed -i -E "s|content://tvlauncher.config/background(/[0-9/]+)?|content://tvlauncher.config/background/$TIMESTAMP|g" temp.json
           
           mv temp.json config.json
           
