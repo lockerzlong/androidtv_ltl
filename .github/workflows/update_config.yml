@@ -1,4 +1,4 @@
-name: Auto Update Config Date
+name: Auto Update Config Timestamp
 
 on:
   push:
@@ -14,20 +14,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Update date in config.json
+      - name: Update timestamp in config.json
         run: |
-          # Lấy ngày định dạng DD/MM/YYYY
-          CURRENT_DATE=$(TZ="Asia/Ho_Chi_Minh" date +'%d/%m/%Y')
+          # Tạo số timestamp (ví dụ: 1697431811)
+          TIMESTAMP=$(date +%s)
           
-          # Sửa key "update" trong file config.json
-          jq ".update = \"$CURRENT_DATE\"" config.json > temp.json && mv temp.json config.json
+          # Cập nhật vào key "update" trong file config.json
+          jq ".update = \"$TIMESTAMP\"" config.json > temp.json && mv temp.json config.json
           
-          echo "Updated date to $CURRENT_DATE"
+          echo "Updated timestamp to $TIMESTAMP"
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add config.json
-          git commit -m "Bot: Cập nhật ngày $CURRENT_DATE" || exit 0
+          git commit -m "Bot: Update background timestamp $TIMESTAMP" || exit 0
           git push
