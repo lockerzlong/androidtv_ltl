@@ -1,0 +1,33 @@
+name: Auto Update Config Date
+
+on:
+  push:
+    paths:
+      - 'background.png'
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update date in config.json
+        run: |
+          # Lấy ngày định dạng DD/MM/YYYY
+          CURRENT_DATE=$(TZ="Asia/Ho_Chi_Minh" date +'%d/%m/%Y')
+          
+          # Sửa key "update" trong file config.json
+          jq ".update = \"$CURRENT_DATE\"" config.json > temp.json && mv temp.json config.json
+          
+          echo "Updated date to $CURRENT_DATE"
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add config.json
+          git commit -m "Bot: Cập nhật ngày $CURRENT_DATE" || exit 0
+          git push
