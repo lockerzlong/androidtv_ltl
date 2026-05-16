@@ -16,13 +16,19 @@ jobs:
 
       - name: Update timestamp in config.json
         run: |
-          # Tạo số timestamp (ví dụ: 1697431811)
+          # 1. Tạo số timestamp mới
           TIMESTAMP=$(date +%s)
           
-          # Cập nhật vào key "update" trong file config.json
-          jq ".update = \"$TIMESTAMP\"" config.json > temp.json && mv temp.json config.json
+          # 2. Cập nhật field "update" bằng jq
+          jq ".update = \"$TIMESTAMP\"" config.json > temp.json
           
-          echo "Updated timestamp to $TIMESTAMP"
+          # 3. Thay thế content://tvlauncher.config/background thành background/timestamp trong chuỗi XML
+          # Dùng sed để tìm và thay thế trong file temp.json
+          sed -i "s|content://tvlauncher.config/background|content://tvlauncher.config/background/$TIMESTAMP|g" temp.json
+          
+          mv temp.json config.json
+          
+          echo "Updated config.json with timestamp $TIMESTAMP"
 
       - name: Commit and Push changes
         run: |
