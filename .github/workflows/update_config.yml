@@ -19,8 +19,8 @@ jobs:
           # 1. Tạo số timestamp mới
           TIMESTAMP=$(date +%s)
           
-          # 2. Tạo date theo định dạng DD/MM/YYYY hh:mm:ss
-          DATE=$(date '+%d/%m/%Y %H:%M:%S')
+          # 2. Tạo date theo giờ Việt Nam (UTC+7)
+          DATE=$(TZ='Asia/Ho_Chi_Minh' date '+%d/%m/%Y %H:%M:%S')
           
           # 3. Cập nhật cả timestamp và date bằng jq
           jq ".timetamp = \"$TIMESTAMP\" | .date = \"$DATE\"" config.json > temp.json
@@ -31,7 +31,7 @@ jobs:
           mv temp.json config.json
           
           echo "Updated config.json with timestamp: $TIMESTAMP"
-          echo "Updated config.json with date: $DATE"
+          echo "Updated config.json with date (VN time): $DATE"
 
       - name: Commit and Push changes
         run: |
