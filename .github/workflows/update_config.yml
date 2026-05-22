@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'background/background.png'
+
 jobs:
   update-json:
     runs-on: ubuntu-latest
@@ -16,31 +17,31 @@ jobs:
       - name: Update timestamp in configbackground.json
         id: update_step
         run: |
-          # 1. Tạo số timestamp mới
+          # 1. Tạo số timestamp mới và date Việt Nam
           TIMESTAMP=$(date +%s)
-          
-          # 2. Tạo date theo giờ Việt Nam (UTC+7)
           DATE=$(TZ='Asia/Ho_Chi_Minh' date '+%d/%m/%Y %H:%M:%S')
           
-          # 3. Sử dụng --arg để truyền biến an toàn vào jq (Đã sửa .timetamp thành .timestamp)
-          jq --arg ts "$TIMESTAMP" --arg dt "$DATE" '.timestamp = $ts | .date = $dt' configbackground.json > temp.json
+          # 2. Sử dụng --arg để truyền biến vào jq (Đã sửa đường dẫn file và đổi .timetamp thành .timestamp)
+          jq --arg ts "$TIMESTAMP" --arg dt "$DATE" '.timestamp = $ts | .date = $dt' background/configbackground.json > temp.json
           
-          # 4. Sử dụng Regex để tìm 'background' và thay bằng timestamp mới
+          # 3. Sử dụng Regex thay đổi chuỗi background
           sed -i -E "s|content://tvlauncher.config/background(/[0-9/]+)?|content://tvlauncher.config/background/$TIMESTAMP|g" temp.json
           
-          mv temp.json configbackground.json
+          # 4. Ghi đè lại vào đúng thư mục background
+          mv temp.json background/configbackground.json
           
-          # 5. Đẩy biến lên hệ thống để step sau nhận được
+          # 5. Đẩy biến lên hệ thống GitHub để step sau sử dụng
           echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
           
-          echo "Updated configbackground.json with timestamp: $TIMESTAMP"
-          echo "Updated configbackground.json with date (VN time): $DATE"
+          echo "Updated background/configbackground.json với timestamp: $TIMESTAMP"
 
       - name: Commit and Push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add configbackground.json
-          # Sử dụng biến nhận từ step trước qua ngữ cảnh github outputs
+          
+          # Thêm đúng đường dẫn file khi git add
+          git add background/configbackground.json
+          
           git commit -m "Bot: Update background timestamp ${{ steps.update_step.outputs.timestamp }}" || exit 0
           git push
