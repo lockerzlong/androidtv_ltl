@@ -37,6 +37,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add config.json
+          git add configbackground.json
           git commit -m "Bot: Update background timestamp $TIMESTAMP" || exit 0
           git push
