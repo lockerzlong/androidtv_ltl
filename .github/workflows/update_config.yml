@@ -1,4 +1,4 @@
-name: Auto Update Config Timestamp
+name: Auto Update Config Background Timestamp
 
 on:
   push:
