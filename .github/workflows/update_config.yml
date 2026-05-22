@@ -23,12 +23,12 @@ jobs:
           DATE=$(TZ='Asia/Ho_Chi_Minh' date '+%d/%m/%Y %H:%M:%S')
           
           # 3. Cập nhật cả timestamp và date bằng jq
-          jq ".timetamp = \"$TIMESTAMP\" | .date = \"$DATE\"" config.json > temp.json
+          jq ".timetamp = \"$TIMESTAMP\" | .date = \"$DATE\"" configbackground.json > temp.json
           
           # 4. Sử dụng Regex để tìm 'background' và thay bằng timestamp mới
           sed -i -E "s|content://tvlauncher.config/background(/[0-9/]+)?|content://tvlauncher.config/background/$TIMESTAMP|g" temp.json
           
-          mv temp.json config.json
+          mv temp.json configbackground.json
           
           echo "Updated configbackground.json with timestamp: $TIMESTAMP"
           echo "Updated configbackground.json with date (VN time): $DATE"
