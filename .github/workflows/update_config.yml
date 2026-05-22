@@ -3,7 +3,7 @@ name: Auto Update Config Timestamp
 on:
   push:
     paths:
-      - 'background.png'
+      - 'background/background.png'
 
 jobs:
   update-json:
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Update timestamp in config.json
+      - name: Update timestamp in configbackground.json
         run: |
           # 1. Tạo số timestamp mới
           TIMESTAMP=$(date +%s)
@@ -30,8 +30,8 @@ jobs:
           
           mv temp.json config.json
           
-          echo "Updated config.json with timestamp: $TIMESTAMP"
-          echo "Updated config.json with date (VN time): $DATE"
+          echo "Updated configbackground.json with timestamp: $TIMESTAMP"
+          echo "Updated configbackground.json with date (VN time): $DATE"
 
       - name: Commit and Push changes
         run: |
