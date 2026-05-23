@@ -6,7 +6,7 @@
     "whats_new": "- Fix bugs\n- Improve performance\n- Add new features",
     "min_sdk": 21,
     "target_sdk": 33,
-    "sha256": [
-        "7c49d93fbd650852e96d2883848d4d405ba47b158aa14a92ee6a0f7b488af71f"
+    "ls": [
+        "U2FsdGVkX18usoB2rjrU7AYHqZPswF0KRwrGuw0dcAA="
     ]
 }
