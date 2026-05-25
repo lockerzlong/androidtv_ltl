@@ -1,5 +1,4 @@
 {
-    "logo": "",
     "store": [
         {
             "id": "VietPlayTV",
@@ -69,6 +68,20 @@
             "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/cobalt.youtube.tv.apk",
             "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo (Cần xoá youtube gốc). TEST THU LAN 12",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1r4Qq8tM2QFYSaIOK5Xs2QCeIQGdidLTI",
+            "sha256": "ba5f342b0bfa5b4607449480cb03558dc9000102250c96b4151150dc8a179ec3"
+        },
+        {
+            "id": "youtube29",
+            "packageName": "com.tizen.tv9",
+            "name": "TiZenTube (Mod)9",
+            "category": "Giải trí9",
+            "iconUrl": "https://lh3.googleusercontent.com/d/1gyy-iR0bCY_Z0vyNktXfQIYhC0KJO3on9",
+            "version": "1.039",
+            "versionCode": 19,
+            "isActived": true,
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/cobalt.youtube.tv.apk9",
+            "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo (Cần xoá youtube gốc). TEST THU LAN 129999",
+            "bannerUrl": "https://lh3.googleusercontent.com/d/1r4Qq8tM2QFYSaIOK5Xs2QCeIQGdidLTI9",
             "sha256": "ba5f342b0bfa5b4607449480cb03558dc9000102250c96b4151150dc8a179ec3"
         }
     ]
