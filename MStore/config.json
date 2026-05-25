@@ -10,7 +10,8 @@
     "isActived": true,
     "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/VietPlayTV.apk",
     "description": "Truyền hình trực tuyến",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU"
+    "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU",
+    "sha256": "9d4e6ec1fefa88375164a8560559c577ec54b15c19b05fb671dfc6eaa03db58b"
   },
   {
     "id": "iMediaTV",
@@ -23,7 +24,8 @@
     "isActived": true,
     "downloadUrl": "decryptedUrl",
     "description": "Truyền hình trực tuyến",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w"
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w",
+    "sha256": ""
   },
   {
     "id": "MonsterTV",
@@ -36,7 +38,8 @@
     "isActived": true,
     "downloadUrl": "decryptedUrl",
     "description": "Truyền hình trực tuyến,Các kênh truyền hình địa phương, quốc tế: Bao gồm tin tức, thể thao, phim truyện, ca nhạc từ nhiều quốc gia, mở rộng tầm nhìn giải trí toàn cầu ngay tại ngôi nhà của bạn..",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1ZkJPi7b3TbqDF0yk6aBAkEmW1vAvaN_M"
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1ZkJPi7b3TbqDF0yk6aBAkEmW1vAvaN_M",
+    "sha256": ""
   },
   {
     "id": "youtube1",
@@ -49,7 +52,8 @@
     "isActived": true,
     "downloadUrl": "decryptedUrl",
     "description": "Ứng dụng chính thức của google có quảng cáo.",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0"
+    "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0",
+    "sha256": ""
   },
   {
     "id": "youtube2",
@@ -62,6 +66,7 @@
     "isActived": true,
     "downloadUrl": "decryptedUrl",
     "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo (Cần xoá youtube gốc).",
-    "bannerUrl": "https://lh3.googleusercontent.com/d/1r4Qq8tM2QFYSaIOK5Xs2QCeIQGdidLTI"
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1r4Qq8tM2QFYSaIOK5Xs2QCeIQGdidLTI",
+    "sha256": ""
   }
 ]
