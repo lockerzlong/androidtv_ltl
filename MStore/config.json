@@ -50,10 +50,10 @@
     "version": "2.02.14",
     "versionCode": 2,
     "isActived": true,
-    "downloadUrl": "decryptedUrl",
+    "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Youtube.apk",
     "description": "Ứng dụng chính thức của google có quảng cáo.",
     "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0",
-    "sha256": ""
+    "sha256": "438db71beb0105467d001ffb787ca733bdf612c35548eb874b7a62ac21cc2707"
   },
   {
     "id": "youtube2",
