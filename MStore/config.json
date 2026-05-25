@@ -36,10 +36,10 @@
     "version": "3.2.0",
     "versionCode": 3,
     "isActived": true,
-    "downloadUrl": "decryptedUrl",
+    "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/MonsterTV.apk",
     "description": "Truyền hình trực tuyến,Các kênh truyền hình địa phương, quốc tế: Bao gồm tin tức, thể thao, phim truyện, ca nhạc từ nhiều quốc gia, mở rộng tầm nhìn giải trí toàn cầu ngay tại ngôi nhà của bạn..",
     "bannerUrl": "https://lh3.googleusercontent.com/d/1ZkJPi7b3TbqDF0yk6aBAkEmW1vAvaN_M",
-    "sha256": ""
+    "sha256": "b0d73f143f1513118674bba0c4f68035782baf9104ec82ca7788e9b712c5e1f5"
   },
   {
     "id": "youtube1",
