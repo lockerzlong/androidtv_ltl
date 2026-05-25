@@ -49,7 +49,7 @@
     "isActived": true,
     "downloadUrl": "decryptedUrl",
     "description": "Ứng dụng chính thức của google có quảng cáo.",
-    "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0"
+    "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0"
   },
   {
     "id": "youtube2",
