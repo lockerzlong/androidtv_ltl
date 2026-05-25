@@ -1,0 +1,18 @@
+{
+    "original_file": "cobalt.youtube.tv-old.apk",
+    "file_size": 38866981,
+    "chunk_size": 5242880,
+    "total_parts": 8,
+    "parts": [
+        "cobalt.youtube.tv-old.apk.part000",
+        "cobalt.youtube.tv-old.apk.part001",
+        "cobalt.youtube.tv-old.apk.part002",
+        "cobalt.youtube.tv-old.apk.part003",
+        "cobalt.youtube.tv-old.apk.part004",
+        "cobalt.youtube.tv-old.apk.part005",
+        "cobalt.youtube.tv-old.apk.part006",
+        "cobalt.youtube.tv-old.apk.part007"
+    ],
+    "sha256": "957026e28f50619d9dd639464d9d8ff7a284983c9c160c1949004b62fbeedcf4",
+    "created_at": "2026-05-26T02:07:53.508827"
+}
