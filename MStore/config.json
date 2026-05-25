@@ -85,6 +85,20 @@
             "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo (Cần xoá youtube gốc). TEST THU LAN 12999988887776666",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1r4Qq8tM2QFYSaIOK5Xs2QCeIQGdidLTI987776666666",
             "sha256": "ce9827ccbebcd7ed8f3ac3fdf88dd39bd6b7428feae6b1257324d205e64a0024"
+        },
+        {
+            "id": "meimei",
+            "packageName": "meimei",
+            "name": "meimei",
+            "category": "meimei",
+            "iconUrl": "meimei",
+            "version": "1",
+            "versionCode": 1322,
+            "isActived": true,
+            "downloadUrl": "meimei",
+            "description": "meimei",
+            "bannerUrl": "meimei",
+            "sha256": "3c91ba65e4458ffc70183f7f30ef7cbaf98b9baadc7b3b09f0fe59653b5c764b"
         }
     ]
 }
