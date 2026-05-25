@@ -22,10 +22,10 @@
     "version": "25.04.06.B",
     "versionCode": 25,
     "isActived": true,
-    "downloadUrl": "decryptedUrl",
+    "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/iMediaTV.apk",
     "description": "Truyền hình trực tuyến",
     "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w",
-    "sha256": ""
+    "sha256": "0748694b87258b6daca58d838826c41bd52df15b0914539d82e752f15f77d5bc"
   },
   {
     "id": "MonsterTV",
