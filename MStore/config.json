@@ -88,17 +88,17 @@
         },
         {
             "id": "meimei",
-            "packageName": "meimei",
-            "name": "meimei",
-            "category": "meimei",
-            "iconUrl": "meimei",
-            "version": "1",
-            "versionCode": 1322,
+            "packageName": "meimei123",
+            "name": "meimei123",
+            "category": "meimei123",
+            "iconUrl": "meimei123",
+            "version": "1123213",
+            "versionCode": 132221321312,
             "isActived": true,
-            "downloadUrl": "meimei",
-            "description": "meimei",
-            "bannerUrl": "meimei",
-            "sha256": "a966a49a532c9959467e0a05ddbc3dd7fbd01e66a0889f4a6937e6362ad0e1b7"
+            "downloadUrl": "meimei213213123",
+            "description": "meimei21321312",
+            "bannerUrl": "meimei123213",
+            "sha256": "4869b37a65482de68c0eb25729fc87482d398fdbd6ddd2bb0bd2c31e42f1a6f5"
         }
     ]
 }
