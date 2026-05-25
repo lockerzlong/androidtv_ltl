@@ -1,0 +1,67 @@
+[
+  {
+    "id": "VietPlay TV",
+    "packageName": "com.nghenhin24h.vietplaytv",
+    "name": "VietPlay TV",
+    "category": "Truyền hình",
+    "iconUrl": "https://lh3.googleusercontent.com/d/1zKZ1TsLjq7rpVwcTLGnZIR0QLmVSFROG",
+    "version": "2.3",
+    "versionCode": 1,
+    "isActived": true,
+    "downloadUrl": "decryptedUrl",
+    "description": "Truyền hình trực tuyến",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU
+  },
+  {
+    "id": "iMediaTV",
+    "packageName": "com.kt.apps.media.xemtv.beta",
+    "name": "iMedia - Xem Tivi HD",
+    "category": "Truyền hình",
+    "iconUrl": "https://lh3.googleusercontent.com/d/1tKga1m7Vg7UeevzAmy-bmfdT5YF44qad",
+    "version": "25.04.06.B",
+    "versionCode": 25,
+    "isActived": true,
+    "downloadUrl": "decryptedUrl",
+    "description": "Truyền hình trực tuyến",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w"
+  },
+  {
+    "id": "MonsterTV",
+    "packageName": "com.quang.monstertv",
+    "name": "Monster TV",
+    "category": "Truyền hình",
+    "iconUrl": "https://lh3.googleusercontent.com/d/1LHHZiXGddPnq-H7M812RAXdrQsDglgfs",
+    "version": "3.2.0",
+    "versionCode": 3,
+    "isActived": true,
+    "downloadUrl": "decryptedUrl",
+    "description": "Truyền hình trực tuyến,Các kênh truyền hình địa phương, quốc tế: Bao gồm tin tức, thể thao, phim truyện, ca nhạc từ nhiều quốc gia, mở rộng tầm nhìn giải trí toàn cầu ngay tại ngôi nhà của bạn..",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1ZkJPi7b3TbqDF0yk6aBAkEmW1vAvaN_M"
+  },
+  {
+    "id": "youtube1",
+    "packageName": "com.google.android.youtube.tv",
+    "name": "Youtube TV",
+    "category": "Giải trí",
+    "iconUrl": "https://lh3.googleusercontent.com/d/1cWIGVS-4sMv901_KyhM5uY1VsGlh1Acr",
+    "version": "2.02.14",
+    "versionCode": 2,
+    "isActived": true,
+    "downloadUrl": "decryptedUrl",
+    "description": "Ứng dụng chính thức của google có quảng cáo.",
+    "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0"
+  },
+  {
+    "id": "youtube2",
+    "packageName": "com.tizen.tv",
+    "name": "TiZenTube (Mod)",
+    "category": "Giải trí",
+    "iconUrl": "https://lh3.googleusercontent.com/d/1gyy-iR0bCY_Z0vyNktXfQIYhC0KJO3on",
+    "version": "1.03",
+    "versionCode": 1,
+    "isActived": true,
+    "downloadUrl": "decryptedUrl",
+    "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo (Cần xoá youtube gốc).",
+    "bannerUrl": "https://lh3.googleusercontent.com/d/1r4Qq8tM2QFYSaIOK5Xs2QCeIQGdidLTI"
+  }
+]
