@@ -1,6 +1,6 @@
 [
   {
-    "id": "VietPlay TV",
+    "id": "VietPlayTV",
     "packageName": "com.nghenhin24h.vietplaytv",
     "name": "VietPlay TV",
     "category": "Truyền hình",
@@ -8,7 +8,7 @@
     "version": "2.3",
     "versionCode": 1,
     "isActived": true,
-    "downloadUrl": "decryptedUrl",
+    "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/VietPlayTV.apk",
     "description": "Truyền hình trực tuyến",
     "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU"
   },
