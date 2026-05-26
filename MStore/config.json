@@ -291,10 +291,10 @@
             "version": "1.03",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/cobalt.youtube.tv.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/TiZenTubeMod/TiZenTubeMod.apk",
             "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo (Cần xoá youtube gốc).",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1XycZbgkhOOpzZHFEEUDaWndNmGtljQof",
-            "sha256": "ba5f342b0bfa5b4607449480cb03558dc9000102250c96b4151150dc8a179ec3"
+            "sha256": "6fd6ff799e34ffdba02acf6b51eb7eda116bf3ab65d70600a1a2e5f498b1ece9"
         },
         {
             "id": "TiZenTube",
