@@ -11,7 +11,7 @@
             "version": "2.3",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/VietPlayTV/VietPlayTV.apk",
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/VietPlayTV/VietPlayTV.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU",
             "sha256": "fd7fa5f915103e61c7ddd0abbbdcab2d4f2c7022661e9eaa42996d34969bdff9"
@@ -25,10 +25,10 @@
             "version": "25.04.06.B",
             "versionCode": 25,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/iMediaTV/iMediaTV.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/iMediaTV/iMediaTV.apk",
             "description": "Truyền hình trực tuyến",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w",
-            "sha256": "2d7209b1f30023eb83ea990a2b8dcfcebdebc433f33900d54bab13eef2c2c9c1"
+            "sha256": "680a89f9da4e84aed3a7c1e8e01dc385abbde0d66fb03efe0444cf19cc860962"
         },
         {
             "id": "MonsterTV",
