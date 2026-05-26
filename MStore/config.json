@@ -417,10 +417,10 @@
             "version": "5.1.1",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Sports.tv.v.5.1.1.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/SportsTV/SportsTV.apk",
             "description": "SportsTV có thể là một ứng dụng cung cấp nội dung thể thao, như phim và chương trình truyền hình thể thao,Được thêm từ các nguồn bên ngoài.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1b6ltmlcKEULdVsrebMHWiFiTL5MTngw7",
-            "sha256": ""
+            "sha256": "17e93ab0ff2a3345235aa4337c89200ea97b0fa797377d52e1e9e747a11604af"
         },
         {
             "id": "SportzX",
