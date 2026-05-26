@@ -25,10 +25,10 @@
             "version": "25.04.06.B",
             "versionCode": 25,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/iMedia.TV.v.25.04.06.B.apk",
+            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/iMediaTV/iMediaTV.apk",
             "description": "Truyền hình trực tuyến",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w",
-            "sha256": "0748694b87258b6daca58d838826c41bd52df15b0914539d82e752f15f77d5bc"
+            "sha256": "2d7209b1f30023eb83ea990a2b8dcfcebdebc433f33900d54bab13eef2c2c9c1"
         },
         {
             "id": "MonsterTV",
