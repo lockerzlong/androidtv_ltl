@@ -53,10 +53,10 @@
             "version": "1.0.8",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/BaoTV_1.0.8.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/BaoTV/BaoTV.apk",
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/TRUY%E1%BB%80N%20H%C3%8CNH/AnhBaoTV1_1.0.8.png",
-            "sha256": ""
+            "sha256": "3d4ec3c6c9bb2c2148dd1ac273428aa82a799c4cec369f9296f48b4ebf1d2025"
         },
         {
             "id": "DLTivi",
