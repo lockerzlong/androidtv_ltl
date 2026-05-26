@@ -739,10 +739,10 @@
             "version": "2.5.3",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/SupperVoice.v.2.5.3.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/SupperVoice/SupperVoice.apk",
             "description": "Hổ trợ tìm kiếm giọng nói,Gọi kênh truyền hình,youtube,tìm phim vv...Lưu ý phải gỡi lỗi usb(ADB)",
             "bannerUrl": "https://lh3.googleusercontent.com/d/167d0QiwzrJkVpu9YjFvz9yKmlPZPSN8u",
-            "sha256": ""
+            "sha256": "16da65c4074caadd8efd5e121cc49f6c4e7f20934fb26898d808be9ea5693c7d"
         },
         {
             "id": "MapVoice",
