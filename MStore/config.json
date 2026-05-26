@@ -11,10 +11,10 @@
             "version": "2.3",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/Vietplaytv_2.3.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/VietPlayTV/VietPlayTV.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU",
-            "sha256": "9d4e6ec1fefa88375164a8560559c577ec54b15c19b05fb671dfc6eaa03db58b"
+            "sha256": "7931a3802f7bf79d0f6c67dfcc624e9c08d0cb9851084a9cd3d0eca2c6fc0b16"
         },
         {
             "id": "iMediaTV",
