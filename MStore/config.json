@@ -109,10 +109,10 @@
             "version": "520921",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/Quantv.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/QUANGTV/QUANGTV.apk",
             "description": "Truyền hình IPTV",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/QUANGTV/QUANTV.jpg",
-            "sha256": ""
+            "sha256": "b80870dc1e700b171569d84346e308278d635486458dd61b674793e82ddab445"
         },
         {
             "id": "TV360",
