@@ -319,10 +319,10 @@
             "version": "1.1.8",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/R.Gi.i.Tri.v.1.1.8.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/RoGiaiTri/RoGiaiTri.apk",
             "description": "Kênh giải trí Xem phim, trực tiếp các giải bóng đá hàng đầu và thể thao đặc sắc.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1B0QOetRzPUOULtg-sG-49K5IsfAVi34Z",
-            "sha256": ""
+            "sha256": "edbd2107371e41fcbb4bfce2105936abe117a177ef4ee40d2446f1fb460eb645"
         },
         {
             "id": "CloudStream",
