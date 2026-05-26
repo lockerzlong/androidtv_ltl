@@ -11,7 +11,7 @@
             "version": "2.3",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/VietPlayTV/VietPlayTV.apk",
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/VietPlayTV/VietPlayTV.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU",
             "sha256": "64777a98d552aac2ce8779375cd1c5d2bfc0c00b233795d08f63c86f7fff7786"
