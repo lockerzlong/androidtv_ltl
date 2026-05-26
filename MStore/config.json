@@ -25,7 +25,7 @@
             "version": "25.04.06.B",
             "versionCode": 25,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/iMediaTV/iMediaTV.apk",
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/iMediaTV/iMediaTV.apk",
             "description": "Truyền hình trực tuyến",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w",
             "sha256": "680a89f9da4e84aed3a7c1e8e01dc385abbde0d66fb03efe0444cf19cc860962"
