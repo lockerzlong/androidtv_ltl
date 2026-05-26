@@ -53,10 +53,10 @@
             "version": "1.0.8",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/BaoTV/BaoTV.apk",
+            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/BaoTV_1.0.8.apk",
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/TRUY%E1%BB%80N%20H%C3%8CNH/AnhBaoTV1_1.0.8.png",
-            "sha256": "3d4ec3c6c9bb2c2148dd1ac273428aa82a799c4cec369f9296f48b4ebf1d2025"
+            "sha256": ""
         },
         {
             "id": "DLTivi",
@@ -67,10 +67,10 @@
             "version": "16.0.2",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/DLTivi_16.0.2.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/DLTivi/DLTivi.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1wxsCLdYcEGQGp1WUYxlTRheK8dJSE3Kv",
-            "sha256": ""
+            "sha256": "21afb0f001cc0568da6a809a016690bdfe540e16af66813e54dab0eacfd64b96"
         },
         {
             "id": "CoTiVi",
