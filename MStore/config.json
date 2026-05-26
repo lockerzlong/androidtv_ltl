@@ -67,10 +67,10 @@
             "version": "16.0.2",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/DLTivi/DLTivi.apk",
+            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/DLTivi_16.0.2.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1wxsCLdYcEGQGp1WUYxlTRheK8dJSE3Kv",
-            "sha256": "21afb0f001cc0568da6a809a016690bdfe540e16af66813e54dab0eacfd64b96"
+            "sha256": ""
         },
         {
             "id": "CoTiVi",
@@ -81,10 +81,10 @@
             "version": "1.1.3",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/Cotivi_1.1.3.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/CoTiVi/CoTiVi.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1ajSuZ_y4w85r_vryp4ls77wEXdFIxtqI",
-            "sha256": ""
+            "sha256": "917892c1e9e86e3046a174667aa556952d338256af5db621e7b10aa99f5da9a9"
         },
         {
             "id": "vAppTV",
