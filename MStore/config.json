@@ -67,10 +67,10 @@
             "version": "16.0.2",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/DLTivi_16.0.2.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DLTiv/DLTivi.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1wxsCLdYcEGQGp1WUYxlTRheK8dJSE3Kv",
-            "sha256": ""
+            "sha256": "8477b5c90e5bb0d14b6c2584957714518386c0a686591e467faacad65f91b475"
         },
         {
             "id": "CoTiVi",
@@ -840,6 +840,20 @@
             "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/SAI.v.4.5.apk",
             "description": "SAI có khả năng cài đặt các ứng dụng được phân phối dưới dạng tệp .apk, .xapk, .apkm và .apks..",
             "bannerUrl": "https://lh3.googleusercontent.com/d/17f9dIaRgkHemxBX_mblrXYOLU1caDf-T",
+            "sha256": ""
+        },
+        {
+            "id": "MoCacFile",
+            "packageName": "com.aboutmycode.betteropenwith",
+            "name": "Mở các file",
+            "category": "Tiện Ích",
+            "iconUrl": "https://lh3.googleusercontent.com/d/1q6W1l4K1NeS4JDMSKTCU0x09mU68-MID",
+            "version": "1.4.16",
+            "versionCode": 1,
+            "isActived": true,
+            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/D.c.file.v.1.4.16.apk",
+            "description": "Hổ trợ mở các file Word, Excel, PowerPoint, Ảnh, Pdf vv....",
+            "bannerUrl": "https://lh3.googleusercontent.com/d/1icb5wTWto-uhOJlPd21fIEU3jHsp4stx",
             "sha256": ""
         },
         {
