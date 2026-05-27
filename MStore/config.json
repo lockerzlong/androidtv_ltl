@@ -95,7 +95,7 @@
             "version": "1.0.2",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/vAppTV/vAppTV.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/vAppTV/vAppTV.apk",
             "description": "Ứng dụng xem truyền hình thể thao trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1SNt1amvLvWZHWx9IZGQ4xzLeliUN2OJ_",
             "sha256": "d92d667768ca5a7cffaed0a450734f7ee0fd12457ba628a6b6c64aff32c83faa"
@@ -845,7 +845,7 @@
         {
             "id": "VIETNAMVPN",
             "packageName": "free.vpnvietnam.unlimited.secure.turbo.unblock.proxy",
-            "name": "VIETNAM VPN",
+            "name": "VIETNAM VPNNN",
             "category": "Tiện Ích",
             "iconUrl": "https://lh3.googleusercontent.com/d/1QhvewwmrN2MVtYbSaIh1AHjafQE-DADr",
             "version": "4.6.2",
