@@ -857,20 +857,6 @@
             "sha256": ""
         },
         {
-            "id": "VIETNAMVPN",
-            "packageName": "free.vpnvietnam.unlimited.secure.turbo.unblock.proxy",
-            "name": "VIETNAM VPN",
-            "category": "Tiện Ích",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1QhvewwmrN2MVtYbSaIh1AHjafQE-DADr",
-            "version": "4.6.2",
-            "versionCode": 1,
-            "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Vietnampvn.v.4.6.2.6.apk",
-            "description": "VIETNAM VPN là một công nghệ tạo ra kết nối an toàn và được mã hóa giữa thiết bị của bạn và Internet, giúp ẩn địa chỉ IP thực, bảo vệ quyền riêng tư và truy cập các nội dung bị hạn chế chặn QC Yuotube.",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/1lmfaFXPdN9dmu0LTvvHrO7k8puPBh-MU",
-            "sha256": ""
-        },
-        {
             "id": "Cloudflare",
             "packageName": "com.cloudflare.onedotonedotonedotone",
             "name": "1.1.1.1",
