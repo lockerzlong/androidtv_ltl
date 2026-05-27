@@ -843,20 +843,6 @@
             "sha256": ""
         },
         {
-            "id": "MoCacFile",
-            "packageName": "com.aboutmycode.betteropenwith",
-            "name": "Mở các file",
-            "category": "Tiện Ích",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1q6W1l4K1NeS4JDMSKTCU0x09mU68-MID",
-            "version": "1.4.16",
-            "versionCode": 1,
-            "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/D.c.file.v.1.4.16.apk",
-            "description": "Hổ trợ mở các file Word, Excel, PowerPoint, Ảnh, Pdf vv....",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/1icb5wTWto-uhOJlPd21fIEU3jHsp4stx",
-            "sha256": ""
-        },
-        {
             "id": "VIETNAMVPN",
             "packageName": "free.vpnvietnam.unlimited.secure.turbo.unblock.proxy",
             "name": "VIETNAM VPN",
