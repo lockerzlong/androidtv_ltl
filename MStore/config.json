@@ -347,10 +347,10 @@
             "version": "2.1.5",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/Phim4K/Phim4K.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Phim4K/Phim4K.apk",
             "description": "Xem trực tiếp phim chất lượng cao độ phân giải 4K sống động.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1Z_58e_mTUpuBQHI7owzBvJyIhKcLLeAF",
-            "sha256": "89f07c9e9285644a7f565b886c73a5013897b5019857851dceae9637ebf35baf"
+            "sha256": "caf2404169c0525974820ce9d1ae66f799fe73ad6b4e154050dab7fb963eceb5"
         },
         {
             "id": "iQIYI",
