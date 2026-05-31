@@ -221,10 +221,10 @@
             "version": "1.1.1",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/Hdtv_1.1.1.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/HTVC/HTVC.apk",
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/TRUY%E1%BB%80N%20H%C3%8CNH/HTV1.png",
-            "sha256": ""
+            "sha256": "1c8fad5d8807cab0c6716650ebf6b242dc27fc4d04192ea48bef3fdbff7d764d"
         },
         {
             "id": "SCTVonline",
