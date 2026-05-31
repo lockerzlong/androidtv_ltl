@@ -179,10 +179,10 @@
             "version": "3.52",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/MyTV.v.3.52.0_431_2206141108.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/MyTV/MyTV.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1wlPEYWGqimDn9ZIJZcnv7PGaokADTV_Z",
-            "sha256": ""
+            "sha256": "d8868e52bbdf40c122761bbb65fe09f57a3061be2bfdf823e2066ca657ab3a71"
         },
         {
             "id": "PCRTV",
