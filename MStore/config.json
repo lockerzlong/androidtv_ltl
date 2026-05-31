@@ -333,10 +333,10 @@
             "version": "4.6.0",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/CloudStream/CloudStream_Mod.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/CloudStream/CloudStream_Mod.apk",
             "description": "(pas:nghien android tv)là kênh giả trí được tích họp nhiều nguồn bạn có thể chọn.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/13tOY-VkA1Oc4BbGgthEOJaTlJfqvv-_8",
-            "sha256": "6506c657539ac8bd77ba0a2807aa6cc33bdfb84d8b793eec9d20f2ad3ff40c42"
+            "sha256": "3a93fbe26a6792c3bd620863ef4ded03cc657dd2885d5e0c3ced4cee32088185"
         },
         {
             "id": "Phim4K",
