@@ -361,10 +361,10 @@
             "version": "1.9.0",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/iQIYI.v.9.3.1.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/iQIYI/iQIYI.apk",
             "description": "iQIYI là một nền tảng xem video trực tuyến của Trung Quốc, thuộc sở hữu của tập đoàn Baidu, cung cấp một kho nội dung giải trí đa dạng bao gồm phim truyền hình, điện ảnh, chương trình truyền hình và anime. Nền tảng này có phiên bản quốc tế với phụ đề đa ngôn ngữ, bao gồm tiếng Việt, để phục vụ người xem trên toàn thế giới.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1D9sVlqRmTYo3kA4YCAF2hFzYTQUC-AKD",
-            "sha256": ""
+            "sha256": "8de51d275cd55e0e6b44f80840ff2e745b8f5dc24011ae917fdefb61e9acbf05"
         },
         {
             "id": "KODI",
