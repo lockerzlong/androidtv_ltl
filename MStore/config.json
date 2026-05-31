@@ -277,10 +277,10 @@
             "version": "31.63",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/yuliskov/SmartTube/releases/download/31.63/SmartTube_beta_31.63_arm64-v8a.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SmartTubeBeta/SmartTubeBeta.apk",
             "description": "Smarttube ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1N8wpmU5ZE2zC0EJTSsNneByxaoihDCVU",
-            "sha256": ""
+            "sha256": "3a29e9c60cc87a8f43cee573828d18b32a6722779c6151b0a10633ca117117a9"
         },
         {
             "id": "TiZenTubeMod",
