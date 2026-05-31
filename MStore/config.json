@@ -165,10 +165,10 @@
             "version": "7.25.10",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/FPTPLAY.v.7.25.10.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/FPTPlay/FPTPlay.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1df9mNRKOlE-uN-o7RotqrJ_8z-1xZE9i",
-            "sha256": ""
+            "sha256": "bb4804e382f6058afca1ba28cb6c3fad7ca1dcc4c8954aec1205624c75da677c"
         },
         {
             "id": "MyTV",
