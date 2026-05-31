@@ -305,10 +305,10 @@
             "version": "1.04",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/TiZenTube/TiZenTube.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TiZenTube/TiZenTube.apk",
             "description": "TizenTube ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1H57yVU39Mj80ZhtPTJg_GTab52FyfmF_",
-            "sha256": "2dc1e7dc0d66572b2b4fab7de99c16d03f785de372c59d9cdbb24bfb324ba94f"
+            "sha256": "e711d1b87b146767df35e80fa91913094b3699704e0072d0fff3213a12c47fb3"
         },
         {
             "id": "RoGiaiTri",
