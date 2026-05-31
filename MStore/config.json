@@ -151,10 +151,10 @@
             "version": "11.12.30",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/Vtvgotv_11.12.30.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/VTVgo/VTVgo.apk",
             "description": "Ứng dụng xem truyền hình,thể thao trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/VTVgo1.png",
-            "sha256": ""
+            "sha256": "a5e6b0021903a7b230bd595142e6dc34c4b2ec24cd32387245e5c3fdcb869eef"
         },
         {
             "id": "FPTPlay",
