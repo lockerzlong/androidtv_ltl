@@ -137,10 +137,10 @@
             "version": "2.2.1",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/Vtvcab_2.2.1.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/VTVCab/VTVCab.apk",
             "description": "Ứng dụng xem truyền hình,thể thao trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/1.jpg",
-            "sha256": ""
+            "sha256": "40355f7936c2e047c578ad40b9836795678cd43e34df829e6e2ad01b18941acb"
         },
         {
             "id": "VTVgo",
