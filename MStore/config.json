@@ -235,10 +235,10 @@
             "version": "5.26.20",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/SCTV.online_5.26.20.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SCTVonline/SCTVonline.apk",
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/TRUY%E1%BB%80N%20H%C3%8CNH/SCTV1.jpg",
-            "sha256": ""
+            "sha256": "15ba0ea1c980e39033dac91c1c232671d002456d603ab95955b62802866d3345"
         },
         {
             "id": "youtube1",
