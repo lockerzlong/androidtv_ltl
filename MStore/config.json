@@ -291,10 +291,10 @@
             "version": "1.03",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/TiZenTubeMod/TiZenTubeMod.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TiZenTubeMod/TiZenTubeMod.apk",
             "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo (Cần xoá youtube gốc).",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1XycZbgkhOOpzZHFEEUDaWndNmGtljQof",
-            "sha256": "6fd6ff799e34ffdba02acf6b51eb7eda116bf3ab65d70600a1a2e5f498b1ece9"
+            "sha256": "a0c955ed9d9ebb89acbf5a2c241d8e79d328270593cba638d610097ec79235f8"
         },
         {
             "id": "TiZenTube",
