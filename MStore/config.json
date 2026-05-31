@@ -375,10 +375,10 @@
             "version": "21.2",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/tree/main/MStore/app/KODI/KODI.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/KODI/KODI.apk",
             "description": "Kodi là một ứng dụng phần mềm trung tâm giải trí đa phương tiện miễn phí và mã nguồn mở, cho phép người dùng xem phim, nghe nhạc, xem ảnh và truy cập nhiều nội dung khác từ nhiều nguồn như ổ cứng, mạng nội bộ hoặc Internet. Ứng dụng có thể tùy biến giao diện .",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1J6yoq8mmHtprWmiyMReDwzR9zxCqIkfd",
-            "sha256": "cf1a828af42f09b5ba3b8e5e6aa78703a75831395eb70738035d67d42bab41e4"
+            "sha256": "5bff2c5494df3bfae144b650326e938c16e5fa1362d86f7f424a36b6dab27472"
         },
         {
             "id": "PhimNe",
