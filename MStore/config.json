@@ -417,10 +417,10 @@
             "version": "1.0.11",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Monplayer.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/MonPlayerTV/MonPlayerTV.apk",
             "description": "MonPlayer TV là một ứng dụng xem thể thao, xem phim miễn phí với chất lượng cao và mượt mà, có sẵn trên các thiết bị Android TV.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1HHIHzJfMTUsZiT-sBQd9AE7aK6nP8Fgy",
-            "sha256": ""
+            "sha256": "4a7716cc9690b5323c04444a0384922d3f29348d64fa4a58dd328f17e46dda8f"
         },
         {
             "id": "SportsTV",
