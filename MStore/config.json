@@ -3,6 +3,20 @@
     "version": "1",
     "store": [
         {
+            "id": "TVMedia",
+            "packageName": "com.androidtv.tvmedia",
+            "name": "TVMedia",
+            "category": "Truyền hình",
+            "iconUrl": "https://lh3.googleusercontent.com/d/1zKZ1TsLjq7rpVwcTLGnZIR0QLmVSFROG",
+            "version": "2.3",
+            "versionCode": 1,
+            "isActived": true,
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/VietPlayTV/VietPlayTV.apk",
+            "description": "Ứng dụng xem truyền hình trực tuyến Việt Nam.",
+            "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU",
+            "sha256": "fd7fa5f915103e61c7ddd0abbbdcab2d4f2c7022661e9eaa42996d34969bdff9"
+        },
+	{
             "id": "VietPlayTV",
             "packageName": "com.nghenhin24h.vietplaytv",
             "name": "VietPlay TV",
