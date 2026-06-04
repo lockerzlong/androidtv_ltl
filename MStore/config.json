@@ -459,10 +459,10 @@
             "version": "1.0.7",
             "versionCode": 2,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/CricfyTV/CricfyTV.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Getout/Getout.apk",
             "description": "Trực tiếp thể thao vv....",
             "bannerUrl": "https://lh3.googleusercontent.com/d/13pZhSGTD1Cdi5qgEQiWIa7zi2_xmt0Yr",
-            "sha256": "8845d5d28bbe498b58d8dacf383b0df1c8bdf8fb7f02d760c656f471887c5e27"
+            "sha256": "4e011f7bdfc86acb12ec6af2fd6a802feb5e18fa4db72f23086694cd6fcb2264"
         },
         {
             "id": "RBTV",
