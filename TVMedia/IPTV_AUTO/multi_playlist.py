@@ -325,12 +325,6 @@ def process_socolive_source(name, url, output_file):
     print(f"🛰️ Đang xử lý SocoLive")
     print(f"==============================")
 
-    r = scraper.get(url, timeout=15)
-    print("STATUS =", r.status_code)
-    print("SERVER =", r.headers.get("server"))
-    print("CF-RAY =", r.headers.get("cf-ray"))
-    print("TEXT =", r.text[:500])
-    
     root = fetch_jsonp(url)
 
     if not root:
