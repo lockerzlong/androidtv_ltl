@@ -274,13 +274,13 @@
             "name": "SmartTube(stable)",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1nDFoughGJVkS9iVqOKSrDuQqzUg6VRdc",
-            "version": "31.63s",
+            "version": "31.63",
             "versionCode": 1,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SmartTubeStable/SmartTubeStable.apk",
             "description": "Smarttube ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1i6QHWkn4TLAEejn8FIEyUU1V1LJEKhFp",
-            "sha256": "7d613c612196b85112ca6ab669d674b7d86f465d52c80559644431a31e98d9be"
+            "sha256": "7953a437af0ceb073085421713f7baca58245f352a13661d269d6420e3e2b0ff"
         },
         {
             "id": "SmartTubeBeta",
