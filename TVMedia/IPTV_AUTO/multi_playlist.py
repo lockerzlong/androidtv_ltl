@@ -233,36 +233,51 @@ def fetch_jsonp(url):
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Accept": "application/json, text/javascript, */*; q=0.01",
-            "Accept-Language": "vi-VN,vi;q=0.9,en;q=0.8",
-            "Referer": "https://socolive.com/",
-            "Origin": "https://socolive.com",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Referer": "https://www.google.com/",
+            "Origin": "https://json.vnres.co",
+            "DNT": "1",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "none",
+            "Sec-Fetch-User": "?1",
+            "Cache-Control": "max-age=0",
         }
-        r = requests.get(url, headers=headers, timeout=15)
-        r.raise_for_status()
-
-        text = r.text.strip()
-
-        # Xử lý JSONP: function_name({...})
-        if text.startswith("{"):
-            return json.loads(text)
         
-        # Tìm vị trí bắt đầu và kết thúc của JSON
+        # Thử dùng session
+        session = requests.Session()
+        session.headers.update(headers)
+        
+        # Thêm cookie nếu cần
+        session.cookies.set("__cf_bm", "dummy_value")
+        
+        r = session.get(url, timeout=30, allow_redirects=True)
+        
+        if r.status_code == 403:
+            print(f"⚠️ Vẫn bị 403, thử phương pháp khác...")
+            # Thử dùng requests với tham số khác
+            r = requests.get(url, headers=headers, timeout=30, verify=False)
+        
+        r.raise_for_status()
+        
+        text = r.text.strip()
         start = text.find("{")
         end = text.rfind("}") + 1
         
         if start != -1 and end != 0:
             json_text = text[start:end]
             return json.loads(json_text)
-
-        print(f"❌ Unknown format: {url}")
+        
         return None
-
+        
     except Exception as e:
         print(f"❌ JSONP error {url}: {e}")
         return None
-
-
+        
 def process_socolive_source(name, url, output_file):
     print(f"\n==============================")
     print(f"🛰️ Đang xử lý Socolive")
