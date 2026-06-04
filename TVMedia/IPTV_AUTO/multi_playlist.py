@@ -1,4 +1,4 @@
-import cloudscraper
+import requests
 import json
 from datetime import datetime
 from pathlib import Path
@@ -6,7 +6,6 @@ from pathlib import Path
 # 📂 Đặt thư mục lưu file đầu ra
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
-scraper = cloudscraper.create_scraper()
 
 SOURCES = [
     # {"name": "BunCha", "url": "https://hxcv.site/buncha", "output": OUTPUT_DIR /"buncha.m3u"}, # chưa chạy được
@@ -14,21 +13,21 @@ SOURCES = [
     # {"name": "GaVang", "url": "https://hxcv.site/gavang", "output": OUTPUT_DIR /"gavang.m3u"}, # chưa chạy được, chạy với vlc thì ok
     #{"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
     {"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
-    {"name": "Hoadao", "url": "https://hxcv.site/hoadao", "output": OUTPUT_DIR /"hoadao.m3u"},
-    {"name": "Vankhanh", "url": "https://hxcv.site/vankhanh", "output": OUTPUT_DIR /"vankhanh.m3u"},
-    {"name": "Chuoichien", "url": "https://hxcv.site/chuoichien", "output": OUTPUT_DIR /"chuoichien.m3u"},
-    {"name": "LuongSon", "url": "https://hxcv.site/luongson", "output": OUTPUT_DIR /"luongson.m3u"},    
-    {"name": "TruyenHinh", "url": "https://iptv.nhadai.org/v1", "output": OUTPUT_DIR /"nhadai.m3u"},
+    #{"name": "Hoadao", "url": "https://hxcv.site/hoadao", "output": OUTPUT_DIR /"hoadao.m3u"},
+    #{"name": "Vankhanh", "url": "https://hxcv.site/vankhanh", "output": OUTPUT_DIR /"vankhanh.m3u"},
+    #{"name": "Chuoichien", "url": "https://hxcv.site/chuoichien", "output": OUTPUT_DIR /"chuoichien.m3u"},
+    #{"name": "LuongSon", "url": "https://hxcv.site/luongson", "output": OUTPUT_DIR /"luongson.m3u"},    
+    #{"name": "TruyenHinh", "url": "https://iptv.nhadai.org/v1", "output": OUTPUT_DIR /"nhadai.m3u"},
     {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
 ]
 # 🆕 Các nguồn kiểu M3U trực tiếp (ví dụ: Cakhia)
 EXTRA_SOURCES = [
     # {"name": "Cakhia", "url": "http://sharing.gotdns.ch:8091/cakhia.php", "output": OUTPUT_DIR / "cakhia.m3u"},# chưa chạy được, chạy với vlc thì ok    
-    {"name": "LuongSon_2", "url": "http://sharing.gotdns.ch:8091/luongsontv.php", "output": OUTPUT_DIR / "luongson_share.m3u"}, 
-    {"name": "Socolive_2", "url": "http://sharing.gotdns.ch:8091/socolive.php", "output": OUTPUT_DIR / "Socolive_share.m3u"},
+    #{"name": "LuongSon_2", "url": "http://sharing.gotdns.ch:8091/luongsontv.php", "output": OUTPUT_DIR / "luongson_share.m3u"}, 
+    #{"name": "Socolive_2", "url": "http://sharing.gotdns.ch:8091/socolive.php", "output": OUTPUT_DIR / "Socolive_share.m3u"},
     {"name": "TruyenHinh_2", "url": "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", "output": OUTPUT_DIR / "nhadai_2.m3u"},
     {"name": "TruyenHinh_3", "url": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Danh%20s%C3%A1ch%20k%C3%AAnh/G%C3%B3i%20ch%C3%ADnh%20th%E1%BB%A9c/H%C3%A0%20N%E1%BB%99i%20IPTV.m3u", "output": OUTPUT_DIR / "nhadai_3.m3u"},
-    {"name": "TruyenHinh_4", "url": "https://raw.githubusercontent.com/luongtamlong/DAKLAK_RADIO/refs/heads/main/DAKLAKIPTV", "output": OUTPUT_DIR / "nhadai_4.m3u"},
+    #{"name": "TruyenHinh_4", "url": "https://raw.githubusercontent.com/luongtamlong/DAKLAK_RADIO/refs/heads/main/DAKLAKIPTV", "output": OUTPUT_DIR / "nhadai_4.m3u"},
     
 ]
 ALL_OUTPUT = OUTPUT_DIR / "all.m3u"
@@ -36,7 +35,7 @@ ALL_OUTPUT = OUTPUT_DIR / "all.m3u"
 
 def fetch_json(url):
     try:
-        r = scraper.get(url, timeout=15)
+        r = requests.get(url, timeout=15)
         r.raise_for_status()
         return r.json()
     except Exception as e:
@@ -283,40 +282,45 @@ def process_source(name, base_url, output_file):
 def fetch_jsonp(url):
     try:
         headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/137.0.0.0 Safari/537.36"
-            ),
-            "Accept": "*/*",
-            "Referer": "https://socolive.tv/"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/javascript, */*; q=0.01",
+            "Accept-Language": "vi-VN,vi;q=0.9,en;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Referer": "https://socolive.com/",
+            "Origin": "https://socolive.com",
+            "Connection": "keep-alive",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "same-site",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache",
         }
-
-        r = scraper.get(
-            url,
-            headers=headers,
-            timeout=30
-        )
-
-        print("STATUS =", r.status_code)
-
+        r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
 
         text = r.text.strip()
 
+        # JSON thường
         if text.startswith("{"):
             return json.loads(text)
 
+        # JSONP
         start = text.find("(")
         end = text.rfind(")")
 
         if start != -1 and end != -1:
-            return json.loads(text[start+1:end])
+            return json.loads(
+                text[start + 1:end]
+            )
+
+        print(f"❌ Unknown format: {url}")
 
         return None
 
     except Exception as e:
+
         print(f"❌ JSONP error {url}: {e}")
+
         return None
         
 def process_socolive_source(name, url, output_file):
@@ -325,6 +329,10 @@ def process_socolive_source(name, url, output_file):
     print(f"🛰️ Đang xử lý SocoLive")
     print(f"==============================")
 
+    r = requests.get(url, timeout=15)
+    print("STATUS =", r.status_code)
+    print("TEXT =", r.text[:200])
+    
     root = fetch_jsonp(url)
 
     if not root:
@@ -445,7 +453,7 @@ def process_m3u_source(name, url, output_file):
     print(f"==============================")
 
     try:
-        r = scraper.get(url, timeout=15)
+        r = requests.get(url, timeout=15)
         r.raise_for_status()
         lines = r.text.splitlines()
     except Exception as e:
