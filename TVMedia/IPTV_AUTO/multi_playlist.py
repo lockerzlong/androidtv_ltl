@@ -1,4 +1,4 @@
-import requests
+import cloudscraper
 import json
 from datetime import datetime
 from pathlib import Path
@@ -6,6 +6,7 @@ from pathlib import Path
 # 📂 Đặt thư mục lưu file đầu ra
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
+scraper = cloudscraper.create_scraper()
 
 SOURCES = [
     # {"name": "BunCha", "url": "https://hxcv.site/buncha", "output": OUTPUT_DIR /"buncha.m3u"}, # chưa chạy được
@@ -35,7 +36,7 @@ ALL_OUTPUT = OUTPUT_DIR / "all.m3u"
 
 def fetch_json(url):
     try:
-        r = requests.get(url, timeout=15)
+        r = scraper.get(url, timeout=15)
         r.raise_for_status()
         return r.json()
     except Exception as e:
@@ -281,42 +282,41 @@ def process_source(name, base_url, output_file):
     
 def fetch_jsonp(url):
     try:
-
         headers = {
-            "User-Agent": "Mozilla/5.0"
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/137.0.0.0 Safari/537.36"
+            ),
+            "Accept": "*/*",
+            "Referer": "https://socolive.tv/"
         }
 
-        r = requests.get(
+        r = scraper.get(
             url,
             headers=headers,
-            timeout=15
+            timeout=30
         )
+
+        print("STATUS =", r.status_code)
 
         r.raise_for_status()
 
         text = r.text.strip()
 
-        # JSON thường
         if text.startswith("{"):
             return json.loads(text)
 
-        # JSONP
         start = text.find("(")
         end = text.rfind(")")
 
         if start != -1 and end != -1:
-            return json.loads(
-                text[start + 1:end]
-            )
-
-        print(f"❌ Unknown format: {url}")
+            return json.loads(text[start+1:end])
 
         return None
 
     except Exception as e:
-
         print(f"❌ JSONP error {url}: {e}")
-
         return None
         
 def process_socolive_source(name, url, output_file):
@@ -325,9 +325,11 @@ def process_socolive_source(name, url, output_file):
     print(f"🛰️ Đang xử lý SocoLive")
     print(f"==============================")
 
-    r = requests.get(url, timeout=15)
+    r = scraper.get(url, timeout=15)
     print("STATUS =", r.status_code)
-    print("TEXT =", r.text[:200])
+    print("SERVER =", r.headers.get("server"))
+    print("CF-RAY =", r.headers.get("cf-ray"))
+    print("TEXT =", r.text[:500])
     
     root = fetch_jsonp(url)
 
@@ -449,7 +451,7 @@ def process_m3u_source(name, url, output_file):
     print(f"==============================")
 
     try:
-        r = requests.get(url, timeout=15)
+        r = scraper.get(url, timeout=15)
         r.raise_for_status()
         lines = r.text.splitlines()
     except Exception as e:
