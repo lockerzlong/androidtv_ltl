@@ -86,7 +86,11 @@ def process_tamquoc_source(name, url, output_file):
     if not root:
         return []
 
-    matches = root.get("data", [])
+    matches = (
+        root.get("data")
+        or root.get("matches")
+        or []
+    )
     if not matches:
         print("⚠️ Không có trận đấu nào")
         return []
