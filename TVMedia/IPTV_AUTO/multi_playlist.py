@@ -8,28 +8,15 @@ OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 SOURCES = [
-    # {"name": "BunCha", "url": "https://hxcv.site/buncha", "output": OUTPUT_DIR /"buncha.m3u"}, # chưa chạy được
-    # {"name": "KhanDaiA", "url": "https://hxcv.site/khandaia", "output": OUTPUT_DIR /"khandaia.m3u"}, # chưa chạy được, chạy với vlc thì ok    
-    # {"name": "GaVang", "url": "https://hxcv.site/gavang", "output": OUTPUT_DIR /"gavang.m3u"}, # chưa chạy được, chạy với vlc thì ok
-    #{"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
     {"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
-    #{"name": "Hoadao", "url": "https://hxcv.site/hoadao", "output": OUTPUT_DIR /"hoadao.m3u"},
-    #{"name": "Vankhanh", "url": "https://hxcv.site/vankhanh", "output": OUTPUT_DIR /"vankhanh.m3u"},
-    #{"name": "Chuoichien", "url": "https://hxcv.site/chuoichien", "output": OUTPUT_DIR /"chuoichien.m3u"},
-    #{"name": "LuongSon", "url": "https://hxcv.site/luongson", "output": OUTPUT_DIR /"luongson.m3u"},    
-    #{"name": "TruyenHinh", "url": "https://iptv.nhadai.org/v1", "output": OUTPUT_DIR /"nhadai.m3u"},
     {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
 ]
-# 🆕 Các nguồn kiểu M3U trực tiếp (ví dụ: Cakhia)
+
 EXTRA_SOURCES = [
-    # {"name": "Cakhia", "url": "http://sharing.gotdns.ch:8091/cakhia.php", "output": OUTPUT_DIR / "cakhia.m3u"},# chưa chạy được, chạy với vlc thì ok    
-    #{"name": "LuongSon_2", "url": "http://sharing.gotdns.ch:8091/luongsontv.php", "output": OUTPUT_DIR / "luongson_share.m3u"}, 
-    #{"name": "Socolive_2", "url": "http://sharing.gotdns.ch:8091/socolive.php", "output": OUTPUT_DIR / "Socolive_share.m3u"},
     {"name": "TruyenHinh_2", "url": "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", "output": OUTPUT_DIR / "nhadai_2.m3u"},
     {"name": "TruyenHinh_3", "url": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Danh%20s%C3%A1ch%20k%C3%AAnh/G%C3%B3i%20ch%C3%ADnh%20th%E1%BB%A9c/H%C3%A0%20N%E1%BB%99i%20IPTV.m3u", "output": OUTPUT_DIR / "nhadai_3.m3u"},
-    #{"name": "TruyenHinh_4", "url": "https://raw.githubusercontent.com/luongtamlong/DAKLAK_RADIO/refs/heads/main/DAKLAKIPTV", "output": OUTPUT_DIR / "nhadai_4.m3u"},
-    
 ]
+
 ALL_OUTPUT = OUTPUT_DIR / "all.m3u"
 
 
@@ -77,7 +64,8 @@ def extract_channels(data):
 
     walk(data)
     return channels
-    
+
+
 def process_tamquoc_source(name, url, output_file):
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý TamQuocTV: {url}")
@@ -87,11 +75,7 @@ def process_tamquoc_source(name, url, output_file):
     if not root:
         return []
 
-    matches = (
-        root.get("data")
-        or root.get("matches")
-        or []
-    )
+    matches = root.get("data") or root.get("matches") or []
     if not matches:
         print("⚠️ Không có trận đấu nào")
         return []
@@ -110,17 +94,8 @@ def process_tamquoc_source(name, url, output_file):
             match_label = title
 
         commentator = match.get("commentator") or {}
-
-        blv = (
-            commentator.get("nickname")
-            or commentator.get("username")
-            or "BLV"
-        )
-
-        logo = (
-            match.get("homeClub", {})
-            .get("logoUrl")
-        )
+        blv = commentator.get("nickname") or commentator.get("username") or "BLV"
+        logo = match.get("homeClub", {}).get("logoUrl")
 
         streams = [
             commentator.get("streamSourceFhd"),
@@ -128,11 +103,7 @@ def process_tamquoc_source(name, url, output_file):
             commentator.get("streamSourceSd")
         ]
 
-        qualities = [
-            "FHD",
-            "HD",
-            "SD"
-        ]
+        qualities = ["FHD", "HD", "SD"]
 
         for quality, stream_url in zip(qualities, streams):
             if not stream_url:
@@ -150,32 +121,18 @@ def process_tamquoc_source(name, url, output_file):
     if all_entries:
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
-
             for e in all_entries:
-                attrs = [
-                    f'group-title="{e["match"]}"'
-                ]
-
+                attrs = [f'group-title="{e["match"]}"']
                 if e["img"]:
-                    attrs.append(
-                        f'tvg-logo="{e["img"]}"'
-                    )
-
+                    attrs.append(f'tvg-logo="{e["img"]}"')
                 attr_line = " ".join(attrs)
+                f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
+                f.write(f'{e["url"]}\n')
 
-                f.write(
-                    f'#EXTINF:-1 {attr_line},{e["name"]}\n'
-                )
-
-                f.write(
-                    f'{e["url"]}\n'
-                )
-
-        print(
-            f"🎉 Đã tạo {output_file} ({len(all_entries)} links)"
-        )
+        print(f"🎉 Đã tạo {output_file} ({len(all_entries)} links)")
 
     return all_entries
+
 
 def process_source(name, base_url, output_file):
     print(f"\n==============================")
@@ -198,15 +155,14 @@ def process_source(name, base_url, output_file):
         match_name = ch.get("name", "NoName")
         img = (ch.get("image") or {}).get("url")
 
-        # Giờ thi đấu
         time_str = ch.get("start_time") or ch.get("time") or ""
         if time_str:
             try:
                 dt = datetime.fromisoformat(time_str.replace("Z", "+00:00"))
                 local_time = dt.astimezone().strftime("%H:%M")
+                match_label = f"{match_name} - {local_time}"
             except Exception:
-                local_time = time_str
-            match_label = f"{match_name} - {local_time}"
+                match_label = match_name
         else:
             match_label = match_name
 
@@ -219,7 +175,6 @@ def process_source(name, base_url, output_file):
                     blv_name = stream.get("name", "").strip() or "No BLV"
                     img_stream = (stream.get("image") or {}).get("url")
 
-                    # --- 1️⃣ Xử lý kiểu cũ: có remote_data ---
                     remote_data = stream.get("remote_data")
                     if remote_data and isinstance(remote_data, dict):
                         remote_url = remote_data.get("url")
@@ -234,8 +189,6 @@ def process_source(name, base_url, output_file):
                                     "referer": link["referer"],
                                     "img": img or img_stream
                                 })
-
-                    # --- 2️⃣ Xử lý kiểu mới: có stream_links trực tiếp ---
                     elif "stream_links" in stream:
                         for s in stream["stream_links"]:
                             url = s.get("url")
@@ -256,17 +209,13 @@ def process_source(name, base_url, output_file):
 
         all_entries.extend(match_entries)
 
-    # Viết file riêng
     if all_entries:
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for e in all_entries:
                 attrs = [f'group-title="{e["match"]}"']
-
-                # Bổ sung tùy chọn referer cho VLC
                 if e["referer"]:
                     f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                    # Tùy chọn referer (KHÔNG phải http-referrer) vẫn được giữ trong EXTINF
                     attrs.append(f'referer="{e["referer"]}"')
                 if e["img"]:
                     attrs.append(f'tvg-logo="{e["img"]}"')
@@ -278,125 +227,93 @@ def process_source(name, base_url, output_file):
         print(f"⚠️ Không có link hợp lệ cho {name}")
 
     return all_entries
-    
+
+
 def fetch_jsonp(url):
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             "Accept": "application/json, text/javascript, */*; q=0.01",
             "Accept-Language": "vi-VN,vi;q=0.9,en;q=0.8",
-            "Accept-Encoding": "gzip, deflate, br",
             "Referer": "https://socolive.com/",
             "Origin": "https://socolive.com",
-            "Connection": "keep-alive",
-            "Sec-Fetch-Dest": "empty",
-            "Sec-Fetch-Mode": "cors",
-            "Sec-Fetch-Site": "same-site",
-            "Pragma": "no-cache",
-            "Cache-Control": "no-cache",
         }
         r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
 
         text = r.text.strip()
 
-        # JSON thường
+        # Xử lý JSONP: function_name({...})
         if text.startswith("{"):
             return json.loads(text)
-
-        # JSONP
-        start = text.find("(")
-        end = text.rfind(")")
-
-        if start != -1 and end != -1:
-            return json.loads(
-                text[start + 1:end]
-            )
+        
+        # Tìm vị trí bắt đầu và kết thúc của JSON
+        start = text.find("{")
+        end = text.rfind("}") + 1
+        
+        if start != -1 and end != 0:
+            json_text = text[start:end]
+            return json.loads(json_text)
 
         print(f"❌ Unknown format: {url}")
-
         return None
 
     except Exception as e:
-
         print(f"❌ JSONP error {url}: {e}")
-
         return None
-        
-def process_socolive_source(name, url, output_file):
 
+
+def process_socolive_source(name, url, output_file):
     print(f"\n==============================")
-    print(f"🛰️ Đang xử lý SocoLive")
+    print(f"🛰️ Đang xử lý Socolive")
     print(f"==============================")
 
-    r = requests.get(url, timeout=15)
-    print("STATUS =", r.status_code)
-    print("TEXT =", r.text[:200])
-    
+    # Lấy dữ liệu JSONP
     root = fetch_jsonp(url)
-
+    
     if not root:
+        print("❌ Không lấy được dữ liệu từ Socolive")
         return []
 
     data = root.get("data", {})
-    print("GROUP COUNT =", len(data))
+    print(f"📊 Tìm thấy {len(data)} groups")
+    
     all_entries = []
 
     for group_name, group in data.items():
-        print(
-            f"GROUP={group_name} "
-            f"ROOMS={len(group)}"
-        )
         if not isinstance(group, list):
             continue
-
+            
+        print(f"📁 Group {group_name}: {len(group)} rooms")
+        
         for room in group:
-
             room_num = room.get("roomNum")
-
             if not room_num:
                 continue
 
-            detail_url = (
-                f"https://json.vnres.co/room/"
-                f"{room_num}/detail.json"
-            )
-            
-            print("ROOM =", room_num)
+            # Lấy chi tiết stream từ mỗi room
+            detail_url = f"https://json.vnres.co/room/{room_num}/detail.json"
             detail = fetch_jsonp(detail_url)
+            
             if not detail:
-                print("DETAIL FAIL =", room_num)
+                print(f"⚠️ Không lấy được detail cho room {room_num}")
                 continue
 
-            room_data = (
-                detail.get("data", {})
-                .get("room", {})
-            )
+            room_data = detail.get("data", {}).get("room", {})
+            stream_data = detail.get("data", {}).get("stream", {})
 
-            stream_data = (
-                detail.get("data", {})
-                .get("stream", {})
-            )
-
-            title = room_data.get(
-                "title",
-                "Unknown Match"
-            )
-
+            title = room_data.get("title", "Unknown Match")
             cover = room_data.get("cover")
+            blv = room_data.get("anchor", {}).get("nickName", "BLV")
 
-            blv = (
-                room_data.get("anchor", {})
-                .get("nickName", "BLV")
-            )
-
+            # Lấy các quality stream
             streams = [
+                ("FHD", stream_data.get("fhdM3u8")),
                 ("HD", stream_data.get("hdM3u8")),
                 ("SD", stream_data.get("m3u8"))
             ]
 
             for quality, stream_url in streams:
-
                 if not stream_url:
                     continue
 
@@ -408,44 +325,25 @@ def process_socolive_source(name, url, output_file):
                     "referer": None,
                     "img": cover
                 })
-    print(
-        "SOCOLIVE LINKS =",
-        len(all_entries)
-    )
+
+    print(f"📊 Tổng số links Socolive: {len(all_entries)}")
+    
     if all_entries:
-
         with open(output_file, "w", encoding="utf-8") as f:
-
             f.write("#EXTM3U\n")
-
             for e in all_entries:
-
-                attrs = [
-                    f'group-title="{e["match"]}"'
-                ]
-
+                attrs = [f'group-title="{e["match"]}"']
                 if e["img"]:
-                    attrs.append(
-                        f'tvg-logo="{e["img"]}"'
-                    )
-
+                    attrs.append(f'tvg-logo="{e["img"]}"')
                 attr_line = " ".join(attrs)
+                f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
+                f.write(f'{e["url"]}\n')
 
-                f.write(
-                    f'#EXTINF:-1 {attr_line},{e["name"]}\n'
-                )
-
-                f.write(
-                    f'{e["url"]}\n'
-                )
-
-        print(
-            f"🎉 Đã tạo {output_file}"
-            f" ({len(all_entries)} links)"
-        )
+        print(f"🎉 Đã tạo {output_file} ({len(all_entries)} links)")
 
     return all_entries
-    
+
+
 def process_m3u_source(name, url, output_file):
     """Xử lý nguồn .m3u có chứa |Referer=..."""
     print(f"\n==============================")
@@ -499,19 +397,19 @@ def generate_all_playlist(all_data):
     print("\n==============================")
     print("🧩 Gộp tất cả nguồn thành all.m3u (group theo nguồn)")
     print("==============================")
+    
     with open(ALL_OUTPUT, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for e in all_data:
             group = e["source"]
             attrs = [f'group-title="{group}"']
             
-            # Bổ sung tùy chọn referer cho VLC
             if e["referer"]:
                 f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                # Tùy chọn referer (KHÔNG phải http-referrer) vẫn được giữ trong EXTINF
                 attrs.append(f'referer="{e["referer"]}"')
             if e["img"]:
                 attrs.append(f'tvg-logo="{e["img"]}"')
+            
             attr_line = " ".join(attrs)
             f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
             f.write(f'{e["url"]}\n')
@@ -520,57 +418,48 @@ def generate_all_playlist(all_data):
 
 
 def main():
+    print("🚀 Bắt đầu tạo playlist IPTV...")
     all_entries = []
-    Path("./").mkdir(exist_ok=True)
 
-    # JSON/remote data sources
+    # Xử lý các nguồn JSON
     for src in SOURCES:
-
         if src["name"] == "Tamquoc":
-            entries = process_tamquoc_source(
-                src["name"],
-                src["url"],
-                src["output"]
-            )
-        
+            entries = process_tamquoc_source(src["name"], src["url"], src["output"])
         elif src["name"] == "Socolive":
-        
-            entries = process_socolive_source(
-                src["name"],
-                src["url"],
-                src["output"]
-            )
-        
+            entries = process_socolive_source(src["name"], src["url"], src["output"])
         else:
+            entries = process_source(src["name"], src["url"], src["output"])
         
-            entries = process_source(
-                src["name"],
-                src["url"],
-                src["output"]
-            )
-
         all_entries.extend(entries)
+        print(f"✅ Đã xử lý xong {src['name']}: {len(entries)} links")
 
-    # Extra M3U sources
+    # Xử lý các nguồn M3U
     for src in EXTRA_SOURCES:
-        entries = process_m3u_source(
-            src["name"],
-            src["url"],
-            src["output"]
-        )
+        entries = process_m3u_source(src["name"], src["url"], src["output"])
         all_entries.extend(entries)
+        print(f"✅ Đã xử lý xong {src['name']}: {len(entries)} links")
 
+    # Tạo file tổng hợp
     if all_entries:
         generate_all_playlist(all_entries)
+        print(f"\n🎉 THÀNH CÔNG! Tổng số links: {len(all_entries)}")
     else:
         print("❌ Không có dữ liệu hợp lệ nào để gộp.")
 
-    if not any(OUTPUT_DIR.glob("*.m3u")):
-        print("⚠️ Không có file nào được tạo trong output/. Kiểm tra nguồn dữ liệu!")
+    # Kiểm tra file đầu ra
+    m3u_files = list(OUTPUT_DIR.glob("*.m3u"))
+    if m3u_files:
+        print(f"\n📁 Các file đã tạo:")
+        for f in m3u_files:
+            print(f"   - {f.name}")
+    else:
+        print("⚠️ Không có file nào được tạo trong output/")
 
+    # Lưu thống kê
     stats_file = OUTPUT_DIR / "stats.txt"
     with open(stats_file, "w", encoding="utf-8") as f:
-        f.write(str(len(all_entries)))
+        f.write(f"Total links: {len(all_entries)}\n")
+        f.write(f"Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 
 
 if __name__ == "__main__":
