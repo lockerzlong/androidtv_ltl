@@ -459,10 +459,10 @@
             "version": "5.3",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Cricfy.tv.v.5.3.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/CricfyTV/CricfyTV.apk",
             "description": "Trực tiếp thể thao vv....",
             "bannerUrl": "https://lh3.googleusercontent.com/d/13pZhSGTD1Cdi5qgEQiWIa7zi2_xmt0Yr",
-            "sha256": ""
+            "sha256": "8845d5d28bbe498b58d8dacf383b0df1c8bdf8fb7f02d760c656f471887c5e27"
         },
         {
             "id": "RBTV",
