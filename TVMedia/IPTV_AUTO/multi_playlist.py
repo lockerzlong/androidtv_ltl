@@ -13,7 +13,6 @@ SOURCES = [
 ]
 
 EXTRA_SOURCES = [
-    {"name": "LuongSon_2", "url": "https://api-ls.cdnokvip.com/api/get-livestream-group", "output": OUTPUT_DIR / "luongson_share.m3u"}, 
     {"name": "TruyenHinh_2", "url": "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", "output": OUTPUT_DIR / "nhadai_2.m3u"},
     {"name": "TruyenHinh_3", "url": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Danh%20s%C3%A1ch%20k%C3%AAnh/G%C3%B3i%20ch%C3%ADnh%20th%E1%BB%A9c/H%C3%A0%20N%E1%BB%99i%20IPTV.m3u", "output": OUTPUT_DIR / "nhadai_3.m3u"},
 ]
@@ -33,25 +32,6 @@ def fetch_json(url):
         return r.json()
     except Exception as e:
         print(f"❌ Lỗi lấy JSON từ {url}: {e}")
-        return None
-
-
-def fetch_json_post(url, data=None):
-    """Lấy JSON từ URL bằng phương thức POST"""
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            "Accept": "application/json, text/plain, */*",
-            "Content-Type": "application/json",
-        }
-        if data:
-            r = requests.post(url, json=data, headers=headers, timeout=15)
-        else:
-            r = requests.post(url, headers=headers, timeout=15)
-        r.raise_for_status()
-        return r.json()
-    except Exception as e:
-        print(f"❌ Lỗi lấy JSON POST từ {url}: {e}")
         return None
 
 
@@ -218,45 +198,34 @@ def process_luongson_source(name, url, output_file):
         
         league_name = match.get("leagueName", "")
         
-        # Gọi API detail để lấy link stream
-        match_id = match.get("matchId")
-        if not match_id:
-            print(f"⚠️ [{idx+1}/{total_matches}] Không có matchId cho {title}")
+        # Lấy slug để gọi API detail
+        slug = match.get("slugUrl")
+        if not slug:
+            print(f"⚠️ [{idx+1}/{total_matches}] Không có slug cho {title}")
             continue
             
         print(f"📺 [{idx+1}/{total_matches}] {match_label}")
-        print(f"   🔍 Đang lấy link stream cho matchId: {match_id}")
         
-        # Thử POST request
-        detail_url = "https://api-ls.cdnokvip.com/api/match-detail"
-        detail = fetch_json_post(detail_url, {"matchId": match_id})
+        # Gọi API match-detail-slug
+        detail_url = f"https://api-ls.cdnokvip.com/api/match-detail-slug?slug={slug}"
+        detail = fetch_json(detail_url)
         
         if not detail:
             print(f"   ❌ Không lấy được detail")
             continue
             
-        # Lấy link stream từ detail response
+        # Lấy link stream từ response
         value_detail = detail.get("value", {})
+        datas_detail = value_detail.get("datas", {})
         
-        # Thử các field có thể chứa link stream
-        stream_url = (
-            value_detail.get("streamSourceFhd") or
-            value_detail.get("streamSourceHd") or 
-            value_detail.get("streamSourceSd") or
-            value_detail.get("url") or
-            value_detail.get("m3u8") or
-            value_detail.get("streamUrl") or
-            value_detail.get("link") or
-            value_detail.get("hls_url") or
-            value_detail.get("stream_url")
-        )
+        # Link stream HLS (m3u8) - ưu tiên dùng linkLive
+        stream_url = datas_detail.get("linkLive") or datas_detail.get("linkLiveFlv")
         
         if not stream_url:
             print(f"   ⚠️ Không tìm thấy link stream")
-            print(f"   Các field có trong detail: {list(value_detail.keys()) if value_detail else 'Empty'}")
             continue
 
-        # Tạo tên kênh
+        # Tạo tên kênh với đầy đủ thông tin
         channel_name = f"{match_label} [{blv}]"
         if league_name:
             channel_name = f"[{league_name}] {channel_name}"
