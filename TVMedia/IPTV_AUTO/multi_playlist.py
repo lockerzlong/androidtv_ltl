@@ -76,7 +76,101 @@ def extract_channels(data):
 
     walk(data)
     return channels
+    
+def process_tamquoc_source(name, url, output_file):
+    print(f"\n==============================")
+    print(f"🛰️  Đang xử lý TamQuocTV: {url}")
+    print(f"==============================")
 
+    root = fetch_json(url)
+    if not root:
+        return []
+
+    matches = root.get("data", [])
+    if not matches:
+        print("⚠️ Không có trận đấu nào")
+        return []
+
+    all_entries = []
+
+    for match in matches:
+        title = match.get("title", "Unknown Match")
+        start_time = match.get("startTime", "")
+
+        try:
+            dt = datetime.fromisoformat(start_time)
+            local_time = dt.strftime("%H:%M")
+            match_label = f"{title} - {local_time}"
+        except:
+            match_label = title
+
+        commentator = match.get("commentator") or {}
+
+        blv = (
+            commentator.get("nickname")
+            or commentator.get("username")
+            or "BLV"
+        )
+
+        logo = (
+            match.get("homeClub", {})
+            .get("logoUrl")
+        )
+
+        streams = [
+            commentator.get("streamSourceFhd"),
+            commentator.get("streamSourceHd"),
+            commentator.get("streamSourceSd")
+        ]
+
+        qualities = [
+            "FHD",
+            "HD",
+            "SD"
+        ]
+
+        for quality, stream_url in zip(qualities, streams):
+            if not stream_url:
+                continue
+
+            all_entries.append({
+                "source": name,
+                "match": match_label,
+                "name": f"{match_label} [{blv} - {quality}]",
+                "url": stream_url,
+                "referer": None,
+                "img": logo
+            })
+
+    if all_entries:
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+
+            for e in all_entries:
+                attrs = [
+                    f'group-title="{e["match"]}"'
+                ]
+
+                if e["img"]:
+                    attrs.append(
+                        f'tvg-logo="{e["img"]}"'
+                    )
+
+                attr_line = " ".join(attrs)
+
+                f.write(
+                    f'#EXTINF:-1 {attr_line},{e["name"]}\n'
+                )
+
+                f.write(
+                    f'{e["url"]}\n'
+                )
+
+        print(
+            f"🎉 Đã tạo {output_file} ({len(all_entries)} links)"
+        )
+
+    return all_entries
 
 def process_source(name, base_url, output_file):
     print(f"\n==============================")
@@ -260,8 +354,21 @@ def main():
 
     # JSON/remote data sources
     for src in SOURCES:
-        entries = process_source(src["name"], src["url"], src["output"])
-        all_entries.extend(entries)
+
+    if src["name"] == "Tamquoc":
+        entries = process_tamquoc_source(
+            src["name"],
+            src["url"],
+            src["output"]
+        )
+    else:
+        entries = process_source(
+            src["name"],
+            src["url"],
+            src["output"]
+        )
+
+    all_entries.extend(entries)
 
     # Extra M3U sources (Cakhia, ...)
     for src in EXTRA_SOURCES:
