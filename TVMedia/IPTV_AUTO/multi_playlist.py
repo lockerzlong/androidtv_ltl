@@ -12,7 +12,7 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 CLOUDFLARE_WORKER_URL = os.environ.get("CLOUDFLARE_WORKER_URL", "")
 
 SOURCES = [
-    {"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
+    {"name": "Socolive", "url": "https://fancy-breeze-bc4b.lockerzlong.workers.dev/?url=https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
     {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
 ]
 
