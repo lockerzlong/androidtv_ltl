@@ -11,6 +11,7 @@ SOURCES = [
     # {"name": "BunCha", "url": "https://hxcv.site/buncha", "output": OUTPUT_DIR /"buncha.m3u"}, # chưa chạy được
     # {"name": "KhanDaiA", "url": "https://hxcv.site/khandaia", "output": OUTPUT_DIR /"khandaia.m3u"}, # chưa chạy được, chạy với vlc thì ok    
     # {"name": "GaVang", "url": "https://hxcv.site/gavang", "output": OUTPUT_DIR /"gavang.m3u"}, # chưa chạy được, chạy với vlc thì ok
+    #{"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
     {"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
     {"name": "Hoadao", "url": "https://hxcv.site/hoadao", "output": OUTPUT_DIR /"hoadao.m3u"},
     {"name": "Vankhanh", "url": "https://hxcv.site/vankhanh", "output": OUTPUT_DIR /"vankhanh.m3u"},
@@ -277,8 +278,139 @@ def process_source(name, base_url, output_file):
         print(f"⚠️ Không có link hợp lệ cho {name}")
 
     return all_entries
+    
+def fetch_jsonp(url):
+    try:
+        r = requests.get(url, timeout=15)
+        r.raise_for_status()
 
+        text = r.text.strip()
 
+        start = text.find("(")
+        end = text.rfind(")")
+
+        if start == -1 or end == -1:
+            return None
+
+        json_text = text[start + 1:end]
+
+        return json.loads(json_text)
+
+    except Exception as e:
+        print(f"❌ JSONP error {url}: {e}")
+        return None
+        
+def process_socolive_source(name, url, output_file):
+
+    print(f"\n==============================")
+    print(f"🛰️ Đang xử lý SocoLive")
+    print(f"==============================")
+
+    root = fetch_jsonp(url)
+
+    if not root:
+        return []
+
+    data = root.get("data", {})
+    all_entries = []
+
+    for group in data.values():
+
+        if not isinstance(group, list):
+            continue
+
+        for room in group:
+
+            room_num = room.get("roomNum")
+
+            if not room_num:
+                continue
+
+            detail_url = (
+                f"https://json.vnres.co/room/"
+                f"{room_num}/detail.json"
+            )
+
+            detail = fetch_jsonp(detail_url)
+
+            if not detail:
+                continue
+
+            room_data = (
+                detail.get("data", {})
+                .get("room", {})
+            )
+
+            stream_data = (
+                detail.get("data", {})
+                .get("stream", {})
+            )
+
+            title = room_data.get(
+                "title",
+                "Unknown Match"
+            )
+
+            cover = room_data.get("cover")
+
+            blv = (
+                room_data.get("anchor", {})
+                .get("nickName", "BLV")
+            )
+
+            streams = [
+                ("HD", stream_data.get("hdM3u8")),
+                ("SD", stream_data.get("m3u8"))
+            ]
+
+            for quality, stream_url in streams:
+
+                if not stream_url:
+                    continue
+
+                all_entries.append({
+                    "source": name,
+                    "match": title,
+                    "name": f"{title} [{blv} - {quality}]",
+                    "url": stream_url,
+                    "referer": None,
+                    "img": cover
+                })
+
+    if all_entries:
+
+        with open(output_file, "w", encoding="utf-8") as f:
+
+            f.write("#EXTM3U\n")
+
+            for e in all_entries:
+
+                attrs = [
+                    f'group-title="{e["match"]}"'
+                ]
+
+                if e["img"]:
+                    attrs.append(
+                        f'tvg-logo="{e["img"]}"'
+                    )
+
+                attr_line = " ".join(attrs)
+
+                f.write(
+                    f'#EXTINF:-1 {attr_line},{e["name"]}\n'
+                )
+
+                f.write(
+                    f'{e["url"]}\n'
+                )
+
+        print(
+            f"🎉 Đã tạo {output_file}"
+            f" ({len(all_entries)} links)"
+        )
+
+    return all_entries
+    
 def process_m3u_source(name, url, output_file):
     """Xử lý nguồn .m3u có chứa |Referer=..."""
     print(f"\n==============================")
@@ -365,7 +497,17 @@ def main():
                 src["url"],
                 src["output"]
             )
+        
+        elif src["name"] == "SocoLive_JSON":
+        
+            entries = process_socolive_source(
+                src["name"],
+                src["url"],
+                src["output"]
+            )
+        
         else:
+        
             entries = process_source(
                 src["name"],
                 src["url"],
