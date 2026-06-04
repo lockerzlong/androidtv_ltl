@@ -428,13 +428,13 @@
             "name": "SportsTV",
             "category": "Thể Thao",
             "iconUrl": "https://lh3.googleusercontent.com/d/1Mc5fxKY8AOISsTtLjRDhz6UgD_0J0waa",
-            "version": "5.1.1",
-            "versionCode": 1,
+            "version": "5.2.3",
+            "versionCode": 523,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SportsTV/SportsTV.apk",
             "description": "SportsTV có thể là một ứng dụng cung cấp nội dung thể thao, như phim và chương trình truyền hình thể thao,Được thêm từ các nguồn bên ngoài.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1b6ltmlcKEULdVsrebMHWiFiTL5MTngw7",
-            "sha256": "006207a81d541f99baaa38302d774f5f0ed7e44d72544eae40282bcb3fb5690f"
+            "sha256": "194f5082021ad88c169f9e949e7fae03fbd5beb8445b43a29628a51edfb7a66b"
         },
         {
             "id": "SportzX",
