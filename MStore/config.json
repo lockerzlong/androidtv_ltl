@@ -270,7 +270,7 @@
         },
         {
             "id": "SmartTubeStable",
-            "packageName": "com.teamsmart.videomanager.tv",
+            "packageName": "org.smarttube.stable",
             "name": "SmartTube(stable)",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1nDFoughGJVkS9iVqOKSrDuQqzUg6VRdc",
@@ -284,7 +284,7 @@
         },
         {
             "id": "SmartTubeBeta",
-            "packageName": "com.teamsmart.videomanager.tv",
+            "packageName": "org.smarttube.beta",
             "name": "SmartTube(beta)",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1Xr4OneYRA30hOmhTfFeO5Tts8KyJhfxJ",
