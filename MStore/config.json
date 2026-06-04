@@ -28,7 +28,7 @@
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/VietPlayTV/VietPlayTV.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU",
-            "sha256": "fd7fa5f915103e61c7ddd0abbbdcab2d4f2c7022661e9eaa42996d34969bdff9"
+            "sha256": "77662cbab484958f22cd53b15d40fc6723cfe821ae1641dcc385fb13f26b6144"
         },
         {
             "id": "iMediaTV",
@@ -455,13 +455,13 @@
             "packageName": "com.linor.vn.getout",
             "name": "Get Out",
             "category": "Thể Thao",
-            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Getout/logo.png",
+            "iconUrl": "https://lh3.googleusercontent.com/d/1lqToJ_XgvnfQ8L44PbF7Fm449ekCRxxe",
             "version": "1.0.7",
             "versionCode": 2,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Getout/Getout.apk",
             "description": "Trực tiếp thể thao vv....",
-            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Getout/banner.jpeg",
+            "bannerUrl": "https://lh3.googleusercontent.com/d/13pZhSGTD1Cdi5qgEQiWIa7zi2_xmt0Yr",
             "sha256": "4e011f7bdfc86acb12ec6af2fd6a802feb5e18fa4db72f23086694cd6fcb2264"
         },
         {
