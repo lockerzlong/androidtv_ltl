@@ -2,10 +2,14 @@ import requests
 import json
 from datetime import datetime
 from pathlib import Path
+import os
 
 # 📂 Đặt thư mục lưu file đầu ra
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
+
+# Cloudflare Worker URL (để bypass 403)
+CLOUDFLARE_WORKER_URL = os.environ.get("CLOUDFLARE_WORKER_URL", "")
 
 SOURCES = [
     {"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
@@ -21,8 +25,13 @@ ALL_OUTPUT = OUTPUT_DIR / "all.m3u"
 
 
 def fetch_json(url):
+    """Lấy JSON từ URL thông thường"""
     try:
-        r = requests.get(url, timeout=15)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "application/json, text/plain, */*",
+        }
+        r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
         return r.json()
     except Exception as e:
@@ -30,8 +39,64 @@ def fetch_json(url):
         return None
 
 
+def fetch_jsonp(url):
+    """Lấy JSONP từ URL, sử dụng Cloudflare Worker nếu cần"""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "application/json, text/javascript, */*",
+            "Referer": "https://socolive.com/",
+            "Origin": "https://socolive.com",
+        }
+        
+        # Thử dùng Cloudflare Worker nếu có
+        if CLOUDFLARE_WORKER_URL:
+            proxy_url = f"{CLOUDFLARE_WORKER_URL}?url={url}"
+            print(f"🔄 Dùng Cloudflare Worker proxy...")
+            try:
+                r = requests.get(proxy_url, timeout=30)
+                if r.status_code == 200:
+                    text = r.text.strip()
+                    # Xử lý JSONP
+                    start = text.find("{")
+                    end = text.rfind("}") + 1
+                    if start != -1 and end != 0:
+                        return json.loads(text[start:end])
+            except Exception as e:
+                print(f"⚠️ Cloudflare Worker thất bại: {e}")
+        
+        # Fallback: gọi trực tiếp
+        print(f"🔄 Thử gọi trực tiếp...")
+        r = requests.get(url, headers=headers, timeout=15)
+        r.raise_for_status()
+        
+        text = r.text.strip()
+        
+        # Xử lý JSONP
+        if text.startswith("{"):
+            return json.loads(text)
+        
+        start = text.find("(")
+        end = text.rfind(")")
+        if start != -1 and end != -1:
+            return json.loads(text[start + 1:end])
+        
+        # Tìm JSON thuần trong text
+        start = text.find("{")
+        end = text.rfind("}") + 1
+        if start != -1 and end != 0:
+            return json.loads(text[start:end])
+        
+        print(f"❌ Unknown format: {url}")
+        return None
+        
+    except Exception as e:
+        print(f"❌ JSONP error {url}: {e}")
+        return None
+
+
 def fetch_stream_links(remote_url):
-    """Lấy danh sách link stream từ remote_data (dành cho nguồn cũ)."""
+    """Lấy danh sách link stream từ remote_data"""
     data = fetch_json(remote_url)
     if not data or "stream_links" not in data:
         return []
@@ -48,25 +113,8 @@ def fetch_stream_links(remote_url):
     return links
 
 
-def extract_channels(data):
-    """Tìm toàn bộ channel trong JSON, dù nằm trong group hoặc root."""
-    channels = []
-
-    def walk(node):
-        if isinstance(node, dict):
-            if "channels" in node:
-                channels.extend(node["channels"])
-            for v in node.values():
-                walk(v)
-        elif isinstance(node, list):
-            for item in node:
-                walk(item)
-
-    walk(data)
-    return channels
-
-
 def process_tamquoc_source(name, url, output_file):
+    """Xử lý nguồn TamQuocTV"""
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý TamQuocTV: {url}")
     print(f"==============================")
@@ -134,153 +182,12 @@ def process_tamquoc_source(name, url, output_file):
     return all_entries
 
 
-def process_source(name, base_url, output_file):
-    print(f"\n==============================")
-    print(f"🛰️  Đang xử lý nguồn {name}: {base_url}")
-    print(f"==============================")
-
-    root = fetch_json(base_url)
-    if not root:
-        print(f"❌ Không lấy được dữ liệu từ {base_url}")
-        return []
-
-    channels = extract_channels(root)
-    if not channels:
-        print(f"⚠️  Không tìm thấy channel nào trong {name}")
-        return []
-
-    all_entries = []
-
-    for ch in channels:
-        match_name = ch.get("name", "NoName")
-        img = (ch.get("image") or {}).get("url")
-
-        time_str = ch.get("start_time") or ch.get("time") or ""
-        if time_str:
-            try:
-                dt = datetime.fromisoformat(time_str.replace("Z", "+00:00"))
-                local_time = dt.astimezone().strftime("%H:%M")
-                match_label = f"{match_name} - {local_time}"
-            except Exception:
-                match_label = match_name
-        else:
-            match_label = match_name
-
-        print(f"\n📺 {match_label}")
-        match_entries = []
-
-        for source in ch.get("sources", []):
-            for content in source.get("contents", []):
-                for stream in content.get("streams", []):
-                    blv_name = stream.get("name", "").strip() or "No BLV"
-                    img_stream = (stream.get("image") or {}).get("url")
-
-                    remote_data = stream.get("remote_data")
-                    if remote_data and isinstance(remote_data, dict):
-                        remote_url = remote_data.get("url")
-                        if remote_url:
-                            links = fetch_stream_links(remote_url)
-                            for link in links:
-                                match_entries.append({
-                                    "source": name,
-                                    "match": match_label,
-                                    "name": f"{match_label} [{blv_name} - {link['name']}]",
-                                    "url": link["url"],
-                                    "referer": link["referer"],
-                                    "img": img or img_stream
-                                })
-                    elif "stream_links" in stream:
-                        for s in stream["stream_links"]:
-                            url = s.get("url")
-                            if not url:
-                                continue
-                            match_entries.append({
-                                "source": name,
-                                "match": match_label,
-                                "name": f"{match_label} [{s.get('name', blv_name)}]",
-                                "url": url,
-                                "referer": None,
-                                "img": img or img_stream
-                            })
-
-        if not match_entries:
-            print("   ⚠️  Không có stream hợp lệ.")
-            continue
-
-        all_entries.extend(match_entries)
-
-    if all_entries:
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            for e in all_entries:
-                attrs = [f'group-title="{e["match"]}"']
-                if e["referer"]:
-                    f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                    attrs.append(f'referer="{e["referer"]}"')
-                if e["img"]:
-                    attrs.append(f'tvg-logo="{e["img"]}"')
-                attr_line = " ".join(attrs)
-                f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
-                f.write(f'{e["url"]}\n')
-        print(f"🎉 Đã tạo xong file: {output_file} ({len(all_entries)} links)")
-    else:
-        print(f"⚠️ Không có link hợp lệ cho {name}")
-
-    return all_entries
-
-def fetch_jsonp(url):
-    try:
-        # Sử dụng proxy service để bypass 403
-        proxy_urls = [
-            f"https://api.allorigins.win/raw?url={url}",
-            f"https://cors-anywhere.herokuapp.com/{url}",
-            f"https://proxy.cors.sh/{url}",
-        ]
-        
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        }
-        
-        for proxy_url in proxy_urls:
-            try:
-                print(f"🔄 Thử proxy: {proxy_url[:50]}...")
-                r = requests.get(proxy_url, headers=headers, timeout=30)
-                
-                if r.status_code == 200:
-                    text = r.text.strip()
-                    start = text.find("{")
-                    end = text.rfind("}") + 1
-                    
-                    if start != -1 and end != 0:
-                        json_text = text[start:end]
-                        return json.loads(json_text)
-            except:
-                continue
-        
-        # Fallback: thử trực tiếp
-        r = requests.get(url, headers=headers, timeout=30)
-        r.raise_for_status()
-        
-        text = r.text.strip()
-        start = text.find("{")
-        end = text.rfind("}") + 1
-        
-        if start != -1 and end != 0:
-            json_text = text[start:end]
-            return json.loads(json_text)
-        
-        return None
-        
-    except Exception as e:
-        print(f"❌ JSONP error {url}: {e}")
-        return None
-        
 def process_socolive_source(name, url, output_file):
+    """Xử lý nguồn Socolive"""
     print(f"\n==============================")
     print(f"🛰️ Đang xử lý Socolive")
     print(f"==============================")
 
-    # Lấy dữ liệu JSONP
     root = fetch_jsonp(url)
     
     if not root:
@@ -303,12 +210,10 @@ def process_socolive_source(name, url, output_file):
             if not room_num:
                 continue
 
-            # Lấy chi tiết stream từ mỗi room
             detail_url = f"https://json.vnres.co/room/{room_num}/detail.json"
             detail = fetch_jsonp(detail_url)
             
             if not detail:
-                print(f"⚠️ Không lấy được detail cho room {room_num}")
                 continue
 
             room_data = detail.get("data", {}).get("room", {})
@@ -318,7 +223,6 @@ def process_socolive_source(name, url, output_file):
             cover = room_data.get("cover")
             blv = room_data.get("anchor", {}).get("nickName", "BLV")
 
-            # Lấy các quality stream
             streams = [
                 ("FHD", stream_data.get("fhdM3u8")),
                 ("HD", stream_data.get("hdM3u8")),
@@ -357,13 +261,14 @@ def process_socolive_source(name, url, output_file):
 
 
 def process_m3u_source(name, url, output_file):
-    """Xử lý nguồn .m3u có chứa |Referer=..."""
+    """Xử lý nguồn .m3u trực tiếp"""
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý M3U nguồn {name}: {url}")
     print(f"==============================")
 
     try:
-        r = requests.get(url, timeout=15)
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
         lines = r.text.splitlines()
     except Exception as e:
@@ -398,7 +303,7 @@ def process_m3u_source(name, url, output_file):
                     f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
                 f.write(f'#EXTINF:-1 group-title="{name}",{e["name"]}\n')
                 f.write(f'{e["url"]}\n')
-        print(f"🎉 Đã tạo file M3U chuẩn VLC: {output_file} ({len(all_entries)} links)")
+        print(f"🎉 Đã tạo file M3U: {output_file} ({len(all_entries)} links)")
     else:
         print(f"⚠️ Không có link hợp lệ trong {name}")
 
@@ -406,8 +311,9 @@ def process_m3u_source(name, url, output_file):
 
 
 def generate_all_playlist(all_data):
+    """Gộp tất cả playlist thành 1 file"""
     print("\n==============================")
-    print("🧩 Gộp tất cả nguồn thành all.m3u (group theo nguồn)")
+    print("🧩 Gộp tất cả nguồn thành all.m3u")
     print("==============================")
     
     with open(ALL_OUTPUT, "w", encoding="utf-8") as f:
@@ -426,11 +332,13 @@ def generate_all_playlist(all_data):
             f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
             f.write(f'{e["url"]}\n')
 
-    print(f"🎉 Đã tạo xong file tổng: {ALL_OUTPUT} ({len(all_data)} links)")
+    print(f"🎉 Đã tạo file tổng: {ALL_OUTPUT} ({len(all_data)} links)")
 
 
 def main():
     print("🚀 Bắt đầu tạo playlist IPTV...")
+    print(f"📅 Thời gian: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    
     all_entries = []
 
     # Xử lý các nguồn JSON
@@ -440,16 +348,17 @@ def main():
         elif src["name"] == "Socolive":
             entries = process_socolive_source(src["name"], src["url"], src["output"])
         else:
-            entries = process_source(src["name"], src["url"], src["output"])
+            # Nếu có thêm nguồn JSON khác
+            entries = []
         
         all_entries.extend(entries)
-        print(f"✅ Đã xử lý xong {src['name']}: {len(entries)} links")
+        print(f"✅ {src['name']}: {len(entries)} links")
 
     # Xử lý các nguồn M3U
     for src in EXTRA_SOURCES:
         entries = process_m3u_source(src["name"], src["url"], src["output"])
         all_entries.extend(entries)
-        print(f"✅ Đã xử lý xong {src['name']}: {len(entries)} links")
+        print(f"✅ {src['name']}: {len(entries)} links")
 
     # Tạo file tổng hợp
     if all_entries:
@@ -461,9 +370,10 @@ def main():
     # Kiểm tra file đầu ra
     m3u_files = list(OUTPUT_DIR.glob("*.m3u"))
     if m3u_files:
-        print(f"\n📁 Các file đã tạo:")
+        print(f"\n📁 Các file đã tạo ({len(m3u_files)} files):")
         for f in m3u_files:
-            print(f"   - {f.name}")
+            size = f.stat().st_size
+            print(f"   - {f.name} ({size:,} bytes)")
     else:
         print("⚠️ Không có file nào được tạo trong output/")
 
@@ -472,6 +382,7 @@ def main():
     with open(stats_file, "w", encoding="utf-8") as f:
         f.write(f"Total links: {len(all_entries)}\n")
         f.write(f"Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write(f"Sources: {', '.join([s['name'] for s in SOURCES + EXTRA_SOURCES])}\n")
 
 
 if __name__ == "__main__":
