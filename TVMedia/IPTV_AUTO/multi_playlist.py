@@ -355,24 +355,28 @@ def main():
     # JSON/remote data sources
     for src in SOURCES:
 
-    if src["name"] == "Tamquoc":
-        entries = process_tamquoc_source(
-            src["name"],
-            src["url"],
-            src["output"]
-        )
-    else:
-        entries = process_source(
-            src["name"],
-            src["url"],
-            src["output"]
-        )
+        if src["name"] == "Tamquoc":
+            entries = process_tamquoc_source(
+                src["name"],
+                src["url"],
+                src["output"]
+            )
+        else:
+            entries = process_source(
+                src["name"],
+                src["url"],
+                src["output"]
+            )
 
-    all_entries.extend(entries)
+        all_entries.extend(entries)
 
-    # Extra M3U sources (Cakhia, ...)
+    # Extra M3U sources
     for src in EXTRA_SOURCES:
-        entries = process_m3u_source(src["name"], src["url"], src["output"])
+        entries = process_m3u_source(
+            src["name"],
+            src["url"],
+            src["output"]
+        )
         all_entries.extend(entries)
 
     if all_entries:
@@ -382,8 +386,7 @@ def main():
 
     if not any(OUTPUT_DIR.glob("*.m3u")):
         print("⚠️ Không có file nào được tạo trong output/. Kiểm tra nguồn dữ liệu!")
-    
-    # 🧮 Ghi thống kê để workflow dùng trong commit message
+
     stats_file = OUTPUT_DIR / "stats.txt"
     with open(stats_file, "w", encoding="utf-8") as f:
         f.write(str(len(all_entries)))
