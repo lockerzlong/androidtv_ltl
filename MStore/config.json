@@ -400,13 +400,13 @@
             "name": "PhimNe",
             "category": "Xem Phim",
             "iconUrl": "https://lh3.googleusercontent.com/d/1UKPpvBnLr-_omWUwyafsc4JrChFKFyz_",
-            "version": "3.1.1",
-            "versionCode": 1,
+            "version": "4.1.4",
+            "versionCode": 51,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/PhimNe/PhimNe.apk",
             "description": "Xem phim online miễn phí với chất lượng.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1g3TqVUxoI-V8Xi_pzQF6zDNtmRNQULpp",
-            "sha256": "5a15237bea3b1c21ea45d4f2d41981b3a0fab5cb27754cac85730e151817afbe"
+            "sha256": "89508b6b2baa76ef17f3538135b2e0340e34843c15fc07bfa8e629987d71ae0d"
         },
         {
             "id": "MonPlayerTV",
