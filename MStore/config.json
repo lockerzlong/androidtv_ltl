@@ -200,17 +200,17 @@
         },
         {
             "id": "PCRTV",
-            "packageName": "com.anhbaotv.app",
+            "packageName": "com.example.pcrtv",
             "name": "PCRTV",
             "category": "Truyền hình",
             "iconUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/PCRTV/PCRTV_icon.jpg",
             "version": "4.0.9",
-            "versionCode": 1,
+            "versionCode": 55,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/BaoStore/releases/download/BaoStoreapp/PCRTV-OTA.4.0.9.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/PCRTV/PCRTV.apk",
             "description": "App truyền hình và phim ảnh cần đăng ký tài khoản",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/PCRTV/PCRTV1.png",
-            "sha256": ""
+            "sha256": "68994268b182107370cc3879bb0b8b794f097da5a33e5c7f26f113dee4ea50d1"
         },
         {
             "id": "HDtivi",
