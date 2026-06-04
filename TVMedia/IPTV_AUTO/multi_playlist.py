@@ -165,6 +165,110 @@ def process_tamquoc_source(name, url, output_file):
 
     return all_entries
 
+def process_luongson_source(name, url, output_file):
+    """Xử lý nguồn LuongSonTV"""
+    print(f"\n==============================")
+    print(f"🛰️  Đang xử lý LuongSonTV: {url}")
+    print(f"==============================")
+
+    root = fetch_json(url)
+    if not root:
+        return []
+
+    # Lấy dữ liệu từ cấu trúc JSON
+    value = root.get("value", {})
+    datas = value.get("datas", [])
+    
+    if not datas:
+        print("⚠️ Không có trận đấu nào")
+        return []
+
+    all_entries = []
+
+    for match in datas:
+        # Lấy thông tin trận đấu
+        home_name = match.get("homeName", "Unknown")
+        away_name = match.get("awayName", "Unknown")
+        title = f"{home_name} vs {away_name}"
+        
+        # Thời gian thi đấu (timestamp)
+        match_time = match.get("matchTime", 0)
+        try:
+            if match_time:
+                dt = datetime.fromtimestamp(match_time)
+                local_time = dt.strftime("%H:%M")
+                match_label = f"{title} - {local_time}"
+            else:
+                match_label = title
+        except:
+            match_label = title
+
+        # BLV
+        commentator = match.get("commentator", "BLV")
+        blv = commentator if commentator else "BLV"
+
+        # Logo
+        home_logo = match.get("homeLogo", "")
+        away_logo = match.get("awayLogo", "")
+        logo = home_logo or away_logo
+
+        # Giải đấu
+        league_name = match.get("leagueName", "")
+        
+        # Lấy link stream từ các quality
+        # Cấu trúc có thể có các link stream khác nhau
+        streams = {
+            "FHD": match.get("streamSourceFhd"),
+            "HD": match.get("streamSourceHd"),
+            "SD": match.get("streamSourceSd")
+        }
+        
+        # Nếu không có các field trên, thử lấy từ các field khác
+        if not any(streams.values()):
+            # Một số API có thể dùng tên field khác
+            streams = {
+                "FHD": match.get("url_fhd") or match.get("fhd_url"),
+                "HD": match.get("url_hd") or match.get("hd_url"),
+                "SD": match.get("url_sd") or match.get("sd_url") or match.get("url")
+            }
+
+        qualities = ["FHD", "HD", "SD"]
+
+        for quality, stream_url in zip(qualities, [streams.get("FHD"), streams.get("HD"), streams.get("SD")]):
+            if not stream_url:
+                continue
+
+            # Tạo tên kênh với đầy đủ thông tin
+            channel_name = f"{match_label} [{blv} - {quality}]"
+            if league_name:
+                channel_name = f"[{league_name}] {channel_name}"
+
+            all_entries.append({
+                "source": name,
+                "match": match_label,
+                "name": channel_name,
+                "url": stream_url,
+                "referer": None,
+                "img": logo
+            })
+
+    if all_entries:
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for e in all_entries:
+                attrs = [f'group-title="{e["match"]}"']
+                if e["img"]:
+                    attrs.append(f'tvg-logo="{e["img"]}"')
+                attr_line = " ".join(attrs)
+                f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
+                f.write(f'{e["url"]}\n')
+
+        print(f"🎉 Đã tạo {output_file} ({len(all_entries)} links)")
+    else:
+        print(f"⚠️ Không có link nào cho {name}")
+
+    return all_entries
+    
 def process_source(name, base_url, output_file):
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý nguồn {name}: {base_url}")
@@ -347,29 +451,18 @@ def main():
 
     # JSON/remote data sources
     for src in SOURCES:
-
         if src["name"] == "Tamquoc":
-            entries = process_tamquoc_source(
-                src["name"],
-                src["url"],
-                src["output"]
-            )
+            entries = process_tamquoc_source(src["name"], src["url"], src["output"])
+        elif src["name"] == "LuongSon":
+            entries = process_luongson_source(src["name"], src["url"], src["output"])
         else:
-            entries = process_source(
-                src["name"],
-                src["url"],
-                src["output"]
-            )
+            entries = process_source(src["name"], src["url"], src["output"])
 
         all_entries.extend(entries)
 
     # Extra M3U sources
     for src in EXTRA_SOURCES:
-        entries = process_m3u_source(
-            src["name"],
-            src["url"],
-            src["output"]
-        )
+        entries = process_m3u_source(src["name"], src["url"], src["output"])
         all_entries.extend(entries)
 
     if all_entries:
