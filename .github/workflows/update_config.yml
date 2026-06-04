@@ -1,0 +1,53 @@
+name: Auto Update Launcher Config Background
+
+on:
+  push:
+    paths:
+      - 'LauncherCustomizer/background.png'
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Update timestamp in config.json
+        id: update_step
+        run: |
+          # 1. Tạo số timestamp mới và date Việt Nam
+          TIMESTAMP=$(date +%s)
+          DATE=$(TZ='Asia/Ho_Chi_Minh' date '+%d/%m/%Y %H:%M:%S')
+          
+          # 2. Cập nhật config.json với timestamp và date mới
+          jq --arg ts "$TIMESTAMP" --arg dt "$DATE" \
+            '.timestamp = $ts | .date = $dt' \
+            LauncherCustomizer/config.json > temp.json
+          
+          # 3. Cập nhật URI background trong chuỗi configuration
+          sed -i -E "s|content://tvlauncher.config/background/[0-9]+|content://tvlauncher.config/background/$TIMESTAMP|g" temp.json
+          
+          # 4. Ghi đè lại file config.json
+          mv temp.json LauncherCustomizer/config.json
+          
+          # 5. Xuất timestamp ra output
+          echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+          
+          echo "✅ Updated LauncherCustomizer/config.json với timestamp: $TIMESTAMP"
+          echo "📅 Date: $DATE"
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Thêm file config.json đã thay đổi
+          git add LauncherCustomizer/config.json
+          
+          # Commit thay đổi (thoát với mã 0 nếu không có gì để commit)
+          git commit -m "Bot: Update background timestamp ${{ steps.update_step.outputs.timestamp }}" || exit 0
+          
+          # Push lên repository
+          git push
