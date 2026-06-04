@@ -442,13 +442,13 @@
             "name": "SportzX",
             "category": "Thể Thao",
             "iconUrl": "https://lh3.googleusercontent.com/d/1-rAayzRWafW4tqQ7m8On6Np061HQuSjV",
-            "version": "2.1",
-            "versionCode": 1,
+            "version": "2.5",
+            "versionCode": 14,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SportzX/SportzX.apk",
             "description": "SportzX là một ứng dụng xem thể thao, xem phim miễn phí.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1knxLD_R_AEAVtuiHvnDeTop4bn8JAjEa",
-            "sha256": "ce10195587f7fcb84470b70b15cc3551e1164096c97997a13e58ccf0b18adb16"
+            "sha256": "29aa89fd3cc4e1c54c62796bf232d3803dd8ebc01225162409e732c9078dff50"
         },
         {
             "id": "CricfyTV",
