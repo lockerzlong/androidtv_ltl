@@ -445,10 +445,10 @@
             "version": "2.1",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Sportzx.live.v.2.1.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SportzX/SportzX.apk",
             "description": "SportzX là một ứng dụng xem thể thao, xem phim miễn phí.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1knxLD_R_AEAVtuiHvnDeTop4bn8JAjEa",
-            "sha256": ""
+            "sha256": "ce10195587f7fcb84470b70b15cc3551e1164096c97997a13e58ccf0b18adb16"
         },
         {
             "id": "CricfyTV",
