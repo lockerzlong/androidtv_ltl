@@ -473,10 +473,10 @@
             "version": "3.0.306",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Rblive.tv.v.3.0.306.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/RBTV/RBTV.apk",
             "description": "Trực tiếp thể thao vv.....",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1kJilcQdNRqV6hXbD9Ca_6UPs-rcRxMQc",
-            "sha256": ""
+            "sha256": "ecd5e4020902164d366b2bf94f7ebeb61d934ead5bd2d7fbbac302a8c945dbd0"
         },
         {
             "id": "SmartKaraoke",
