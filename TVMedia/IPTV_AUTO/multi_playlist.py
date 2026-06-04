@@ -17,6 +17,7 @@ SOURCES = [
     {"name": "Chuoichien", "url": "https://hxcv.site/chuoichien", "output": OUTPUT_DIR /"chuoichien.m3u"},
     {"name": "LuongSon", "url": "https://hxcv.site/luongson", "output": OUTPUT_DIR /"luongson.m3u"},    
     {"name": "TruyenHinh", "url": "https://iptv.nhadai.org/v1", "output": OUTPUT_DIR /"nhadai.m3u"},
+    {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
 ]
 # 🆕 Các nguồn kiểu M3U trực tiếp (ví dụ: Cakhia)
 EXTRA_SOURCES = [
