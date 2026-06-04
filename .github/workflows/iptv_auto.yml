@@ -26,6 +26,8 @@ jobs:
           pip install -r TVMedia/IPTV_AUTO/requirements.txt
 
       - name: Run playlist generator
+        env:
+          CLOUDFLARE_WORKER_URL: ${{ secrets.CLOUDFLARE_WORKER_URL }}
         run: |
           cd TVMedia/IPTV_AUTO
           python multi_playlist.py
