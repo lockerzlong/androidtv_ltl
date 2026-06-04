@@ -8,9 +8,6 @@ import os
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# Cloudflare Worker URL (để bypass 403)
-CLOUDFLARE_WORKER_URL = os.environ.get("CLOUDFLARE_WORKER_URL", "")
-
 SOURCES = [
     {"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
     {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
@@ -40,66 +37,28 @@ def fetch_json(url):
 
 
 def fetch_jsonp(url):
-    """Lấy JSONP từ URL, sử dụng Cloudflare Worker nếu cần"""
+    """Lấy JSONP từ URL, sử dụng AllOrigins để bypass CORS/403"""
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            "Accept": "application/json, text/javascript, */*",
-            "Referer": "https://socolive.com/",
-            "Origin": "https://socolive.com",
-        }
+        # Dùng AllOrigins.win - dịch vụ proxy miễn phí
+        proxy_url = f"https://api.allorigins.win/raw?url={url}"
+        print(f"🔄 Dùng AllOrigins proxy...")
         
-        # Thử dùng Cloudflare Worker nếu có
-        if CLOUDFLARE_WORKER_URL:
-            proxy_url = f"{CLOUDFLARE_WORKER_URL}?url={url}"
-            print(f"🔄 Dùng Cloudflare Worker proxy: {CLOUDFLARE_WORKER_URL}")
-            try:
-                r = requests.get(proxy_url, timeout=30)
-                print(f"   Status code: {r.status_code}")
-                if r.status_code == 200:
-                    text = r.text.strip()
-                    # Xử lý JSONP (bỏ hàm bao bên ngoài)
-                    start = text.find("{")
-                    end = text.rfind("}") + 1
-                    if start != -1 and end != 0:
-                        json_text = text[start:end]
-                        return json.loads(json_text)
-                    else:
-                        # Thử parse trực tiếp
-                        return json.loads(text)
-            except Exception as e:
-                print(f"⚠️ Cloudflare Worker thất bại: {e}")
+        r = requests.get(proxy_url, timeout=30)
+        print(f"   Status code: {r.status_code}")
         
-        # Fallback: gọi trực tiếp
-        print(f"🔄 Thử gọi trực tiếp...")
-        r = requests.get(url, headers=headers, timeout=15)
-        r.raise_for_status()
+        if r.status_code == 200:
+            text = r.text.strip()
+            # Xử lý JSONP: tìm JSON trong response
+            start = text.find("{")
+            end = text.rfind("}") + 1
+            if start != -1 and end != 0:
+                json_text = text[start:end]
+                return json.loads(json_text)
         
-        text = r.text.strip()
-        
-        # Xử lý JSONP
-        if text.startswith("{"):
-            return json.loads(text)
-        
-        # Xử lý function_name({...})
-        start = text.find("(")
-        end = text.rfind(")")
-        if start != -1 and end != -1:
-            json_text = text[start + 1:end]
-            return json.loads(json_text)
-        
-        # Tìm JSON thuần trong text
-        start = text.find("{")
-        end = text.rfind("}") + 1
-        if start != -1 and end != 0:
-            json_text = text[start:end]
-            return json.loads(json_text)
-        
-        print(f"❌ Unknown format: {url[:100]}...")
         return None
         
     except Exception as e:
-        print(f"❌ JSONP error {url}: {e}")
+        print(f"❌ JSONP error: {e}")
         return None
 
 
@@ -222,7 +181,6 @@ def process_socolive_source(name, url, output_file):
             if not room_num:
                 continue
 
-            # Log tiến độ
             if idx % 10 == 0:
                 print(f"   Đang xử lý room {idx+1}/{len(group)}...")
             
@@ -360,10 +318,6 @@ def main():
     print("🚀 IPTV Playlist Generator")
     print("=" * 60)
     print(f"📅 Thời gian: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    if CLOUDFLARE_WORKER_URL:
-        print(f"🔧 Cloudflare Worker: {CLOUDFLARE_WORKER_URL}")
-    else:
-        print(f"⚠️ Cloudflare Worker chưa được cấu hình")
     print("=" * 60)
     
     all_entries = []
