@@ -1,61 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="Lebanon vs Yemen - 23:00" tvg-logo="https://media.api-sports.io/football/teams/1551.png",Lebanon vs Yemen - 23:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="Lebanon vs Yemen - 23:00" tvg-logo="https://media.api-sports.io/football/teams/1551.png",Lebanon vs Yemen - 23:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Lebanon vs Yemen - 23:00" tvg-logo="https://media.api-sports.io/football/teams/1551.png",Lebanon vs Yemen - 23:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Northern Ireland vs Guinea - 23:00" tvg-logo="https://media.api-sports.io/football/teams/771.png",Northern Ireland vs Guinea - 23:00 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Northern Ireland vs Guinea - 23:00" tvg-logo="https://media.api-sports.io/football/teams/771.png",Northern Ireland vs Guinea - 23:00 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Northern Ireland vs Guinea - 23:00" tvg-logo="https://media.api-sports.io/football/teams/771.png",Northern Ireland vs Guinea - 23:00 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Spain vs Iraq - 02:00" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Iraq - 02:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Spain vs Iraq - 02:00" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Iraq - 02:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Spain vs Iraq - 02:00" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Iraq - 02:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="France vs Ivory Coast - 02:10" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Ivory Coast - 02:10 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="France vs Ivory Coast - 02:10" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Ivory Coast - 02:10 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="France vs Ivory Coast - 02:10" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Ivory Coast - 02:10 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Mexico vs Serbia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/16.png",Mexico vs Serbia - 09:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Mexico vs Serbia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/16.png",Mexico vs Serbia - 09:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Mexico vs Serbia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/16.png",Mexico vs Serbia - 09:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Bỉ Nữ - Cộng hòa Séc Nữ - 14:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/500px-Flag_of_Belgium.svg.png",Bỉ Nữ - Cộng hòa Séc Nữ - 14:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="Bỉ Nữ - Cộng hòa Séc Nữ - 14:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/500px-Flag_of_Belgium.svg.png",Bỉ Nữ - Cộng hòa Séc Nữ - 14:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Bỉ Nữ - Cộng hòa Séc Nữ - 14:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/500px-Flag_of_Belgium.svg.png",Bỉ Nữ - Cộng hòa Séc Nữ - 14:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Singapore vs China - 18:30" tvg-logo="https://media.api-sports.io/football/teams/1546.png",Singapore vs China - 18:30 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Singapore vs China - 18:30" tvg-logo="https://media.api-sports.io/football/teams/1546.png",Singapore vs China - 18:30 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Singapore vs China - 18:30" tvg-logo="https://media.api-sports.io/football/teams/1546.png",Singapore vs China - 18:30 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Hungary vs Finland - 00:45" tvg-logo="https://media.api-sports.io/football/teams/769.png",Hungary vs Finland - 00:45 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Hungary vs Finland - 00:45" tvg-logo="https://media.api-sports.io/football/teams/769.png",Hungary vs Finland - 00:45 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Hungary vs Finland - 00:45" tvg-logo="https://media.api-sports.io/football/teams/769.png",Hungary vs Finland - 00:45 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Portugal vs Chile - 00:45" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Chile - 00:45 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Portugal vs Chile - 00:45" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Chile - 00:45 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Portugal vs Chile - 00:45" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Chile - 00:45 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="England vs New Zealand - 03:00" tvg-logo="https://media.api-sports.io/football/teams/10.png",England vs New Zealand - 03:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="England vs New Zealand - 03:00" tvg-logo="https://media.api-sports.io/football/teams/10.png",England vs New Zealand - 03:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="England vs New Zealand - 03:00" tvg-logo="https://media.api-sports.io/football/teams/10.png",England vs New Zealand - 03:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Italy U17 vs Spain U17 - 17:00" tvg-logo="https://cdn-img.cdnokvip.com/logos/1837_165750303647.png",[UEFA European U-17 Football Championship] Italy U17 vs Spain U17 - 17:00 [BLV KEVILL]
+https://hls.cdnfaster-a.live/live/KEVILL/index.m3u8?expire=1788427256&sign=189afcf7f800d4c6c8a5aa97649a110799
+#EXTINF:-1 group-title="Hassania Agadir vs Union Touarga Sport Rabat - 18:00" tvg-logo="https://cdn-img.cdnokvip.com/logos/3202_1gxsjfmnkx2n.png",[Botola Pro 1] Hassania Agadir vs Union Touarga Sport Rabat - 18:00 [BLV GẤU KA]
+https://hls.cdnfaster-a.live/live/GAUKA/index.m3u8?expire=2530553700&sign=778587d85b2551e2baa61a02917ace14
+#EXTINF:-1 group-title="Spain vs Iraq - 19:00" tvg-logo="https://cdn-img.cdnokvip.com/logos/666_164983321668.png",[International Friendly] Spain vs Iraq - 19:00 [BLV PELE]
+https://hls.cdnfaster-a.live/live/VUONGLUAN/index.m3u8?expire=1893165900&sign=60fcb5252d4dafeac0cb5da922c56645
+#EXTINF:-1 group-title="France vs Ivory Coast - 19:10" tvg-logo="https://cdn-img.cdnokvip.com/logos/559_164983446440.png",[International Friendly] France vs Ivory Coast - 19:10 [BLV PHI HỔ]
+https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
