@@ -1,4 +1,3 @@
-
 import requests
 import json
 from datetime import datetime
@@ -9,29 +8,50 @@ OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 SOURCES = [
-    # {"name": "BunCha", "url": "https://hxcv.site/buncha", "output": OUTPUT_DIR /"buncha.m3u"}, # chưa chạy được
-    # {"name": "KhanDaiA", "url": "https://hxcv.site/khandaia", "output": OUTPUT_DIR /"khandaia.m3u"}, # chưa chạy được, chạy với vlc thì ok    
-    # {"name": "GaVang", "url": "https://hxcv.site/gavang", "output": OUTPUT_DIR /"gavang.m3u"}, # chưa chạy được, chạy với vlc thì ok
     {"name": "LuongSon", "url": "https://api-ls.cdnokvip.com/api/get-livestream-group", "output": OUTPUT_DIR /"luongson.m3u"},    
     {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
 ]
-# 🆕 Các nguồn kiểu M3U trực tiếp (ví dụ: Cakhia)
+
 EXTRA_SOURCES = [
-    # {"name": "Cakhia", "url": "http://sharing.gotdns.ch:8091/cakhia.php", "output": OUTPUT_DIR / "cakhia.m3u"},# chưa chạy được, chạy với vlc thì ok    
     {"name": "LuongSon_2", "url": "https://api-ls.cdnokvip.com/api/get-livestream-group", "output": OUTPUT_DIR / "luongson_share.m3u"}, 
     {"name": "TruyenHinh_2", "url": "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", "output": OUTPUT_DIR / "nhadai_2.m3u"},
     {"name": "TruyenHinh_3", "url": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Danh%20s%C3%A1ch%20k%C3%AAnh/G%C3%B3i%20ch%C3%ADnh%20th%E1%BB%A9c/H%C3%A0%20N%E1%BB%99i%20IPTV.m3u", "output": OUTPUT_DIR / "nhadai_3.m3u"},
 ]
+
 ALL_OUTPUT = OUTPUT_DIR / "all.m3u"
 
 
 def fetch_json(url):
+    """Lấy JSON từ URL bằng phương thức GET"""
     try:
-        r = requests.get(url, timeout=15)
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "application/json, text/plain, */*",
+        }
+        r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
         return r.json()
     except Exception as e:
         print(f"❌ Lỗi lấy JSON từ {url}: {e}")
+        return None
+
+
+def fetch_json_post(url, data=None):
+    """Lấy JSON từ URL bằng phương thức POST"""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+        }
+        if data:
+            r = requests.post(url, json=data, headers=headers, timeout=15)
+        else:
+            r = requests.post(url, headers=headers, timeout=15)
+        r.raise_for_status()
+        return r.json()
+    except Exception as e:
+        print(f"❌ Lỗi lấy JSON POST từ {url}: {e}")
         return None
 
 
@@ -70,7 +90,9 @@ def extract_channels(data):
     walk(data)
     return channels
     
+
 def process_tamquoc_source(name, url, output_file):
+    """Xử lý nguồn TamQuocTV"""
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý TamQuocTV: {url}")
     print(f"==============================")
@@ -116,11 +138,7 @@ def process_tamquoc_source(name, url, output_file):
             commentator.get("streamSourceSd")
         ]
 
-        qualities = [
-            "FHD",
-            "HD",
-            "SD"
-        ]
+        qualities = ["FHD", "HD", "SD"]
 
         for quality, stream_url in zip(qualities, streams):
             if not stream_url:
@@ -130,123 +148,6 @@ def process_tamquoc_source(name, url, output_file):
                 "source": name,
                 "match": match_label,
                 "name": f"{match_label} [{blv} - {quality}]",
-                "url": stream_url,
-                "referer": None,
-                "img": logo
-            })
-
-    if all_entries:
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-
-            for e in all_entries:
-                attrs = [
-                    f'group-title="{e["match"]}"'
-                ]
-
-                if e["img"]:
-                    attrs.append(
-                        f'tvg-logo="{e["img"]}"'
-                    )
-
-                attr_line = " ".join(attrs)
-
-                f.write(
-                    f'#EXTINF:-1 {attr_line},{e["name"]}\n'
-                )
-
-                f.write(
-                    f'{e["url"]}\n'
-                )
-
-        print(
-            f"🎉 Đã tạo {output_file} ({len(all_entries)} links)"
-        )
-
-    return all_entries
-
-def process_luongson_source(name, url, output_file):
-    """Xử lý nguồn LuongSonTV"""
-    print(f"\n==============================")
-    print(f"🛰️  Đang xử lý LuongSonTV: {url}")
-    print(f"==============================")
-
-    root = fetch_json(url)
-    if not root:
-        return []
-
-    # Lấy dữ liệu từ cấu trúc JSON
-    value = root.get("value", {})
-    datas = value.get("datas", [])
-    
-    if not datas:
-        print("⚠️ Không có trận đấu nào")
-        return []
-
-    all_entries = []
-
-    for match in datas:
-        # Lấy thông tin trận đấu
-        home_name = match.get("homeName", "Unknown")
-        away_name = match.get("awayName", "Unknown")
-        title = f"{home_name} vs {away_name}"
-        
-        # Thời gian thi đấu (timestamp)
-        match_time = match.get("matchTime", 0)
-        try:
-            if match_time:
-                dt = datetime.fromtimestamp(match_time)
-                local_time = dt.strftime("%H:%M")
-                match_label = f"{title} - {local_time}"
-            else:
-                match_label = title
-        except:
-            match_label = title
-
-        # BLV
-        commentator = match.get("commentator", "BLV")
-        blv = commentator if commentator else "BLV"
-
-        # Logo
-        home_logo = match.get("homeLogo", "")
-        away_logo = match.get("awayLogo", "")
-        logo = home_logo or away_logo
-
-        # Giải đấu
-        league_name = match.get("leagueName", "")
-        
-        # Lấy link stream từ các quality
-        # Cấu trúc có thể có các link stream khác nhau
-        streams = {
-            "FHD": match.get("streamSourceFhd"),
-            "HD": match.get("streamSourceHd"),
-            "SD": match.get("streamSourceSd")
-        }
-        
-        # Nếu không có các field trên, thử lấy từ các field khác
-        if not any(streams.values()):
-            # Một số API có thể dùng tên field khác
-            streams = {
-                "FHD": match.get("url_fhd") or match.get("fhd_url"),
-                "HD": match.get("url_hd") or match.get("hd_url"),
-                "SD": match.get("url_sd") or match.get("sd_url") or match.get("url")
-            }
-
-        qualities = ["FHD", "HD", "SD"]
-
-        for quality, stream_url in zip(qualities, [streams.get("FHD"), streams.get("HD"), streams.get("SD")]):
-            if not stream_url:
-                continue
-
-            # Tạo tên kênh với đầy đủ thông tin
-            channel_name = f"{match_label} [{blv} - {quality}]"
-            if league_name:
-                channel_name = f"[{league_name}] {channel_name}"
-
-            all_entries.append({
-                "source": name,
-                "match": match_label,
-                "name": channel_name,
                 "url": stream_url,
                 "referer": None,
                 "img": logo
@@ -268,8 +169,129 @@ def process_luongson_source(name, url, output_file):
         print(f"⚠️ Không có link nào cho {name}")
 
     return all_entries
+
+
+def process_luongson_source(name, url, output_file):
+    """Xử lý nguồn LuongSonTV"""
+    print(f"\n==============================")
+    print(f"🛰️  Đang xử lý LuongSonTV: {url}")
+    print(f"==============================")
+
+    # Lấy danh sách trận đấu
+    root = fetch_json(url)
+    if not root:
+        return []
+
+    value = root.get("value", {})
+    datas = value.get("datas", [])
     
+    if not datas:
+        print("⚠️ Không có trận đấu nào")
+        return []
+
+    all_entries = []
+    total_matches = len(datas)
+    print(f"📊 Tìm thấy {total_matches} trận đấu")
+
+    for idx, match in enumerate(datas):
+        home_name = match.get("homeName", "Unknown")
+        away_name = match.get("awayName", "Unknown")
+        title = f"{home_name} vs {away_name}"
+        
+        match_time = match.get("matchTime", 0)
+        try:
+            if match_time:
+                dt = datetime.fromtimestamp(match_time)
+                local_time = dt.strftime("%H:%M")
+                match_label = f"{title} - {local_time}"
+            else:
+                match_label = title
+        except:
+            match_label = title
+
+        commentator = match.get("commentator", "BLV")
+        blv = commentator if commentator else "BLV"
+        
+        home_logo = match.get("homeLogo", "")
+        away_logo = match.get("awayLogo", "")
+        logo = home_logo or away_logo
+        
+        league_name = match.get("leagueName", "")
+        
+        # Gọi API detail để lấy link stream
+        match_id = match.get("matchId")
+        if not match_id:
+            print(f"⚠️ [{idx+1}/{total_matches}] Không có matchId cho {title}")
+            continue
+            
+        print(f"📺 [{idx+1}/{total_matches}] {match_label}")
+        print(f"   🔍 Đang lấy link stream cho matchId: {match_id}")
+        
+        # Thử POST request
+        detail_url = "https://api-ls.cdnokvip.com/api/match-detail"
+        detail = fetch_json_post(detail_url, {"matchId": match_id})
+        
+        if not detail:
+            print(f"   ❌ Không lấy được detail")
+            continue
+            
+        # Lấy link stream từ detail response
+        value_detail = detail.get("value", {})
+        
+        # Thử các field có thể chứa link stream
+        stream_url = (
+            value_detail.get("streamSourceFhd") or
+            value_detail.get("streamSourceHd") or 
+            value_detail.get("streamSourceSd") or
+            value_detail.get("url") or
+            value_detail.get("m3u8") or
+            value_detail.get("streamUrl") or
+            value_detail.get("link") or
+            value_detail.get("hls_url") or
+            value_detail.get("stream_url")
+        )
+        
+        if not stream_url:
+            print(f"   ⚠️ Không tìm thấy link stream")
+            print(f"   Các field có trong detail: {list(value_detail.keys()) if value_detail else 'Empty'}")
+            continue
+
+        # Tạo tên kênh
+        channel_name = f"{match_label} [{blv}]"
+        if league_name:
+            channel_name = f"[{league_name}] {channel_name}"
+
+        all_entries.append({
+            "source": name,
+            "match": match_label,
+            "name": channel_name,
+            "url": stream_url,
+            "referer": None,
+            "img": logo
+        })
+        
+        print(f"   ✅ Đã lấy được link stream")
+
+    if all_entries:
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for e in all_entries:
+                attrs = [f'group-title="{e["match"]}"']
+                if e["img"]:
+                    attrs.append(f'tvg-logo="{e["img"]}"')
+                attr_line = " ".join(attrs)
+                f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
+                f.write(f'{e["url"]}\n')
+
+        print(f"\n🎉 Đã tạo {output_file} ({len(all_entries)} links)")
+    else:
+        print(f"\n⚠️ Không có link nào cho {name}")
+
+    return all_entries
+
+
 def process_source(name, base_url, output_file):
+    """Xử lý nguồn JSON có cấu trúc channels"""
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý nguồn {name}: {base_url}")
     print(f"==============================")
@@ -290,15 +312,14 @@ def process_source(name, base_url, output_file):
         match_name = ch.get("name", "NoName")
         img = (ch.get("image") or {}).get("url")
 
-        # Giờ thi đấu
         time_str = ch.get("start_time") or ch.get("time") or ""
         if time_str:
             try:
                 dt = datetime.fromisoformat(time_str.replace("Z", "+00:00"))
                 local_time = dt.astimezone().strftime("%H:%M")
+                match_label = f"{match_name} - {local_time}"
             except Exception:
-                local_time = time_str
-            match_label = f"{match_name} - {local_time}"
+                match_label = match_name
         else:
             match_label = match_name
 
@@ -311,7 +332,6 @@ def process_source(name, base_url, output_file):
                     blv_name = stream.get("name", "").strip() or "No BLV"
                     img_stream = (stream.get("image") or {}).get("url")
 
-                    # --- 1️⃣ Xử lý kiểu cũ: có remote_data ---
                     remote_data = stream.get("remote_data")
                     if remote_data and isinstance(remote_data, dict):
                         remote_url = remote_data.get("url")
@@ -326,8 +346,6 @@ def process_source(name, base_url, output_file):
                                     "referer": link["referer"],
                                     "img": img or img_stream
                                 })
-
-                    # --- 2️⃣ Xử lý kiểu mới: có stream_links trực tiếp ---
                     elif "stream_links" in stream:
                         for s in stream["stream_links"]:
                             url = s.get("url")
@@ -348,17 +366,13 @@ def process_source(name, base_url, output_file):
 
         all_entries.extend(match_entries)
 
-    # Viết file riêng
     if all_entries:
         with open(output_file, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for e in all_entries:
                 attrs = [f'group-title="{e["match"]}"']
-
-                # Bổ sung tùy chọn referer cho VLC
                 if e["referer"]:
                     f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                    # Tùy chọn referer (KHÔNG phải http-referrer) vẫn được giữ trong EXTINF
                     attrs.append(f'referer="{e["referer"]}"')
                 if e["img"]:
                     attrs.append(f'tvg-logo="{e["img"]}"')
@@ -379,7 +393,8 @@ def process_m3u_source(name, url, output_file):
     print(f"==============================")
 
     try:
-        r = requests.get(url, timeout=15)
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        r = requests.get(url, headers=headers, timeout=15)
         r.raise_for_status()
         lines = r.text.splitlines()
     except Exception as e:
@@ -422,22 +437,23 @@ def process_m3u_source(name, url, output_file):
 
 
 def generate_all_playlist(all_data):
+    """Gộp tất cả playlist thành 1 file"""
     print("\n==============================")
     print("🧩 Gộp tất cả nguồn thành all.m3u (group theo nguồn)")
     print("==============================")
+    
     with open(ALL_OUTPUT, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for e in all_data:
             group = e["source"]
             attrs = [f'group-title="{group}"']
             
-            # Bổ sung tùy chọn referer cho VLC
             if e["referer"]:
                 f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                # Tùy chọn referer (KHÔNG phải http-referrer) vẫn được giữ trong EXTINF
                 attrs.append(f'referer="{e["referer"]}"')
             if e["img"]:
                 attrs.append(f'tvg-logo="{e["img"]}"')
+            
             attr_line = " ".join(attrs)
             f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
             f.write(f'{e["url"]}\n')
@@ -446,10 +462,16 @@ def generate_all_playlist(all_data):
 
 
 def main():
+    print("=" * 60)
+    print("🚀 IPTV Playlist Generator")
+    print("=" * 60)
+    print(f"📅 Thời gian: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 60)
+    
     all_entries = []
     Path("./").mkdir(exist_ok=True)
 
-    # JSON/remote data sources
+    # Xử lý các nguồn JSON
     for src in SOURCES:
         if src["name"] == "Tamquoc":
             entries = process_tamquoc_source(src["name"], src["url"], src["output"])
@@ -459,23 +481,40 @@ def main():
             entries = process_source(src["name"], src["url"], src["output"])
 
         all_entries.extend(entries)
+        print(f"✅ {src['name']}: {len(entries)} links")
 
-    # Extra M3U sources
+    # Xử lý các nguồn M3U
     for src in EXTRA_SOURCES:
         entries = process_m3u_source(src["name"], src["url"], src["output"])
         all_entries.extend(entries)
+        print(f"✅ {src['name']}: {len(entries)} links")
 
+    # Tạo file tổng hợp
     if all_entries:
         generate_all_playlist(all_entries)
+        print(f"\n🎉 THÀNH CÔNG! Tổng số links: {len(all_entries)}")
     else:
         print("❌ Không có dữ liệu hợp lệ nào để gộp.")
 
-    if not any(OUTPUT_DIR.glob("*.m3u")):
-        print("⚠️ Không có file nào được tạo trong output/. Kiểm tra nguồn dữ liệu!")
+    # Kiểm tra file đầu ra
+    m3u_files = list(OUTPUT_DIR.glob("*.m3u"))
+    if m3u_files:
+        print(f"\n📁 Các file đã tạo ({len(m3u_files)} files):")
+        for f in sorted(m3u_files):
+            size = f.stat().st_size
+            print(f"   - {f.name} ({size:,} bytes)")
+    else:
+        print("⚠️ Không có file nào được tạo trong output/")
 
+    # Lưu thống kê
     stats_file = OUTPUT_DIR / "stats.txt"
     with open(stats_file, "w", encoding="utf-8") as f:
         f.write(str(len(all_entries)))
+
+    print("\n" + "=" * 60)
+    print("✅ Kết thúc!")
+    print("=" * 60)
+
 
 if __name__ == "__main__":
     main()
