@@ -13,7 +13,7 @@ CLOUDFLARE_WORKER_URL = os.environ.get("CLOUDFLARE_WORKER_URL", "")
 
 # QUAN TRỌNG: Đã đặt URL Worker trực tiếp, không cần CLOUDFLARE_WORKER_URL nữa
 SOURCES = [
-    {"name": "Socolive", "url": "https://fancy-breeze-bc4b.lockerzlong.workers.dev/?url=https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
+    {"name": "Socolive", "url": "https://json.vnres.co/all_live_rooms.json", "output": OUTPUT_DIR /"socolive.m3u"},
     {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
 ]
 
