@@ -280,7 +280,7 @@
             "downloadUrl": "https://github.com/yuliskov/SmartTube/releases/download/latest/smarttube_stable.apk",
             "description": "Smarttube ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1i6QHWkn4TLAEejn8FIEyUU1V1LJEKhFp",
-            "sha256": "latest"
+            "sha256": "7953a437af0ceb073085421713f7baca58245f352a13661d269d6420e3e2b0ff"
         },
         {
             "id": "SmartTubeBeta",
@@ -288,13 +288,13 @@
             "name": "SmartTube(beta)",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1Xr4OneYRA30hOmhTfFeO5Tts8KyJhfxJ",
-            "version": "31.72",
+            "version": "Luôn mới nhất",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SmartTubeBeta/SmartTubeBeta.apk",
+            "downloadUrl": "https://github.com/yuliskov/SmartTube/releases/download/latest/smarttube_beta.apk",
             "description": "Smarttube ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1N8wpmU5ZE2zC0EJTSsNneByxaoihDCVU",
-            "sha256": "latest"
+            "sha256": "206493f23f0d2f2b05db616ef81916667c1a003c04b296146839fd4e7722cbe0"
         },
         {
             "id": "TiZenTubeMod",
