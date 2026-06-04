@@ -232,13 +232,13 @@
             "name": "HTVC",
             "category": "Truyền hình",
             "iconUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/TRUY%E1%BB%80N%20H%C3%8CNH/HTVlogo.png",
-            "version": "1.1.1",
-            "versionCode": 1,
+            "version": "1.0.3",
+            "versionCode": 5,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/HTVC/HTVC.apk",
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/anhbaotv/Store-Anh/main/TRUY%E1%BB%80N%20H%C3%8CNH/HTV1.png",
-            "sha256": "1c8fad5d8807cab0c6716650ebf6b242dc27fc4d04192ea48bef3fdbff7d764d"
+            "sha256": "0552256265cb8a39ee07d06afc295423daa6d71174c171a398bb7bfca2ed6bed"
         },
         {
             "id": "SCTVonline",
