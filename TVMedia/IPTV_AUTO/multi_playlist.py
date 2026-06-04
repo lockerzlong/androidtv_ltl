@@ -498,7 +498,7 @@ def main():
                 src["output"]
             )
         
-        elif src["name"] == "SocoLive_JSON":
+        elif src["name"] == "Socolive":
         
             entries = process_socolive_source(
                 src["name"],
