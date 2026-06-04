@@ -451,13 +451,13 @@
             "sha256": "29aa89fd3cc4e1c54c62796bf232d3803dd8ebc01225162409e732c9078dff50"
         },
         {
-            "id": "CricfyTV",
-            "packageName": "com.cricfy.tv",
-            "name": "Cricfy TV",
+            "id": "Getout",
+            "packageName": "com.linor.vn.getout",
+            "name": "Get Out",
             "category": "Thể Thao",
             "iconUrl": "https://lh3.googleusercontent.com/d/1lqToJ_XgvnfQ8L44PbF7Fm449ekCRxxe",
-            "version": "5.3",
-            "versionCode": 1,
+            "version": "1.0.7",
+            "versionCode": 2,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/CricfyTV/CricfyTV.apk",
             "description": "Trực tiếp thể thao vv....",
