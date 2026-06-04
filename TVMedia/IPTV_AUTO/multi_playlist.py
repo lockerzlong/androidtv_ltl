@@ -52,16 +52,21 @@ def fetch_jsonp(url):
         # Thử dùng Cloudflare Worker nếu có
         if CLOUDFLARE_WORKER_URL:
             proxy_url = f"{CLOUDFLARE_WORKER_URL}?url={url}"
-            print(f"🔄 Dùng Cloudflare Worker proxy...")
+            print(f"🔄 Dùng Cloudflare Worker proxy: {CLOUDFLARE_WORKER_URL}")
             try:
                 r = requests.get(proxy_url, timeout=30)
+                print(f"   Status code: {r.status_code}")
                 if r.status_code == 200:
                     text = r.text.strip()
-                    # Xử lý JSONP
+                    # Xử lý JSONP (bỏ hàm bao bên ngoài)
                     start = text.find("{")
                     end = text.rfind("}") + 1
                     if start != -1 and end != 0:
-                        return json.loads(text[start:end])
+                        json_text = text[start:end]
+                        return json.loads(json_text)
+                    else:
+                        # Thử parse trực tiếp
+                        return json.loads(text)
             except Exception as e:
                 print(f"⚠️ Cloudflare Worker thất bại: {e}")
         
@@ -76,18 +81,21 @@ def fetch_jsonp(url):
         if text.startswith("{"):
             return json.loads(text)
         
+        # Xử lý function_name({...})
         start = text.find("(")
         end = text.rfind(")")
         if start != -1 and end != -1:
-            return json.loads(text[start + 1:end])
+            json_text = text[start + 1:end]
+            return json.loads(json_text)
         
         # Tìm JSON thuần trong text
         start = text.find("{")
         end = text.rfind("}") + 1
         if start != -1 and end != 0:
-            return json.loads(text[start:end])
+            json_text = text[start:end]
+            return json.loads(json_text)
         
-        print(f"❌ Unknown format: {url}")
+        print(f"❌ Unknown format: {url[:100]}...")
         return None
         
     except Exception as e:
@@ -178,6 +186,8 @@ def process_tamquoc_source(name, url, output_file):
                 f.write(f'{e["url"]}\n')
 
         print(f"🎉 Đã tạo {output_file} ({len(all_entries)} links)")
+    else:
+        print(f"⚠️ Không có link nào cho {name}")
 
     return all_entries
 
@@ -198,18 +208,24 @@ def process_socolive_source(name, url, output_file):
     print(f"📊 Tìm thấy {len(data)} groups")
     
     all_entries = []
+    total_rooms = 0
 
     for group_name, group in data.items():
         if not isinstance(group, list):
             continue
-            
+        
+        total_rooms += len(group)
         print(f"📁 Group {group_name}: {len(group)} rooms")
         
-        for room in group:
+        for idx, room in enumerate(group):
             room_num = room.get("roomNum")
             if not room_num:
                 continue
 
+            # Log tiến độ
+            if idx % 10 == 0:
+                print(f"   Đang xử lý room {idx+1}/{len(group)}...")
+            
             detail_url = f"https://json.vnres.co/room/{room_num}/detail.json"
             detail = fetch_jsonp(detail_url)
             
@@ -242,6 +258,8 @@ def process_socolive_source(name, url, output_file):
                     "img": cover
                 })
 
+    print(f"\n📊 Tổng số groups: {len(data)}")
+    print(f"📊 Tổng số rooms: {total_rooms}")
     print(f"📊 Tổng số links Socolive: {len(all_entries)}")
     
     if all_entries:
@@ -256,6 +274,8 @@ def process_socolive_source(name, url, output_file):
                 f.write(f'{e["url"]}\n')
 
         print(f"🎉 Đã tạo {output_file} ({len(all_entries)} links)")
+    else:
+        print(f"⚠️ Không có link nào cho {name}")
 
     return all_entries
 
@@ -336,19 +356,26 @@ def generate_all_playlist(all_data):
 
 
 def main():
-    print("🚀 Bắt đầu tạo playlist IPTV...")
+    print("=" * 60)
+    print("🚀 IPTV Playlist Generator")
+    print("=" * 60)
     print(f"📅 Thời gian: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    if CLOUDFLARE_WORKER_URL:
+        print(f"🔧 Cloudflare Worker: {CLOUDFLARE_WORKER_URL}")
+    else:
+        print(f"⚠️ Cloudflare Worker chưa được cấu hình")
+    print("=" * 60)
     
     all_entries = []
 
     # Xử lý các nguồn JSON
     for src in SOURCES:
+        print(f"\n{'='*60}")
         if src["name"] == "Tamquoc":
             entries = process_tamquoc_source(src["name"], src["url"], src["output"])
         elif src["name"] == "Socolive":
             entries = process_socolive_source(src["name"], src["url"], src["output"])
         else:
-            # Nếu có thêm nguồn JSON khác
             entries = []
         
         all_entries.extend(entries)
@@ -361,6 +388,7 @@ def main():
         print(f"✅ {src['name']}: {len(entries)} links")
 
     # Tạo file tổng hợp
+    print("\n" + "="*60)
     if all_entries:
         generate_all_playlist(all_entries)
         print(f"\n🎉 THÀNH CÔNG! Tổng số links: {len(all_entries)}")
@@ -371,7 +399,7 @@ def main():
     m3u_files = list(OUTPUT_DIR.glob("*.m3u"))
     if m3u_files:
         print(f"\n📁 Các file đã tạo ({len(m3u_files)} files):")
-        for f in m3u_files:
+        for f in sorted(m3u_files):
             size = f.stat().st_size
             print(f"   - {f.name} ({size:,} bytes)")
     else:
@@ -383,6 +411,10 @@ def main():
         f.write(f"Total links: {len(all_entries)}\n")
         f.write(f"Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
         f.write(f"Sources: {', '.join([s['name'] for s in SOURCES + EXTRA_SOURCES])}\n")
+    
+    print("\n" + "="*60)
+    print("✅ Kết thúc!")
+    print("="*60)
 
 
 if __name__ == "__main__":
