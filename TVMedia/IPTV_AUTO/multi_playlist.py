@@ -281,23 +281,42 @@ def process_source(name, base_url, output_file):
     
 def fetch_jsonp(url):
     try:
-        r = requests.get(url, timeout=15)
+
+        headers = {
+            "User-Agent": "Mozilla/5.0"
+        }
+
+        r = requests.get(
+            url,
+            headers=headers,
+            timeout=15
+        )
+
         r.raise_for_status()
 
         text = r.text.strip()
 
+        # JSON thường
+        if text.startswith("{"):
+            return json.loads(text)
+
+        # JSONP
         start = text.find("(")
         end = text.rfind(")")
 
-        if start == -1 or end == -1:
-            return None
+        if start != -1 and end != -1:
+            return json.loads(
+                text[start + 1:end]
+            )
 
-        json_text = text[start + 1:end]
+        print(f"❌ Unknown format: {url}")
 
-        return json.loads(json_text)
+        return None
 
     except Exception as e:
+
         print(f"❌ JSONP error {url}: {e}")
+
         return None
         
 def process_socolive_source(name, url, output_file):
@@ -306,16 +325,24 @@ def process_socolive_source(name, url, output_file):
     print(f"🛰️ Đang xử lý SocoLive")
     print(f"==============================")
 
+    r = requests.get(url, timeout=15)
+    print("STATUS =", r.status_code)
+    print("TEXT =", r.text[:200])
+    
     root = fetch_jsonp(url)
 
     if not root:
         return []
 
     data = root.get("data", {})
+    print("GROUP COUNT =", len(data))
     all_entries = []
 
-    for group in data.values():
-
+    for group_name, group in data.items():
+        print(
+            f"GROUP={group_name} "
+            f"ROOMS={len(group)}"
+        )
         if not isinstance(group, list):
             continue
 
@@ -330,10 +357,11 @@ def process_socolive_source(name, url, output_file):
                 f"https://json.vnres.co/room/"
                 f"{room_num}/detail.json"
             )
-
+            
+            print("ROOM =", room_num)
             detail = fetch_jsonp(detail_url)
-
             if not detail:
+                print("DETAIL FAIL =", room_num)
                 continue
 
             room_data = (
@@ -376,7 +404,10 @@ def process_socolive_source(name, url, output_file):
                     "referer": None,
                     "img": cover
                 })
-
+    print(
+        "SOCOLIVE LINKS =",
+        len(all_entries)
+    )
     if all_entries:
 
         with open(output_file, "w", encoding="utf-8") as f:
