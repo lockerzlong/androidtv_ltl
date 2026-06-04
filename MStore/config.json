@@ -280,7 +280,7 @@
             "downloadUrl": "https://github.com/yuliskov/SmartTube/releases/download/latest/smarttube_stable.apk",
             "description": "Smarttube ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1i6QHWkn4TLAEejn8FIEyUU1V1LJEKhFp",
-            "sha256": "7953a437af0ceb073085421713f7baca58245f352a13661d269d6420e3e2b0ff"
+            "sha256": "latest"
         },
         {
             "id": "SmartTubeBeta",
