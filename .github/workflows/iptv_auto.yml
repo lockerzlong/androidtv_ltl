@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+     #runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
@@ -22,16 +22,16 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
+         #run: |
           pip install -r TVMedia/IPTV_AUTO/requirements.txt
 
       - name: Run playlist generator
-        run: |
+        # run: |
           cd TVMedia/IPTV_AUTO
           python multi_playlist.py
 
       - name: Publish playlists branch
-        run: |
+         #run: |
           set -e
 
           git config --global user.name "github-actions[bot]"
