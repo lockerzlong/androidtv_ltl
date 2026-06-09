@@ -5,3 +5,33 @@ https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="Argentina vs Iceland - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Iceland - 08:00 [BLV Ricky - SD]
 https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Cuba vs Ba Lan - 12:00" tvg-logo="https://static.flashscore.com/res/image/data/AmSqkKjl-hIzfuNSD.png",Cuba vs Ba Lan - 12:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Cuba vs Ba Lan - 12:00" tvg-logo="https://static.flashscore.com/res/image/data/AmSqkKjl-hIzfuNSD.png",Cuba vs Ba Lan - 12:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Cuba vs Ba Lan - 12:00" tvg-logo="https://static.flashscore.com/res/image/data/AmSqkKjl-hIzfuNSD.png",Cuba vs Ba Lan - 12:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Sydney Olympic - SD Raiders FC   - 16:30" tvg-logo="https://static.flashscore.com/res/image/data/Qcwgu5fM-KrXUgPPB.png",Sydney Olympic - SD Raiders FC   - 16:30 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Sydney Olympic - SD Raiders FC   - 16:30" tvg-logo="https://static.flashscore.com/res/image/data/Qcwgu5fM-KrXUgPPB.png",Sydney Olympic - SD Raiders FC   - 16:30 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Sydney Olympic - SD Raiders FC   - 16:30" tvg-logo="https://static.flashscore.com/res/image/data/Qcwgu5fM-KrXUgPPB.png",Sydney Olympic - SD Raiders FC   - 16:30 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Saudi Arabia W vs Laos W - 19:00" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Saudi Arabia W vs Laos W - 19:00" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Saudi Arabia W vs Laos W - 19:00" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="KuPS vs VPS - 21:00" tvg-logo="https://media.api-sports.io/football/teams/1165.png",KuPS vs VPS - 21:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="KuPS vs VPS - 21:00" tvg-logo="https://media.api-sports.io/football/teams/1165.png",KuPS vs VPS - 21:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="KuPS vs VPS - 21:00" tvg-logo="https://media.api-sports.io/football/teams/1165.png",KuPS vs VPS - 21:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Portugal vs Nigeria - 02:45" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Nigeria - 02:45 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Portugal vs Nigeria - 02:45" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Nigeria - 02:45 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Portugal vs Nigeria - 02:45" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Nigeria - 02:45 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
