@@ -1,22 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://static.flashscore.com/res/image/data/QsDUXXzB-Iy4CNX9E.png",Portugal (W) U20 - Brazil U20 Nữ - 21:30 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://static.flashscore.com/res/image/data/QsDUXXzB-Iy4CNX9E.png",Portugal (W) U20 - Brazil U20 Nữ - 21:30 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://static.flashscore.com/res/image/data/QsDUXXzB-Iy4CNX9E.png",Portugal (W) U20 - Brazil U20 Nữ - 21:30 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1508.png",Congo DR vs Chile - 22:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1508.png",Congo DR vs Chile - 22:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1508.png",Congo DR vs Chile - 22:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1094.png",Armenia vs Moldova - 22:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1094.png",Armenia vs Moldova - 22:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1094.png",Armenia vs Moldova - 22:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Iceland - 08:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Iceland - 08:00 [BLV Ricky - HD]
