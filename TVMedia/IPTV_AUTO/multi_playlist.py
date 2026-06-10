@@ -16,7 +16,7 @@ SOURCES = [
     # {"name": "Vankhanh", "url": "https://hxcv.site/vankhanh", "output": OUTPUT_DIR /"vankhanh.m3u"},
     # {"name": "Chuoichien", "url": "https://hxcv.site/chuoichien", "output": OUTPUT_DIR /"chuoichien.m3u"},
     # {"name": "LuongSon", "url": "https://hxcv.site/luongson", "output": OUTPUT_DIR /"luongson.m3u"},    
-    {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia/update/IPTV", "output": OUTPUT_DIR / "1truyenhinh.m3u"},
+    # {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia/update/IPTV", "output": OUTPUT_DIR / "1truyenhinh.m3u"},
     {"name": "Tamquoc", "url": "https://sv.tamquoctv.xyz/internal/api/matches", "output": OUTPUT_DIR /"tamquoc.m3u"},
 ]
 # 🆕 Các nguồn kiểu M3U trực tiếp (ví dụ: Cakhia)
@@ -26,7 +26,7 @@ EXTRA_SOURCES = [
     # {"name": "Socolive_2", "url": "http://sharing.gotdns.ch:8091/socolive.php", "output": OUTPUT_DIR / "Socolive_share.m3u"},
     # {"name": "TruyenHinh_2", "url": "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", "output": OUTPUT_DIR / "nhadai_2.m3u"},
     # {"name": "TruyenHinh_3", "url": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Danh%20s%C3%A1ch%20k%C3%AAnh/G%C3%B3i%20ch%C3%ADnh%20th%E1%BB%A9c/H%C3%A0%20N%E1%BB%99i%20IPTV.m3u", "output": OUTPUT_DIR / "nhadai_3.m3u"},
-    # {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia/update/IPTV", "output": OUTPUT_DIR / "1truyenhinh.m3u"},
+    {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia/update/IPTV", "output": OUTPUT_DIR / "1truyenhinh.m3u"},
     
 ]
 ALL_OUTPUT = OUTPUT_DIR / "all.m3u"
@@ -384,6 +384,14 @@ def main():
         all_entries.extend(entries)
 
     if all_entries:
+        # Ưu tiên Truyền Hình
+        all_entries.sort(
+            key=lambda x: (
+                0 if x["source"] == "TruyenHinh" else 1,
+                x["source"],
+                x["name"]
+            )
+        )
         generate_all_playlist(all_entries)
     else:
         print("❌ Không có dữ liệu hợp lệ nào để gộp.")
