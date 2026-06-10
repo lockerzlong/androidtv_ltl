@@ -30,19 +30,19 @@ https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist10
 https://live.fptplay53.net/fnxhd1/vntoday_vhls.smil/chunklist.m3u8
 #EXTINF:-1 group-title="Truyền Hình" tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/ATV1_HD.png", ATV HD
 https://hnlive.dramahay.xyz/live/atv/index.m3u8
-#EXTINF:-1 tvg-logo="https://vn.xemtv.net/image/htv1.png" group-title="HTV",HTV1
+#EXTINF:-1 tvg-logo="https://i.ibb.co/dfGZxST/cchtv1.webp" group-title="HTV",HTV1
 https://live.fptplay53.net/epzhd1/htv1_hls.smil/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://vn.xemtv.net/image/htv2.png" group-title="HTV",HTV2
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Yc3cmAi.png" group-title="HTV",HTV2
 https://live.fptplay53.net/epzhd1/htv2hd_vhls.smil/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://vn.xemtv.net/image/htv3.png" group-title="HTV",HTV3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/8rWVRBf/cchtv3.webp" group-title="HTV",HTV3
 https://live.fptplay53.net/epzhd1/htv3_hls.smil/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://vn.xemtv.net/image/htv4.png" group-title="HTV",HTV4
+#EXTINF:-1 tvg-logo="https://i.ibb.co/cw0Jym1/cchtvkey.webp" group-title="HTV",HTV4
 https://live.fptplay53.net/epzhd1/htv4_hls.smil/chunklist.m3u8
-#EXTINF:-1 tvg-id="htv5" group-title="HTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c3/HTV5_Bchannel.png", HTV5 - B Channel
+#EXTINF:-1 tvg-id="htv5" group-title="HTV" tvg-logo=https://i.imgur.com/jeunb3Y.png", HTV5 - B Channel
 https://live.fptplay53.net/fnxsd1/btv9_hls.smil/chunklist.m3u8
-#EXTINF:-1 tvg-logo="https://vn.xemtv.net/image/htv7.png" group-title="HTV",HTV7
+#EXTINF:-1 tvg-logo="https://i.ibb.co/bX1LD0H/cchtv7.webp" group-title="HTV",HTV7
 https://live.fptplay53.net/epzhd1/htv7hd_vhls.smil/chunklist_b5000000.m3u8
-#EXTINF:-1 tvg-logo="https://vn.xemtv.net/image/htv9.png" group-title="HTV",HTV9
+#EXTINF:-1 tvg-logo="https://i.ibb.co/j6BCF0M/cchtv9.webp" group-title="HTV",HTV9
 https://live.fptplay53.net/live/media/htv9/live247-hls-avc/index.m3u8
 #EXTINF:-1 tvg-logo="https://img-ali1.tv360.vn/image1/2023/04/03/16/1680514594557/ab2557f0b015_640_360.png" group-title="HTV",HTV Thể Thao
 https://live.fptplay53.net/epzhd1/htvcthethao_vhls.smil/chunklist.m3u8
