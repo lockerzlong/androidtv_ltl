@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Sydney Olympic - SD Raiders FC   - 16:30" tvg-logo="https://static.flashscore.com/res/image/data/Qcwgu5fM-KrXUgPPB.png",Sydney Olympic - SD Raiders FC   - 16:30 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Sydney Olympic - SD Raiders FC   - 16:30" tvg-logo="https://static.flashscore.com/res/image/data/Qcwgu5fM-KrXUgPPB.png",Sydney Olympic - SD Raiders FC   - 16:30 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Sydney Olympic - SD Raiders FC   - 16:30" tvg-logo="https://static.flashscore.com/res/image/data/Qcwgu5fM-KrXUgPPB.png",Sydney Olympic - SD Raiders FC   - 16:30 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Saudi Arabia W vs Laos W - 19:00" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Saudi Arabia W vs Laos W - 19:00" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Ricky - HD]
