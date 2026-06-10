@@ -278,9 +278,8 @@ def process_source(name, base_url, output_file):
 
     return all_entries
 
-
 def process_m3u_source(name, url, output_file):
-    """Xử lý nguồn .m3u có chứa |Referer=..."""
+    """Xử lý nguồn M3U và GIỮ NGUYÊN toàn bộ EXTINF"""
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý M3U nguồn {name}: {url}")
     print(f"==============================")
@@ -294,64 +293,113 @@ def process_m3u_source(name, url, output_file):
         return []
 
     all_entries = []
-    current_title = "Unknown"
+
+    current_extinf = None
 
     for line in lines:
+
+        line = line.strip()
+
+        if not line:
+            continue
+
         if line.startswith("#EXTINF"):
-            current_title = line.split(",", 1)[-1].strip()
-        elif line.strip() and not line.startswith("#"):
-            link = line.strip()
+            current_extinf = line
+
+        elif line.startswith("#"):
+            continue
+
+        else:
+            link = line
+
             ref = None
+
             if "|Referer=" in link:
                 link, ref = link.split("|Referer=", 1)
+
             all_entries.append({
                 "source": name,
-                "match": name,
-                "name": current_title,
+                "extinf": current_extinf,
                 "url": link,
-                "referer": ref,
-                "img": None,
+                "referer": ref
             })
 
     if all_entries:
         with open(output_file, "w", encoding="utf-8") as f:
+
             f.write("#EXTM3U\n")
+
             for e in all_entries:
+
                 if e["referer"]:
-                    f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                f.write(f'#EXTINF:-1 group-title="{name}",{e["name"]}\n')
-                f.write(f'{e["url"]}\n')
-        print(f"🎉 Đã tạo file M3U chuẩn VLC: {output_file} ({len(all_entries)} links)")
+                    f.write(
+                        f'#EXTVLCOPT:http-referrer={e["referer"]}\n'
+                    )
+
+                f.write(e["extinf"] + "\n")
+                f.write(e["url"] + "\n")
+
+        print(
+            f"🎉 Đã tạo file M3U chuẩn VLC: {output_file} ({len(all_entries)} links)"
+        )
+
     else:
         print(f"⚠️ Không có link hợp lệ trong {name}")
 
     return all_entries
-
-
+    
 def generate_all_playlist(all_data):
     print("\n==============================")
-    print("🧩 Gộp tất cả nguồn thành all.m3u (group theo nguồn)")
+    print("🧩 Gộp tất cả nguồn thành all.m3u")
     print("==============================")
+
     with open(ALL_OUTPUT, "w", encoding="utf-8") as f:
+
         f.write("#EXTM3U\n")
+
         for e in all_data:
-            group = e["source"]
-            attrs = [f'group-title="{group}"']
-            
-            # Bổ sung tùy chọn referer cho VLC
-            if e["referer"]:
-                f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                # Tùy chọn referer (KHÔNG phải http-referrer) vẫn được giữ trong EXTINF
-                attrs.append(f'referer="{e["referer"]}"')
-            if e["img"]:
-                attrs.append(f'tvg-logo="{e["img"]}"')
-            attr_line = " ".join(attrs)
-            f.write(f'#EXTINF:-1 {attr_line},{e["name"]}\n')
-            f.write(f'{e["url"]}\n')
 
-    print(f"🎉 Đã tạo xong file tổng: {ALL_OUTPUT} ({len(all_data)} links)")
+            if "extinf" in e:
+                if e["referer"]:
+                    f.write(
+                        f'#EXTVLCOPT:http-referrer={e["referer"]}\n'
+                    )
 
+                f.write(e["extinf"] + "\n")
+                f.write(e["url"] + "\n")
 
+            else:
+                attrs = [
+                    f'group-title="{e["source"]}"'
+                ]
+
+                if e["referer"]:
+                    f.write(
+                        f'#EXTVLCOPT:http-referrer={e["referer"]}\n'
+                    )
+                    attrs.append(
+                        f'referer="{e["referer"]}"'
+                    )
+
+                if e["img"]:
+                    attrs.append(
+                        f'tvg-logo="{e["img"]}"'
+                    )
+
+                attr_line = " ".join(attrs)
+
+                f.write(
+                    f'#EXTINF:-1 {attr_line},{e["name"]}\n'
+                )
+
+                f.write(
+                    f'{e["url"]}\n'
+                )
+
+    print(
+        f"🎉 Đã tạo xong file tổng: {ALL_OUTPUT} ({len(all_data)} links)"
+    )
+    
 def main():
     all_entries = []
     Path("./").mkdir(exist_ok=True)
