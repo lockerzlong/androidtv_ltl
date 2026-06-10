@@ -355,10 +355,18 @@ def generate_all_playlist(all_data):
 def main():
     all_entries = []
     Path("./").mkdir(exist_ok=True)
-
+    
+    # Extra M3U sources
+    for src in EXTRA_SOURCES:
+        entries = process_m3u_source(
+            src["name"],
+            src["url"],
+            src["output"]
+        )
+        all_entries.extend(entries)
+        
     # JSON/remote data sources
     for src in SOURCES:
-
         if src["name"] == "Tamquoc":
             entries = process_tamquoc_source(
                 src["name"],
@@ -374,24 +382,7 @@ def main():
 
         all_entries.extend(entries)
 
-    # Extra M3U sources
-    for src in EXTRA_SOURCES:
-        entries = process_m3u_source(
-            src["name"],
-            src["url"],
-            src["output"]
-        )
-        all_entries.extend(entries)
-
     if all_entries:
-        # Ưu tiên Truyền Hình
-        all_entries.sort(
-            key=lambda x: (
-                0 if x["source"] == "TruyenHinh" else 1,
-                x["source"],
-                x["name"]
-            )
-        )
         generate_all_playlist(all_entries)
     else:
         print("❌ Không có dữ liệu hợp lệ nào để gộp.")
