@@ -53,6 +53,12 @@ https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="USA vs Paraguay - 08:00" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Coca - SD]
 https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="USA vs Paraguay - 08:00" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Dragon - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_dragon/playlist.m3u8
+#EXTINF:-1 group-title="USA vs Paraguay - 08:00" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Dragon - HD]
+https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="USA vs Paraguay - 08:00" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Dragon - SD]
+https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Jiangsu Suning Nữ vs Sichuan nữ - 15:00" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Mã Siêu - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 #EXTINF:-1 group-title="Jiangsu Suning Nữ vs Sichuan nữ - 15:00" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Mã Siêu - HD]
