@@ -1,16 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="PVF-CAND vs Bắc Ninh - 18:00" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/1/12/Logo_CLB_PVF%E2%80%93CAND.png",PVF-CAND vs Bắc Ninh - 18:00 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="PVF-CAND vs Bắc Ninh - 18:00" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/1/12/Logo_CLB_PVF%E2%80%93CAND.png",PVF-CAND vs Bắc Ninh - 18:00 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="PVF-CAND vs Bắc Ninh - 18:00" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/1/12/Logo_CLB_PVF%E2%80%93CAND.png",PVF-CAND vs Bắc Ninh - 18:00 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Nhật Bản vs Ba Lan - 19:00" tvg-logo="https://static.flashscore.com/res/image/data/f552VMEa-E1YhvyqD.png",Nhật Bản vs Ba Lan - 19:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="Nhật Bản vs Ba Lan - 19:00" tvg-logo="https://static.flashscore.com/res/image/data/f552VMEa-E1YhvyqD.png",Nhật Bản vs Ba Lan - 19:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Nhật Bản vs Ba Lan - 19:00" tvg-logo="https://static.flashscore.com/res/image/data/f552VMEa-E1YhvyqD.png",Nhật Bản vs Ba Lan - 19:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="FC Isloch Minsk R. vs Naftan - 21:00" tvg-logo="https://media.api-sports.io/football/teams/391.png",FC Isloch Minsk R. vs Naftan - 21:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="FC Isloch Minsk R. vs Naftan - 21:00" tvg-logo="https://media.api-sports.io/football/teams/391.png",FC Isloch Minsk R. vs Naftan - 21:00 [BLV Ricky - HD]
