@@ -355,12 +355,6 @@ https://live.fptplay53.net/epzhd2/kbs_vhls.smil/chunklist_b5000000.m3u8
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="tlchd" group-title="Quốc tế" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/1280px-TLC_Logo.svg.png" catchup="append" catchup-days="2" catchup-source="https://tshift.fptplay.net/dvr/travelliving_1000.stream/chunks_dvr_range-${start}-${offset}.m3u8", Travel Living Channel
 https://s129135.cdn.mytvnet.vn/pkg20/live_dzones/tlc.smil/manifest.mpd
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/17.png",South Korea vs Czech Republic - 09:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/17.png",South Korea vs Czech Republic - 09:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/17.png",South Korea vs Czech Republic - 09:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://img0.aiscore.com/football/team/4fdd983fc166e48243c7eecfdeb57f25.png!w60",North Star vs Peninsula Power - 16:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://img0.aiscore.com/football/team/4fdd983fc166e48243c7eecfdeb57f25.png!w60",North Star vs Peninsula Power - 16:00 [BLV Ricky - HD]
@@ -397,3 +391,57 @@ https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/5529.png",Canada vs Bosnia & Herzegovina - 02:00 [BLV Mã Siêu - SD]
 https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Paraguay - 08:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/267.png",Fylkir vs Grotta - 21:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/267.png",Fylkir vs Grotta - 21:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/267.png",Fylkir vs Grotta - 21:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1569.png",Qatar vs Switzerland - 02:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
