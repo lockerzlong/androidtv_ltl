@@ -399,6 +399,12 @@ https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2386.png",Haiti vs Scotland - 08:00 [BLV Mã Siêu - SD]
 https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20.png",Australia vs Türkiye - 11:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20.png",Australia vs Türkiye - 11:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20.png",Australia vs Türkiye - 11:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9167.png",Phu Dong vs Ho Chi Minh - 18:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9167.png",Phu Dong vs Ho Chi Minh - 18:00 [BLV Ricky - HD]
