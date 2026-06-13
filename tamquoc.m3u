@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Jiangsu Suning Nữ vs Sichuan nữ - 15:00" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Jiangsu Suning Nữ vs Sichuan nữ - 15:00" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Jiangsu Suning Nữ vs Sichuan nữ - 15:00" tvg-logo="https://static.flashscore.com/res/image/data/WfvuPMYg-E3aYZdYh.png",Jiangsu Suning Nữ vs Sichuan nữ - 15:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Saudi Arabia W vs Laos W - 19:00" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Mã Siêu - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 #EXTINF:-1 group-title="Saudi Arabia W vs Laos W - 19:00" tvg-logo="https://media.api-sports.io/football/teams/20453.png",Saudi Arabia W vs Laos W - 19:00 [BLV Mã Siêu - HD]
