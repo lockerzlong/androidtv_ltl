@@ -357,18 +357,6 @@ https://live.fptplay53.net/epzhd2/kbs_vhls.smil/chunklist_b5000000.m3u8
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="tlchd" group-title="Quốc tế" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/1280px-TLC_Logo.svg.png" catchup="append" catchup-days="2" catchup-source="https://tshift.fptplay.net/dvr/travelliving_1000.stream/chunks_dvr_range-${start}-${offset}.m3u8", Travel Living Channel
 https://s129135.cdn.mytvnet.vn/pkg20/live_dzones/tlc.smil/manifest.mpd
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2386.png",Haiti vs Scotland - 08:00 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2386.png",Haiti vs Scotland - 08:00 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2386.png",Haiti vs Scotland - 08:00 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20.png",Australia vs Türkiye - 11:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20.png",Australia vs Türkiye - 11:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/20.png",Australia vs Türkiye - 11:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9167.png",Phu Dong vs Ho Chi Minh - 18:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9167.png",Phu Dong vs Ho Chi Minh - 18:00 [BLV Ricky - HD]
@@ -398,4 +386,70 @@ https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Japan - 03:00 [BLV Ricky - HD]
 https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Japan - 03:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Japan - 03:00 [BLV Dragon - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_dragon/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Japan - 03:00 [BLV Dragon - HD]
+https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Japan - 03:00 [BLV Dragon - SD]
+https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1501.png",Ivory Coast vs Ecuador - 06:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1501.png",Ivory Coast vs Ecuador - 06:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1501.png",Ivory Coast vs Ecuador - 06:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1501.png",Ivory Coast vs Ecuador - 06:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1501.png",Ivory Coast vs Ecuador - 06:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1501.png",Ivory Coast vs Ecuador - 06:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/5.png",Sweden vs Tunisia - 09:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/5.png",Sweden vs Tunisia - 09:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/5.png",Sweden vs Tunisia - 09:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/5.png",Sweden vs Tunisia - 09:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/5.png",Sweden vs Tunisia - 09:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/5.png",Sweden vs Tunisia - 09:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Dragon - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_dragon/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Dragon - HD]
+https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/9.png",Spain vs Cape Verde Islands - 23:00 [BLV Dragon - SD]
+https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1.png",Belgium vs Egypt - 02:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1.png",Belgium vs Egypt - 02:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1.png",Belgium vs Egypt - 02:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1.png",Belgium vs Egypt - 02:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1.png",Belgium vs Egypt - 02:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/1.png",Belgium vs Egypt - 02:00 [BLV Ricky - SD]
 https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
