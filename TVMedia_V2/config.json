@@ -6,6 +6,7 @@
     },
     "password": 1986
   },
+  "devices": {
     "EAFCE918": {
       "build_number": "PD2241C_A_16.3.6.8.W10 | compiler260105174135",
       "hardware_name": "VIVO V2241A",
