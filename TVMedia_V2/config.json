@@ -1,0 +1,22 @@
+{
+  "config": {
+    "notification": {
+      "is_active": false,
+      "marquee_active": true
+    },
+    "password": 1986
+  }.
+    "EAFCE918": {
+      "build_number": "PD2241C_A_16.3.6.8.W10 | compiler260105174135",
+      "hardware_name": "VIVO V2241A",
+      "installed_app_name": "PhanChauTV",
+      "installed_package": "com.apptv.phanchautv",
+      "installed_version": "1.0.9"
+    }
+  },
+  "update": {
+    "note": "Thông Báo:\\n-Khi cập nhật vui lòng liên hệ Admin để kích hoạt lại mã.\\nThông tin cập nhật:\\n-Thay đổi giao diện danh sách ngang, đổi phím thêm kênh yêu thích.",
+    "url": "",
+    "version": "1.0.9"
+  }
+}
