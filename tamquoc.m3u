@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Phu Dong vs Ho Chi Minh - 18:00" tvg-logo="https://media.api-sports.io/football/teams/9167.png",Phu Dong vs Ho Chi Minh - 18:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="Phu Dong vs Ho Chi Minh - 18:00" tvg-logo="https://media.api-sports.io/football/teams/9167.png",Phu Dong vs Ho Chi Minh - 18:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Phu Dong vs Ho Chi Minh - 18:00" tvg-logo="https://media.api-sports.io/football/teams/9167.png",Phu Dong vs Ho Chi Minh - 18:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Germany vs Curaçao - 00:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Curaçao - 00:00 [BLV Mã Siêu - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 #EXTINF:-1 group-title="Germany vs Curaçao - 00:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Curaçao - 00:00 [BLV Mã Siêu - HD]
