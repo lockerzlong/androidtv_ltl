@@ -26,7 +26,7 @@ EXTRA_SOURCES = [
     # {"name": "Socolive_2", "url": "http://sharing.gotdns.ch:8091/socolive.php", "output": OUTPUT_DIR / "Socolive_share.m3u"},
     # {"name": "TruyenHinh_2", "url": "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", "output": OUTPUT_DIR / "nhadai_2.m3u"},
     # {"name": "TruyenHinh_3", "url": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Danh%20s%C3%A1ch%20k%C3%AAnh/G%C3%B3i%20ch%C3%ADnh%20th%E1%BB%A9c/H%C3%A0%20N%E1%BB%99i%20IPTV.m3u", "output": OUTPUT_DIR / "nhadai_3.m3u"},
-    {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia_V2/IPTV", "output": OUTPUT_DIR / "truyenhinh.m3u", "keep_original": True},
+    {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia_V2/IPTV", "output": OUTPUT_DIR / "truyenhinh.m3u"},
     
 ]
 ALL_OUTPUT = OUTPUT_DIR / "all_V2.m3u"
@@ -279,7 +279,7 @@ def process_source(name, base_url, output_file):
     return all_entries
 
 def process_m3u_source(name, url, output_file, keep_original=False):
-    """Xử lý nguồn M3U và GIỮ NGUYÊN toàn bộ EXTINF"""
+    """Xử lý nguồn M3U và GIỮ NGUYÊN toàn bộ nội dung"""
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý M3U nguồn {name}: {url}")
     print(f"==============================")
@@ -293,88 +293,103 @@ def process_m3u_source(name, url, output_file, keep_original=False):
         return []
 
     all_entries = []
+    
+    # Biến để lưu trạng thái
     current_extinf = None
-    current_group = None
-
-    for line in lines:
-        line = line.strip()
-
+    current_options = []  # Lưu các #EXTVLCOPT
+    current_comments = []  # Lưu các comment
+    current_url = None
+    
+    # Biến đếm để theo dõi
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        
         if not line:
+            i += 1
             continue
-
-        if line.startswith("#EXTM3U"):
-            continue
-
-        if line.startswith("#EXTINF"):
-            # ✅ Lưu toàn bộ dòng EXTINF gốc
-            current_extinf = line
             
-            # Trích xuất group-title nếu có
-            import re
-            match = re.search(r'group-title="([^"]+)"', line)
-            if match:
-                current_group = match.group(1)
-            else:
-                current_group = name
-
-        elif line.startswith("#"):
-            # Giữ nguyên các dòng comment khác
-            if current_extinf:
-                all_entries.append({
-                    "source": name,
-                    "extinf": current_extinf,
-                    "url": None,
-                    "referer": None,
-                    "is_comment": True,
-                    "line": line,
-                    "group": current_group
-                })
+        if line.startswith("#EXTM3U"):
+            all_entries.append({
+                "type": "header",
+                "line": line
+            })
+            i += 1
             continue
+            
+        # Lưu các dòng #EXTVLCOPT
+        if line.startswith("#EXTVLCOPT"):
+            current_options.append(line)
+            i += 1
+            continue
+            
+        # Lưu các dòng comment (không phải EXTINF)
+        if line.startswith("#") and not line.startswith("#EXTINF"):
+            current_comments.append(line)
+            i += 1
+            continue
+            
+        # Xử lý #EXTINF
+        if line.startswith("#EXTINF"):
+            current_extinf = line
+            i += 1
+            continue
+            
+        # Xử lý URL
+        if not line.startswith("#") and current_extinf:
+            current_url = line
+            i += 1
+            
+            # Tạo entry với đầy đủ thông tin
+            entry = {
+                "type": "stream",
+                "extinf": current_extinf,
+                "url": current_url,
+                "options": current_options.copy(),
+                "comments": current_comments.copy()
+            }
+            
+            # Reset cho entry tiếp theo
+            all_entries.append(entry)
+            current_extinf = None
+            current_url = None
+            current_options = []
+            current_comments = []
+            continue
+        
+        i += 1
 
-        else:
-            # Đây là URL
-            link = line
-            ref = None
+    # Nếu có EXTINF nhưng không có URL (ít xảy ra)
+    if current_extinf:
+        entry = {
+            "type": "stream",
+            "extinf": current_extinf,
+            "url": None,
+            "options": current_options,
+            "comments": current_comments
+        }
+        all_entries.append(entry)
 
-            if "|Referer=" in link:
-                link, ref = link.split("|Referer=", 1)
-
-            if current_extinf:
-                all_entries.append({
-                    "source": name,
-                    "extinf": current_extinf,  # ✅ Giữ nguyên EXTINF gốc
-                    "url": link,
-                    "referer": ref,
-                    "is_comment": False,
-                    "group": current_group
-                })
-                current_extinf = None
-            else:
-                # Trường hợp URL không có EXTINF (hiếm)
-                all_entries.append({
-                    "source": name,
-                    "extinf": f'#EXTINF:-1 group-title="{name}",{name}',
-                    "url": link,
-                    "referer": ref,
-                    "is_comment": False,
-                    "group": name
-                })
-
-    # Ghi file riêng (giữ nguyên)
+    # Ghi file riêng (giữ nguyên hoàn toàn)
     if all_entries:
         with open(output_file, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            for e in all_entries:
-                if e.get("is_comment") and e.get("line"):
-                    f.write(e["line"] + "\n")
-                else:
-                    if e["referer"]:
-                        f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                    f.write(e["extinf"] + "\n")
-                    if e["url"]:
-                        f.write(e["url"] + "\n")
+            for entry in all_entries:
+                if entry["type"] == "header":
+                    f.write(entry["line"] + "\n")
+                elif entry["type"] == "stream":
+                    # Ghi comment
+                    for comment in entry["comments"]:
+                        f.write(comment + "\n")
+                    # Ghi EXTINF
+                    f.write(entry["extinf"] + "\n")
+                    # Ghi options (nếu có)
+                    for opt in entry["options"]:
+                        f.write(opt + "\n")
+                    # Ghi URL
+                    if entry["url"]:
+                        f.write(entry["url"] + "\n")
         
-        print(f"🎉 Đã tạo file M3U: {output_file} ({len(all_entries)} links)")
+        print(f"🎉 Đã tạo file M3U: {output_file} ({len([e for e in all_entries if e['type'] == 'stream'])} links)")
     else:
         print(f"⚠️ Không có link hợp lệ trong {name}")
 
@@ -386,25 +401,32 @@ def generate_all_playlist(all_data):
     print("==============================")
 
     with open(ALL_OUTPUT, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-
+        # Không thêm #EXTM3U ở đây nếu đã có trong các entry
+        has_header = False
+        
         for e in all_data:
-            # ✅ Nếu có extinf, giữ nguyên hoàn toàn
+            # ✅ Nếu là header, ghi nguyên
+            if e.get("type") == "header":
+                f.write(e["line"] + "\n")
+                has_header = True
+                continue
+            
+            # ✅ Nếu là stream với extinf gốc
             if "extinf" in e and e["extinf"]:
-                if e.get("is_comment"):
-                    # Là comment, giữ nguyên
-                    if e.get("line"):
-                        f.write(e["line"] + "\n")
-                else:
-                    # Có EXTINF gốc
-                    if e.get("referer"):
-                        f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
-                    
-                    # ✅ Giữ nguyên EXTINF gốc
-                    f.write(e["extinf"] + "\n")
-                    
-                    if e.get("url"):
-                        f.write(e["url"] + "\n")
+                # Ghi comments (nếu có)
+                for comment in e.get("comments", []):
+                    f.write(comment + "\n")
+                
+                # Ghi EXTINF gốc
+                f.write(e["extinf"] + "\n")
+                
+                # Ghi options (nếu có)
+                for opt in e.get("options", []):
+                    f.write(opt + "\n")
+                
+                # Ghi URL
+                if e.get("url"):
+                    f.write(e["url"] + "\n")
             
             # ❌ Không có extinf (dữ liệu từ JSON) - xử lý thông thường
             else:
@@ -420,6 +442,13 @@ def generate_all_playlist(all_data):
                 attr_line = " ".join(attrs)
                 f.write(f'#EXTINF:-1 {attr_line},{e.get("name", "Unknown")}\n')
                 f.write(f'{e.get("url", "")}\n')
+    
+    # Nếu không có header, thêm vào đầu file
+    if not has_header:
+        with open(ALL_OUTPUT, "r+", encoding="utf-8") as f:
+            content = f.read()
+            f.seek(0, 0)
+            f.write("#EXTM3U\n" + content)
 
     print(f"🎉 Đã tạo xong file tổng: {ALL_OUTPUT} ({len(all_data)} links)")
     
