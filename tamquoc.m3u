@@ -1,22 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Dragon - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_dragon/playlist.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Dragon - HD]
-https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="France vs Senegal - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2.png",France vs Senegal - 02:00 [BLV Dragon - SD]
-https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Iraq vs Norway - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1567.png",Iraq vs Norway - 05:00 [BLV Coca - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
 #EXTINF:-1 group-title="Iraq vs Norway - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1567.png",Iraq vs Norway - 05:00 [BLV Coca - HD]
