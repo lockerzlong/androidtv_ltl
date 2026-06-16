@@ -23,12 +23,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r TVMedia/IPTV_AUTO/requirements.txt
+          pip install -r TVMedia_V2/IPTV_AUTO/requirements.txt
 
       - name: Run playlist generator
         run: |
-          cd TVMedia/IPTV_AUTO
-          python multi_playlist.py
+          cd TVMedia_V2/IPTV_AUTO
+          python multi_playlist_V2.py
 
       - name: Publish playlists branch
         run: |
@@ -37,7 +37,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          OUTPUT_DIR="TVMedia/IPTV_AUTO/output"
+          OUTPUT_DIR="TVMedia_V2/IPTV_AUTO/output"
 
           if [ ! -d "$OUTPUT_DIR" ]; then
             echo "Output directory not found!"
