@@ -26,7 +26,7 @@ EXTRA_SOURCES = [
     # {"name": "Socolive_2", "url": "http://sharing.gotdns.ch:8091/socolive.php", "output": OUTPUT_DIR / "Socolive_share.m3u"},
     # {"name": "TruyenHinh_2", "url": "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv", "output": OUTPUT_DIR / "nhadai_2.m3u"},
     # {"name": "TruyenHinh_3", "url": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/Danh%20s%C3%A1ch%20k%C3%AAnh/G%C3%B3i%20ch%C3%ADnh%20th%E1%BB%A9c/H%C3%A0%20N%E1%BB%99i%20IPTV.m3u", "output": OUTPUT_DIR / "nhadai_3.m3u"},
-    {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia_V2/IPTV", "output": OUTPUT_DIR / "truyenhinh.m3u"},
+    {"name": "TruyenHinh", "url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/TVMedia_V2/IPTV", "output": OUTPUT_DIR / "truyenhinh.m3u", "keep_original": True},
     
 ]
 ALL_OUTPUT = OUTPUT_DIR / "all_V2.m3u"
@@ -278,7 +278,7 @@ def process_source(name, base_url, output_file):
 
     return all_entries
 
-def process_m3u_source(name, url, output_file):
+def process_m3u_source(name, url, output_file, keep_original=False):
     """Xử lý nguồn M3U và GIỮ NGUYÊN toàn bộ EXTINF"""
     print(f"\n==============================")
     print(f"🛰️  Đang xử lý M3U nguồn {name}: {url}")
@@ -293,56 +293,88 @@ def process_m3u_source(name, url, output_file):
         return []
 
     all_entries = []
-
     current_extinf = None
+    current_group = None
 
     for line in lines:
-
         line = line.strip()
 
         if not line:
             continue
 
+        if line.startswith("#EXTM3U"):
+            continue
+
         if line.startswith("#EXTINF"):
+            # ✅ Lưu toàn bộ dòng EXTINF gốc
             current_extinf = line
+            
+            # Trích xuất group-title nếu có
+            import re
+            match = re.search(r'group-title="([^"]+)"', line)
+            if match:
+                current_group = match.group(1)
+            else:
+                current_group = name
 
         elif line.startswith("#"):
+            # Giữ nguyên các dòng comment khác
+            if current_extinf:
+                all_entries.append({
+                    "source": name,
+                    "extinf": current_extinf,
+                    "url": None,
+                    "referer": None,
+                    "is_comment": True,
+                    "line": line,
+                    "group": current_group
+                })
             continue
 
         else:
+            # Đây là URL
             link = line
-
             ref = None
 
             if "|Referer=" in link:
                 link, ref = link.split("|Referer=", 1)
 
-            all_entries.append({
-                "source": name,
-                "extinf": current_extinf,
-                "url": link,
-                "referer": ref
-            })
+            if current_extinf:
+                all_entries.append({
+                    "source": name,
+                    "extinf": current_extinf,  # ✅ Giữ nguyên EXTINF gốc
+                    "url": link,
+                    "referer": ref,
+                    "is_comment": False,
+                    "group": current_group
+                })
+                current_extinf = None
+            else:
+                # Trường hợp URL không có EXTINF (hiếm)
+                all_entries.append({
+                    "source": name,
+                    "extinf": f'#EXTINF:-1 group-title="{name}",{name}',
+                    "url": link,
+                    "referer": ref,
+                    "is_comment": False,
+                    "group": name
+                })
 
+    # Ghi file riêng (giữ nguyên)
     if all_entries:
         with open(output_file, "w", encoding="utf-8") as f:
-
             f.write("#EXTM3U\n")
-
             for e in all_entries:
-
-                if e["referer"]:
-                    f.write(
-                        f'#EXTVLCOPT:http-referrer={e["referer"]}\n'
-                    )
-
-                f.write(e["extinf"] + "\n")
-                f.write(e["url"] + "\n")
-
-        print(
-            f"🎉 Đã tạo file M3U chuẩn VLC: {output_file} ({len(all_entries)} links)"
-        )
-
+                if e.get("is_comment") and e.get("line"):
+                    f.write(e["line"] + "\n")
+                else:
+                    if e["referer"]:
+                        f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
+                    f.write(e["extinf"] + "\n")
+                    if e["url"]:
+                        f.write(e["url"] + "\n")
+        
+        print(f"🎉 Đã tạo file M3U: {output_file} ({len(all_entries)} links)")
     else:
         print(f"⚠️ Không có link hợp lệ trong {name}")
 
@@ -354,51 +386,42 @@ def generate_all_playlist(all_data):
     print("==============================")
 
     with open(ALL_OUTPUT, "w", encoding="utf-8") as f:
-
         f.write("#EXTM3U\n")
 
         for e in all_data:
-
-            if "extinf" in e:
-                if e["referer"]:
-                    f.write(
-                        f'#EXTVLCOPT:http-referrer={e["referer"]}\n'
-                    )
-
-                f.write(e["extinf"] + "\n")
-                f.write(e["url"] + "\n")
-
+            # ✅ Nếu có extinf, giữ nguyên hoàn toàn
+            if "extinf" in e and e["extinf"]:
+                if e.get("is_comment"):
+                    # Là comment, giữ nguyên
+                    if e.get("line"):
+                        f.write(e["line"] + "\n")
+                else:
+                    # Có EXTINF gốc
+                    if e.get("referer"):
+                        f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
+                    
+                    # ✅ Giữ nguyên EXTINF gốc
+                    f.write(e["extinf"] + "\n")
+                    
+                    if e.get("url"):
+                        f.write(e["url"] + "\n")
+            
+            # ❌ Không có extinf (dữ liệu từ JSON) - xử lý thông thường
             else:
-                attrs = [
-                    f'group-title="{e["source"]}"'
-                ]
+                attrs = [f'group-title="{e.get("source", "Unknown")}"']
 
-                if e["referer"]:
-                    f.write(
-                        f'#EXTVLCOPT:http-referrer={e["referer"]}\n'
-                    )
-                    attrs.append(
-                        f'referer="{e["referer"]}"'
-                    )
+                if e.get("referer"):
+                    f.write(f'#EXTVLCOPT:http-referrer={e["referer"]}\n')
+                    attrs.append(f'referer="{e["referer"]}"')
 
-                if e["img"]:
-                    attrs.append(
-                        f'tvg-logo="{e["img"]}"'
-                    )
+                if e.get("img"):
+                    attrs.append(f'tvg-logo="{e["img"]}"')
 
                 attr_line = " ".join(attrs)
+                f.write(f'#EXTINF:-1 {attr_line},{e.get("name", "Unknown")}\n')
+                f.write(f'{e.get("url", "")}\n')
 
-                f.write(
-                    f'#EXTINF:-1 {attr_line},{e["name"]}\n'
-                )
-
-                f.write(
-                    f'{e["url"]}\n'
-                )
-
-    print(
-        f"🎉 Đã tạo xong file tổng: {ALL_OUTPUT} ({len(all_data)} links)"
-    )
+    print(f"🎉 Đã tạo xong file tổng: {ALL_OUTPUT} ({len(all_data)} links)")
     
 def main():
     all_entries = []
@@ -406,10 +429,12 @@ def main():
     
     # Extra M3U sources
     for src in EXTRA_SOURCES:
+        keep_original = src.get("keep_original", False)
         entries = process_m3u_source(
             src["name"],
             src["url"],
-            src["output"]
+            src["output"],
+            keep_original=keep_original  # ✅ Truyền flag
         )
         all_entries.extend(entries)
         
@@ -427,7 +452,6 @@ def main():
                 src["url"],
                 src["output"]
             )
-
         all_entries.extend(entries)
 
     if all_entries:
@@ -441,7 +465,6 @@ def main():
     stats_file = OUTPUT_DIR / "stats.txt"
     with open(stats_file, "w", encoding="utf-8") as f:
         f.write(str(len(all_entries)))
-
-
+        
 if __name__ == "__main__":
     main()
