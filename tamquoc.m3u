@@ -1,22 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV A Soi - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV A Soi - HD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Iran vs New Zealand - 08:00" tvg-logo="https://media.api-sports.io/football/teams/22.png",Iran vs New Zealand - 08:00 [BLV A Soi - SD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Tadamon Sour vs Al Mabarrah - 20:00" tvg-logo="https://media.api-sports.io/football/teams/4577.png",Tadamon Sour vs Al Mabarrah - 20:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Tadamon Sour vs Al Mabarrah - 20:00" tvg-logo="https://media.api-sports.io/football/teams/4577.png",Tadamon Sour vs Al Mabarrah - 20:00 [BLV Ricky - HD]
