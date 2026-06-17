@@ -1,34 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Iraq vs Norway - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1567.png",Iraq vs Norway - 05:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Iraq vs Norway - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1567.png",Iraq vs Norway - 05:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Iraq vs Norway - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1567.png",Iraq vs Norway - 05:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Dragon - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_dragon/playlist.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Dragon - HD]
-https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Dragon - SD]
-https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV A Soi - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV A Soi - HD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV A Soi - SD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Dragon - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_dragon/playlist.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Dragon - HD]
-https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina vs Algeria - 08:00" tvg-logo="https://media.api-sports.io/football/teams/26.png",Argentina vs Algeria - 08:00 [BLV Dragon - SD]
-https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Austria vs Jordan - 11:00" tvg-logo="https://media.api-sports.io/football/teams/775.png",Austria vs Jordan - 11:00 [BLV Mã Siêu - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 #EXTINF:-1 group-title="Austria vs Jordan - 11:00" tvg-logo="https://media.api-sports.io/football/teams/775.png",Austria vs Jordan - 11:00 [BLV Mã Siêu - HD]
