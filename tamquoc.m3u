@@ -1,16 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Merani Martvili vs Samtredia - 20:00" tvg-logo="https://media.api-sports.io/football/teams/10016.png",Merani Martvili vs Samtredia - 20:00 [BLV A Soi - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
-#EXTINF:-1 group-title="Merani Martvili vs Samtredia - 20:00" tvg-logo="https://media.api-sports.io/football/teams/10016.png",Merani Martvili vs Samtredia - 20:00 [BLV A Soi - HD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Merani Martvili vs Samtredia - 20:00" tvg-logo="https://media.api-sports.io/football/teams/10016.png",Merani Martvili vs Samtredia - 20:00 [BLV A Soi - SD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Turku PS vs KuPS - 22:00" tvg-logo="https://media.api-sports.io/football/teams/1168.png",Turku PS vs KuPS - 22:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Turku PS vs KuPS - 22:00" tvg-logo="https://media.api-sports.io/football/teams/1168.png",Turku PS vs KuPS - 22:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Turku PS vs KuPS - 22:00" tvg-logo="https://media.api-sports.io/football/teams/1168.png",Turku PS vs KuPS - 22:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Portugal vs Congo DR - 00:00" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Congo DR - 00:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Portugal vs Congo DR - 00:00" tvg-logo="https://media.api-sports.io/football/teams/27.png",Portugal vs Congo DR - 00:00 [BLV Ricky - HD]
@@ -35,3 +23,57 @@ https://tqlive.yarncdn.live/live/tqtv_blv_dragon/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="England vs Croatia - 03:00" tvg-logo="https://media.api-sports.io/football/teams/10.png",England vs Croatia - 03:00 [BLV Dragon - SD]
 https://alive.yarncdn.live/tqtv_blv_dragon/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Ghana vs Panama - 06:00" tvg-logo="https://media.api-sports.io/football/teams/1504.png",Ghana vs Panama - 06:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Ghana vs Panama - 06:00" tvg-logo="https://media.api-sports.io/football/teams/1504.png",Ghana vs Panama - 06:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Ghana vs Panama - 06:00" tvg-logo="https://media.api-sports.io/football/teams/1504.png",Ghana vs Panama - 06:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Ghana vs Panama - 06:00" tvg-logo="https://media.api-sports.io/football/teams/1504.png",Ghana vs Panama - 06:00 [BLV A Soi - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
+#EXTINF:-1 group-title="Ghana vs Panama - 06:00" tvg-logo="https://media.api-sports.io/football/teams/1504.png",Ghana vs Panama - 06:00 [BLV A Soi - HD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Ghana vs Panama - 06:00" tvg-logo="https://media.api-sports.io/football/teams/1504.png",Ghana vs Panama - 06:00 [BLV A Soi - SD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Uzbekistan vs Colombia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/1568.png",Uzbekistan vs Colombia - 09:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Uzbekistan vs Colombia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/1568.png",Uzbekistan vs Colombia - 09:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Uzbekistan vs Colombia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/1568.png",Uzbekistan vs Colombia - 09:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Uzbekistan vs Colombia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/1568.png",Uzbekistan vs Colombia - 09:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Uzbekistan vs Colombia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/1568.png",Uzbekistan vs Colombia - 09:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Uzbekistan vs Colombia - 09:00" tvg-logo="https://media.api-sports.io/football/teams/1568.png",Uzbekistan vs Colombia - 09:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Brommapojkarna W vs Vittsjö W - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16004.png",Brommapojkarna W vs Vittsjö W - 20:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Brommapojkarna W vs Vittsjö W - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16004.png",Brommapojkarna W vs Vittsjö W - 20:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Brommapojkarna W vs Vittsjö W - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16004.png",Brommapojkarna W vs Vittsjö W - 20:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Renaissance Berkane vs Olympique Safi - 21:00" tvg-logo="https://media.api-sports.io/football/teams/962.png",Renaissance Berkane vs Olympique Safi - 21:00 [BLV A Soi - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
+#EXTINF:-1 group-title="Renaissance Berkane vs Olympique Safi - 21:00" tvg-logo="https://media.api-sports.io/football/teams/962.png",Renaissance Berkane vs Olympique Safi - 21:00 [BLV A Soi - HD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Renaissance Berkane vs Olympique Safi - 21:00" tvg-logo="https://media.api-sports.io/football/teams/962.png",Renaissance Berkane vs Olympique Safi - 21:00 [BLV A Soi - SD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Czechia vs South Africa - 23:00" tvg-logo="https://media.api-sports.io/football/teams/770.png",Czechia vs South Africa - 23:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Czechia vs South Africa - 23:00" tvg-logo="https://media.api-sports.io/football/teams/770.png",Czechia vs South Africa - 23:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Czechia vs South Africa - 23:00" tvg-logo="https://media.api-sports.io/football/teams/770.png",Czechia vs South Africa - 23:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Czechia vs South Africa - 23:00" tvg-logo="https://media.api-sports.io/football/teams/770.png",Czechia vs South Africa - 23:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Czechia vs South Africa - 23:00" tvg-logo="https://media.api-sports.io/football/teams/770.png",Czechia vs South Africa - 23:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Czechia vs South Africa - 23:00" tvg-logo="https://media.api-sports.io/football/teams/770.png",Czechia vs South Africa - 23:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Switzerland vs Bosnia & Herzegovina - 02:00" tvg-logo="https://media.api-sports.io/football/teams/15.png",Switzerland vs Bosnia & Herzegovina - 02:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Switzerland vs Bosnia & Herzegovina - 02:00" tvg-logo="https://media.api-sports.io/football/teams/15.png",Switzerland vs Bosnia & Herzegovina - 02:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Switzerland vs Bosnia & Herzegovina - 02:00" tvg-logo="https://media.api-sports.io/football/teams/15.png",Switzerland vs Bosnia & Herzegovina - 02:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
