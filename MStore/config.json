@@ -455,14 +455,14 @@
             "packageName": "com.linor.vn.getout",
             "name": "Get Out",
             "category": "Thể Thao",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1lqToJ_XgvnfQ8L44PbF7Fm449ekCRxxe",
-            "version": "1.0.7",
-            "versionCode": 2,
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Getout/logo.png",
+            "version": "2.0",
+            "versionCode": 4,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Getout/Getout.apk",
             "description": "Trực tiếp thể thao vv....",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/13pZhSGTD1Cdi5qgEQiWIa7zi2_xmt0Yr",
-            "sha256": "4e011f7bdfc86acb12ec6af2fd6a802feb5e18fa4db72f23086694cd6fcb2264"
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Getout/banner.png",
+            "sha256": "9c8a9d6adc378f88ffd80472b95b1018defec463f335d9865a1856a36df4b4bc"
         },
         {
             "id": "RBTV",
