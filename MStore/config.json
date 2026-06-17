@@ -7,14 +7,14 @@
             "packageName": "com.androidtv.tvmedia",
             "name": "TVMedia",
             "category": "Truyền hình",
-            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/TVMedia/logo.png",
-            "version": "9.9.2021",
+            "iconUrl": "MStore/app/TVMedia/logo.png",
+            "version": "09.09.2021",
             "versionCode": 2021,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TVMedia/TVMedia.apk",
             "description": "Ứng dụng xem truyền hình trực tuyến Việt Nam.",
-            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/TVMedia/banner.png",
-            "sha256": "9ae0865053fd7e1b348b02e7a7aed13e65f5dc26c685e1a64f6c4559d03f60f9"
+            "bannerUrl": "MStore/app/TVMedia/banner.png",
+            "sha256": "47c156b53bad83dd71c0c65e031caf10660573baec4df7e4d5c4e3eb5e90061a"
         },
         {
             "id": "VietPlayTV",
