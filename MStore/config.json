@@ -355,16 +355,16 @@
         {
             "id": "Phim4K",
             "packageName": "com.oxootv.spagreen",
-            "name": "Phim 4K (TV)",
+            "name": "Phim4K",
             "category": "Xem Phim",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1Z_58e_mTUpuBQHI7owzBvJyIhKcLLeAF",
-            "version": "2.5.8",
-            "versionCode": 68,
+            "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Phim4K/logo.png",
+            "version": "2.5.9",
+            "versionCode": 69,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Phim4K/Phim4K.apk",
             "description": "Xem trực tiếp phim chất lượng cao độ phân giải 4K sống động.",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/1Z_58e_mTUpuBQHI7owzBvJyIhKcLLeAF",
-            "sha256": "7314fd125194da109be56863db1d01a6fc80072a11013167ba0a5a5cef8e8699"
+            "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Phim4K/banner.png",
+            "sha256": "de19db50bedf801f06a38addbc3ab5a9c1afedc73a7d52030f61a4a5d7aca3f4"
         },
         {
             "id": "iQIYI",
