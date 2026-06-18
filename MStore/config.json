@@ -904,13 +904,13 @@
             "name": "Vua Giai Tri",
             "category": "Xem Phim",
             "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Vuagiaitri/logo.png",
-            "version": "1.1.9",
+            "version": "1.1.18",
             "versionCode": 1,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Vuagiaitri/Vuagiaitri.apk",
             "description": "Kênh giải trí Xem phim hàng đầu và đặc sắc.",
             "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Vuagiaitri/banner.png",
-            "sha256": "45c0010ac70628749fc84586148aa0eb214f3fd68697f589009dbc16f0cc5010"
+            "sha256": "393e858ab1bcaf7c223508225b868711458ded9996c2320ff6893ef5c36f7c5d"
         }
     ],
     "ls": [
