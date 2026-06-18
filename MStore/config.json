@@ -911,6 +911,20 @@
             "description": "Kênh giải trí Xem phim hàng đầu và đặc sắc.",
             "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Vuagiaitri/banner.png",
             "sha256": "393e858ab1bcaf7c223508225b868711458ded9996c2320ff6893ef5c36f7c5d"
+        },
+        {
+            "id": "Netflix",
+            "packageName": "com.netflix.ninja",
+            "name": "Netflix",
+            "category": "Xem Phim",
+            "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Netflix/logo.png",
+            "version": "10.1.0",
+            "versionCode": 18316,
+            "isActived": true,
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Netflix/Netflix.apk",
+            "description": "Xem trực tiếp phim có bản quyền chất lượng cao độ phân giải 4K sống động.",
+            "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Netflix/banner.png",
+            "sha256": "263fc446d636f3fe4eb7bfb77b6dd71b628188d5d23daf0c20336aad03637d3b"
         }
     ],
     "ls": [
