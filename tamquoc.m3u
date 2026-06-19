@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Naftan vs Baranovichi - 22:00" tvg-logo="https://media.api-sports.io/football/teams/750.png",Naftan vs Baranovichi - 22:00 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Naftan vs Baranovichi - 22:00" tvg-logo="https://media.api-sports.io/football/teams/750.png",Naftan vs Baranovichi - 22:00 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Naftan vs Baranovichi - 22:00" tvg-logo="https://media.api-sports.io/football/teams/750.png",Naftan vs Baranovichi - 22:00 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Al Fahaheel vs Kazma - 23:05" tvg-logo="https://media.api-sports.io/football/teams/3533.png",Al Fahaheel vs Kazma - 23:05 [BLV A Soi - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
 #EXTINF:-1 group-title="Al Fahaheel vs Kazma - 23:05" tvg-logo="https://media.api-sports.io/football/teams/3533.png",Al Fahaheel vs Kazma - 23:05 [BLV A Soi - HD]
@@ -23,24 +17,24 @@ https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="USA vs Australia - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Australia - 02:00 [BLV Coca - SD]
 https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Ricky - HD]
 https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Ricky - SD]
 https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Coca - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Coca - HD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Coca - SD]
-https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Türkiye vs Paraguay - 10:00" tvg-logo="https://media.api-sports.io/football/teams/777.png",Türkiye vs Paraguay - 10:00 [BLV Mã Siêu - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 #EXTINF:-1 group-title="Türkiye vs Paraguay - 10:00" tvg-logo="https://media.api-sports.io/football/teams/777.png",Türkiye vs Paraguay - 10:00 [BLV Mã Siêu - HD]
