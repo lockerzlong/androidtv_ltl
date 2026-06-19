@@ -29,3 +29,69 @@ https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="USA vs Australia - 02:00" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Australia - 02:00 [BLV Coca - SD]
 https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Scotland vs Morocco - 05:00" tvg-logo="https://media.api-sports.io/football/teams/1108.png",Scotland vs Morocco - 05:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Brazil vs Haiti - 07:30" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Haiti - 07:30 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Türkiye vs Paraguay - 10:00" tvg-logo="https://media.api-sports.io/football/teams/777.png",Türkiye vs Paraguay - 10:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Türkiye vs Paraguay - 10:00" tvg-logo="https://media.api-sports.io/football/teams/777.png",Türkiye vs Paraguay - 10:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Türkiye vs Paraguay - 10:00" tvg-logo="https://media.api-sports.io/football/teams/777.png",Türkiye vs Paraguay - 10:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Fortuna Ålesund W vs Bodø / Glimt W - 17:00" tvg-logo="https://media.api-sports.io/football/teams/18985.png",Fortuna Ålesund W vs Bodø / Glimt W - 17:00 [BLV Mã Siêu - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+#EXTINF:-1 group-title="Fortuna Ålesund W vs Bodø / Glimt W - 17:00" tvg-logo="https://media.api-sports.io/football/teams/18985.png",Fortuna Ålesund W vs Bodø / Glimt W - 17:00 [BLV Mã Siêu - HD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Fortuna Ålesund W vs Bodø / Glimt W - 17:00" tvg-logo="https://media.api-sports.io/football/teams/18985.png",Fortuna Ålesund W vs Bodø / Glimt W - 17:00 [BLV Mã Siêu - SD]
+https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Nhật Bản vs Cộng Hòa Dominica - 19:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",Nhật Bản vs Cộng Hòa Dominica - 19:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Nhật Bản vs Cộng Hòa Dominica - 19:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",Nhật Bản vs Cộng Hòa Dominica - 19:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Nhật Bản vs Cộng Hòa Dominica - 19:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",Nhật Bản vs Cộng Hòa Dominica - 19:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Zhenys vs Irtysh - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
+#EXTINF:-1 group-title="Zhenys vs Irtysh - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - HD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Zhenys vs Irtysh - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - SD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Netherlands vs Sweden - 00:00" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Sweden - 00:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Netherlands vs Sweden - 00:00" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Sweden - 00:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Netherlands vs Sweden - 00:00" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Sweden - 00:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Netherlands vs Sweden - 00:00" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Sweden - 00:00 [BLV A Soi - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
+#EXTINF:-1 group-title="Netherlands vs Sweden - 00:00" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Sweden - 00:00 [BLV A Soi - HD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Netherlands vs Sweden - 00:00" tvg-logo="https://media.api-sports.io/football/teams/1118.png",Netherlands vs Sweden - 00:00 [BLV A Soi - SD]
+https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Germany vs Ivory Coast - 03:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Ivory Coast - 03:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Germany vs Ivory Coast - 03:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Ivory Coast - 03:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Germany vs Ivory Coast - 03:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Ivory Coast - 03:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Germany vs Ivory Coast - 03:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Ivory Coast - 03:00 [BLV Coca - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
+#EXTINF:-1 group-title="Germany vs Ivory Coast - 03:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Ivory Coast - 03:00 [BLV Coca - HD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Germany vs Ivory Coast - 03:00" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Ivory Coast - 03:00 [BLV Coca - SD]
+https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8
