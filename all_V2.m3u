@@ -701,12 +701,6 @@ https://live.secufun.xyz/live/e275b763237306b148772eac6f3026c1/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 null
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/3533.png",Al Fahaheel vs Kazma - 23:05 [BLV A Soi - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/3533.png",Al Fahaheel vs Kazma - 23:05 [BLV A Soi - HD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/3533.png",Al Fahaheel vs Kazma - 23:05 [BLV A Soi - SD]
-https://alive.yarncdn.live/tqtv_blv_asoi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Australia - 02:00 [BLV Ricky - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Australia - 02:00 [BLV Ricky - HD]
