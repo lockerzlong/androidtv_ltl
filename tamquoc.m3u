@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="University Azzurri FC - Mindil Aces - 18:00" tvg-logo="https://img0.aiscore.com/football/team/c9bf281eb0f1cf13975e39dbe45c4c5e.png!w60",University Azzurri FC - Mindil Aces - 18:00 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="University Azzurri FC - Mindil Aces - 18:00" tvg-logo="https://img0.aiscore.com/football/team/c9bf281eb0f1cf13975e39dbe45c4c5e.png!w60",University Azzurri FC - Mindil Aces - 18:00 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="University Azzurri FC - Mindil Aces - 18:00" tvg-logo="https://img0.aiscore.com/football/team/c9bf281eb0f1cf13975e39dbe45c4c5e.png!w60",University Azzurri FC - Mindil Aces - 18:00 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Naftan vs Baranovichi - 22:00" tvg-logo="https://media.api-sports.io/football/teams/750.png",Naftan vs Baranovichi - 22:00 [BLV Coca - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
 #EXTINF:-1 group-title="Naftan vs Baranovichi - 22:00" tvg-logo="https://media.api-sports.io/football/teams/750.png",Naftan vs Baranovichi - 22:00 [BLV Coca - HD]
@@ -59,12 +53,6 @@ https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="Fortuna Ålesund W vs Bodø / Glimt W - 17:00" tvg-logo="https://media.api-sports.io/football/teams/18985.png",Fortuna Ålesund W vs Bodø / Glimt W - 17:00 [BLV Mã Siêu - SD]
 https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Nhật Bản vs Cộng Hòa Dominica - 19:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",Nhật Bản vs Cộng Hòa Dominica - 19:00 [BLV Ricky - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
-#EXTINF:-1 group-title="Nhật Bản vs Cộng Hòa Dominica - 19:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",Nhật Bản vs Cộng Hòa Dominica - 19:00 [BLV Ricky - HD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Nhật Bản vs Cộng Hòa Dominica - 19:00" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/1280px-Flag_of_Japan.svg.png",Nhật Bản vs Cộng Hòa Dominica - 19:00 [BLV Ricky - SD]
-https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Zhenys vs Irtysh - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
 #EXTINF:-1 group-title="Zhenys vs Irtysh - 20:00" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - HD]
