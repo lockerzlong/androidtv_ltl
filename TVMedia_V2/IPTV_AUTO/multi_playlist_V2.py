@@ -11,6 +11,13 @@ try:
 except ImportError:
     HAS_CURL_FFI = False
     print("❌ curl_cffi not available")
+    try:
+        import cloudscraper
+        HAS_CLOUDSCRAPER = True
+        print("✅ cloudscraper available")
+    except ImportError:
+        HAS_CLOUDSCRAPER = False
+        print("❌ cloudscraper not available")
 
 # 📂 Đặt thư mục lưu file đầu ra
 OUTPUT_DIR = Path("output")
@@ -100,85 +107,128 @@ def _tieulam_build_query(page=1, limit=200):
     }
 
 def _tieulam_http_post(payload, timeout=30):
-    """POST với curl_cffi"""
+    """POST với curl_cffi hoặc cloudscraper"""
     try:
-        if not HAS_CURL_FFI:
-            print("   ❌ curl_cffi not available")
+        if HAS_CURL_FFI:
+            # Dùng curl_cffi
+            for impersonate in ["chrome120", "chrome119", "chrome118"]:
+                try:
+                    print(f"   🔄 Thử fingerprint: {impersonate}")
+                    r = cf_requests.post(
+                        TIEULAM_API_URL,
+                        json=payload,
+                        headers=TIEULAM_POST_HEADERS,
+                        timeout=timeout,
+                        impersonate=impersonate,
+                        verify=False
+                    )
+                    print(f"   📡 POST → {r.status_code}")
+                    if r.status_code == 200:
+                        return json.loads(r.text)
+                    elif r.status_code == 403:
+                        print(f"   ❌ 403 với {impersonate}, thử tiếp...")
+                        continue
+                    else:
+                        print(f"   ❌ {r.status_code}: {r.text[:200]}")
+                        return None
+                except Exception as e:
+                    print(f"   ❌ Lỗi với {impersonate}: {e}")
+                    continue
             return None
             
-        # Thử nhiều fingerprint khác nhau
-        for impersonate in ["chrome120", "chrome119", "chrome118", "chrome110"]:
-            try:
-                print(f"   🔄 Thử fingerprint: {impersonate}")
-                r = cf_requests.post(
-                    TIEULAM_API_URL,
-                    json=payload,
-                    headers=TIEULAM_POST_HEADERS,
-                    timeout=timeout,
-                    impersonate=impersonate,
-                    verify=False  # Tắt verify để tránh lỗi SSL
-                )
-                print(f"   📡 POST → {r.status_code}")
-                if r.status_code == 200:
-                    return json.loads(r.text)
-                elif r.status_code == 403:
-                    print(f"   ❌ 403 với {impersonate}, thử tiếp...")
-                    continue
-                else:
-                    print(f"   ❌ {r.status_code}: {r.text[:200]}")
-                    return None
-            except Exception as e:
-                print(f"   ❌ Lỗi với {impersonate}: {e}")
-                continue
-        
-        print("   ❌ Tất cả fingerprint đều thất bại")
-        return None
-                
+        elif HAS_CLOUDSCRAPER:
+            # Dùng cloudscraper
+            print("   🔄 Dùng cloudscraper")
+            scraper = cloudscraper.create_scraper(
+                browser={
+                    'browser': 'chrome',
+                    'platform': 'windows',
+                    'mobile': False
+                }
+            )
+            r = scraper.post(
+                TIEULAM_API_URL,
+                json=payload,
+                headers=TIEULAM_POST_HEADERS,
+                timeout=timeout
+            )
+            print(f"   📡 POST → {r.status_code}")
+            if r.status_code == 200:
+                return r.json()
+            else:
+                print(f"   ❌ {r.status_code}: {r.text[:200]}")
+                return None
+        else:
+            print("   ❌ Không có thư viện bypass Cloudflare")
+            return None
+            
     except Exception as e:
         print(f"   ❌ POST exception: {e}")
         return None
 
 def _tieulam_http_get(url, referer=None, timeout=15):
-    """GET với curl_cffi"""
+    """GET với curl_cffi hoặc cloudscraper"""
     try:
-        if not HAS_CURL_FFI:
-            print("   ❌ curl_cffi not available")
-            return None
-            
         headers = dict(TIEULAM_GET_HEADERS)
         if referer:
             headers["Referer"] = referer
             
-        # Thử nhiều fingerprint khác nhau
-        for impersonate in ["chrome120", "chrome119", "chrome118", "chrome110"]:
-            try:
-                print(f"   🔄 Thử fingerprint: {impersonate}")
-                r = cf_requests.get(
-                    url,
-                    headers=headers,
-                    timeout=timeout,
-                    impersonate=impersonate,
-                    verify=False
-                )
-                print(f"   📡 GET → {r.status_code}")
-                if r.status_code == 200:
-                    return json.loads(r.text)
-                elif r.status_code == 403:
-                    print(f"   ❌ 403 với {impersonate}, thử tiếp...")
+        if HAS_CURL_FFI:
+            # Dùng curl_cffi
+            for impersonate in ["chrome120", "chrome119", "chrome118"]:
+                try:
+                    print(f"   🔄 Thử fingerprint: {impersonate}")
+                    r = cf_requests.get(
+                        url,
+                        headers=headers,
+                        timeout=timeout,
+                        impersonate=impersonate,
+                        verify=False
+                    )
+                    print(f"   📡 GET → {r.status_code}")
+                    if r.status_code == 200:
+                        return json.loads(r.text)
+                    elif r.status_code == 403:
+                        print(f"   ❌ 403 với {impersonate}, thử tiếp...")
+                        continue
+                    else:
+                        print(f"   ❌ {r.status_code}: {r.text[:200]}")
+                        return None
+                except Exception as e:
+                    print(f"   ❌ Lỗi với {impersonate}: {e}")
                     continue
-                else:
-                    print(f"   ❌ {r.status_code}: {r.text[:200]}")
-                    return None
-            except Exception as e:
-                print(f"   ❌ Lỗi với {impersonate}: {e}")
-                continue
-        
-        print("   ❌ Tất cả fingerprint đều thất bại")
-        return None
-                
+            return None
+            
+        elif HAS_CLOUDSCRAPER:
+            # Dùng cloudscraper
+            print("   🔄 Dùng cloudscraper")
+            scraper = cloudscraper.create_scraper(
+                browser={
+                    'browser': 'chrome',
+                    'platform': 'windows',
+                    'mobile': False
+                }
+            )
+            r = scraper.get(
+                url,
+                headers=headers,
+                timeout=timeout
+            )
+            print(f"   📡 GET → {r.status_code}")
+            if r.status_code == 200:
+                return r.json()
+            else:
+                print(f"   ❌ {r.status_code}: {r.text[:200]}")
+                return None
+        else:
+            print("   ❌ Không có thư viện bypass Cloudflare")
+            return None
+            
     except Exception as e:
         print(f"   ❌ GET exception: {e}")
-        return Nonedef _tieulam_check_url(url, timeout=5):
+        return None
+
+def _tieulam_check_url(url, timeout=5):
     try:
         r = requests.head(url, headers=TIEULAM_GET_HEADERS, timeout=timeout, allow_redirects=True)
         return r.status_code < 400
