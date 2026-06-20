@@ -1,0 +1,175 @@
+name: Auto Update IPTV
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    # Thêm timeout để tránh chạy quá lâu
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Lấy toàn bộ lịch sử để checkout branch khác
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: 'pip'  # Cache dependencies để chạy nhanh hơn
+
+      - name: Install dependencies
+        run: |
+          # Cập nhật pip
+          python -m pip install --upgrade pip
+          
+          # Cài đặt các thư viện cần thiết
+          pip install requests
+          pip install curl-cffi  # QUAN TRỌNG: để vượt Cloudflare
+          pip install cloudscraper  # Dự phòng
+          pip install beautifulsoup4  # Có thể cần
+          pip install lxml  # Có thể cần
+          
+          # Nếu có requirements.txt thì cài
+          if [ -f "TVMedia_V2/IPTV_AUTO/requirements.txt" ]; then
+            pip install -r TVMedia_V2/IPTV_AUTO/requirements.txt
+          fi
+          
+          # Kiểm tra cài đặt
+          python -c "import curl_cffi; print('✅ curl_cffi installed successfully')"
+
+      - name: Run playlist generator
+        env:
+          # Thêm environment variables để debug
+          PYTHONUNBUFFERED: 1
+          GITHUB_ACTIONS: true
+        run: |
+          cd TVMedia_V2/IPTV_AUTO
+          python multi_playlist_V2.py
+          
+          # Kiểm tra output
+          if [ ! -d "output" ]; then
+            echo "❌ Output directory not created!"
+            exit 1
+          fi
+          
+          # Hiển thị thông tin file tạo ra
+          echo "📁 Generated files:"
+          ls -la output/
+          
+          # Hiển thị số lượng links
+          if [ -f "output/stats.txt" ]; then
+            echo "📊 Total links: $(cat output/stats.txt)"
+          fi
+
+      - name: Publish playlists branch
+        run: |
+          set -e
+          
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          OUTPUT_DIR="TVMedia_V2/IPTV_AUTO/output"
+          
+          if [ ! -d "$OUTPUT_DIR" ] || [ -z "$(ls -A $OUTPUT_DIR)" ]; then
+            echo "⚠️ Output directory is empty! Creating dummy file to prevent branch deletion..."
+            mkdir -p $OUTPUT_DIR
+            echo "# No data available" > $OUTPUT_DIR/empty.m3u
+            echo "0" > $OUTPUT_DIR/stats.txt
+          fi
+          
+          # Đọc số lượng links
+          LINKS_COUNT=$(cat $OUTPUT_DIR/stats.txt 2>/dev/null || echo "0")
+          
+          # Tạo thư mục tạm chứa playlist
+          mkdir -p /tmp/playlists_publish
+          cp -r $OUTPUT_DIR/* /tmp/playlists_publish/
+          
+          # Kiểm tra branch playlists tồn tại chưa
+          if git ls-remote --heads origin playlists | grep -q playlists; then
+            echo "📌 Branch 'playlists' exists, checking out..."
+            git fetch origin playlists
+            git checkout playlists
+          else
+            echo "📌 Creating new branch 'playlists'..."
+            git checkout --orphan playlists
+            # Xóa tất cả file để bắt đầu sạch
+            git rm -rf . 2>/dev/null || true
+          fi
+          
+          # Xóa toàn bộ nội dung branch hiện tại (giữ .git)
+          find . -mindepth 1 -maxdepth 1 ! -name ".git" -exec rm -rf {} + 2>/dev/null || true
+          
+          # Copy playlist mới vào root branch
+          cp -r /tmp/playlists_publish/* .
+          
+          # Tạo README cho branch
+          cat > README.md << EOF
+          # IPTV Playlists
+          
+          📅 Last updated: $(date '+%Y-%m-%d %H:%M:%S UTC')
+          📊 Total links: ${LINKS_COUNT}
+          
+          ## Available playlists
+          $(ls -1 *.m3u 2>/dev/null | sed 's/^/- /')
+          
+          ## How to use
+          Copy the URL of any playlist and paste into your IPTV player.
+          
+          Example:
+          \`\`\`
+          https://raw.githubusercontent.com/${{ github.repository }}/playlists/all_V2.m3u
+          \`\`\`
+          EOF
+          
+          # Thêm .nojekyll để GitHub Pages hoạt động
+          touch .nojekyll
+          
+          git add .
+          
+          # Kiểm tra có thay đổi không
+          if git diff --cached --quiet; then
+            echo "✅ No changes detected, skipping commit"
+            exit 0
+          fi
+          
+          # Commit và push
+          git commit -m "🤖 Auto update $(date '+%Y-%m-%d %H:%M:%S') (links: ${LINKS_COUNT})"
+          
+          # Push với retry nếu thất bại
+          MAX_RETRIES=3
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "🔄 Push attempt $i/$MAX_RETRIES..."
+            if git push origin playlists --force; then
+              echo "✅ Push successful!"
+              break
+            fi
+            if [ $i -lt $MAX_RETRIES ]; then
+              echo "⏳ Waiting 5 seconds before retry..."
+              sleep 5
+              git pull origin playlists --rebase 2>/dev/null || true
+            fi
+          done
+
+      - name: Upload artifacts (for debugging)
+        if: always()  # Luôn chạy kể cả khi lỗi
+        uses: actions/upload-artifact@v4
+        with:
+          name: playlists
+          path: TVMedia_V2/IPTV_AUTO/output/
+          retention-days: 7
+          
+      - name: Send notification (optional)
+        if: failure()
+        run: |
+          echo "❌ Workflow failed! Check logs for details."
+          # Có thể thêm webhook notification ở đây
