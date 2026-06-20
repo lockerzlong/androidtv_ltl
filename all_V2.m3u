@@ -9,7 +9,10 @@
 
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-origin=https://sv1.tieulamlive.org
+#EXTVLCOPT:http-x-requested-with=XMLHttpRequest
+#EXTVLCOPT:http-cache-control=no-cache
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -24,7 +27,10 @@ https://live.fblive.eu.cc/live/a4903deed60eaed1c96c5606983d78f7/playlist.m3u8
 
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - HD1
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-origin=https://sv1.tieulamlive.org
+#EXTVLCOPT:http-x-requested-with=XMLHttpRequest
+#EXTVLCOPT:http-cache-control=no-cache
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -39,7 +45,10 @@ https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - HD2
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-origin=https://sv1.tieulamlive.org
+#EXTVLCOPT:http-x-requested-with=XMLHttpRequest
+#EXTVLCOPT:http-cache-control=no-cache
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -54,7 +63,10 @@ https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - HD3
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-origin=https://sv1.tieulamlive.org
+#EXTVLCOPT:http-x-requested-with=XMLHttpRequest
+#EXTVLCOPT:http-cache-control=no-cache
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -69,7 +81,10 @@ https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 
 #EXTINF:-1 group-title="LIVE",🔴 Shakhter Soligorsk - Ostrowitz - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-origin=https://sv1.tieulamlive.org
+#EXTVLCOPT:http-x-requested-with=XMLHttpRequest
+#EXTVLCOPT:http-cache-control=no-cache
 # ID: 1l4rjnh9gekym7v
 # StreamKey: c118ab3ac3bf4ecb81b1687455a48aed
 # CurrentTime: 2026-06-20 21:00:00
@@ -82,7 +97,10 @@ https://live.fblive.eu.cc/live/ad941c7d8b661829be897401de5fb758/playlist.m3u8
 
 #EXTINF:-1 group-title="LIVE",🔴 Druzhba Maikop - FK Chayka 2 - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+#EXTVLCOPT:http-origin=https://sv1.tieulamlive.org
+#EXTVLCOPT:http-x-requested-with=XMLHttpRequest
+#EXTVLCOPT:http-cache-control=no-cache
 # ID: 965mkyhk8pjwr1g
 # StreamKey: 8b36142baa524d8fbdca1e56172f2365
 # CurrentTime: 2026-06-20 21:00:00
