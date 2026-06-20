@@ -3,6 +3,21 @@ import json
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+# ── Bypass Cloudflare: dùng curl_cffi (tốt nhất) → cloudscraper → requests ──
+try:
+    from curl_cffi import requests as cf_requests
+    _CF_ENGINE = "curl_cffi"
+except ImportError:
+    cf_requests = None
+    try:
+        import cloudscraper
+        _CF_ENGINE = "cloudscraper"
+    except ImportError:
+        cloudscraper = None
+        _CF_ENGINE = "requests"
+
+print(f"🔧 Cloudflare engine: {_CF_ENGINE}")
+
 # 📂 Đặt thư mục lưu file đầu ra
 OUTPUT_DIR = Path("output")
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -38,43 +53,26 @@ TIEULAM_STREAM_DOMAINS = [
     "https://sv1.tieulamlive.org/live/",
 ]
 
-# Danh sách headers thử lần lượt cho đến khi thành công
-TIEULAM_HEADER_CANDIDATES = [
-    # 1. okhttp — thường dùng trong Android Java (Volley/OkHttp)
-    {
-        "Content-Type": "application/json; charset=utf-8",
-        "Accept-Encoding": "gzip",
-        "User-Agent": "okhttp/4.12.0",
-    },
-    # 2. Web browser với Referer tieulamlive.org
-    {
-        "Content-Type": "application/json",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Origin": "https://tieulamlive.org",
-        "Referer": "https://tieulamlive.org/",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
-    },
-    # 3. Referer domain tlap
-    {
-        "Content-Type": "application/json",
-        "Accept": "application/json, */*",
-        "Origin": "https://tlap17062026.com",
-        "Referer": "https://tlap17062026.com/",
-        "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",
-    },
-    # 4. Android WebView
-    {
-        "Content-Type": "application/json",
-        "Accept": "*/*",
-        "User-Agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36",
-        "X-Requested-With": "com.androidtv.getm3u",
-    },
-    # 5. Bare minimum
-    {
-        "Content-Type": "application/json",
-    },
-]
+# Headers chính xác từ Java httpPost
+TIEULAM_POST_HEADERS = {
+    "Content-Type": "application/json",
+    "Accept": "application/json, text/plain, */*",
+    "Origin": "https://sv1.tieulamlive.org",
+    "Referer": "https://sv1.tieulamlive.org/trang-chu",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+# Headers cho GET /match/{id}/live (từ Java fetchAllStreamLinksFromApi)
+TIEULAM_GET_HEADERS = {
+    "Accept": "application/json, text/plain, */*",
+    "Origin": "https://sv1.tieulamlive.org",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Connection": "keep-alive",
+}
 
 
 def fetch_json(url):
@@ -150,45 +148,44 @@ def _tieulam_build_query(page=1, limit=200):
 
 
 def _tieulam_http_post(payload, timeout=20):
-    """Thử lần lượt từng bộ headers cho đến khi thành công."""
-    session = requests.Session()
-    for i, headers in enumerate(TIEULAM_HEADER_CANDIDATES):
-        try:
-            r = session.post(TIEULAM_API_URL, json=payload, headers=headers, timeout=timeout)
-            if r.status_code == 200:
-                print(f"   ✅ Headers [{i+1}] thành công")
-                return r.json()
-            else:
-                print(f"   ⚠️ Headers [{i+1}] → {r.status_code}: {r.text[:120]}")
-        except Exception as e:
-            print(f"   ❌ Headers [{i+1}] → Exception: {e}")
-    print("❌ Tất cả headers đều thất bại cho POST Tieulam")
-    return None
+    """POST với headers chính xác từ Java httpPost."""
+    try:
+        r = requests.post(TIEULAM_API_URL, json=payload, headers=TIEULAM_POST_HEADERS, timeout=timeout)
+        print(f"   📡 POST → {r.status_code}")
+        if r.status_code == 200:
+            return r.json()
+        else:
+            print(f"   ❌ {r.status_code}: {r.text[:200]}")
+            return None
+    except Exception as e:
+        print(f"   ❌ POST exception: {e}")
+        return None
 
 
-def _tieulam_http_get(url, timeout=10):
-    """GET với retry headers."""
-    for headers in TIEULAM_HEADER_CANDIDATES:
-        try:
-            r = requests.get(url, headers=headers, timeout=timeout)
-            if r.status_code == 200:
-                return r.json()
-            elif r.status_code == 404:
-                return None
-        except Exception:
-            continue
-    return None
+def _tieulam_http_get(url, referer=None, timeout=15):
+    """GET với headers từ Java fetchAllStreamLinksFromApi."""
+    headers = dict(TIEULAM_GET_HEADERS)
+    if referer:
+        headers["Referer"] = referer
+    try:
+        r = requests.get(url, headers=headers, timeout=timeout)
+        print(f"   📡 GET {url} → {r.status_code}")
+        if r.status_code == 200:
+            return r.json()
+        else:
+            print(f"   ❌ {r.status_code}: {r.text[:200]}")
+            return None
+    except Exception as e:
+        print(f"   ❌ GET exception: {e}")
+        return None
 
 
 def _tieulam_check_url(url, timeout=5):
-    for headers in TIEULAM_HEADER_CANDIDATES[:2]:
-        try:
-            r = requests.head(url, headers=headers, timeout=timeout, allow_redirects=True)
-            if r.status_code < 400:
-                return True
-        except Exception:
-            continue
-    return False
+    try:
+        r = requests.head(url, headers=TIEULAM_GET_HEADERS, timeout=timeout, allow_redirects=True)
+        return r.status_code < 400
+    except Exception:
+        return False
 
 
 def _tieulam_fetch_all_pages(limit=200, max_pages=20):
@@ -255,29 +252,53 @@ def _tieulam_parse_match(raw, idx=0):
     return md
 
 
+def _tieulam_create_slug(title, match_id):
+    """Tạo slug từ title + match_id, giống Java createSlug()."""
+    import unicodedata, re as _re
+    if not title:
+        return match_id
+    s = title.lower()
+    # Bỏ dấu tiếng Việt
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    s = s.replace('đ', 'd')
+    s = _re.sub(r'\s+vs\s+', '-vs-', s)
+    s = _re.sub(r'[^a-z0-9\s-]', '', s)
+    s = _re.sub(r'\s+', '-', s)
+    s = _re.sub(r'-+', '-', s).strip('-')
+    return f'{s}-{match_id}' if s else match_id
+
+
 def _tieulam_fetch_detail_links(match_id, match_title):
-    """Gọi API detail để lấy hd_1, hd_2, hd_3, source_live..."""
-    url = TIEULAM_DETAIL_URL.format(match_id=match_id)
-    data = _tieulam_http_get(url)
-    if not data:
-        print(f"   ❌ Không lấy được detail {match_title}")
+    """Gọi GET /match/{id}/live với slug referer, lấy source/hd_1/hd_2/hd_3."""
+    if not match_id:
         return []
 
-    match_obj = data.get("data") or data
+    slug = _tieulam_create_slug(match_title, match_id)
+    api_url = f'https://api.tlap17062026.com/match/{match_id}/live'
+    referer = f'https://sv1.tieulamlive.org/truc-tiep/{slug}'
+
+    print(f"   📡 GET {api_url}")
+    print(f"   📡 Referer: {referer}")
+
+    data = _tieulam_http_get(api_url, referer=referer)
+    if not data:
+        print(f"   ❌ Không lấy được stream links cho {match_title}")
+        return []
+
     links = []
+    # Thứ tự ưu tiên: source → hd_1 → hd_2 → hd_3 (giống Java addLinkIfValid)
+    for field, label in [("source", "Source"), ("hd_1", "HD1"), ("hd_2", "HD2"), ("hd_3", "HD3")]:
+        val = data.get(field, '')
+        if val and val != 'null' and val.startswith('http'):
+            links.append({'name': label, 'url': val})
+            print(f"   ✅ {label}: {val}")
 
-    # Các field link Java đề cập
-    for field, label in [("hd_1", "HD1"), ("hd_2", "HD2"), ("hd_3", "HD3"), ("source_live", "Source")]:
-        val = match_obj.get(field, "")
-        if val and isinstance(val, str) and val.startswith("http"):
-            links.append({"name": label, "url": val})
-
-    # Mảng streams nếu có
-    for s in (match_obj.get("streams") or []):
-        u = s.get("url", "")
-        n = s.get("name") or s.get("type") or "Stream"
-        if u:
-            links.append({"name": n, "url": u})
+    # Fallback: field 'url'
+    if not links:
+        val = data.get('url', '')
+        if val and val != 'null':
+            links.append({'name': 'Source', 'url': val})
 
     print(f"   🔗 {match_title}: {len(links)} link")
     return links
@@ -344,13 +365,28 @@ def _tieulam_build_m3u(live_matches, upcoming_matches):
             group      = f"{category} - {m.get('league', 'Football')}"
             logo       = m.get("team1_logo", "")
 
+            # Xác định danh sách links cần ghi
+            write_links = []
             if m["stream_links"]:
-                for lnk in m["stream_links"]:
-                    lines.append(f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}",{base_name} [{lnk["name"]}]')
-                    lines.append(lnk["url"])
+                write_links = m["stream_links"]
             elif m["stream_url"]:
-                lines.append(f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}",{base_name}')
-                lines.append(m["stream_url"])
+                write_links = [{"name": "Source", "url": m["stream_url"]}]
+
+            for lnk in write_links:
+                entry_name = f'{base_name} [{lnk["name"]}]' if lnk.get('name') else base_name
+                lines.append(f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}",{entry_name}')
+                # VLC options giống Java appendMatchToM3U
+                lines.append('#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/')
+                lines.append('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
+                # Meta comments
+                if m.get('id'):          lines.append(f'# ID: {m["id"]}')
+                if m.get('stream_key'):  lines.append(f'# StreamKey: {m["stream_key"]}')
+                if m.get('start_date'):  lines.append(f'# Date: {m["start_date"]}')
+                if m.get('league'):      lines.append(f'# League: {m["league"]}')
+                if _tieulam_has_blv(m):  lines.append(f'# BLV: {m["blv"]}')
+                if m['is_hot']:          lines.append('# Hot: Yes')
+                lines.append(lnk['url'])
+                lines.append('')
         lines.append("")
 
     return "\n".join(lines)
