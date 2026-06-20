@@ -701,12 +701,12 @@ https://live.secufun.xyz/live/e275b763237306b148772eac6f3026c1/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 null
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/18985.png",Fortuna Ålesund W vs Bodø / Glimt W - 17:00 [BLV Mã Siêu - FHD]
-https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/18985.png",Fortuna Ålesund W vs Bodø / Glimt W - 17:00 [BLV Mã Siêu - HD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8
-#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/18985.png",Fortuna Ålesund W vs Bodø / Glimt W - 17:00 [BLV Mã Siêu - SD]
-https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://cocacnuoc.com/wp-content/uploads/2024/10/co-nhat-ban.jpg",Nhật Bản vs Dominica - 19:00 [BLV Ricky - FHD]
+https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://cocacnuoc.com/wp-content/uploads/2024/10/co-nhat-ban.jpg",Nhật Bản vs Dominica - 19:00 [BLV Ricky - HD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="Tamquoc" tvg-logo="https://cocacnuoc.com/wp-content/uploads/2024/10/co-nhat-ban.jpg",Nhật Bản vs Dominica - 19:00 [BLV Ricky - SD]
+https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - HD]
