@@ -10,7 +10,8 @@
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTHTTP:{"headers":{"Referer":"https://sv1.tieulamlive.org/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36","Origin":"https://sv1.tieulamlive.org"}}
+#EXTHTTP:http-referrer=https://sv1.tieulamlive.org/
+#EXTHTTP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -26,7 +27,8 @@ https://live.fblive.eu.cc/live/a4903deed60eaed1c96c5606983d78f7/playlist.m3u8
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - HD1
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTHTTP:{"headers":{"Referer":"https://sv1.tieulamlive.org/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36","Origin":"https://sv1.tieulamlive.org"}}
+#EXTHTTP:http-referrer=https://sv1.tieulamlive.org/
+#EXTHTTP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -42,7 +44,8 @@ https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - HD2
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTHTTP:{"headers":{"Referer":"https://sv1.tieulamlive.org/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36","Origin":"https://sv1.tieulamlive.org"}}
+#EXTHTTP:http-referrer=https://sv1.tieulamlive.org/
+#EXTHTTP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -58,7 +61,8 @@ https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 #EXTINF:-1 group-title="TRẠNG TÍ",🔴 FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - HD3
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTHTTP:{"headers":{"Referer":"https://sv1.tieulamlive.org/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36","Origin":"https://sv1.tieulamlive.org"}}
+#EXTHTTP:http-referrer=https://sv1.tieulamlive.org/
+#EXTHTTP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 4wyrn4h661lyq86
 # StreamKey: 900232d055494f5397fe9cd1950f3b7f
 # CurrentTime: 2026-06-20 22:30:00
@@ -74,7 +78,8 @@ https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 #EXTINF:-1 group-title="LIVE",🔴 Kvik Trondheim - SK Herd - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-#EXTHTTP:{"headers":{"Referer":"https://sv1.tieulamlive.org/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36","Origin":"https://sv1.tieulamlive.org"}}
+#EXTHTTP:http-referrer=https://sv1.tieulamlive.org/
+#EXTHTTP:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 23xmvkh62o2jqg8
 # StreamKey: fec58832f4544667a972a6ea0f0b5709
 # CurrentTime: 2026-06-20 20:30:00
