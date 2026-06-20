@@ -1,13 +1,13 @@
 #EXTM3U
 # Playlist from TieuLamLive
 # Total: 107 matches
-# 🔴 LIVE: 21
-# ⏳ UPCOMING: 86
-# Updated: 2026-06-20 21:43:46
+# 🔴 LIVE: 19
+# ⏳ UPCOMING: 88
+# Updated: 2026-06-20 21:55:42
 
-# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (21 trận) ===
+# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (19 trận) ===
 
-#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Slavia Mozyr - FK Isloch Minsk [BLV TRẠNG BÉO]
+#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Slavia Mozyr - FK Isloch Minsk [BLV TRẠNG BÉO] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: dn1m1ghlld0lmoe
@@ -19,21 +19,55 @@
 # Teams: Slavia Mozyr vs FK Isloch Minsk (0 - 1)
 # Top: Yes
 # BLV: BLV TRẠNG BÉO
+# Quality: Source
 https://live.fblive.eu.cc/live/5d3d3efb44614819db8783f547008cd0/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Fumin Village - Dali Village
+#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Slavia Mozyr - FK Isloch Minsk [BLV TRẠNG BÉO] - HD1
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 965mkyhk0nkvr1g
-# StreamKey: 5bff48076e9c417b9fe44623f993ecfc
-# CurrentTime: 2026-06-20 19:45:00
-# Date: 2026-06-20T12:45:00
-# League: Rural Football Super League
+# ID: dn1m1ghlld0lmoe
+# StreamKey: b671674d51444c6b8a0828e076b0654c
+# CurrentTime: 2026-06-20 20:30:00
+# Date: 2026-06-20T13:30:00
+# League: Belarusian Premier League
 # Type: FOOTBALL
-# Teams: Fumin Village vs Dali Village (1 - 4)
-https://live.fblive.eu.cc/live/9459530dfc72ec5798bc5a42ccb03983/playlist.m3u8
+# Teams: Slavia Mozyr vs FK Isloch Minsk (0 - 1)
+# Top: Yes
+# BLV: BLV TRẠNG BÉO
+# Quality: HD1
+https://pull.asynccdn.com/live/b671674d51444c6b8a0828e076b0654c/index.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Skjervoy - Bossekop
+#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Slavia Mozyr - FK Isloch Minsk [BLV TRẠNG BÉO] - HD2
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dn1m1ghlld0lmoe
+# StreamKey: b671674d51444c6b8a0828e076b0654c
+# CurrentTime: 2026-06-20 20:30:00
+# Date: 2026-06-20T13:30:00
+# League: Belarusian Premier League
+# Type: FOOTBALL
+# Teams: Slavia Mozyr vs FK Isloch Minsk (0 - 1)
+# Top: Yes
+# BLV: BLV TRẠNG BÉO
+# Quality: HD2
+https://pull.asynccdn.com/live/b671674d51444c6b8a0828e076b0654c/index.m3u8
+
+#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Slavia Mozyr - FK Isloch Minsk [BLV TRẠNG BÉO] - HD3
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dn1m1ghlld0lmoe
+# StreamKey: b671674d51444c6b8a0828e076b0654c
+# CurrentTime: 2026-06-20 20:30:00
+# Date: 2026-06-20T13:30:00
+# League: Belarusian Premier League
+# Type: FOOTBALL
+# Teams: Slavia Mozyr vs FK Isloch Minsk (0 - 1)
+# Top: Yes
+# BLV: BLV TRẠNG BÉO
+# Quality: HD3
+https://pull.asynccdn.com/live/b671674d51444c6b8a0828e076b0654c/index.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Skjervoy - Bossekop - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 3glrw7hn9j44qdy
@@ -42,10 +76,11 @@ https://live.fblive.eu.cc/live/9459530dfc72ec5798bc5a42ccb03983/playlist.m3u8
 # Date: 2026-06-20T13:00:00
 # League: Norwegian 3.Divisjon
 # Type: FOOTBALL
-# Teams: Skjervoy vs Bossekop (3 - 5)
+# Teams: Skjervoy vs Bossekop (3 - 8)
+# Quality: Source
 https://live.fblive.eu.cc/live/c59e98b9122824e08964fb08365ff9e8/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 FC Saturn Ramenskoe - Metallurg Lipetsk
+#EXTINF:-1 group-title="LIVE",🔴 FC Saturn Ramenskoe - Metallurg Lipetsk - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 965mkyhkwlx0r1g
@@ -54,10 +89,11 @@ https://live.fblive.eu.cc/live/c59e98b9122824e08964fb08365ff9e8/playlist.m3u8
 # Date: 2026-06-20T13:00:00
 # League: RUS D3B
 # Type: FOOTBALL
-# Teams: FC Saturn Ramenskoe vs Metallurg Lipetsk (0 - 0)
+# Teams: FC Saturn Ramenskoe vs Metallurg Lipetsk (1 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/703b2cedc803d69b6d5b37735f559d50/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Al-Abbassieh FC - Al Safa SC
+#EXTINF:-1 group-title="LIVE",🔴 Al-Abbassieh FC - Al Safa SC - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: ednm9whw782yryo
@@ -66,34 +102,11 @@ https://live.fblive.eu.cc/live/703b2cedc803d69b6d5b37735f559d50/playlist.m3u8
 # Date: 2026-06-20T13:00:00
 # League: Lebanese Premier League
 # Type: FOOTBALL
-# Teams: Al-Abbassieh FC vs Al Safa SC (0 - 3)
+# Teams: Al-Abbassieh FC vs Al Safa SC (1 - 4)
+# Quality: Source
 https://live.fblive.eu.cc/live/aeac197c6917cbd4c9e9321abaee7d56/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Kvant Obninsk - SKA Khabarovsk-2
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: n54qllhn356zqvy
-# StreamKey: c5dcc8312f364d2fabbb0f0fa23db5b6
-# CurrentTime: 2026-06-20 20:00:00
-# Date: 2026-06-20T13:00:00
-# League: RUS D3B
-# Type: FOOTBALL
-# Teams: Kvant Obninsk vs SKA Khabarovsk-2 (1 - 2)
-https://live.fblive.eu.cc/live/7a36621451c496035586789f7b07e852/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Zhenis Astana - Irtysh Pavlodar
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: pxwrxlhylg11ryk
-# StreamKey: baf649fc5651417c94fa06f1278fafcd
-# CurrentTime: 2026-06-20 20:00:00
-# Date: 2026-06-20T13:00:00
-# League: Kazakhstan Premier League
-# Type: FOOTBALL
-# Teams: Zhenis Astana vs Irtysh Pavlodar (0 - 0)
-https://live.fblive.eu.cc/live/4e5fde26187dac7ed14d697f3fbc6f7a/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 CS Sagesse - Jwayya
+#EXTINF:-1 group-title="LIVE",🔴 CS Sagesse - Jwayya - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: zp5rzghg5y6dq82
@@ -103,21 +116,10 @@ https://live.fblive.eu.cc/live/4e5fde26187dac7ed14d697f3fbc6f7a/playlist.m3u8
 # League: Lebanese Premier League
 # Type: FOOTBALL
 # Teams: CS Sagesse vs Jwayya (2 - 2)
+# Quality: Source
 https://live.fblive.eu.cc/live/462edd0224902e0f1b3708c2eb0e2b83/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 BFC Daugavpils - Grobina
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: zp5rzghggpy4q82
-# StreamKey: 0129c57e56534fd493c421d8ec3510f5
-# CurrentTime: 2026-06-20 20:00:00
-# Date: 2026-06-20T13:00:00
-# League: Latvian Higher League
-# Type: FOOTBALL
-# Teams: BFC Daugavpils vs Grobina (1 - 0)
-https://live.fblive.eu.cc/live/d186c4443e89a2e435663c4d2c108563/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Kvik Trondheim - SK Herd
+#EXTINF:-1 group-title="LIVE",🔴 Kvik Trondheim - SK Herd - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 23xmvkh62o2jqg8
@@ -126,10 +128,11 @@ https://live.fblive.eu.cc/live/d186c4443e89a2e435663c4d2c108563/playlist.m3u8
 # Date: 2026-06-20T13:30:00
 # League: Norwegian 3.Divisjon
 # Type: FOOTBALL
-# Teams: Kvik Trondheim vs SK Herd (1 - 2)
+# Teams: Kvik Trondheim vs SK Herd (1 - 3)
+# Quality: Source
 https://live.fblive.eu.cc/live/f6eef7e21b755b919626c0f46a0c3951/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Kvik Halden - Sotra
+#EXTINF:-1 group-title="LIVE",🔴 Kvik Halden - Sotra - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 6ypq3nhv7le8md7
@@ -139,9 +142,10 @@ https://live.fblive.eu.cc/live/f6eef7e21b755b919626c0f46a0c3951/playlist.m3u8
 # League: Norwegian 2.Divisjon
 # Type: FOOTBALL
 # Teams: Kvik Halden vs Sotra (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/b3fcb9c737f2dded8ec253bd44187714/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Zenit St Petersburg Women - Ryazan-VDV Women
+#EXTINF:-1 group-title="LIVE",🔴 Zenit St Petersburg Women - Ryazan-VDV Women - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 8yomo4h1yxexq0j
@@ -151,9 +155,10 @@ https://live.fblive.eu.cc/live/b3fcb9c737f2dded8ec253bd44187714/playlist.m3u8
 # League: Russian Women's Premier League
 # Type: FOOTBALL
 # Teams: Zenit St Petersburg Women vs Ryazan-VDV Women (2 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/4d7c1d33ae8a4c486a92c471990a4731/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Spjelkavik - Orkla
+#EXTINF:-1 group-title="LIVE",🔴 Spjelkavik - Orkla - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: ednm9whwo9ojryo
@@ -163,9 +168,10 @@ https://live.fblive.eu.cc/live/4d7c1d33ae8a4c486a92c471990a4731/playlist.m3u8
 # League: Norwegian 3.Divisjon
 # Type: FOOTBALL
 # Teams: Spjelkavik vs Orkla (0 - 1)
+# Quality: Source
 https://live.fblive.eu.cc/live/39130cd228b056303918b55c889c3ea0/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Shakhter Soligorsk - Ostrowitz
+#EXTINF:-1 group-title="LIVE",🔴 Shakhter Soligorsk - Ostrowitz - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 1l4rjnh9gekym7v
@@ -175,9 +181,10 @@ https://live.fblive.eu.cc/live/39130cd228b056303918b55c889c3ea0/playlist.m3u8
 # League: Belarusian First League
 # Type: FOOTBALL
 # Teams: Shakhter Soligorsk vs Ostrowitz (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/ad941c7d8b661829be897401de5fb758/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Druzhba Maikop - FK Chayka 2
+#EXTINF:-1 group-title="LIVE",🔴 Druzhba Maikop - FK Chayka 2 - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 965mkyhk8pjwr1g
@@ -187,9 +194,10 @@ https://live.fblive.eu.cc/live/ad941c7d8b661829be897401de5fb758/playlist.m3u8
 # League: RUS D3B
 # Type: FOOTBALL
 # Teams: Druzhba Maikop vs FK Chayka 2 (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/5cbf206eccf1bb3ae268d7a5f03b5908/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Salyut-Energia Belgorod - Strogino Moscow
+#EXTINF:-1 group-title="LIVE",🔴 Salyut-Energia Belgorod - Strogino Moscow - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: ednm9whwo84oryo
@@ -199,9 +207,10 @@ https://live.fblive.eu.cc/live/5cbf206eccf1bb3ae268d7a5f03b5908/playlist.m3u8
 # League: RUS D3B
 # Type: FOOTBALL
 # Teams: Salyut-Energia Belgorod vs Strogino Moscow (1 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/a55f6866b68befe68433fee3d147b3ff/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Levadia Tallinn - Nomme JK Kalju
+#EXTINF:-1 group-title="LIVE",🔴 Levadia Tallinn - Nomme JK Kalju - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: jw2r09hk2kxxrz8
@@ -211,9 +220,10 @@ https://live.fblive.eu.cc/live/a55f6866b68befe68433fee3d147b3ff/playlist.m3u8
 # League: Estonian Premium Liiga
 # Type: FOOTBALL
 # Teams: Levadia Tallinn vs Nomme JK Kalju (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/c30f8f7cc8996f869671af0410719584/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Londrina PR - Athletic Club
+#EXTINF:-1 group-title="LIVE",🔴 Londrina PR - Athletic Club - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: jw2r09hkkxn5rz8
@@ -223,9 +233,10 @@ https://live.fblive.eu.cc/live/c30f8f7cc8996f869671af0410719584/playlist.m3u8
 # League: Brazilian Serie B
 # Type: FOOTBALL
 # Teams: Londrina PR vs Athletic Club (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/4b58db894d62247c015cc0e0306a5d0f/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Spartak Nalchik - Luhansk
+#EXTINF:-1 group-title="LIVE",🔴 Spartak Nalchik - Luhansk - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: k82rekhg2l5drep
@@ -235,9 +246,10 @@ https://live.fblive.eu.cc/live/4b58db894d62247c015cc0e0306a5d0f/playlist.m3u8
 # League: RUS D3B
 # Type: FOOTBALL
 # Teams: Spartak Nalchik vs Luhansk (2 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/0459490b462f6f1482fb95cf7ae77110/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 Dynamo Kyiv - Slavia Praha
+#EXTINF:-1 group-title="LIVE",🔴 Dynamo Kyiv - Slavia Praha - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: l5ergph4jwo2r8k
@@ -247,9 +259,23 @@ https://live.fblive.eu.cc/live/0459490b462f6f1482fb95cf7ae77110/playlist.m3u8
 # League: International Club Friendly
 # Type: FOOTBALL
 # Teams: Dynamo Kyiv vs Slavia Praha (0 - 1)
+# Quality: Source
 https://live.fblive.eu.cc/live/14c9c14a577e6525c7e20b5fac531dd9/playlist.m3u8
 
-#EXTINF:-1 group-title="LIVE",🔴 FC Rodina-M Moscow - Zenit Penza
+#EXTINF:-1 group-title="LIVE",🔴 FK Angusht Nazran - FK Rostov-2 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: zp5rzghg38n6q82
+# StreamKey: 165436dcb2ab4e668a179b34b6a843eb
+# CurrentTime: 2026-06-20 21:00:00
+# Date: 2026-06-20T14:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: FK Angusht Nazran vs FK Rostov-2 (1 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/b71c82aecf4f8ae025d93a79570f64da/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 FC Rodina-M Moscow - Zenit Penza - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: zp5rzghgoy95q82
@@ -259,12 +285,26 @@ https://live.fblive.eu.cc/live/14c9c14a577e6525c7e20b5fac531dd9/playlist.m3u8
 # League: RUS D3B
 # Type: FOOTBALL
 # Teams: FC Rodina-M Moscow vs Zenit Penza (3 - 1)
+# Quality: Source
 https://live.fblive.eu.cc/live/8ff2ce5ebc51d546f7370edad5101485/playlist.m3u8
 
+#EXTINF:-1 group-title="LIVE",🔴 FK Astrakhan - FC Sevastopol - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh9nv84m7v
+# StreamKey: 755148192cde45f2952ffacb3bad9b70
+# CurrentTime: 2026-06-20 21:30:00
+# Date: 2026-06-20T14:30:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: FK Astrakhan vs FC Sevastopol (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/2f752410ff67c2db3797189cd7dcb6a6/playlist.m3u8
 
-# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (86 trận) ===
 
-#EXTINF:-1 group-title="UPCOMING",Rotor Volgograd-2 - FK Shumbrat Saransk
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (88 trận) ===
+
+#EXTINF:-1 group-title="UPCOMING",Rotor Volgograd-2 - FK Shumbrat Saransk - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 1l4rjnh9gy09m7v
@@ -274,6 +314,7 @@ https://live.fblive.eu.cc/live/8ff2ce5ebc51d546f7370edad5101485/playlist.m3u8
 # League: RUS D3B
 # Type: FOOTBALL
 # Teams: Rotor Volgograd-2 vs FK Shumbrat Saransk (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/892d5d0ff55984a87a1030cf66f5a6ca/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",Jeunesse Sportive Massira - Racing Casablanca
@@ -298,7 +339,7 @@ https://live.fblive.eu.cc/live/892d5d0ff55984a87a1030cf66f5a6ca/playlist.m3u8
 # Type: FOOTBALL
 # Teams: JS Pobe vs Association Sportive de la Vallée de l'Ouémé FC (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",FK Oryol - FC Arsenal-2 Tula
+#EXTINF:-1 group-title="UPCOMING",FK Oryol - FC Arsenal-2 Tula - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 23xmvkh62vjpqg8
@@ -308,6 +349,7 @@ https://live.fblive.eu.cc/live/892d5d0ff55984a87a1030cf66f5a6ca/playlist.m3u8
 # League: RUS D3B
 # Type: FOOTBALL
 # Teams: FK Oryol vs FC Arsenal-2 Tula (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/4521eb8ad6b2c3b85b0e366ebc15e9f8/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",CS FC Petrolul ZF1948 Berca - Pescarusul Sarichioi
@@ -431,7 +473,7 @@ https://live.fblive.eu.cc/live/4521eb8ad6b2c3b85b0e366ebc15e9f8/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Beskid Andrychow vs Moravia Morawica (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",Ordabasy - FK Kaspyi Aktau
+#EXTINF:-1 group-title="UPCOMING",Ordabasy - FK Kaspyi Aktau - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 6ypq3nhvk050md7
@@ -441,6 +483,7 @@ https://live.fblive.eu.cc/live/4521eb8ad6b2c3b85b0e366ebc15e9f8/playlist.m3u8
 # League: Kazakhstan Premier League
 # Type: FOOTBALL
 # Teams: Ordabasy vs FK Kaspyi Aktau (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/c2193183a5e2223335ebdadcc6baf8c2/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",FK Auda (W) - Rigas Futbola Skola Women
@@ -487,7 +530,7 @@ https://live.fblive.eu.cc/live/c2193183a5e2223335ebdadcc6baf8c2/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Shelbourne Women vs Sligo Rovers Women (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",Kaisar Kyzylorda - Ulytau Zhezkazgan
+#EXTINF:-1 group-title="UPCOMING",Kaisar Kyzylorda - Ulytau Zhezkazgan - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: dj2ryohl7kkwq1z
@@ -497,6 +540,7 @@ https://live.fblive.eu.cc/live/c2193183a5e2223335ebdadcc6baf8c2/playlist.m3u8
 # League: Kazakhstan Premier League
 # Type: FOOTBALL
 # Teams: Kaisar Kyzylorda vs Ulytau Zhezkazgan (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/f7239a4bcaf92f8499d53e751cabc0b4/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",Union Sportive Boujaad - Wydad Fes
@@ -719,17 +763,6 @@ https://live.fblive.eu.cc/live/f7239a4bcaf92f8499d53e751cabc0b4/playlist.m3u8
 # Type: FOOTBALL
 # Teams: CD Espuce Women vs Emelec (w) (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",Union Abong-Mbang - Les Astres FC
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: y0or5jh8w2pvqwz
-# StreamKey: 6bec32d116e34c1c911285993f12500c
-# CurrentTime: 2026-06-20 22:00:00
-# Date: 2026-06-20T15:00:00
-# League: Cameroon Elite two
-# Type: FOOTBALL
-# Teams: Union Abong-Mbang vs Les Astres FC (0 - 0)
-
 #EXTINF:-1 group-title="UPCOMING",Chabab Atlas Khenifra - KAC de Kenitra
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
@@ -774,7 +807,7 @@ https://live.fblive.eu.cc/live/f7239a4bcaf92f8499d53e751cabc0b4/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Agnita vs ASC Corona Brasov (0 - 0)
 
-#EXTINF:-1 group-title="TRẠNG TÍ",FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ]
+#EXTINF:-1 group-title="TRẠNG TÍ",FK Vitebsk - Dinamo Brest [BLV TRẠNG TÍ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 4wyrn4h661lyq86
@@ -786,6 +819,7 @@ https://live.fblive.eu.cc/live/f7239a4bcaf92f8499d53e751cabc0b4/playlist.m3u8
 # Teams: FK Vitebsk vs Dinamo Brest (0 - 0)
 # Top: Yes
 # BLV: BLV TRẠNG TÍ
+# Quality: Source
 https://live.fblive.eu.cc/live/a4903deed60eaed1c96c5606983d78f7/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",FC Renens - Lausanne Sports
@@ -832,7 +866,7 @@ https://live.fblive.eu.cc/live/a4903deed60eaed1c96c5606983d78f7/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Necaxa vs Atletico Morelia (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",Banga Gargzdai - FK Zalgiris Vilnius
+#EXTINF:-1 group-title="UPCOMING",Banga Gargzdai - FK Zalgiris Vilnius - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: n54qllhnn32zqvy
@@ -842,6 +876,7 @@ https://live.fblive.eu.cc/live/a4903deed60eaed1c96c5606983d78f7/playlist.m3u8
 # League: Lithuanian A Lyga 
 # Type: FOOTBALL
 # Teams: Banga Gargzdai vs FK Zalgiris Vilnius (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/86be3973c03be4ceb2d0c2d58cafcb7d/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",FC Dunav Ruse - Lokomotiv Gorna Oryahovitsa
@@ -866,7 +901,7 @@ https://live.fblive.eu.cc/live/86be3973c03be4ceb2d0c2d58cafcb7d/playlist.m3u8
 # Type: FOOTBALL
 # Teams: FC Ballkani vs Egnatia (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",BFA Vilnius - Hegelmann Litauen II
+#EXTINF:-1 group-title="UPCOMING",BFA Vilnius - Hegelmann Litauen II - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 1l4rjnh9n389m7v
@@ -876,6 +911,7 @@ https://live.fblive.eu.cc/live/86be3973c03be4ceb2d0c2d58cafcb7d/playlist.m3u8
 # League: Lithuanian I Lyga
 # Type: FOOTBALL
 # Teams: BFA Vilnius vs Hegelmann Litauen II (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/75d56f40793d15267fbde435e3d0841a/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",Lautaro de Buin - CD Constitucion Unido
@@ -955,7 +991,7 @@ https://live.fblive.eu.cc/live/75d56f40793d15267fbde435e3d0841a/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Haukar Hafnarfjordur vs Vikingur Olafsvik (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",Centro Atletico Fenix - Oriental
+#EXTINF:-1 group-title="UPCOMING",Centro Atletico Fenix - Oriental - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: ednm9whwlg14ryo
@@ -965,6 +1001,7 @@ https://live.fblive.eu.cc/live/75d56f40793d15267fbde435e3d0841a/playlist.m3u8
 # League: Uruguay Segunda League
 # Type: FOOTBALL
 # Teams: Centro Atletico Fenix vs Oriental (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/bd634d5dbd2b08be6737bc769745036c/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",Chertanovo Moscow Women - Lokomotiv Moscow Women
@@ -989,7 +1026,7 @@ https://live.fblive.eu.cc/live/bd634d5dbd2b08be6737bc769745036c/playlist.m3u8
 # Type: FOOTBALL
 # Teams: City Lads FC Women vs JVW FC Women (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",FC Elva Women - Paide Linnameeskond (W)
+#EXTINF:-1 group-title="UPCOMING",FC Elva Women - Paide Linnameeskond (W) - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: n54qllhn448lqvy
@@ -999,6 +1036,7 @@ https://live.fblive.eu.cc/live/bd634d5dbd2b08be6737bc769745036c/playlist.m3u8
 # League: Estonian Women's Meistri Liiga
 # Type: FOOTBALL
 # Teams: FC Elva Women vs Paide Linnameeskond (W) (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/b8f65682640d2c3202774bb961a19827/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",Augnablik Kopavogur - KF Fjallabyggdar
@@ -1056,7 +1094,7 @@ https://live.fblive.eu.cc/live/b8f65682640d2c3202774bb961a19827/playlist.m3u8
 # Type: FOOTBALL
 # Teams: HB Torshavn 2 vs FC Hoyvik (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",Coquimbo Unido - Municipal Iquique
+#EXTINF:-1 group-title="UPCOMING",Coquimbo Unido - Municipal Iquique - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 4wyrn4h617gxq86
@@ -1066,6 +1104,7 @@ https://live.fblive.eu.cc/live/b8f65682640d2c3202774bb961a19827/playlist.m3u8
 # League: Chilean Cup
 # Type: FOOTBALL
 # Teams: Coquimbo Unido vs Municipal Iquique (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/7aad553c489959d27a6adb0b12318a01/playlist.m3u8
 
 #EXTINF:-1 group-title="UPCOMING",Celta Vigo B - Ponferradina
@@ -1079,7 +1118,7 @@ https://live.fblive.eu.cc/live/7aad553c489959d27a6adb0b12318a01/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Celta Vigo B vs Ponferradina (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",Palestino - CD Magallanes
+#EXTINF:-1 group-title="UPCOMING",Palestino - CD Magallanes - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: pxwrxlhyw264ryk
@@ -1089,9 +1128,10 @@ https://live.fblive.eu.cc/live/7aad553c489959d27a6adb0b12318a01/playlist.m3u8
 # League: Chilean Cup
 # Type: FOOTBALL
 # Teams: Palestino vs CD Magallanes (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/3db9ba7d8f8ef263448e7a315811a47b/playlist.m3u8
 
-#EXTINF:-1 group-title="TRẠNG PHỆ",🔥 Netherlands - Sweden [BLV TRẠNG PHỆ]
+#EXTINF:-1 group-title="TRẠNG PHỆ",🔥 Netherlands - Sweden [BLV TRẠNG PHỆ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: x7lm7phj72vxm2w
@@ -1104,6 +1144,7 @@ https://live.fblive.eu.cc/live/3db9ba7d8f8ef263448e7a315811a47b/playlist.m3u8
 # Hot: Yes
 # Top: Yes
 # BLV: BLV TRẠNG PHỆ
+# Quality: Source
 https://live.fblive.eu.cc/live/f6bb2fd8915472032f48f084e76bb3d4/playlist.m3u8
 
 #EXTINF:-1 group-title="TRẠNG QUỶ",Netherlands - Sweden [BLV TRẠNG QUỶ]
@@ -1187,7 +1228,7 @@ https://live.fblive.eu.cc/live/f6bb2fd8915472032f48f084e76bb3d4/playlist.m3u8
 # Type: FOOTBALL
 # Teams: CD Arnedo vs Club Deportivo Tropezon (0 - 0)
 
-#EXTINF:-1 group-title="UPCOMING",EB Streymur - Skala Itrottarfelag
+#EXTINF:-1 group-title="UPCOMING",EB Streymur - Skala Itrottarfelag - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 3glrw7hn3v3vqdy
@@ -1197,9 +1238,10 @@ https://live.fblive.eu.cc/live/f6bb2fd8915472032f48f084e76bb3d4/playlist.m3u8
 # League: Faroe Islands Premier League
 # Type: FOOTBALL
 # Teams: EB Streymur vs Skala Itrottarfelag (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/1613cc9d751783d3faf3d64a7bc83a6e/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",FC Gomel - Dnepr Mogilev
+#EXTINF:-1 group-title="UPCOMING",FC Gomel - Dnepr Mogilev - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 965mkyhkk9o5r1g
@@ -1209,9 +1251,10 @@ https://live.fblive.eu.cc/live/1613cc9d751783d3faf3d64a7bc83a6e/playlist.m3u8
 # League: Belarusian Premier League
 # Type: FOOTBALL
 # Teams: FC Gomel vs Dnepr Mogilev (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/d3f00e686314551188d607769d5b8f30/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Deportivo Laferrere - Defensores Unidos
+#EXTINF:-1 group-title="UPCOMING",Deportivo Laferrere - Defensores Unidos - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: dn1m1ghl2zk4moe
@@ -1221,9 +1264,10 @@ https://live.fblive.eu.cc/live/d3f00e686314551188d607769d5b8f30/playlist.m3u8
 # League: Argentine Group B Tebolidun League Manchester
 # Type: FOOTBALL
 # Teams: Deportivo Laferrere vs Defensores Unidos (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/6aa03fd13a22fd17cd63af5b66ecce1a/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",UAI Urquiza - San Martin Burzaco
+#EXTINF:-1 group-title="UPCOMING",UAI Urquiza - San Martin Burzaco - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: jw2r09hk2v7jrz8
@@ -1233,7 +1277,41 @@ https://live.fblive.eu.cc/live/6aa03fd13a22fd17cd63af5b66ecce1a/playlist.m3u8
 # League: Argentine Group B Tebolidun League Manchester
 # Type: FOOTBALL
 # Teams: UAI Urquiza vs San Martin Burzaco (0 - 0)
+# Quality: Source
 https://live.fblive.eu.cc/live/0f6fd7089a898e9ee1c669dc3952c15d/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Olaria - Cabofriense(RJ)
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh9p3ovm7v
+# StreamKey: 43825944cfd644efaafa2a1cc18a9fa3
+# CurrentTime: 2026-06-21 00:45:00
+# Date: 2026-06-20T17:45:00
+# League: Brazilian Campeonato Carioca 2
+# Type: FOOTBALL
+# Teams: Olaria vs Cabofriense(RJ) (0 - 0)
+
+#EXTINF:-1 group-title="UPCOMING",Perolas Negras - Americano RJ
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghnd02om0v
+# StreamKey: f6af4e8447ee4754a3fb7bbefd05741a
+# CurrentTime: 2026-06-21 00:45:00
+# Date: 2026-06-20T17:45:00
+# League: Brazilian Campeonato Carioca 2
+# Type: FOOTBALL
+# Teams: Perolas Negras vs Americano RJ (0 - 0)
+
+#EXTINF:-1 group-title="UPCOMING",Sao Goncalo - Bonsucesso
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: ednm9whwldnkryo
+# StreamKey: 89cb12f950a14239967ef92ca76b3758
+# CurrentTime: 2026-06-21 00:45:00
+# Date: 2026-06-20T17:45:00
+# League: Brazilian Campeonato Carioca 2
+# Type: FOOTBALL
+# Teams: Sao Goncalo vs Bonsucesso (0 - 0)
 
 #EXTINF:-1 group-title="Tamquoc" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs Irtysh - 20:00 [BLV A Soi - FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
