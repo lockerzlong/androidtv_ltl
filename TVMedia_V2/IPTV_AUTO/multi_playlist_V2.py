@@ -1,23 +1,8 @@
 import requests
+import cloudscraper
 import json
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-
-# ── Bypass Cloudflare: dùng curl_cffi ──
-try:
-    from curl_cffi import requests as cf_requests
-    HAS_CURL_FFI = True
-    print("✅ curl_cffi available")
-except ImportError:
-    HAS_CURL_FFI = False
-    print("❌ curl_cffi not available")
-    try:
-        import cloudscraper
-        HAS_CLOUDSCRAPER = True
-        print("✅ cloudscraper available")
-    except ImportError:
-        HAS_CLOUDSCRAPER = False
-        print("❌ cloudscraper not available")
 
 # 📂 Đặt thư mục lưu file đầu ra
 OUTPUT_DIR = Path("output")
@@ -46,18 +31,28 @@ TIEULAM_POST_HEADERS = {
     "Accept": "application/json, text/plain, */*",
     "Origin": "https://sv1.tieulamlive.org",
     "Referer": "https://sv1.tieulamlive.org/trang-chu",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept-Encoding": "gzip, deflate, br",
     "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Sec-Ch-Ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "Connection": "keep-alive",
 }
 
 TIEULAM_GET_HEADERS = {
     "Accept": "application/json, text/plain, */*",
     "Origin": "https://sv1.tieulamlive.org",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept-Encoding": "gzip, deflate, br",
     "Accept-Language": "en-US,en;q=0.9",
     "Connection": "keep-alive",
+    "Cache-Control": "no-cache",
 }
 
 def fetch_json(url):
@@ -107,59 +102,33 @@ def _tieulam_build_query(page=1, limit=200):
     }
 
 def _tieulam_http_post(payload, timeout=30):
-    """POST với curl_cffi hoặc cloudscraper"""
+    """POST với cloudscraper"""
     try:
-        if HAS_CURL_FFI:
-            # Dùng curl_cffi
-            for impersonate in ["chrome120", "chrome119", "chrome118"]:
-                try:
-                    print(f"   🔄 Thử fingerprint: {impersonate}")
-                    r = cf_requests.post(
-                        TIEULAM_API_URL,
-                        json=payload,
-                        headers=TIEULAM_POST_HEADERS,
-                        timeout=timeout,
-                        impersonate=impersonate,
-                        verify=False
-                    )
-                    print(f"   📡 POST → {r.status_code}")
-                    if r.status_code == 200:
-                        return json.loads(r.text)
-                    elif r.status_code == 403:
-                        print(f"   ❌ 403 với {impersonate}, thử tiếp...")
-                        continue
-                    else:
-                        print(f"   ❌ {r.status_code}: {r.text[:200]}")
-                        return None
-                except Exception as e:
-                    print(f"   ❌ Lỗi với {impersonate}: {e}")
-                    continue
-            return None
-            
-        elif HAS_CLOUDSCRAPER:
-            # Dùng cloudscraper
-            print("   🔄 Dùng cloudscraper")
-            scraper = cloudscraper.create_scraper(
-                browser={
-                    'browser': 'chrome',
-                    'platform': 'windows',
-                    'mobile': False
+        print("   🔄 Dùng cloudscraper")
+        
+        scraper = cloudscraper.create_scraper(
+            browser={
+                'browser': 'chrome',
+                'platform': 'windows',
+                'mobile': False,
+                'custom': {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
                 }
-            )
-            r = scraper.post(
-                TIEULAM_API_URL,
-                json=payload,
-                headers=TIEULAM_POST_HEADERS,
-                timeout=timeout
-            )
-            print(f"   📡 POST → {r.status_code}")
-            if r.status_code == 200:
-                return r.json()
-            else:
-                print(f"   ❌ {r.status_code}: {r.text[:200]}")
-                return None
+            },
+            delay=1
+        )
+        
+        r = scraper.post(
+            TIEULAM_API_URL,
+            json=payload,
+            headers=TIEULAM_POST_HEADERS,
+            timeout=timeout
+        )
+        print(f"   📡 POST → {r.status_code}")
+        if r.status_code == 200:
+            return r.json()
         else:
-            print("   ❌ Không có thư viện bypass Cloudflare")
+            print(f"   ❌ {r.status_code}: {r.text[:200]}")
             return None
             
     except Exception as e:
@@ -167,61 +136,30 @@ def _tieulam_http_post(payload, timeout=30):
         return None
 
 def _tieulam_http_get(url, referer=None, timeout=15):
-    """GET với curl_cffi hoặc cloudscraper"""
+    """GET với cloudscraper"""
     try:
         headers = dict(TIEULAM_GET_HEADERS)
         if referer:
             headers["Referer"] = referer
-            
-        if HAS_CURL_FFI:
-            # Dùng curl_cffi
-            for impersonate in ["chrome120", "chrome119", "chrome118"]:
-                try:
-                    print(f"   🔄 Thử fingerprint: {impersonate}")
-                    r = cf_requests.get(
-                        url,
-                        headers=headers,
-                        timeout=timeout,
-                        impersonate=impersonate,
-                        verify=False
-                    )
-                    print(f"   📡 GET → {r.status_code}")
-                    if r.status_code == 200:
-                        return json.loads(r.text)
-                    elif r.status_code == 403:
-                        print(f"   ❌ 403 với {impersonate}, thử tiếp...")
-                        continue
-                    else:
-                        print(f"   ❌ {r.status_code}: {r.text[:200]}")
-                        return None
-                except Exception as e:
-                    print(f"   ❌ Lỗi với {impersonate}: {e}")
-                    continue
-            return None
-            
-        elif HAS_CLOUDSCRAPER:
-            # Dùng cloudscraper
-            print("   🔄 Dùng cloudscraper")
-            scraper = cloudscraper.create_scraper(
-                browser={
-                    'browser': 'chrome',
-                    'platform': 'windows',
-                    'mobile': False
-                }
-            )
-            r = scraper.get(
-                url,
-                headers=headers,
-                timeout=timeout
-            )
-            print(f"   📡 GET → {r.status_code}")
-            if r.status_code == 200:
-                return r.json()
-            else:
-                print(f"   ❌ {r.status_code}: {r.text[:200]}")
-                return None
+        
+        scraper = cloudscraper.create_scraper(
+            browser={
+                'browser': 'chrome',
+                'platform': 'windows',
+                'mobile': False
+            }
+        )
+        
+        r = scraper.get(
+            url,
+            headers=headers,
+            timeout=timeout
+        )
+        print(f"   📡 GET → {r.status_code}")
+        if r.status_code == 200:
+            return r.json()
         else:
-            print("   ❌ Không có thư viện bypass Cloudflare")
+            print(f"   ❌ {r.status_code}: {r.text[:200]}")
             return None
             
     except Exception as e:
