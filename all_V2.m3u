@@ -21,7 +21,7 @@
 # Top: Yes
 # BLV: BLV TRẠNG TÍ
 # Quality: Source
-https://live.fblive.eu.cc/live/a4903deed60eaed1c96c5606983d78f7/playlist.m3u8?_=1781969996573
+https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 
 #EXTINF:-1 group-title="LIVE",🔴 Shakhter Soligorsk - Ostrowitz - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
@@ -35,7 +35,7 @@ https://live.fblive.eu.cc/live/a4903deed60eaed1c96c5606983d78f7/playlist.m3u8?_=
 # Type: FOOTBALL
 # Teams: Shakhter Soligorsk vs Ostrowitz (4 - 1)
 # Quality: Source
-https://live.fblive.eu.cc/live/ad941c7d8b661829be897401de5fb758/playlist.m3u8?_=1781969996577
+https://pull.asynccdn.com/live/900232d055494f5397fe9cd1950f3b7f/index.m3u8
 
 #EXTINF:-1 group-title="LIVE",🔴 Druzhba Maikop - FK Chayka 2 - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
