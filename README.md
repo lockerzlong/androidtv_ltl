@@ -1,6 +1,6 @@
 # IPTV Playlists
 
-📅 Last updated: 2026-06-20 22:50:42 UTC
+📅 Last updated: 2026-06-20 22:56:38 UTC
 📊 Total links: 211
 
 ## Available playlists
