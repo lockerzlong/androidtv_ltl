@@ -37,11 +37,44 @@ TIEULAM_STREAM_DOMAINS = [
     "https://live.secufun.xyz/live/",
     "https://sv1.tieulamlive.org/live/",
 ]
-TIEULAM_HEADERS = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-    "User-Agent": "Mozilla/5.0",
-}
+
+# Danh sách headers thử lần lượt cho đến khi thành công
+TIEULAM_HEADER_CANDIDATES = [
+    # 1. okhttp — thường dùng trong Android Java (Volley/OkHttp)
+    {
+        "Content-Type": "application/json; charset=utf-8",
+        "Accept-Encoding": "gzip",
+        "User-Agent": "okhttp/4.12.0",
+    },
+    # 2. Web browser với Referer tieulamlive.org
+    {
+        "Content-Type": "application/json",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Origin": "https://tieulamlive.org",
+        "Referer": "https://tieulamlive.org/",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+    },
+    # 3. Referer domain tlap
+    {
+        "Content-Type": "application/json",
+        "Accept": "application/json, */*",
+        "Origin": "https://tlap17062026.com",
+        "Referer": "https://tlap17062026.com/",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36",
+    },
+    # 4. Android WebView
+    {
+        "Content-Type": "application/json",
+        "Accept": "*/*",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36",
+        "X-Requested-With": "com.androidtv.getm3u",
+    },
+    # 5. Bare minimum
+    {
+        "Content-Type": "application/json",
+    },
+]
 
 
 def fetch_json(url):
@@ -117,21 +150,45 @@ def _tieulam_build_query(page=1, limit=200):
 
 
 def _tieulam_http_post(payload, timeout=20):
-    try:
-        r = requests.post(TIEULAM_API_URL, json=payload, headers=TIEULAM_HEADERS, timeout=timeout)
-        r.raise_for_status()
-        return r.json()
-    except Exception as e:
-        print(f"❌ POST Tieulam lỗi: {e}")
-        return None
+    """Thử lần lượt từng bộ headers cho đến khi thành công."""
+    session = requests.Session()
+    for i, headers in enumerate(TIEULAM_HEADER_CANDIDATES):
+        try:
+            r = session.post(TIEULAM_API_URL, json=payload, headers=headers, timeout=timeout)
+            if r.status_code == 200:
+                print(f"   ✅ Headers [{i+1}] thành công")
+                return r.json()
+            else:
+                print(f"   ⚠️ Headers [{i+1}] → {r.status_code}: {r.text[:120]}")
+        except Exception as e:
+            print(f"   ❌ Headers [{i+1}] → Exception: {e}")
+    print("❌ Tất cả headers đều thất bại cho POST Tieulam")
+    return None
+
+
+def _tieulam_http_get(url, timeout=10):
+    """GET với retry headers."""
+    for headers in TIEULAM_HEADER_CANDIDATES:
+        try:
+            r = requests.get(url, headers=headers, timeout=timeout)
+            if r.status_code == 200:
+                return r.json()
+            elif r.status_code == 404:
+                return None
+        except Exception:
+            continue
+    return None
 
 
 def _tieulam_check_url(url, timeout=5):
-    try:
-        r = requests.head(url, headers=TIEULAM_HEADERS, timeout=timeout, allow_redirects=True)
-        return r.status_code < 400
-    except Exception:
-        return False
+    for headers in TIEULAM_HEADER_CANDIDATES[:2]:
+        try:
+            r = requests.head(url, headers=headers, timeout=timeout, allow_redirects=True)
+            if r.status_code < 400:
+                return True
+        except Exception:
+            continue
+    return False
 
 
 def _tieulam_fetch_all_pages(limit=200, max_pages=20):
@@ -201,12 +258,9 @@ def _tieulam_parse_match(raw, idx=0):
 def _tieulam_fetch_detail_links(match_id, match_title):
     """Gọi API detail để lấy hd_1, hd_2, hd_3, source_live..."""
     url = TIEULAM_DETAIL_URL.format(match_id=match_id)
-    try:
-        r = requests.get(url, headers=TIEULAM_HEADERS, timeout=10)
-        r.raise_for_status()
-        data = r.json()
-    except Exception as e:
-        print(f"   ❌ Không lấy được detail {match_title}: {e}")
+    data = _tieulam_http_get(url)
+    if not data:
+        print(f"   ❌ Không lấy được detail {match_title}")
         return []
 
     match_obj = data.get("data") or data
