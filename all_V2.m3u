@@ -1,559 +1,73 @@
 #EXTM3U
 # Playlist from TieuLamLive
-# Total: 55 matches
-# 🔴 LIVE: 12
-# ⏳ UPCOMING: 43
-# Updated: 2026-06-21 11:56:01
+# Total: 41 matches
+# 🔴 LIVE: 15
+# ⏳ UPCOMING: 26
+# Updated: 2026-06-21 14:42:31
 
-# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (12 trận) ===
+# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (15 trận) ===
 
-#EXTINF:-1 group-title="TRẠNG QUỶ",🔥 🔴 Tunisia - Japan [BLV TRẠNG QUỶ] - HD1
+#EXTINF:-1 group-title="TRẠNG TÈO",🔴 Queensland Lions SC - Rochedale Rovers [BLV TRẠNG TÈO] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: c6c841a9ddd54be4890616ea7b2a5d80
-# StreamKey: 8630efa974004061b0f7bc22fcd90e2f
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
+# ID: 6ypq3nhvnn3zmd7
+# StreamKey: 68c6822563d145da951483cb7b4672df
+# CurrentTime: 2026-06-21 14:00:00
+# Date: 2026-06-21T07:00:00
+# League: Australia National Premier Leagues Queensland
 # Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 0)
-# Hot: Yes
+# Teams: Queensland Lions SC vs Rochedale Rovers (1 - 0)
 # Top: Yes
-# BLV: BLV TRẠNG QUỶ
-# Quality: HD1
-https://pull.asynccdn.com/live/8630efa974004061b0f7bc22fcd90e2f/index.m3u8
+# BLV: BLV TRẠNG TÈO
+# Quality: Source
+https://live.fblive.eu.cc/live/078a61f179a9886b5aa70ad9f92c4059/playlist.m3u8
 
-#EXTINF:-1 group-title="TRẠNG QUỶ",🔥 🔴 Tunisia - Japan [BLV TRẠNG QUỶ] - HD2
+#EXTINF:-1 group-title="TRẠNG TÈO",🔴 Queensland Lions SC - Rochedale Rovers [BLV TRẠNG TÈO] - HD1
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: c6c841a9ddd54be4890616ea7b2a5d80
-# StreamKey: 8630efa974004061b0f7bc22fcd90e2f
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
+# ID: 6ypq3nhvnn3zmd7
+# StreamKey: 68c6822563d145da951483cb7b4672df
+# CurrentTime: 2026-06-21 14:00:00
+# Date: 2026-06-21T07:00:00
+# League: Australia National Premier Leagues Queensland
 # Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 0)
-# Hot: Yes
-# Top: Yes
-# BLV: BLV TRẠNG QUỶ
-# Quality: HD2
-https://pull.asynccdn.com/live/8630efa974004061b0f7bc22fcd90e2f/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG QUỶ",🔥 🔴 Tunisia - Japan [BLV TRẠNG QUỶ] - HD3
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: c6c841a9ddd54be4890616ea7b2a5d80
-# StreamKey: 8630efa974004061b0f7bc22fcd90e2f
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 0)
-# Hot: Yes
-# Top: Yes
-# BLV: BLV TRẠNG QUỶ
-# Quality: HD3
-https://pull.asynccdn.com/live/8630efa974004061b0f7bc22fcd90e2f/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG TÈO",🔴 Tunisia - Japan [BLV TRẠNG TÈO] - HD1
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: beba2d4142b2413fa7b577ff5e0f63c2
-# StreamKey: 5f8cb8d3c24f4947ba955dead259953f
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 0)
+# Teams: Queensland Lions SC vs Rochedale Rovers (1 - 0)
 # Top: Yes
 # BLV: BLV TRẠNG TÈO
 # Quality: HD1
-https://pull.asynccdn.com/live/5f8cb8d3c24f4947ba955dead259953f/index.m3u8
+https://pull.asynccdn.com/live/68c6822563d145da951483cb7b4672df/index.m3u8
 
-#EXTINF:-1 group-title="TRẠNG TÈO",🔴 Tunisia - Japan [BLV TRẠNG TÈO] - HD2
+#EXTINF:-1 group-title="TRẠNG TÈO",🔴 Queensland Lions SC - Rochedale Rovers [BLV TRẠNG TÈO] - HD2
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: beba2d4142b2413fa7b577ff5e0f63c2
-# StreamKey: 5f8cb8d3c24f4947ba955dead259953f
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
+# ID: 6ypq3nhvnn3zmd7
+# StreamKey: 68c6822563d145da951483cb7b4672df
+# CurrentTime: 2026-06-21 14:00:00
+# Date: 2026-06-21T07:00:00
+# League: Australia National Premier Leagues Queensland
 # Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 0)
+# Teams: Queensland Lions SC vs Rochedale Rovers (1 - 0)
 # Top: Yes
 # BLV: BLV TRẠNG TÈO
 # Quality: HD2
-https://pull.asynccdn.com/live/5f8cb8d3c24f4947ba955dead259953f/index.m3u8
+https://pull.asynccdn.com/live/68c6822563d145da951483cb7b4672df/index.m3u8
 
-#EXTINF:-1 group-title="TRẠNG TÈO",🔴 Tunisia - Japan [BLV TRẠNG TÈO] - HD3
+#EXTINF:-1 group-title="TRẠNG TÈO",🔴 Queensland Lions SC - Rochedale Rovers [BLV TRẠNG TÈO] - HD3
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: beba2d4142b2413fa7b577ff5e0f63c2
-# StreamKey: 5f8cb8d3c24f4947ba955dead259953f
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
+# ID: 6ypq3nhvnn3zmd7
+# StreamKey: 68c6822563d145da951483cb7b4672df
+# CurrentTime: 2026-06-21 14:00:00
+# Date: 2026-06-21T07:00:00
+# League: Australia National Premier Leagues Queensland
 # Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 0)
+# Teams: Queensland Lions SC vs Rochedale Rovers (1 - 0)
 # Top: Yes
 # BLV: BLV TRẠNG TÈO
 # Quality: HD3
-https://pull.asynccdn.com/live/5f8cb8d3c24f4947ba955dead259953f/index.m3u8
+https://pull.asynccdn.com/live/68c6822563d145da951483cb7b4672df/index.m3u8
 
-#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Tunisia - Japan [BLV TRẠNG NGỐ] - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: dn1m1ghl0gdemoe
-# StreamKey: 7eff798915ba4caf8818f5261e1f6347
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 2)
-# Top: Yes
-# BLV: BLV TRẠNG NGỐ
-# Quality: Source
-https://live.fblive.eu.cc/live/ee6fcae15294efa98395c4062b53fbe5/playlist.m3u8
-
-#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Tunisia - Japan [BLV TRẠNG NGỐ] - HD1
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: dn1m1ghl0gdemoe
-# StreamKey: 7eff798915ba4caf8818f5261e1f6347
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 2)
-# Top: Yes
-# BLV: BLV TRẠNG NGỐ
-# Quality: HD1
-https://pull.asynccdn.com/live/7eff798915ba4caf8818f5261e1f6347/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Tunisia - Japan [BLV TRẠNG NGỐ] - HD2
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: dn1m1ghl0gdemoe
-# StreamKey: 7eff798915ba4caf8818f5261e1f6347
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 2)
-# Top: Yes
-# BLV: BLV TRẠNG NGỐ
-# Quality: HD2
-https://pull.asynccdn.com/live/7eff798915ba4caf8818f5261e1f6347/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Tunisia - Japan [BLV TRẠNG NGỐ] - HD3
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: dn1m1ghl0gdemoe
-# StreamKey: 7eff798915ba4caf8818f5261e1f6347
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Tunisia vs Japan (0 - 2)
-# Top: Yes
-# BLV: BLV TRẠNG NGỐ
-# Quality: HD3
-https://pull.asynccdn.com/live/7eff798915ba4caf8818f5261e1f6347/index.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Maitland - Newcastle Olympic - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: vjxm8ghee3o1r6o
-# StreamKey: 29f82b0c99c0471cbb60af9b87def884
-# CurrentTime: 2026-06-21 10:00:00
-# Date: 2026-06-21T03:00:00
-# League: Australia Northern New South Wales Premier League
-# Type: FOOTBALL
-# Teams: Maitland vs Newcastle Olympic (1 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/a588046d091a9a92a117cd5eb43a3fd6/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Sacramento Republic FC - New Mexico United - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: jw2r09hk6k3wrz8
-# StreamKey: 9b1c16ba9b8a439480049b476fa0dc6e
-# CurrentTime: 2026-06-21 10:10:00
-# Date: 2026-06-21T03:10:00
-# League: USL Championship
-# Type: FOOTBALL
-# Teams: Sacramento Republic FC vs New Mexico United (0 - 1)
-# Quality: Source
-https://live.fblive.eu.cc/live/3b5777ff3558f6f9ea2c3055ef1cb5d5/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Kingborough Lions - South Hobart - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: x7lm7phjj8z2m2w
-# StreamKey: 937a50a4624746899a30aa26973b9b57
-# CurrentTime: 2026-06-21 10:15:00
-# Date: 2026-06-21T03:15:00
-# League: Australia Tasmania National Premier League
-# Type: FOOTBALL
-# Teams: Kingborough Lions vs South Hobart (1 - 1)
-# Quality: Source
-https://live.fblive.eu.cc/live/903568a5d6c6e8fd7afcbac8fc061b1f/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Viamaterras Miyazaki Women - VONDS Ichihara (W) - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: k82rekhg2885rep
-# StreamKey: 4141a19578284b79abfa4597cc831484
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: Japanese Nadeshiko League 1
-# Type: FOOTBALL
-# Teams: Viamaterras Miyazaki Women vs VONDS Ichihara (W) (1 - 1)
-# Quality: Source
-https://live.fblive.eu.cc/live/3486c22f808e263410afaa8c535b5e01/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 AS Harima ALBION Women - Nittaidai SMG Yokohama - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: y39mp1h6dkk2moj
-# StreamKey: dd7d4d20c2cc4c2ca75acadcfdf633e9
-# CurrentTime: 2026-06-21 11:00:00
-# Date: 2026-06-21T04:00:00
-# League: Japanese Nadeshiko League 1
-# Type: FOOTBALL
-# Teams: AS Harima ALBION Women vs Nittaidai SMG Yokohama (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/bfcb4bab0de109150a05f81ebdd3567c/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Sydney United 58 FC - SD Raiders FC - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 8yomo4h1gyg0q0j
-# StreamKey: c0c2ac75c6c64497b5ab7968367df9a4
-# CurrentTime: 2026-06-21 11:30:00
-# Date: 2026-06-21T04:30:00
-# League: Australia New South Wales Premier League
-# Type: FOOTBALL
-# Teams: Sydney United 58 FC vs SD Raiders FC (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/8dc5d35741d1232d57008bf1ee928a96/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Layou Village - Chejiang 2 Village - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: l7oqdehg9l27r51
-# StreamKey: 8352b1846946460e935d5601ea7db50d
-# CurrentTime: 2026-06-21 11:30:00
-# Date: 2026-06-21T04:30:00
-# League: Rural Football Super League
-# Type: FOOTBALL
-# Teams: Layou Village vs Chejiang 2 Village (0 - 1)
-# Quality: Source
-https://live.fblive.eu.cc/live/9259ba3d36ac0488a2ea7dc49df4af77/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Majura FC (W) - West Canberra Wanderers FC Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: pxwrxlhywnveryk
-# StreamKey: 029583421ed44910be51203b7a8db16a
-# CurrentTime: 2026-06-21 11:30:00
-# Date: 2026-06-21T04:30:00
-# League: Australia Capital Territory Women's League 
-# Type: FOOTBALL
-# Teams: Majura FC (W) vs West Canberra Wanderers FC Women (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/b2ece9efaf19a782dcc42345e5143986/playlist.m3u8
-
-#EXTINF:-1 group-title="LIVE",🔴 Bulls Academy Women - NWS Spirit Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: ednm9whw5576ryo
-# StreamKey: 2aa3bd495ff74511bc7980adda7e47a3
-# CurrentTime: 2026-06-21 11:40:00
-# Date: 2026-06-21T04:40:00
-# League: Australia New South Wales Women's League
-# Type: FOOTBALL
-# Teams: Bulls Academy Women vs NWS Spirit Women (1 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/d896badc613a7fd15e187298a5477511/playlist.m3u8
-
-
-# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (43 trận) ===
-
-#EXTINF:-1 group-title="UPCOMING",Gold Coast United Women - Souths United SC Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 23xmvkh6zy14qg8
-# StreamKey: 1b4c16a5f64746eaa166f3e3d9785951
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia Queensland State Women's League
-# Type: FOOTBALL
-# Teams: Gold Coast United Women vs Souths United SC Women (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/1b4c16a5f64746eaa166f3e3d9785951/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Gunma FC White Star Women - Fujizakura Yamanashi Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 318q66hx3y5oqo9
-# StreamKey: d6e41f0578a34d549a885fe87ad6cb2c
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Japanese Nadeshiko League 2
-# Type: FOOTBALL
-# Teams: Gunma FC White Star Women vs Fujizakura Yamanashi Women (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/d6e41f0578a34d549a885fe87ad6cb2c/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Okayama Yunogo Belle Women - Setagaya SfidWomen - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 318q66hx877lqo9
-# StreamKey: 1d886772981243c9b3e080cf9b7f7bb6
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Japanese Nadeshiko League 1
-# Type: FOOTBALL
-# Teams: Okayama Yunogo Belle Women vs Setagaya SfidWomen (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/9a5002134e670fae9c14df07b9494a5c/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Canberra FC Women - Canberra Olympic Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 3glrw7hne9opqdy
-# StreamKey: 2729addaf08d4b7f9237b990a2311edd
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia Capital Territory Women's League 
-# Type: FOOTBALL
-# Teams: Canberra FC Women vs Canberra Olympic Women (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/2729addaf08d4b7f9237b990a2311edd/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Shichigahama SC - Sendai University SC II - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 3glrw7hneex5qdy
-# StreamKey: 1ad3f6832a8f40fe89e85ea591447949
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Japanese Regional League
-# Type: FOOTBALL
-# Teams: Shichigahama SC vs Sendai University SC II (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/1ad3f6832a8f40fe89e85ea591447949/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",SWQ Thunder - Virginia United - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 3glrw7hnn22vqdy
-# StreamKey: 743afb64a6d340f1b78a7d2e98800e64
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: QLD D2
-# Type: FOOTBALL
-# Teams: SWQ Thunder vs Virginia United (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/743afb64a6d340f1b78a7d2e98800e64/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Wollongong Wolves - Sydney FC Youth - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 6ypq3nhv7kn1md7
-# StreamKey: 0124d85d93794a4893fe523fbe3ef4ba
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia New South Wales Premier League
-# Type: FOOTBALL
-# Teams: Wollongong Wolves vs Sydney FC Youth (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/e06bfef46b56a86443b3571941d6cb7b/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Wyvern FC - Gakunan F Mosuperio - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 6ypq3nhvdp5emd7
-# StreamKey: 1ba12fe2723a4d8c8e553fe7a03ee8cb
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Japanese Regional League
-# Type: FOOTBALL
-# Teams: Wyvern FC vs Gakunan F Mosuperio (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/1ba12fe2723a4d8c8e553fe7a03ee8cb/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Maca Searle Women - Apia L Tigers Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 965mkyhk88y5r1g
-# StreamKey: 1ccb848a5d1742a395bb217a6784d0f9
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia New South Wales Women's League
-# Type: FOOTBALL
-# Teams: Maca Searle Women vs Apia L Tigers Women (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/1ccb848a5d1742a395bb217a6784d0f9/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Boroondara Eagles Women - Preston Lions Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: dj2ryohl9g9gq1z
-# StreamKey: 8ae417412f0549c79eaaace795e4e29a
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia Victorian Women's Premier League
-# Type: FOOTBALL
-# Teams: Boroondara Eagles Women vs Preston Lions Women (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/5d39bce370596d590f7ccd977141812b/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Illawarra Stingrays Women - UNSW FC Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: k82rekhg22w0rep
-# StreamKey: 33c87354980d40d8b38df32e06f0cf69
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia New South Wales Women's League
-# Type: FOOTBALL
-# Teams: Illawarra Stingrays Women vs UNSW FC Women (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/33c87354980d40d8b38df32e06f0cf69/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Lake Macquarie (W) - Newcastle Olympic FC Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: l7oqdehgzx10r51
-# StreamKey: 3d8658ba26374825ae230a0a1a67d440
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia New South Wales Women's Premier League
-# Type: FOOTBALL
-# Teams: Lake Macquarie (W) vs Newcastle Olympic FC Women (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/3d8658ba26374825ae230a0a1a67d440/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Blacktown City Demons - APIA Leichhardt Tigers - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: n54qllhnp4z7qvy
-# StreamKey: d2353508205943f4a612b3bdd3484393
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia New South Wales Premier League
-# Type: FOOTBALL
-# Teams: Blacktown City Demons vs APIA Leichhardt Tigers (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/4ec970e4ccfab6a9f44fa2ca872b8e74/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Ipswich knights SC - AC Carina - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: pxwrxlhylj60ryk
-# StreamKey: 4f2ce27e94814bfebb33810b32c3c079
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia Brisbane Capital League 1
-# Type: FOOTBALL
-# Teams: Ipswich knights SC vs AC Carina (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/4f2ce27e94814bfebb33810b32c3c079/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Kahibah FC - Charleston City Blues - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: x7lm7phjj8d1m2w
-# StreamKey: e1173a1777b14d13a60c1836ed679ffc
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia Northern New South Wales Premier League
-# Type: FOOTBALL
-# Teams: Kahibah FC vs Charleston City Blues (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/25148dd7b45f740bd5c381f5ab4f979b/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Busan Transportation Corporation - Gyeongju KHNP - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: y0or5jh88382qwz
-# StreamKey: f68e9107b1f14aebb6b4e3047a65e9be
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Korean K League 3 
-# Type: FOOTBALL
-# Teams: Busan Transportation Corporation vs Gyeongju KHNP (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/3912969697f65c87e9e7cf442786e5f3/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Marconi Stallions - University NSW - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: y0or5jh8z9jzqwz
-# StreamKey: a19c3ba498074cfcaa424c7a19472d78
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Australia New South Wales Premier League
-# Type: FOOTBALL
-# Teams: Marconi Stallions vs University NSW (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/d8d36bf5a409b7f74f8df448b76dfb31/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Nadroga FC - Lautoka - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: zp5rzghge5jnq82
-# StreamKey: 786a2e4fad474f979c3bf48eb9391e63
-# CurrentTime: 2026-06-21 12:00:00
-# Date: 2026-06-21T05:00:00
-# League: Fiji Cup
-# Type: FOOTBALL
-# Teams: Nadroga FC vs Lautoka (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/786a2e4fad474f979c3bf48eb9391e63/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Gladesville Ravens Women - Mt Druitt Town Rangers FC (W) - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: dn1m1ghl992lmoe
-# StreamKey: c74178f81be54bb0ad54a7c00ab0bee2
-# CurrentTime: 2026-06-21 12:10:00
-# Date: 2026-06-21T05:10:00
-# League: Australia New South Wales Women's League
-# Type: FOOTBALL
-# Teams: Gladesville Ravens Women vs Mt Druitt Town Rangers FC (W) (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/8c276cc360bb06782e5e050646fcd7a4/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Heidelberg United U23 - Preston Lions U23 - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 8yomo4h11kxwq0j
-# StreamKey: 1eed1740afff4ce4a40042ba38f37a27
-# CurrentTime: 2026-06-21 12:30:00
-# Date: 2026-06-21T05:30:00
-# League: Aus NPL U23
-# Type: FOOTBALL
-# Teams: Heidelberg United U23 vs Preston Lions U23 (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/1eed1740afff4ce4a40042ba38f37a27/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Kingborough Lions Women - Taroona Women - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 8yomo4h1j8z5q0j
-# StreamKey: 53828c9df5084e75b0f62c1176a4ce89
-# CurrentTime: 2026-06-21 12:30:00
-# Date: 2026-06-21T05:30:00
-# League: Australia Tasmania Women's Premier League
-# Type: FOOTBALL
-# Teams: Kingborough Lions Women vs Taroona Women (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/c950845881aeddc0609733a0a032b432/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Shizuoka Sangyo University Women - IGA Kunoichi Women - Source
+#EXTINF:-1 group-title="LIVE",🔴 Shizuoka Sangyo University Women - IGA Kunoichi Women - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 4wyrn4h6y708q86
@@ -562,11 +76,11 @@ https://live.fblive.eu.cc/live/c950845881aeddc0609733a0a032b432/playlist.m3u8
 # Date: 2026-06-21T06:00:00
 # League: Japanese Nadeshiko League 1
 # Type: FOOTBALL
-# Teams: Shizuoka Sangyo University Women vs IGA Kunoichi Women (0 - 0)
+# Teams: Shizuoka Sangyo University Women vs IGA Kunoichi Women (0 - 1)
 # Quality: Source
 https://live.fblive.eu.cc/live/3244abaae31369d36c9990456275e6ac/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Brisbane Olympic United FC - Peninsula Power - Source
+#EXTINF:-1 group-title="LIVE",🔴 Brisbane Olympic United FC - Peninsula Power - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 8yomo4h1443kq0j
@@ -575,50 +89,11 @@ https://live.fblive.eu.cc/live/3244abaae31369d36c9990456275e6ac/playlist.m3u8
 # Date: 2026-06-21T06:00:00
 # League: Australia National Premier Leagues Queensland
 # Type: FOOTBALL
-# Teams: Brisbane Olympic United FC vs Peninsula Power (0 - 0)
+# Teams: Brisbane Olympic United FC vs Peninsula Power (1 - 3)
 # Quality: Source
 https://live.fblive.eu.cc/live/3e45637c617ed0f7870df9f9890fdd08/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Fujieda City Hall FC - FC Kariya - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: pxwrxlhyw013ryk
-# StreamKey: ee1f8aeb19ee4c1aa2bf22928edeedb9
-# CurrentTime: 2026-06-21 13:00:00
-# Date: 2026-06-21T06:00:00
-# League: Japanese Regional League
-# Type: FOOTBALL
-# Teams: Fujieda City Hall FC vs FC Kariya (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/ee1f8aeb19ee4c1aa2bf22928edeedb9/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Fukuyama City FC - ENEOS Mizushima - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: vjxm8gheo769r6o
-# StreamKey: 85836c57f0cb45369b4b06afc263d5b3
-# CurrentTime: 2026-06-21 13:00:00
-# Date: 2026-06-21T06:00:00
-# League: Japanese Regional League
-# Type: FOOTBALL
-# Teams: Fukuyama City FC vs ENEOS Mizushima (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/85836c57f0cb45369b4b06afc263d5b3/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",International Pacific University - SRC Hiroshima - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: x7lm7phjd2e8m2w
-# StreamKey: ea69fcc0f15143d3bb1ed3cf55a2c2bb
-# CurrentTime: 2026-06-21 13:00:00
-# Date: 2026-06-21T06:00:00
-# League: Japanese Regional League
-# Type: FOOTBALL
-# Teams: International Pacific University vs SRC Hiroshima (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/ea69fcc0f15143d3bb1ed3cf55a2c2bb/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Heidelberg United Women - Box Hill Women - Source
+#EXTINF:-1 group-title="LIVE",🔴 Heidelberg United Women - Box Hill Women - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: l7oqdehg9094r51
@@ -627,11 +102,11 @@ https://live.secufun.xyz/live/ea69fcc0f15143d3bb1ed3cf55a2c2bb/playlist.m3u8
 # Date: 2026-06-21T06:15:00
 # League: Australia Victorian Women's Premier League
 # Type: FOOTBALL
-# Teams: Heidelberg United Women vs Box Hill Women (0 - 0)
+# Teams: Heidelberg United Women vs Box Hill Women (1 - 1)
 # Quality: Source
 https://live.fblive.eu.cc/live/f03a39325491dd6306ed71f27625bffb/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Sebian Village - Dali Village - Source
+#EXTINF:-1 group-title="LIVE",🔴 Sebian Village - Dali Village - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 2y8m4zh5ezp3ql0
@@ -642,22 +117,9 @@ https://live.fblive.eu.cc/live/f03a39325491dd6306ed71f27625bffb/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Sebian Village vs Dali Village (0 - 0)
 # Quality: Source
-https://live.secufun.xyz/live/664940d2ec8c4fd4b471678e8fadc5bb/playlist.m3u8
+https://live.fblive.eu.cc/live/47a7b2f181405c784386c28b72356b03/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Sydney United 58 U20 - SD Raiders U20 - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: ednm9whwl0pxryo
-# StreamKey: eba55801912446a5962cc1d387d3db66
-# CurrentTime: 2026-06-21 13:30:00
-# Date: 2026-06-21T06:30:00
-# League: Australia Northern New South Wales U20 League
-# Type: FOOTBALL
-# Teams: Sydney United 58 U20 vs SD Raiders U20 (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/eba55801912446a5962cc1d387d3db66/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Casuarina FC - Darwin Hearts - Source
+#EXTINF:-1 group-title="LIVE",🔴 Casuarina FC - Darwin Hearts - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: jw2r09hkd2j5rz8
@@ -666,26 +128,11 @@ https://live.secufun.xyz/live/eba55801912446a5962cc1d387d3db66/playlist.m3u8
 # Date: 2026-06-21T06:30:00
 # League: Australia Darwin Premier League
 # Type: FOOTBALL
-# Teams: Casuarina FC vs Darwin Hearts (0 - 0)
+# Teams: Casuarina FC vs Darwin Hearts (0 - 1)
 # Quality: Source
 https://live.fblive.eu.cc/live/eac053d62f1f314bec4195b4daeead39/playlist.m3u8
 
-#EXTINF:-1 group-title="TRẠNG TÈO",Queensland Lions SC - Rochedale Rovers [BLV TRẠNG TÈO] - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 6ypq3nhvnn3zmd7
-# StreamKey: 68c6822563d145da951483cb7b4672df
-# CurrentTime: 2026-06-21 14:00:00
-# Date: 2026-06-21T07:00:00
-# League: Australia National Premier Leagues Queensland
-# Type: FOOTBALL
-# Teams: Queensland Lions SC vs Rochedale Rovers (0 - 0)
-# Top: Yes
-# BLV: BLV TRẠNG TÈO
-# Quality: Source
-https://live.fblive.eu.cc/live/078a61f179a9886b5aa70ad9f92c4059/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Sorrento Women - Fremantle City FC Women - Source
+#EXTINF:-1 group-title="LIVE",🔴 Sorrento Women - Fremantle City FC Women - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 2y8m4zh5vewjql0
@@ -694,11 +141,11 @@ https://live.fblive.eu.cc/live/078a61f179a9886b5aa70ad9f92c4059/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: Western Australia Women's League
 # Type: FOOTBALL
-# Teams: Sorrento Women vs Fremantle City FC Women (0 - 0)
+# Teams: Sorrento Women vs Fremantle City FC Women (2 - 2)
 # Quality: Source
 https://live.fblive.eu.cc/live/009d9906d065c21768fc55424754ffac/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Irkutsk - Dinamo Saint Petersburg - Source
+#EXTINF:-1 group-title="LIVE",🔴 Irkutsk - Dinamo Saint Petersburg - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 318q66hx1z22qo9
@@ -707,11 +154,11 @@ https://live.fblive.eu.cc/live/009d9906d065c21768fc55424754ffac/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: RUS D3B
 # Type: FOOTBALL
-# Teams: Irkutsk vs Dinamo Saint Petersburg (0 - 0)
+# Teams: Irkutsk vs Dinamo Saint Petersburg (0 - 2)
 # Quality: Source
 https://live.fblive.eu.cc/live/4734f80c8272f2103141c458d86afe32/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",WS Wanderers B (W) - Hills United (W) - Source
+#EXTINF:-1 group-title="LIVE",🔴 WS Wanderers B (W) - Hills United (W) - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 318q66hx88wwqo9
@@ -720,11 +167,11 @@ https://live.fblive.eu.cc/live/4734f80c8272f2103141c458d86afe32/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: Australia New South Wales Women's League
 # Type: FOOTBALL
-# Teams: WS Wanderers B (W) vs Hills United (W) (0 - 0)
+# Teams: WS Wanderers B (W) vs Hills United (W) (0 - 1)
 # Quality: Source
 https://live.fblive.eu.cc/live/cc0aa2ef837ed753633e18abc7a8fd8b/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Geumsan Insam FC - Jincheon HR FC - Source
+#EXTINF:-1 group-title="LIVE",🔴 Geumsan Insam FC - Jincheon HR FC - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 318q66hx8od7qo9
@@ -733,24 +180,11 @@ https://live.fblive.eu.cc/live/cc0aa2ef837ed753633e18abc7a8fd8b/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: Korean K League 4
 # Type: FOOTBALL
-# Teams: Geumsan Insam FC vs Jincheon HR FC (0 - 0)
+# Teams: Geumsan Insam FC vs Jincheon HR FC (1 - 1)
 # Quality: Source
-https://live.secufun.xyz/live/cc9936cfa1c14d9784fe69c5083e8956/playlist.m3u8
+https://live.fblive.eu.cc/live/f1492aee56db576bf39621c8959d4293/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",North Brisbane - Redcliffe PCYC - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 3glrw7hn4yxeqdy
-# StreamKey: 6c0fa3dc91a243e4a3450db9c0b154a5
-# CurrentTime: 2026-06-21 14:00:00
-# Date: 2026-06-21T07:00:00
-# League: Australia Brisbane Capital League 1
-# Type: FOOTBALL
-# Teams: North Brisbane vs Redcliffe PCYC (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/6c0fa3dc91a243e4a3450db9c0b154a5/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",Ezemvelo (W) - Ramatlaohle FC (W) - Source
+#EXTINF:-1 group-title="LIVE",🔴 Ezemvelo (W) - Ramatlaohle FC (W) - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 3glrw7hneg13qdy
@@ -759,11 +193,11 @@ https://live.secufun.xyz/live/6c0fa3dc91a243e4a3450db9c0b154a5/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: South Africa Women's League
 # Type: FOOTBALL
-# Teams: Ezemvelo (W) vs Ramatlaohle FC (W) (0 - 0)
+# Teams: Ezemvelo (W) vs Ramatlaohle FC (W) (1 - 1)
 # Quality: Source
-https://live.secufun.xyz/live/ec222a0e35c9402791de6308a26935cc/playlist.m3u8
+https://live.fblive.eu.cc/live/daf20fcc8980f513e5af1de436016111/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",UWA-Nedlands FC Women - Perth RedStar Women - Source
+#EXTINF:-1 group-title="LIVE",🔴 UWA-Nedlands FC Women - Perth RedStar Women - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: dj2ryohl79ekq1z
@@ -772,11 +206,11 @@ https://live.secufun.xyz/live/ec222a0e35c9402791de6308a26935cc/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: Western Australia Women's League
 # Type: FOOTBALL
-# Teams: UWA-Nedlands FC Women vs Perth RedStar Women (0 - 0)
+# Teams: UWA-Nedlands FC Women vs Perth RedStar Women (0 - 2)
 # Quality: Source
 https://live.fblive.eu.cc/live/34986eaf487b8b114aff9e34195afc24/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Jinju Citizen - Jungnang Chorus Mustang FC - Source
+#EXTINF:-1 group-title="LIVE",🔴 Jinju Citizen - Jungnang Chorus Mustang FC - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: dn1m1ghl94dkmoe
@@ -789,7 +223,7 @@ https://live.fblive.eu.cc/live/34986eaf487b8b114aff9e34195afc24/playlist.m3u8
 # Quality: Source
 https://live.fblive.eu.cc/live/2194f3eb4ecc59efa9a6799c4844d2a7/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",St Albans Saints - Altona Magic - Source
+#EXTINF:-1 group-title="LIVE",🔴 St Albans Saints - Altona Magic - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: ednm9whw2yk6ryo
@@ -798,37 +232,11 @@ https://live.fblive.eu.cc/live/2194f3eb4ecc59efa9a6799c4844d2a7/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: National Premier Leagues Victoria
 # Type: FOOTBALL
-# Teams: St Albans Saints vs Altona Magic (0 - 0)
+# Teams: St Albans Saints vs Altona Magic (1 - 1)
 # Quality: Source
 https://live.fblive.eu.cc/live/4b73d07054a48ea8783f862b246ee765/playlist.m3u8
 
-#EXTINF:-1 group-title="UPCOMING",Mitchelton FC - Caloundra - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: vjxm8gheeddnr6o
-# StreamKey: 8947893644c54582a18da47c73f694bf
-# CurrentTime: 2026-06-21 14:00:00
-# Date: 2026-06-21T07:00:00
-# League: QLD D2
-# Type: FOOTBALL
-# Teams: Mitchelton FC vs Caloundra (0 - 0)
-# Quality: Source
-https://live.fblive.eu.cc/live/c00d1e35526343efc7d10c28550da3c1/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",North Lakes United - Springfield United - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: vjxm8ghek8n6r6o
-# StreamKey: 5d7b2a4158014487aa5db456b7576cea
-# CurrentTime: 2026-06-21 14:00:00
-# Date: 2026-06-21T07:00:00
-# League: Australia Brisbane Capital League 1
-# Type: FOOTBALL
-# Teams: North Lakes United vs Springfield United (0 - 0)
-# Quality: Source
-https://live.secufun.xyz/live/5d7b2a4158014487aa5db456b7576cea/playlist.m3u8
-
-#EXTINF:-1 group-title="UPCOMING",University of Sydney Women - Sydney Olympic FC Women - Source
+#EXTINF:-1 group-title="LIVE",🔴 University of Sydney Women - Sydney Olympic FC Women - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: y39mp1h6ddz4moj
@@ -837,8 +245,349 @@ https://live.secufun.xyz/live/5d7b2a4158014487aa5db456b7576cea/playlist.m3u8
 # Date: 2026-06-21T07:00:00
 # League: Australia New South Wales Women's League
 # Type: FOOTBALL
-# Teams: University of Sydney Women vs Sydney Olympic FC Women (0 - 0)
+# Teams: University of Sydney Women vs Sydney Olympic FC Women (0 - 1)
 # Quality: Source
-https://live.secufun.xyz/live/30bd419870044e67a5b8aebf62566b72/playlist.m3u8
+https://live.fblive.eu.cc/live/2ee1c6d1263b705f2472dddc0c420263/playlist.m3u8
+
+
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (26 trận) ===
+
+#EXTINF:-1 group-title="UPCOMING",Central Stallions - FC Ulaanbaatar - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: pxwrxlhyw4kgryk
+# StreamKey: 915a11abc8c340beb42b9cc3e29af3c6
+# CurrentTime: 2026-06-21 15:00:00
+# Date: 2026-06-21T08:00:00
+# League: Mongolia Premier League
+# Type: FOOTBALL
+# Teams: Central Stallions vs FC Ulaanbaatar (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/9ef73483788e57d4d406839502e539ae/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Linyi Team - Yantai Team - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h6odnwmoj
+# StreamKey: 6738555fcec246c59f7b0f15e13d0a32
+# CurrentTime: 2026-06-21 15:00:00
+# Date: 2026-06-21T08:00:00
+# League: Shandong Qilu Football Super League
+# Type: FOOTBALL
+# Teams: Linyi Team vs Yantai Team (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/6738555fcec246c59f7b0f15e13d0a32/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Brisbane Olympic FC U23 - Peninsula Power U23 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y0or5jh8dpg9qwz
+# StreamKey: a1868913e35a4cffa6d7f8a5c0f8bcf5
+# CurrentTime: 2026-06-21 15:15:00
+# Date: 2026-06-21T08:15:00
+# League: Australia Queensland U23 League
+# Type: FOOTBALL
+# Teams: Brisbane Olympic FC U23 vs Peninsula Power U23 (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/a1868913e35a4cffa6d7f8a5c0f8bcf5/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Fumin Village - Shuiwei Village - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h1604kq0j
+# StreamKey: 37ea7f6ae5e14caa983e4305106af967
+# CurrentTime: 2026-06-21 15:30:00
+# Date: 2026-06-21T08:30:00
+# League: Rural Football Super League
+# Type: FOOTBALL
+# Teams: Fumin Village vs Shuiwei Village (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/37ea7f6ae5e14caa983e4305106af967/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Pocheon FC - Gangneung Citizen - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 23xmvkh66k67qg8
+# StreamKey: 3d0b191b90624109b2999352558d2601
+# CurrentTime: 2026-06-21 16:00:00
+# Date: 2026-06-21T09:00:00
+# League: Korean K League 3 
+# Type: FOOTBALL
+# Teams: Pocheon FC vs Gangneung Citizen (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/606ba9c75d39e31737e0900aaa6d172f/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Sibir Novosibirsk - Veles Podolsk - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 23xmvkh6z072qg8
+# StreamKey: a68ccc23e2124c39b0e443fb5201762b
+# CurrentTime: 2026-06-21 16:00:00
+# Date: 2026-06-21T09:00:00
+# League: RUS D3A
+# Type: FOOTBALL
+# Teams: Sibir Novosibirsk vs Veles Podolsk (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/f1a994ecf1407c6336229d7e26902cf4/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Krylia Sovetov-2 - Khimik Dzerzhinsk - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghnw4vom0v
+# StreamKey: 70b8b3980de3442191dcef32e01dd2f5
+# CurrentTime: 2026-06-21 16:00:00
+# Date: 2026-06-21T09:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: Krylia Sovetov-2 vs Khimik Dzerzhinsk (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/fca3143f22d6ff0dfa2462d323c4be73/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Hantharwady United U20 - Myawady FC U20 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4wyrn4h61w98q86
+# StreamKey: 72be1b4559c042cda18884aa7bef6a5a
+# CurrentTime: 2026-06-21 16:00:00
+# Date: 2026-06-21T09:00:00
+# League: Myanmar U20 League
+# Type: FOOTBALL
+# Teams: Hantharwady United U20 vs Myawady FC U20 (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/72be1b4559c042cda18884aa7bef6a5a/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Al Ahli SC Nabaṭīya - Ittihad Haret Naameh - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 965mkyhk9679r1g
+# StreamKey: 4a158045b7a6429a89fb53ef052cd46b
+# CurrentTime: 2026-06-21 16:00:00
+# Date: 2026-06-21T09:00:00
+# League: Lebanese Premier 2
+# Type: FOOTBALL
+# Teams: Al Ahli SC Nabaṭīya vs Ittihad Haret Naameh (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/4a158045b7a6429a89fb53ef052cd46b/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",BRU Burirat Academy Women - Nakhon Si Thammarat(W) - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohl33w5q1z
+# StreamKey: 13f2a349db10451987b52c3d8ce359f6
+# CurrentTime: 2026-06-21 16:00:00
+# Date: 2026-06-21T09:00:00
+# League: Thai Women's Super League
+# Type: FOOTBALL
+# Teams: BRU Burirat Academy Women vs Nakhon Si Thammarat(W) (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/13f2a349db10451987b52c3d8ce359f6/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Chonburi Sports School (W) - Nakhon Sawan (W) - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: ednm9whwl38pryo
+# StreamKey: af4aefaf7f4f419d981c9a673c56bb66
+# CurrentTime: 2026-06-21 16:00:00
+# Date: 2026-06-21T09:00:00
+# League: Thai Women's Super League
+# Type: FOOTBALL
+# Teams: Chonburi Sports School (W) vs Nakhon Sawan (W) (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/af4aefaf7f4f419d981c9a673c56bb66/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",JK Tallinna Kalev - Nomme JK Kalju II - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohllj91q1z
+# StreamKey: 543a60ed946c47c4bb73ce6002704652
+# CurrentTime: 2026-06-21 16:30:00
+# Date: 2026-06-21T09:30:00
+# League: Estonian Esiliiga
+# Type: FOOTBALL
+# Teams: JK Tallinna Kalev vs Nomme JK Kalju II (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/543a60ed946c47c4bb73ce6002704652/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Tallinna FC Levadia B - Tallinna FC Ararat TTU - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l7oqdehgg498r51
+# StreamKey: 153e3e032d484a46bf87ae66acbf5be7
+# CurrentTime: 2026-06-21 16:30:00
+# Date: 2026-06-21T09:30:00
+# League: Estonian Esiliiga
+# Type: FOOTBALL
+# Teams: Tallinna FC Levadia B vs Tallinna FC Ararat TTU (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/153e3e032d484a46bf87ae66acbf5be7/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Belshina (W) - Dnepr Mogilev Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh9p46vm7v
+# StreamKey: e0d1f203dfc74c82b688dd84e077ea95
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Belarusian Women's Premier League
+# Type: FOOTBALL
+# Teams: Belshina (W) vs Dnepr Mogilev Women (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/e0d1f203dfc74c82b688dd84e077ea95/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Hawassa City - Bahir Dar Kenema FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hn98xzqdy
+# StreamKey: 4c49bf173ea847c4990e95d256f94671
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Ethiopia Premier League
+# Type: FOOTBALL
+# Teams: Hawassa City vs Bahir Dar Kenema FC (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/4c49bf173ea847c4990e95d256f94671/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Pyeongtaek Citizen - Jecheon Citizen FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4wyrn4h6y812q86
+# StreamKey: 4abf43914bcd40b3b68969ae720fc52f
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Korean K League 4
+# Type: FOOTBALL
+# Teams: Pyeongtaek Citizen vs Jecheon Citizen FC (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/568bed3a101b79732fe51c6e4e1fb0ce/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Ita Mbong Women - Cyclone FC (W) - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 6ypq3nhvdy2xmd7
+# StreamKey: 6eb0f65a54944be7bd0d233c8ee3550a
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Cameroon Women's League 
+# Type: FOOTBALL
+# Teams: Ita Mbong Women vs Cyclone FC (W) (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/6eb0f65a54944be7bd0d233c8ee3550a/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FC Nacka Iliria - Eker Orebro - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohl1dywq1z
+# StreamKey: 708747e4a5e1477facb7da60cdfeed58
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Sweden Division 2
+# Type: FOOTBALL
+# Teams: FC Nacka Iliria vs Eker Orebro (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/708747e4a5e1477facb7da60cdfeed58/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FK Arendal - Treaff - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohlen41q1z
+# StreamKey: ccdf824915f0441b91b245063255a5e6
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Norwegian 2.Divisjon
+# Type: FOOTBALL
+# Teams: FK Arendal vs Treaff (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/f28bc842423756f2325e88e3196c6439/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Hawassa City - Adama City - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l7oqdehgz14dr51
+# StreamKey: 36f2d1eae3ba472bb61efd8f15763898
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Ethiopia Premier League
+# Type: FOOTBALL
+# Teams: Hawassa City vs Adama City (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/36f2d1eae3ba472bb61efd8f15763898/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",University of Fort Hare (W) - Johannesburg Uni Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheo7glr6o
+# StreamKey: 40592d0e7185407f971476a2cc77032e
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: South Africa Women's League
+# Type: FOOTBALL
+# Teams: University of Fort Hare (W) vs Johannesburg Uni Women (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/40592d0e7185407f971476a2cc77032e/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Niva Dolbizno - FC Molodechno - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y0or5jh8513pqwz
+# StreamKey: 6d4b4425138c455eba6b135c2b9186c9
+# CurrentTime: 2026-06-21 17:00:00
+# Date: 2026-06-21T10:00:00
+# League: Belarusian First League
+# Type: FOOTBALL
+# Teams: Niva Dolbizno vs FC Molodechno (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/6d4b4425138c455eba6b135c2b9186c9/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Ullern U19 - FF Lillehammer U19 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh9p769m7v
+# StreamKey: afbac6dcb1d64ec3bf633f5e0b577894
+# CurrentTime: 2026-06-21 17:30:00
+# Date: 2026-06-21T10:30:00
+# League: Norwegian Junior U19
+# Type: FOOTBALL
+# Teams: Ullern U19 vs FF Lillehammer U19 (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/afbac6dcb1d64ec3bf633f5e0b577894/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",CF Badalona - Compostela - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh9pxy5m7v
+# StreamKey: 5391a4b096084da9b35c9fc441beef8a
+# CurrentTime: 2026-06-21 17:30:00
+# Date: 2026-06-21T10:30:00
+# League: Spanish Tercera División RFEF
+# Type: FOOTBALL
+# Teams: CF Badalona vs Compostela (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/5391a4b096084da9b35c9fc441beef8a/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Chejiang 1 Village - Longquanjing Village - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 6ypq3nhvplnzmd7
+# StreamKey: 7c61fd56b17245818c31d7bc27df687c
+# CurrentTime: 2026-06-21 17:30:00
+# Date: 2026-06-21T10:30:00
+# League: Rural Football Super League
+# Type: FOOTBALL
+# Teams: Chejiang 1 Village vs Longquanjing Village (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/7c61fd56b17245818c31d7bc27df687c/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Tromso B - Skedsmo - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: x7lm7phjv0x2m2w
+# StreamKey: ffab5da1512c444c82b1a632274a405b
+# CurrentTime: 2026-06-21 17:30:00
+# Date: 2026-06-21T10:30:00
+# League: Norwegian 3.Divisjon
+# Type: FOOTBALL
+# Teams: Tromso B vs Skedsmo (0 - 0)
+# Quality: Source
+https://live.fblive.eu.cc/live/8d73d73e814dbe221a7237d2b470d0cf/playlist.m3u8
 
 
