@@ -1,11 +1,11 @@
 #EXTM3U
 # Playlist from TieuLamLive
-# Total: 33 matches
+# Total: 80 matches
 # 🔴 LIVE: 33
-# ⏳ UPCOMING: 0
-# Updated: 2026-06-21 21:09:33
+# ⏳ UPCOMING: 47
+# Updated: 2026-06-21 21:13:25
 
-# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (1 trận) ===
+# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (2 trận) ===
 
 #EXTINF:-1 group-title="TRẠNG QUỶ",🔴 Kyzylzhar Petropavlovsk - FC Kairat Almaty [BLV TRẠNG QUỶ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
@@ -66,5 +66,144 @@ https://pull.asynccdn.com/live/ca01f9aaecbd43f49d97d8cf9f44db1b/index.m3u8
 # BLV: BLV TRẠNG QUỶ
 # Quality: HD3
 https://pull.asynccdn.com/live/ca01f9aaecbd43f49d97d8cf9f44db1b/index.m3u8
+
+#EXTINF:-1 group-title="TRẠNG TỒ",🔴 FK Yelimay Semey - FK Atyrau [BLV TRẠNG TỒ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheoondr6o
+# StreamKey: 0bd527cb14e644e4b530307a26dc35c1
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: FK Yelimay Semey vs FK Atyrau (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG TỒ
+# Quality: Source
+https://live.lilive1.eu.cc/live/427e8f55f16c665b36d44ee473d7a45a/playlist.m3u8
+
+#EXTINF:-1 group-title="TRẠNG TỒ",🔴 FK Yelimay Semey - FK Atyrau [BLV TRẠNG TỒ] - HD1
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheoondr6o
+# StreamKey: 0bd527cb14e644e4b530307a26dc35c1
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: FK Yelimay Semey vs FK Atyrau (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG TỒ
+# Quality: HD1
+https://pull.asynccdn.com/live/0bd527cb14e644e4b530307a26dc35c1/index.m3u8
+
+#EXTINF:-1 group-title="TRẠNG TỒ",🔴 FK Yelimay Semey - FK Atyrau [BLV TRẠNG TỒ] - HD2
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheoondr6o
+# StreamKey: 0bd527cb14e644e4b530307a26dc35c1
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: FK Yelimay Semey vs FK Atyrau (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG TỒ
+# Quality: HD2
+https://pull.asynccdn.com/live/0bd527cb14e644e4b530307a26dc35c1/index.m3u8
+
+#EXTINF:-1 group-title="TRẠNG TỒ",🔴 FK Yelimay Semey - FK Atyrau [BLV TRẠNG TỒ] - HD3
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheoondr6o
+# StreamKey: 0bd527cb14e644e4b530307a26dc35c1
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: FK Yelimay Semey vs FK Atyrau (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG TỒ
+# Quality: HD3
+https://pull.asynccdn.com/live/0bd527cb14e644e4b530307a26dc35c1/index.m3u8
+
+
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (5 trận) ===
+
+#EXTINF:-1 group-title="TRẠNG NGỐ",BATE Borisov - Arsenal Dzerzhinsk [BLV TRẠNG NGỐ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghnnd90m0v
+# StreamKey: fe521f2d4bd64c19a0c1274e791c2295
+# CurrentTime: 2026-06-21 22:00:00
+# Date: 2026-06-21T15:00:00
+# League: Belarusian Premier League
+# Type: FOOTBALL
+# Teams: BATE Borisov vs Arsenal Dzerzhinsk (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG NGỐ
+# Quality: Source
+https://live.lilive1.eu.cc/live/e8b579e678483a71f766063e031eeafd/playlist.m3u8
+
+#EXTINF:-1 group-title="TRẠNG PHỆ",🔥 Spain - Saudi Arabia [BLV TRẠNG PHỆ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghn95w2m0v
+# StreamKey: 9b373650be7e40ab9ea02dfc7e99f353
+# CurrentTime: 2026-06-21 23:00:00
+# Date: 2026-06-21T16:00:00
+# League: FIFA World Cup
+# Type: FOOTBALL
+# Teams: Spain vs Saudi Arabia (0 - 0)
+# Hot: Yes
+# Top: Yes
+# BLV: BLV TRẠNG PHỆ
+# Quality: Source
+https://live.lilive1.eu.cc/live/f0b96aa44031d19cd91dc7185e6cff1a/playlist.m3u8
+
+#EXTINF:-1 group-title="TRẠNG BÉO",Spain - Saudi Arabia [BLV TRẠNG BÉO] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 213c59a7c34641789090d8f20477fab6
+# StreamKey: 666b342751d74b839a3b23377eafa8c6
+# CurrentTime: 2026-06-21 23:00:00
+# Date: 2026-06-21T16:00:00
+# League: FIFA World Cup
+# Type: FOOTBALL
+# Teams: Spain  vs Saudi Arabia (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG BÉO
+# Quality: Source
+https://live.secufun.xyz/live/666b342751d74b839a3b23377eafa8c6/playlist.m3u8
+
+#EXTINF:-1 group-title="TRẠNG QUỶ",Spain - Saudi Arabia [BLV TRẠNG QUỶ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3f67826579cc40c19d339c8c9955d839
+# StreamKey: 44dc09f337ef4f0aa457c09b0fdc4bd6
+# CurrentTime: 2026-06-21 23:00:00
+# Date: 2026-06-21T16:00:00
+# League: FIFA World Cup
+# Type: FOOTBALL
+# Teams: Spain  vs Saudi Arabia (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG QUỶ
+# Quality: Source
+https://live.secufun.xyz/live/44dc09f337ef4f0aa457c09b0fdc4bd6/playlist.m3u8
+
+#EXTINF:-1 group-title="TRẠNG TỒ",Neman Grodno - Dinamo Minsk [BLV TRẠNG TỒ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 318q66hxxdgwqo9
+# StreamKey: a5a15621b4e040d594a1df4b5a2927dc
+# CurrentTime: 2026-06-22 00:00:00
+# Date: 2026-06-21T17:00:00
+# League: Belarusian Premier League
+# Type: FOOTBALL
+# Teams: Neman Grodno vs Dinamo Minsk (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG TỒ
+# Quality: Source
+https://live.lilive1.eu.cc/live/703079f60410a4b6681b48595a280913/playlist.m3u8
 
 
