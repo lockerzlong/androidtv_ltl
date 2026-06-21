@@ -1,13 +1,13 @@
 #EXTM3U
 # Playlist from TieuLamLive
 # Total: 30 matches
-# 🔴 LIVE: 9
-# ⏳ UPCOMING: 21
-# Updated: 2026-06-22 04:33:48
+# 🔴 LIVE: 10
+# ⏳ UPCOMING: 20
+# Updated: 2026-06-22 04:36:23
 
-# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (3 trận) ===
+# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (1 trận) ===
 
-#EXTINF:-1 group-title="TRẠNG QUỶ",🔥 05:00 Uruguay - Cabo Verde [BLV TRẠNG QUỶ] - Source
+#EXTINF:-1 group-title="TRẠNG QUỶ",🔥 🔴 Uruguay - Cabo Verde [BLV TRẠNG QUỶ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: vjxm8ghew7oer6o
@@ -22,6 +22,9 @@
 # BLV: BLV TRẠNG QUỶ
 # Quality: Source
 https://live.lilive1.eu.cc/live/3e9028387c58f996e0a5d19f7052ad06/playlist.m3u8
+
+
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (2 trận) ===
 
 #EXTINF:-1 group-title="TRẠNG BỊP",Uruguay - Cabo Verde [BLV TRẠNG BỊP] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
