@@ -1,11 +1,11 @@
 #EXTM3U
 # Playlist from TieuLamLive
-# Total: 16 matches
-# 🔴 LIVE: 16
-# ⏳ UPCOMING: 0
-# Updated: 2026-06-21 19:32:57
+# Total: 81 matches
+# 🔴 LIVE: 19
+# ⏳ UPCOMING: 62
+# Updated: 2026-06-21 19:36:57
 
-# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (16 trận) ===
+# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (19 trận) ===
 
 #EXTINF:-1 group-title="TRẠNG BÉO",🔴 Suzhou Dongwu - Yunnan Yukun [BLV TRẠNG BÉO] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
@@ -66,6 +66,66 @@ https://pull.asynccdn.com/live/f877ebcc756045ae910dd785de6e8fd8/index.m3u8
 # BLV: BLV TRẠNG BÉO
 # Quality: HD3
 https://pull.asynccdn.com/live/f877ebcc756045ae910dd785de6e8fd8/index.m3u8
+
+#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Okzhetpes - Tobol Kostanai [BLV TRẠNG NGỐ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h1y7keq0j
+# StreamKey: faf4359ccbc346e6ad23db1f441bd156
+# CurrentTime: 2026-06-21 19:00:00
+# Date: 2026-06-21T12:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: Okzhetpes vs Tobol Kostanai (0 - 1)
+# Top: Yes
+# BLV: BLV TRẠNG NGỐ
+# Quality: Source
+https://live.lilive1.eu.cc/live/649a678d661009616f816fe325749b67/playlist.m3u8
+
+#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Okzhetpes - Tobol Kostanai [BLV TRẠNG NGỐ] - HD1
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h1y7keq0j
+# StreamKey: faf4359ccbc346e6ad23db1f441bd156
+# CurrentTime: 2026-06-21 19:00:00
+# Date: 2026-06-21T12:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: Okzhetpes vs Tobol Kostanai (0 - 1)
+# Top: Yes
+# BLV: BLV TRẠNG NGỐ
+# Quality: HD1
+https://pull.asynccdn.com/live/faf4359ccbc346e6ad23db1f441bd156/index.m3u8
+
+#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Okzhetpes - Tobol Kostanai [BLV TRẠNG NGỐ] - HD2
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h1y7keq0j
+# StreamKey: faf4359ccbc346e6ad23db1f441bd156
+# CurrentTime: 2026-06-21 19:00:00
+# Date: 2026-06-21T12:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: Okzhetpes vs Tobol Kostanai (0 - 1)
+# Top: Yes
+# BLV: BLV TRẠNG NGỐ
+# Quality: HD2
+https://pull.asynccdn.com/live/faf4359ccbc346e6ad23db1f441bd156/index.m3u8
+
+#EXTINF:-1 group-title="TRẠNG NGỐ",🔴 Okzhetpes - Tobol Kostanai [BLV TRẠNG NGỐ] - HD3
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h1y7keq0j
+# StreamKey: faf4359ccbc346e6ad23db1f441bd156
+# CurrentTime: 2026-06-21 19:00:00
+# Date: 2026-06-21T12:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: Okzhetpes vs Tobol Kostanai (0 - 1)
+# Top: Yes
+# BLV: BLV TRẠNG NGỐ
+# Quality: HD3
+https://pull.asynccdn.com/live/faf4359ccbc346e6ad23db1f441bd156/index.m3u8
 
 #EXTINF:-1 group-title="LIVE",🔴 Molde B - Strindheim IL - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
@@ -261,5 +321,842 @@ https://live.lilive1.eu.cc/live/80a6e52137978bbfee3bfa31a26b9798/playlist.m3u8
 # Teams: Chengdu Team vs Liangshan Team (0 - 0)
 # Quality: Source
 https://live.lilive1.eu.cc/live/1ec8e2b9abd6424cf175c6a934552b36/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Stabaek B - Varhaug - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: jw2r09hk3x1orz8
+# StreamKey: 540eeb217ac644cba2c83d87527ded8a
+# CurrentTime: 2026-06-21 19:00:00
+# Date: 2026-06-21T12:00:00
+# League: Norwegian 3.Divisjon
+# Type: FOOTBALL
+# Teams: Stabaek B vs Varhaug (0 - 1)
+# Quality: Source
+https://live.lilive1.eu.cc/live/b4b71163b082c1061108ffccca33b51f/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Slutsksakhar Slutsk - BATE-2 Borisov - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: zp5rzghgo1p8q82
+# StreamKey: 6df4bac95b83427c801e4925d48da058
+# CurrentTime: 2026-06-21 19:00:00
+# Date: 2026-06-21T12:00:00
+# League: Belarusian First League
+# Type: FOOTBALL
+# Teams: Slutsksakhar Slutsk vs BATE-2 Borisov (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/e8200f5f7476d2bcafcad5b48f701077/playlist.m3u8
+
+
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (62 trận) ===
+
+#EXTINF:-1 group-title="TRẠNG QUỶ",Kyzylzhar Petropavlovsk - FC Kairat Almaty [BLV TRẠNG QUỶ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh5v33lql0
+# StreamKey: ca01f9aaecbd43f49d97d8cf9f44db1b
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Kazakhstan Premier League
+# Type: FOOTBALL
+# Teams: Kyzylzhar Petropavlovsk vs FC Kairat Almaty (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG QUỶ
+# Quality: Source
+https://sv1.tieulamlive.org/live/ca01f9aaecbd43f49d97d8cf9f44db1b/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Tadamon SC Sour - Racing Beirut - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh94yjpm7v
+# StreamKey: 0da51306b8e84677ab5a0ea51eb5e628
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Lebanese Premier League
+# Type: FOOTBALL
+# Teams: Tadamon SC Sour vs Racing Beirut (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/0da51306b8e84677ab5a0ea51eb5e628/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Jelgava - Tukums-2000 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh99xylm7v
+# StreamKey: afe0a36b18e04e8c91954b16e32e0e80
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Latvian Higher League
+# Type: FOOTBALL
+# Teams: Jelgava vs Tukums-2000 (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/afe0a36b18e04e8c91954b16e32e0e80/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Sidama Bunna - Ethio Electric FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh5d1gpql0
+# StreamKey: 132ccfe2f7eb403da87cdc6806b9643b
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Ethiopia Premier League
+# Type: FOOTBALL
+# Teams: Sidama Bunna vs Ethio Electric FC (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/132ccfe2f7eb403da87cdc6806b9643b/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",CD Maxaquene - Chingale de Tete - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh5djw3ql0
+# StreamKey: e0a5a67c156148f2a1f91090021d967f
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Mozambique Championship
+# Type: FOOTBALL
+# Teams: CD Maxaquene vs Chingale de Tete (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/e0a5a67c156148f2a1f91090021d967f/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Hardrock - ZPC Kariba - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh5dp23ql0
+# StreamKey: 40ab6a12cd2c407a9a65cc86af2a35fc
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Zimbabwe Premier Soccer League
+# Type: FOOTBALL
+# Teams: Hardrock vs ZPC Kariba (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/40ab6a12cd2c407a9a65cc86af2a35fc/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Dinamo-2 Makhachkala - Kyzyltash Bakhchysarai - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 318q66hx8l9pqo9
+# StreamKey: 965800aa52144a529bc33ba7a36bfd8f
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: Dinamo-2 Makhachkala vs Kyzyltash Bakhchysarai (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/67bfe3482291d920a4b9b6501d120c7d/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Margveti 2006 - Dinamo Tbilisi II - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hne2dwqdy
+# StreamKey: 38dc608bd0674bb68f235e8da80e6cc9
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Georgia Erovnuli Liga 3
+# Type: FOOTBALL
+# Teams: Margveti 2006 vs Dinamo Tbilisi II (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/38dc608bd0674bb68f235e8da80e6cc9/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FC Pari Nizhniy Novgorod - FC Ufa - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hne8nvqdy
+# StreamKey: bbd91553dfdf4b88b44fee8f0907f0b6
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: International Club Friendly
+# Type: FOOTBALL
+# Teams: FC Pari Nizhniy Novgorod vs FC Ufa (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/bbd91553dfdf4b88b44fee8f0907f0b6/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FK Zalgiris Vilnius B - Lietava Jonava - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghng08gm0v
+# StreamKey: 3c8cd28c76984349b26e03808f3c90e8
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Lithuanian I Lyga
+# Type: FOOTBALL
+# Teams: FK Zalgiris Vilnius B vs Lietava Jonava (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/3c8cd28c76984349b26e03808f3c90e8/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Enkoping - Umea FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghnzjo4m0v
+# StreamKey: 653611c19dc149debd1c8cb946dd8f37
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Sweden Division 1
+# Type: FOOTBALL
+# Teams: Enkoping vs Umea FC (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/653611c19dc149debd1c8cb946dd8f37/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Harstad - Kongsvinger IL B - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 6ypq3nhv8zk3md7
+# StreamKey: 99919e9da80c4b5c90d571986d3db7d5
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Norwegian 3.Divisjon
+# Type: FOOTBALL
+# Teams: Harstad vs Kongsvinger IL B (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/99919e9da80c4b5c90d571986d3db7d5/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Highlanders - Dynamos FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 6ypq3nhvdn2zmd7
+# StreamKey: e94e2ea861214ae0905a07bb3b483e83
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Zimbabwe Premier Soccer League
+# Type: FOOTBALL
+# Teams: Highlanders vs Dynamos FC (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/e94e2ea861214ae0905a07bb3b483e83/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",IF Floya - Stromsgodset B - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h182ygq0j
+# StreamKey: 2fd2d5ca78c649ca9452ec92244e9fa1
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Norwegian 3.Divisjon
+# Type: FOOTBALL
+# Teams: IF Floya vs Stromsgodset B (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/2fd2d5ca78c649ca9452ec92244e9fa1/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Triangle FC - Chicken Inn - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h1j4wkq0j
+# StreamKey: f423fbd6344a4bda9a90a6fffe72a578
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Zimbabwe Premier Soccer League
+# Type: FOOTBALL
+# Teams: Triangle FC vs Chicken Inn (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/f423fbd6344a4bda9a90a6fffe72a578/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Fauve Azur Elite - AS Fortuna Mfou - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 965mkyhk0jxzr1g
+# StreamKey: 86c89867db5f486b84445ee74a3e3020
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Cameroon Elite One
+# Type: FOOTBALL
+# Teams: Fauve Azur Elite vs AS Fortuna Mfou (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/86c89867db5f486b84445ee74a3e3020/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Rubin Kazan-2 - Akron Togliatti-2 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 965mkyhkw734r1g
+# StreamKey: acb7de5db35a49d1b5dcefa226d0c674
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: Rubin Kazan-2 vs Akron Togliatti-2 (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/acb7de5db35a49d1b5dcefa226d0c674/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Manica Diamond - FC Platinum - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohl3xwvq1z
+# StreamKey: be5012c2c33f41f6a1484eaebb08ce14
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Zimbabwe Premier Soccer League
+# Type: FOOTBALL
+# Teams: Manica Diamond vs FC Platinum (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/be5012c2c33f41f6a1484eaebb08ce14/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Ferroviario Maputo - Ferroviario Beira - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dn1m1ghlde0ymoe
+# StreamKey: b34fd8b225a04ceca900064656a6740e
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Mozambique Championship
+# Type: FOOTBALL
+# Teams: Ferroviario Maputo vs Ferroviario Beira (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/b34fd8b225a04ceca900064656a6740e/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Luki Energiya - FC Tver - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dn1m1ghlxv70moe
+# StreamKey: 11c258a9f49849fd9a7b0b8d66cea116
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: Luki Energiya vs FC Tver (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/11c258a9f49849fd9a7b0b8d66cea116/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FK Orenburg-2 - Pobeda Nizhniy Novgorod - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: n54qllhn3988qvy
+# StreamKey: 9407a6538c024a9898fe92fbb1e4bb3f
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: FK Orenburg-2 vs Pobeda Nizhniy Novgorod (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/c0563670e3c5cadb522d7e47cc259f61/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Sandefjord B - Brumunddal - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: n54qllhn3xl8qvy
+# StreamKey: 1a7159bc180e44bb99c47706f353acc3
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Norwegian 3.Divisjon
+# Type: FOOTBALL
+# Teams: Sandefjord B vs Brumunddal (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/1a7159bc180e44bb99c47706f353acc3/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Black Bulls - LD Sofala - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: n54qllhny08zqvy
+# StreamKey: db7c48d440b04b74bf1cad678810ad20
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Mozambique Championship
+# Type: FOOTBALL
+# Teams: Black Bulls vs LD Sofala (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/db7c48d440b04b74bf1cad678810ad20/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FC Iberia tbilisi 2010 - Iberia 1999 B - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: n54qllhnygvjqvy
+# StreamKey: 153d67c651244d31833101881dfd51c9
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Georgia Erovnuli Liga 3
+# Type: FOOTBALL
+# Teams: FC Iberia tbilisi 2010 vs Iberia 1999 B (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/153d67c651244d31833101881dfd51c9/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Barrancas FC - Belgrano Zarate - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: pxwrxlhyw45nryk
+# StreamKey: 9378962bbd424ccaa59ef1cc1c3374e3
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: ARFC
+# Type: FOOTBALL
+# Teams: Barrancas FC vs Belgrano Zarate (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/9378962bbd424ccaa59ef1cc1c3374e3/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Arsenal Tula - Spartak Kostroma - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: pxwrxlhyw4y4ryk
+# StreamKey: 13989099f2294f639f8d253d53655beb
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: International Club Friendly
+# Type: FOOTBALL
+# Teams: Arsenal Tula vs Spartak Kostroma (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/13989099f2294f639f8d253d53655beb/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Gardabani - FC Tbilisi 2025 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: pxwrxlhyw8dpryk
+# StreamKey: aac54b57ad64479086657f0b33a865b4
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Georgia Erovnuli Liga 3
+# Type: FOOTBALL
+# Teams: Gardabani vs FC Tbilisi 2025 (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/aac54b57ad64479086657f0b33a865b4/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Osters IF - Falkenberg - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8ghe5224r6o
+# StreamKey: 8c3277fc1a51445c93c60d2d46df3627
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Sweden Superettan
+# Type: FOOTBALL
+# Teams: Osters IF vs Falkenberg (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/c0f0030f9a6b9ad2dbcd157f8f305181/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",IK Brage - IFK Varnamo - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8ghe52x1r6o
+# StreamKey: 2ce97226d4634435812f814dcfefa638
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Sweden Superettan
+# Type: FOOTBALL
+# Teams: IK Brage vs IFK Varnamo (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/ba5e0935dc8464502118b9f9ad902ce5/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Baia de Pemba F.C - Vilankulo FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheo1p2r6o
+# StreamKey: 0a0b08bee33d4aeca46aa7365cb0b117
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Mozambique Championship
+# Type: FOOTBALL
+# Teams: Baia de Pemba F.C vs Vilankulo FC (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/0a0b08bee33d4aeca46aa7365cb0b117/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FC Didube - Guria Lanchkhuti - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheodygr6o
+# StreamKey: 9c41bc52ebf0458a9a386f404c77c026
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Georgia Erovnuli Liga 3
+# Type: FOOTBALL
+# Teams: FC Didube vs Guria Lanchkhuti (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/9c41bc52ebf0458a9a386f404c77c026/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Helsingborg - GIF Sundsvall - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: x7lm7phj35p1m2w
+# StreamKey: 7fabcaeee3dd47308251d1c00df5ccf4
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Sweden Superettan
+# Type: FOOTBALL
+# Teams: Helsingborg vs GIF Sundsvall (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/8097e77e6dfaa305f8f2f724ecd8b5c9/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",TS Galaxy Women - Copper Belts FC Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: x7lm7phjd2ojm2w
+# StreamKey: 8c3c6f9806854745aac4bf9f8886ec52
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: South Africa Women's League
+# Type: FOOTBALL
+# Teams: TS Galaxy Women vs Copper Belts FC Women (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/8c3c6f9806854745aac4bf9f8886ec52/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Danubio Women - Montevideo Wanderers Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: x7lm7phjd6j4m2w
+# StreamKey: 09d6951892c542e891a3b88c875e041d
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Uruguay Women's League 
+# Type: FOOTBALL
+# Teams: Danubio Women vs Montevideo Wanderers Women (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/09d6951892c542e891a3b88c875e041d/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Chessman Chiba FC - Artilheiros - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: x7lm7phjdpw1m2w
+# StreamKey: e1fc5acf074e4f6c8b5cf177f4a5d761
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Chinese Macao Liga de Elite
+# Type: FOOTBALL
+# Teams: Chessman Chiba FC vs Artilheiros (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/e1fc5acf074e4f6c8b5cf177f4a5d761/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Kolkheti 1913 Poti - FC Gonio - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: x7lm7phjdy40m2w
+# StreamKey: 321e14d365eb4d9189f5da72222db25f
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Georgia Erovnuli Liga 3
+# Type: FOOTBALL
+# Teams: Kolkheti 1913 Poti vs FC Gonio (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/321e14d365eb4d9189f5da72222db25f/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FC Merani Tbilisi - FC Irao Tbilisi - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y0or5jh8dy73qwz
+# StreamKey: a154b196438845cfa76f628e83128067
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Georgia Erovnuli Liga 3
+# Type: FOOTBALL
+# Teams: FC Merani Tbilisi vs FC Irao Tbilisi (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/a154b196438845cfa76f628e83128067/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Bollstanas SK - FC Gute - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y0or5jh8wdkeqwz
+# StreamKey: 02c0f537ffaf485fb2d5e29bdb76e06f
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Sweden Cup
+# Type: FOOTBALL
+# Teams: Bollstanas SK vs FC Gute (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/02c0f537ffaf485fb2d5e29bdb76e06f/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FC Minsk - Maxline Vitebsk - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h66844moj
+# StreamKey: ffaf8d352b3f4ca08b6fc55b20ea78b4
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Belarusian Premier League
+# Type: FOOTBALL
+# Teams: FC Minsk vs Maxline Vitebsk (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/ffaf8d352b3f4ca08b6fc55b20ea78b4/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",RSV Eintracht - BFC Preussen - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h68d03moj
+# StreamKey: bbff9d3313ec4b45941f1241641c66bd
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: International Club Friendly
+# Type: FOOTBALL
+# Teams: RSV Eintracht vs BFC Preussen (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/bbff9d3313ec4b45941f1241641c66bd/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Gremio Esportivo Brazlandia U20 - Gama DF Youth - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h68l26moj
+# StreamKey: 1688e59661d741788b40c2af2546bc77
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Brazilian Youth Championship
+# Type: FOOTBALL
+# Teams: Gremio Esportivo Brazlandia U20 vs Gama DF Youth (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/1688e59661d741788b40c2af2546bc77/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Frigg (w) - Start Kristiansand Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h6dop0moj
+# StreamKey: b2d1462829464bebb1de1579257ef9f7
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Norwegian Women's 1.Divisjon
+# Type: FOOTBALL
+# Teams: Frigg (w) vs Start Kristiansand Women (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/b2d1462829464bebb1de1579257ef9f7/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Baltika-2 Kaliningrad - Chertanovo Moscow - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h6ovwkmoj
+# StreamKey: 0a2f8bee239e4789b8f7f0ce45e54c6f
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: Baltika-2 Kaliningrad vs Chertanovo Moscow (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/b7ed50869278742aab43e82aa57dbe13/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",FK Zenit Izhevsk - Chelyabinsk-2 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: zp5rzghgoj7nq82
+# StreamKey: d27c1f3b2d384a22b81ecc40e99ddb69
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: RUS D3B
+# Type: FOOTBALL
+# Teams: FK Zenit Izhevsk vs Chelyabinsk-2 (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/d27c1f3b2d384a22b81ecc40e99ddb69/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Mekelle 70 Enderta - Adama City - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: zp5rzghgokn6q82
+# StreamKey: 9070ed304eb344128f25f7b892b7ae7a
+# CurrentTime: 2026-06-21 20:00:00
+# Date: 2026-06-21T13:00:00
+# League: Ethiopia Premier League
+# Type: FOOTBALL
+# Teams: Mekelle 70 Enderta vs Adama City (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/9070ed304eb344128f25f7b892b7ae7a/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Ymir - Hottur/Huginn - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 318q66hxd7yjqo9
+# StreamKey: bfcbed028d3240cebda59ca57dbb3552
+# CurrentTime: 2026-06-21 20:30:00
+# Date: 2026-06-21T13:30:00
+# League: Iceland Division 3
+# Type: FOOTBALL
+# Teams: Ymir vs Hottur/Huginn (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/bfcbed028d3240cebda59ca57dbb3552/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Arna Bjornar Women - Bryne Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 965mkyhk8w1or1g
+# StreamKey: a2566b8bc01543119af6b3024cf4851a
+# CurrentTime: 2026-06-21 20:30:00
+# Date: 2026-06-21T13:30:00
+# League: Norwegian Women's 1.Divisjon
+# Type: FOOTBALL
+# Teams: Arna Bjornar Women vs Bryne Women (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/a2566b8bc01543119af6b3024cf4851a/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",CA Los Gorriones - Villa Teresa - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l5ergph4j142r8k
+# StreamKey: 03f7d895221545e38920f524e6736b34
+# CurrentTime: 2026-06-21 20:30:00
+# Date: 2026-06-21T13:30:00
+# League: Uruguay Segunda League
+# Type: FOOTBALL
+# Teams: CA Los Gorriones vs Villa Teresa (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/03f7d895221545e38920f524e6736b34/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Niroye Zamini - FC Fard - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y0or5jh8dez9qwz
+# StreamKey: 0228d7a8ad244dbcaa3ba24f58782d7c
+# CurrentTime: 2026-06-21 20:30:00
+# Date: 2026-06-21T13:30:00
+# League: Iran Azadegan League
+# Type: FOOTBALL
+# Teams: Niroye Zamini vs FC Fard (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/0228d7a8ad244dbcaa3ba24f58782d7c/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Boa EC - CA Patrocinense - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h684e0moj
+# StreamKey: de9b7039c2e343058b4562baf37c3a81
+# CurrentTime: 2026-06-21 20:30:00
+# Date: 2026-06-21T13:30:00
+# League: BRA Campeonato Mineiro 2
+# Type: FOOTBALL
+# Teams: Boa EC vs CA Patrocinense (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/de9b7039c2e343058b4562baf37c3a81/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Arlington SA (W) - Arlington SA U21 (W) - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh9p78nm7v
+# StreamKey: 8c83b91d03e54a9cbaf3141a835ec23b
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: United States Women's Premier League
+# Type: FOOTBALL
+# Teams: Arlington SA (W) vs Arlington SA U21 (W) (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/8c83b91d03e54a9cbaf3141a835ec23b/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Energetik-BGU Minsk - Uni X-Labs Minsk - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 23xmvkh62xkeqg8
+# StreamKey: 086df7628f01422c8242ca8dd11af993
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Belarusian First League
+# Type: FOOTBALL
+# Teams: Energetik-BGU Minsk vs Uni X-Labs Minsk (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/2c363e65b74944cee2e78d043b66ea69/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Goteborg Women - Trelleborgs FF Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 23xmvkh6ppy4qg8
+# StreamKey: aac8cf9cd9ff4ae9acb019074480e5b8
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Sweden Elitettan
+# Type: FOOTBALL
+# Teams: Goteborg Women vs Trelleborgs FF Women (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/aac8cf9cd9ff4ae9acb019074480e5b8/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Orebro Syrianska IF - Lindo FF - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh564jlql0
+# StreamKey: 5d67d4fc8a1d4f558445725033d67471
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Sweden Division 2
+# Type: FOOTBALL
+# Teams: Orebro Syrianska IF vs Lindo FF (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/5d67d4fc8a1d4f558445725033d67471/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Mandalskameratene - Vag - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh57g40ql0
+# StreamKey: 94baa0e07d674fdc93d66d3dbdb26b17
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Norwegian 3.Divisjon
+# Type: FOOTBALL
+# Teams: Mandalskameratene vs Vag (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/cbd24e222b1655a081cc1803d29fa41b/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Ittihad Riadi Tanger - Renaissance Zmamra - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh5d741ql0
+# StreamKey: bd96cb61d4b54a27954a48ca0fd69504
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: The Botola Pro
+# Type: FOOTBALL
+# Teams: Ittihad Riadi Tanger vs Renaissance Zmamra (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/b6c26978f0ba37ca2679c0c2741caa21/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Stade Renard de Melong - Victoria Utd Limbe - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 318q66hx39p2qo9
+# StreamKey: debd02227150408f949981d0116f3bc7
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Cameroon Elite One
+# Type: FOOTBALL
+# Teams: Stade Renard de Melong vs Victoria Utd Limbe (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/debd02227150408f949981d0116f3bc7/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Avaí FC - Cuiaba - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 318q66hxxv0gqo9
+# StreamKey: d47f154ca1fd48e587d64dd0a869f89a
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Brazilian Serie B
+# Type: FOOTBALL
+# Teams: Avaí FC vs Cuiaba (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/34ec1f7a0cc480fcad60ed377d4e2bd9/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Kristianstads FF - Laholms FK - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hn3e41qdy
+# StreamKey: eea734336bc0460c84cb5ab3b6e6c858
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Sweden Division 1
+# Type: FOOTBALL
+# Teams: Kristianstads FF vs Laholms FK (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/10408c8df0db9e9470d4f7e4f077071c/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Raufoss IL - Sogndal - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hn3yp3qdy
+# StreamKey: 051c1bc36253446fbc199e2031f9d08f
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Norwegian 1.Divisjon
+# Type: FOOTBALL
+# Teams: Raufoss IL vs Sogndal (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/3929fef4bf4a6ca0744e975e6d39c85e/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Korsnas IF FK - Sunnersta AIF - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hn7o2xqdy
+# StreamKey: c382a43eb4694c3bac643a7504d00b82
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Sweden Division 2
+# Type: FOOTBALL
+# Teams: Korsnas IF FK vs Sunnersta AIF (0 - 0)
+# Quality: Source
+https://sv1.tieulamlive.org/live/c382a43eb4694c3bac643a7504d00b82/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",PWD de Bamenda - Dynamo de Douala - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghn58jxm0v
+# StreamKey: a9b8dee5d0e94f7fb86eae33154e3031
+# CurrentTime: 2026-06-21 21:00:00
+# Date: 2026-06-21T14:00:00
+# League: Cameroon Elite One
+# Type: FOOTBALL
+# Teams: PWD de Bamenda vs Dynamo de Douala (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/a9b8dee5d0e94f7fb86eae33154e3031/playlist.m3u8
 
 
