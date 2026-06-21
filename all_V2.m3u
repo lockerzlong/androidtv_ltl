@@ -1,11 +1,11 @@
 #EXTM3U
 # Playlist from TieuLamLive
 # Total: 30 matches
-# 🔴 LIVE: 10
-# ⏳ UPCOMING: 20
-# Updated: 2026-06-22 04:37:50
+# 🔴 LIVE: 11
+# ⏳ UPCOMING: 19
+# Updated: 2026-06-22 04:39:39
 
-# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (1 trận) ===
+# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (11 trận) ===
 
 #EXTINF:-1 group-title="TRẠNG QUỶ",🔥 🔴 Uruguay - Cabo Verde [BLV TRẠNG QUỶ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
@@ -23,10 +23,7 @@
 # Quality: Source
 https://live.lilive1.eu.cc/live/3e9028387c58f996e0a5d19f7052ad06/playlist.m3u8
 
-
-# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (2 trận) ===
-
-#EXTINF:-1 group-title="TRẠNG BỊP",Uruguay - Cabo Verde [BLV TRẠNG BỊP] - Source
+#EXTINF:-1 group-title="TRẠNG TÍ ( FAN URUGUAY )",🔴 Uruguay - Cabo Verde [BLV TRẠNG TÍ ( FAN URUGUAY )] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 067a8709215d45e3a848faac4f4dcb93
@@ -37,9 +34,220 @@ https://live.lilive1.eu.cc/live/3e9028387c58f996e0a5d19f7052ad06/playlist.m3u8
 # Type: FOOTBALL
 # Teams: Uruguay vs Cabo Verde (0 - 0)
 # Top: Yes
-# BLV: BLV TRẠNG BỊP
+# BLV: BLV TRẠNG TÍ ( FAN URUGUAY )
 # Quality: Source
 https://live.secufun.xyz/live/5fd2a46cad3f47838ec8ec97bc13e21a/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Club Atletico Guemes - Gimnasia Jujuy - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh5wp3lql0
+# StreamKey: 2ef98ca69c1e441384ad41c737c63104
+# CurrentTime: 2026-06-22 03:00:00
+# Date: 2026-06-21T20:00:00
+# League: ARG Primera Nacional
+# Type: FOOTBALL
+# Teams: Club Atletico Guemes vs Gimnasia Jujuy (1 - 3)
+# Quality: Source
+https://live.lilive1.eu.cc/live/67022aaffea58b9d027f2a059dc1213f/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Sao Bernardo - Juventude - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohlljy9q1z
+# StreamKey: bb1a335ad64040e992a957467d126801
+# CurrentTime: 2026-06-22 03:00:00
+# Date: 2026-06-21T20:00:00
+# League: Brazilian Serie B
+# Type: FOOTBALL
+# Teams: Sao Bernardo vs Juventude (0 - 1)
+# Quality: Source
+https://live.lilive1.eu.cc/live/6e40a03cc32300ff5462a2b232bff9fc/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Santos Ica - Ayacucho Futbol Club - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l7oqdehgz4dyr51
+# StreamKey: 7cb67c1aab4a429785795101525758fd
+# CurrentTime: 2026-06-22 03:00:00
+# Date: 2026-06-21T20:00:00
+# League: Copa de la Liga
+# Type: FOOTBALL
+# Teams: Santos Ica vs Ayacucho Futbol Club (1 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/e2df70f19879dec8abc523fb0673335a/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Fram Reykjavik - Vikingur Reykjavik - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: jw2r09hk2l8yrz8
+# StreamKey: 4b94f0531a93459eb165f5fd026e906e
+# CurrentTime: 2026-06-22 03:15:00
+# Date: 2026-06-21T20:15:00
+# League: Iceland Besta-deild karla
+# Type: FOOTBALL
+# Teams: Fram Reykjavik vs Vikingur Reykjavik (0 - 4)
+# Quality: Source
+https://live.lilive1.eu.cc/live/b5bba33376dbca216bf55ea61d4857a6/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 CD Estudiantil CNI - Sporting Cristal - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 318q66hxdv7yqo9
+# StreamKey: 3944de9fe29f4b94a111720769257eb2
+# CurrentTime: 2026-06-22 03:30:00
+# Date: 2026-06-21T20:30:00
+# League: Copa de la Liga
+# Type: FOOTBALL
+# Teams: CD Estudiantil CNI vs Sporting Cristal (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/6a8491fa0470445132896b383c42c358/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Ferroviaria SP - Inter de Limeira - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4jwq2ghnnjjlm0v
+# StreamKey: 2cd280b581154d1abb63e8ae292a1141
+# CurrentTime: 2026-06-22 04:30:00
+# Date: 2026-06-21T21:30:00
+# League: Brazilian Serie C
+# Type: FOOTBALL
+# Teams: Ferroviaria SP vs Inter de Limeira (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/38ad071de00d219343992965b1c06fab/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Universidad de Chile - Santiago Wanderers - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: k82rekhgdnz6rep
+# StreamKey: 5c0f8bd5f48645f1ba0cdca1b61a0585
+# CurrentTime: 2026-06-22 04:30:00
+# Date: 2026-06-21T21:30:00
+# League: Chilean Cup
+# Type: FOOTBALL
+# Teams: Universidad de Chile vs Santiago Wanderers (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/759ca3cd485f52de339b0fe6ff83194b/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Goiás EC - Operario Ferroviario PR - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l5ergph44v34r8k
+# StreamKey: 0a1e917658b54d448113b516101cb948
+# CurrentTime: 2026-06-22 04:30:00
+# Date: 2026-06-21T21:30:00
+# League: Brazilian Serie B
+# Type: FOOTBALL
+# Teams: Goiás EC vs Operario Ferroviario PR (0 - 1)
+# Quality: Source
+https://live.lilive1.eu.cc/live/a8799ba586fbd8d32604ee0f7eb986a3/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 Barra FC - Amazonas FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: n54qllhnn66gqvy
+# StreamKey: 9cfe96d7ae8d46afbb55f885a36575e8
+# CurrentTime: 2026-06-22 04:30:00
+# Date: 2026-06-21T21:30:00
+# League: Brazilian Serie C
+# Type: FOOTBALL
+# Teams: Barra FC vs Amazonas FC (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/5f5da1a3893cc9293935c7cd45056c1f/playlist.m3u8
+
+
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (19 trận) ===
+
+#EXTINF:-1 group-title="UPCOMING",Botafogo RJ Youth - Serrano RJ U20 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 2y8m4zh5dok2ql0
+# StreamKey: d7364e32577a4ba8ad1ec7de531ba558
+# CurrentTime: 2026-06-22 05:00:00
+# Date: 2026-06-21T22:00:00
+# League: Campeonato Brasileiro Sub-20
+# Type: FOOTBALL
+# Teams: Botafogo RJ Youth vs Serrano RJ U20 (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/d7364e32577a4ba8ad1ec7de531ba558/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Uniao MT Youth - AD Uirapuru U20 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hne83gqdy
+# StreamKey: bffbe2afddda493481dae2c5ecde6f86
+# CurrentTime: 2026-06-22 05:00:00
+# Date: 2026-06-21T22:00:00
+# League: Brazilian Youth Championship
+# Type: FOOTBALL
+# Teams: Uniao MT Youth vs AD Uirapuru U20 (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/bffbe2afddda493481dae2c5ecde6f86/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Real Oruro - Independiente Petrolero - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: jw2r09hkggk1rz8
+# StreamKey: 555deedc410d4d2a8840c845a287cc6f
+# CurrentTime: 2026-06-22 05:00:00
+# Date: 2026-06-21T22:00:00
+# League: Bolivian Primera Division
+# Type: FOOTBALL
+# Teams: Real Oruro vs Independiente Petrolero (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/555deedc410d4d2a8840c845a287cc6f/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Mint Hill FC - Statesville FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l5ergph4j1pvr8k
+# StreamKey: 6a103222393a43d28d3ee39c7a9ac6de
+# CurrentTime: 2026-06-22 05:00:00
+# Date: 2026-06-21T22:00:00
+# League: National Premier Soccer League
+# Type: FOOTBALL
+# Teams: Mint Hill FC vs Statesville FC (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/6a103222393a43d28d3ee39c7a9ac6de/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Columbus Crew B - Atlanta United FC II - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l7oqdehgz3zkr51
+# StreamKey: 2f792a2856df40c1949c0b2ba911f0cc
+# CurrentTime: 2026-06-22 05:00:00
+# Date: 2026-06-21T22:00:00
+# League: MLS Next Pro
+# Type: FOOTBALL
+# Teams: Columbus Crew B vs Atlanta United FC II (0 - 0)
+# Quality: Source
+https://live.lilive1.eu.cc/live/e40794e319f1cbc17165b60e15e66de9/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Pittsburgh Riveters SC (W) - Cleveland Force SC Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: pxwrxlhyw4xnryk
+# StreamKey: 12b87a6045af439aa2d2297edae788f8
+# CurrentTime: 2026-06-22 05:00:00
+# Date: 2026-06-21T22:00:00
+# League: USL WLW
+# Type: FOOTBALL
+# Teams: Pittsburgh Riveters SC (W) vs Cleveland Force SC Women (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/12b87a6045af439aa2d2297edae788f8/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Cancun FC - Monterrey - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: y39mp1h68z5jmoj
+# StreamKey: b45149b30f9f4c87b9ade717239cd9d9
+# CurrentTime: 2026-06-22 05:30:00
+# Date: 2026-06-21T22:30:00
+# League: International Club Friendly
+# Type: FOOTBALL
+# Teams: Cancun FC vs Monterrey (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/b45149b30f9f4c87b9ade717239cd9d9/playlist.m3u8
 
 #EXTINF:-1 group-title="TRẠNG TỒ",Cienciano - Deportivo Garcilaso [BLV TRẠNG TỒ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
@@ -55,5 +263,148 @@ https://live.secufun.xyz/live/5fd2a46cad3f47838ec8ec97bc13e21a/playlist.m3u8
 # BLV: BLV TRẠNG TỒ
 # Quality: Source
 https://live.secufun.xyz/live/8c723c1652fd4bd0ab497c953c779a13/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Orlando City B - Philadelphia Union II - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 6ypq3nhvdnd2md7
+# StreamKey: 1cdb4c7250d64ee7b72944b97c027477
+# CurrentTime: 2026-06-22 06:00:00
+# Date: 2026-06-21T23:00:00
+# League: MLS Next Pro
+# Type: FOOTBALL
+# Teams: Orlando City B vs Philadelphia Union II (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/1cdb4c7250d64ee7b72944b97c027477/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",New York Red Bulls B - Toronto FC II - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 8yomo4h1j4jdq0j
+# StreamKey: d4d93d8c44304b41bdb3e84effbff92e
+# CurrentTime: 2026-06-22 06:00:00
+# Date: 2026-06-21T23:00:00
+# League: MLS Next Pro
+# Type: FOOTBALL
+# Teams: New York Red Bulls B vs Toronto FC II (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/d4d93d8c44304b41bdb3e84effbff92e/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",New York City Team B - Chattanooga - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohl3x36q1z
+# StreamKey: d4438e604383435e8d276fc59bb68817
+# CurrentTime: 2026-06-22 06:00:00
+# Date: 2026-06-21T23:00:00
+# League: MLS Next Pro
+# Type: FOOTBALL
+# Teams: New York City Team B vs Chattanooga (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/d4438e604383435e8d276fc59bb68817/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Lancaster Inferno Women - Northern Virginia FC Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l5ergph4j9dxr8k
+# StreamKey: e357539cef6e46d3bf68c81d12a1a605
+# CurrentTime: 2026-06-22 06:00:00
+# Date: 2026-06-21T23:00:00
+# League: USL WLW
+# Type: FOOTBALL
+# Teams: Lancaster Inferno Women vs Northern Virginia FC Women (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/e357539cef6e46d3bf68c81d12a1a605/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Sueno FC - St. Croix SC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: pxwrxlhyw3wdryk
+# StreamKey: 86290ccbafca4ddc933c6ce0838d8b83
+# CurrentTime: 2026-06-22 06:00:00
+# Date: 2026-06-21T23:00:00
+# League: USL League Two
+# Type: FOOTBALL
+# Teams: Sueno FC vs St. Croix SC (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/86290ccbafca4ddc933c6ce0838d8b83/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Annapolis Blues - Northern Virginia FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hnep5kqdy
+# StreamKey: ffb59ca2f2214773a3e8e7a4af1fe0a9
+# CurrentTime: 2026-06-22 06:30:00
+# Date: 2026-06-21T23:30:00
+# League: USL League Two
+# Type: FOOTBALL
+# Teams: Annapolis Blues vs Northern Virginia FC (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/ffb59ca2f2214773a3e8e7a4af1fe0a9/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",O.Higgins - Union Espanola - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: dj2ryohl35v9q1z
+# StreamKey: 848cf21ca8e64e558a5cc215874c80a8
+# CurrentTime: 2026-06-22 07:00:00
+# Date: 2026-06-22T00:00:00
+# League: Chilean Cup
+# Type: FOOTBALL
+# Teams: O.Higgins vs Union Espanola (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/848cf21ca8e64e558a5cc215874c80a8/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",AHFC Royals - San Antonio FC B - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: pxwrxlhyw36jryk
+# StreamKey: ff8799d218af4d7fa267e5c641607b7c
+# CurrentTime: 2026-06-22 07:00:00
+# Date: 2026-06-22T00:00:00
+# League: USL League Two
+# Type: FOOTBALL
+# Teams: AHFC Royals vs San Antonio FC B (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/ff8799d218af4d7fa267e5c641607b7c/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",West Seattle Junction - Ballard Football Club - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 3glrw7hnepxzqdy
+# StreamKey: 0f43fe30a31b439db8f20fef3a27cffc
+# CurrentTime: 2026-06-22 07:15:00
+# Date: 2026-06-22T00:15:00
+# League: USL League Two
+# Type: FOOTBALL
+# Teams: West Seattle Junction vs Ballard Football Club (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/0f43fe30a31b439db8f20fef3a27cffc/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Oriente Petrolero - Nacional Potosi - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l7oqdehg99ger51
+# StreamKey: 86dcfd46522b4345964bc34ea177cfc5
+# CurrentTime: 2026-06-22 07:30:00
+# Date: 2026-06-22T00:30:00
+# League: Bolivian Primera Division
+# Type: FOOTBALL
+# Teams: Oriente Petrolero vs Nacional Potosi (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/86dcfd46522b4345964bc34ea177cfc5/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",Austin FC II - Sporting Kansas CityReserves - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheownxr6o
+# StreamKey: d44526bbf18c4f94a37a2a34e76fee68
+# CurrentTime: 2026-06-22 07:30:00
+# Date: 2026-06-22T00:30:00
+# League: MLS Next Pro
+# Type: FOOTBALL
+# Teams: Austin FC II vs Sporting Kansas CityReserves (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/d44526bbf18c4f94a37a2a34e76fee68/playlist.m3u8
 
 
