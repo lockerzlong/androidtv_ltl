@@ -1,170 +1,13 @@
 #EXTM3U
 # Playlist from TieuLamLive
-# Total: 58 matches
-# 🔴 LIVE: 19
-# ⏳ UPCOMING: 39
-# Updated: 2026-06-22 02:59:35
+# Total: 31 matches
+# 🔴 LIVE: 7
+# ⏳ UPCOMING: 24
+# Updated: 2026-06-22 04:18:51
 
-# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (3 trận) ===
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (3 trận) ===
 
-#EXTINF:-1 group-title="TRẠNG PHỆ",🔥 🔴 Belgium - IR Iran [BLV TRẠNG PHỆ] - Source
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 23xmvkh60l2zqg8
-# StreamKey: b6f9e1757f634d54b40d8a15891c05f2
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Hot: Yes
-# Top: Yes
-# BLV: BLV TRẠNG PHỆ
-# Quality: Source
-https://live.lilive1.eu.cc/live/b612e7e0127b4ec7d9f0d067710ffccb/playlist.m3u8
-
-#EXTINF:-1 group-title="TRẠNG PHỆ",🔥 🔴 Belgium - IR Iran [BLV TRẠNG PHỆ] - HD1
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 23xmvkh60l2zqg8
-# StreamKey: b6f9e1757f634d54b40d8a15891c05f2
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Hot: Yes
-# Top: Yes
-# BLV: BLV TRẠNG PHỆ
-# Quality: HD1
-https://pull.asynccdn.com/live/b6f9e1757f634d54b40d8a15891c05f2/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG PHỆ",🔥 🔴 Belgium - IR Iran [BLV TRẠNG PHỆ] - HD2
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 23xmvkh60l2zqg8
-# StreamKey: b6f9e1757f634d54b40d8a15891c05f2
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Hot: Yes
-# Top: Yes
-# BLV: BLV TRẠNG PHỆ
-# Quality: HD2
-https://pull.asynccdn.com/live/b6f9e1757f634d54b40d8a15891c05f2/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG PHỆ",🔥 🔴 Belgium - IR Iran [BLV TRẠNG PHỆ] - HD3
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 23xmvkh60l2zqg8
-# StreamKey: b6f9e1757f634d54b40d8a15891c05f2
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Hot: Yes
-# Top: Yes
-# BLV: BLV TRẠNG PHỆ
-# Quality: HD3
-https://pull.asynccdn.com/live/b6f9e1757f634d54b40d8a15891c05f2/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Belgium - IR Iran [BLV TRẠNG BÉO] - HD1
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 0ba2b99d0db14319937cf91fff3554c5
-# StreamKey: da0292f0733f4420924c15f1184ce4ce
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Top: Yes
-# BLV: BLV TRẠNG BÉO
-# Quality: HD1
-https://pull.asynccdn.com/live/da0292f0733f4420924c15f1184ce4ce/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Belgium - IR Iran [BLV TRẠNG BÉO] - HD2
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 0ba2b99d0db14319937cf91fff3554c5
-# StreamKey: da0292f0733f4420924c15f1184ce4ce
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Top: Yes
-# BLV: BLV TRẠNG BÉO
-# Quality: HD2
-https://pull.asynccdn.com/live/da0292f0733f4420924c15f1184ce4ce/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Belgium - IR Iran [BLV TRẠNG BÉO] - HD3
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 0ba2b99d0db14319937cf91fff3554c5
-# StreamKey: da0292f0733f4420924c15f1184ce4ce
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Top: Yes
-# BLV: BLV TRẠNG BÉO
-# Quality: HD3
-https://pull.asynccdn.com/live/da0292f0733f4420924c15f1184ce4ce/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Belgium - IR Iran [BLV TRẠNG BÉO] - HD1
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 0ba2b99d0db14319937cf91fff3554c5
-# StreamKey: da0292f0733f4420924c15f1184ce4ce
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Top: Yes
-# BLV: BLV TRẠNG BÉO
-# Quality: HD1
-https://pull.asynccdn.com/live/da0292f0733f4420924c15f1184ce4ce/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Belgium - IR Iran [BLV TRẠNG BÉO] - HD2
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 0ba2b99d0db14319937cf91fff3554c5
-# StreamKey: da0292f0733f4420924c15f1184ce4ce
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Top: Yes
-# BLV: BLV TRẠNG BÉO
-# Quality: HD2
-https://pull.asynccdn.com/live/da0292f0733f4420924c15f1184ce4ce/index.m3u8
-
-#EXTINF:-1 group-title="TRẠNG BÉO",🔴 Belgium - IR Iran [BLV TRẠNG BÉO] - HD3
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: 0ba2b99d0db14319937cf91fff3554c5
-# StreamKey: da0292f0733f4420924c15f1184ce4ce
-# CurrentTime: 2026-06-22 02:00:00
-# Date: 2026-06-21T19:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: Belgium vs IR Iran (0 - 0)
-# Top: Yes
-# BLV: BLV TRẠNG BÉO
-# Quality: HD3
-https://pull.asynccdn.com/live/da0292f0733f4420924c15f1184ce4ce/index.m3u8
-
-
-# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (2 trận) ===
-
-#EXTINF:-1 group-title="TRẠNG QUỶ",🔥 Uruguay - Cabo Verde [BLV TRẠNG QUỶ] - Source
+#EXTINF:-1 group-title="TRẠNG QUỶ",22:00 🔥 Uruguay - Cabo Verde [BLV TRẠNG QUỶ] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: vjxm8ghew7oer6o
@@ -180,7 +23,7 @@ https://pull.asynccdn.com/live/da0292f0733f4420924c15f1184ce4ce/index.m3u8
 # Quality: Source
 https://live.lilive1.eu.cc/live/3e9028387c58f996e0a5d19f7052ad06/playlist.m3u8
 
-#EXTINF:-1 group-title="TRẠNG BỊP",Uruguay - Cabo Verde [BLV TRẠNG BỊP] - Source
+#EXTINF:-1 group-title="TRẠNG BỊP",22:00 Uruguay - Cabo Verde [BLV TRẠNG BỊP] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
 # ID: 067a8709215d45e3a848faac4f4dcb93
@@ -194,5 +37,20 @@ https://live.lilive1.eu.cc/live/3e9028387c58f996e0a5d19f7052ad06/playlist.m3u8
 # BLV: BLV TRẠNG BỊP
 # Quality: Source
 https://live.secufun.xyz/live/5fd2a46cad3f47838ec8ec97bc13e21a/playlist.m3u8
+
+#EXTINF:-1 group-title="TRẠNG TỒ",23:00 Cienciano - Deportivo Garcilaso [BLV TRẠNG TỒ] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: k82rekhgdy84rep
+# StreamKey: 8c723c1652fd4bd0ab497c953c779a13
+# CurrentTime: 2026-06-22 06:00:00
+# Date: 2026-06-21T23:00:00
+# League: Copa de la Liga
+# Type: FOOTBALL
+# Teams: Cienciano vs Deportivo Garcilaso (0 - 0)
+# Top: Yes
+# BLV: BLV TRẠNG TỒ
+# Quality: Source
+https://live.secufun.xyz/live/8c723c1652fd4bd0ab497c953c779a13/playlist.m3u8
 
 
