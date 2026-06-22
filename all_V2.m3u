@@ -1,7 +1,26 @@
 #EXTM3U
 # Playlist from TieuLamLive
-# Total: 2 matches
-# 🔴 LIVE: 0
-# ⏳ UPCOMING: 2
-# Updated: 2026-06-22 12:52:23
+# Total: 8 matches
+# 🔴 LIVE: 2
+# ⏳ UPCOMING: 6
+# Updated: 2026-06-22 14:43:42
+
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (1 trận) ===
+
+#EXTINF:-1 group-title="TRẠNG TÈO",🔥 17:15 Melbourne Victory FC Youth - Brunswick City [BLV TRẠNG TÈO] - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: n54qllhnp1xdqvy
+# StreamKey: 4ce0f96085d34da5afa7021965805fc1
+# CurrentTime: 2026-06-22 17:15:00
+# Date: 2026-06-22T10:15:00
+# League: National Premier Leagues Victoria 2
+# Type: FOOTBALL
+# Teams: Melbourne Victory FC Youth vs Brunswick City (0 - 0)
+# Hot: Yes
+# Top: Yes
+# BLV: BLV TRẠNG TÈO
+# Quality: Source
+https://live.secufun.xyz/live/4ce0f96085d34da5afa7021965805fc1/playlist.m3u8
+
 
