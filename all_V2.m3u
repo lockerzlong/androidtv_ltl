@@ -3,9 +3,103 @@
 # Total: 8 matches
 # 🔴 LIVE: 2
 # ⏳ UPCOMING: 6
-# Updated: 2026-06-22 14:43:42
+# Updated: 2026-06-22 14:46:03
 
-# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (1 trận) ===
+# === 🔴 TRẬN ĐANG DIỄN RA (LIVE) (2 trận) ===
+
+#EXTINF:-1 group-title="LIVE",🔴 13:10 Persma Manado - Pesik Kuningan - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheoy34r6o
+# StreamKey: 9ee1265557f348e9aaa9a5b62a24effe
+# CurrentTime: 2026-06-22 13:10:00
+# Date: 2026-06-22T06:10:00
+# League: Indo D4
+# Type: FOOTBALL
+# Teams: Persma Manado vs Pesik Kuningan (0 - 2)
+# Quality: Source
+https://live.lilive2.eu.cc/live/1b2b5774c80de445a97137239fb1ae51/playlist.m3u8
+
+#EXTINF:-1 group-title="LIVE",🔴 13:10 PSN Ngada - 757 Kepri FC - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: x7lm7phjd48om2w
+# StreamKey: abc193f4c5d6439088908c2351588d1f
+# CurrentTime: 2026-06-22 13:10:00
+# Date: 2026-06-22T06:10:00
+# League: Indo D4
+# Type: FOOTBALL
+# Teams: PSN Ngada vs 757 Kepri FC (2 - 0)
+# Quality: Source
+https://live.lilive2.eu.cc/live/753ef4ac78164d4dec6558bc19e4c886/playlist.m3u8
+
+
+# === ⏳ TRẬN SẮP DIỄN RA (UPCOMING) (6 trận) ===
+
+#EXTINF:-1 group-title="UPCOMING",15:00 Hunters FC - Bishrelt Khoromkhon - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: vjxm8gheo1zjr6o
+# StreamKey: 12012f43509040f4b8af0e5ecfea5a7f
+# CurrentTime: 2026-06-22 15:00:00
+# Date: 2026-06-22T08:00:00
+# League: Mongolia Premier League
+# Type: FOOTBALL
+# Teams: Hunters FC vs Bishrelt Khoromkhon (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/12012f43509040f4b8af0e5ecfea5a7f/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",15:15 Melbourne Victory U23 - Brunswick City U23 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: n54qllhnyog7qvy
+# StreamKey: 1acc60c1ccb04771a376735d4992c359
+# CurrentTime: 2026-06-22 15:15:00
+# Date: 2026-06-22T08:15:00
+# League: Aus NPL U23
+# Type: FOOTBALL
+# Teams: Melbourne Victory U23 vs Brunswick City U23 (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/1acc60c1ccb04771a376735d4992c359/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",16:00 Zwekapin FC (w) - Institute of Sports & Physical Education FC Women - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 4wyrn4h61k5nq86
+# StreamKey: bf375139ae5a47109d3702d28ce23992
+# CurrentTime: 2026-06-22 16:00:00
+# Date: 2026-06-22T09:00:00
+# League: MML W
+# Type: FOOTBALL
+# Teams: Zwekapin FC (w) vs Institute of Sports & Physical Education FC Women (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/bf375139ae5a47109d3702d28ce23992/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",16:30 Myawady FC Women - Yangon United FC (W) - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: l5ergph4j97xr8k
+# StreamKey: 094ae419573244679fb33f4aed629dbe
+# CurrentTime: 2026-06-22 16:30:00
+# Date: 2026-06-22T09:30:00
+# League: MML W
+# Type: FOOTBALL
+# Teams: Myawady FC Women vs Yangon United FC (W) (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/094ae419573244679fb33f4aed629dbe/playlist.m3u8
+
+#EXTINF:-1 group-title="UPCOMING",16:45 Sydney Olympic U20 - Rockdale City Suns U20 - Source
+#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+# ID: 1l4rjnh9p30vm7v
+# StreamKey: 29f34d80158f465fa4ca41e36654c755
+# CurrentTime: 2026-06-22 16:45:00
+# Date: 2026-06-22T09:45:00
+# League: Australia Northern New South Wales U20 League
+# Type: FOOTBALL
+# Teams: Sydney Olympic U20 vs Rockdale City Suns U20 (0 - 0)
+# Quality: Source
+https://live.secufun.xyz/live/29f34d80158f465fa4ca41e36654c755/playlist.m3u8
 
 #EXTINF:-1 group-title="TRẠNG TÈO",🔥 17:15 Melbourne Victory FC Youth - Brunswick City [BLV TRẠNG TÈO] - Source
 #EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
