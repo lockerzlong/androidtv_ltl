@@ -636,18 +636,3 @@ https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 https://s129135.cdn.mytvnet.vn/pkg20/live_dzones/tlc.smil/manifest.mpd
 #-----------------------KÊNH WC-------------------------------#
 
-#EXTINF:-1 group-title="TRẠNG TÍ",🔥 🔴 New Zealand - Egypt [BLV TRẠNG TÍ] - HD2
-#EXTVLCOPT:http-referrer=https://sv1.tieulamlive.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
-# ID: jw2r09hk0gdwrz8
-# StreamKey: f8a1a083830d481fadf4d684b59e45d7
-# CurrentTime: 2026-06-22 08:00:00
-# Date: 2026-06-22T01:00:00
-# League: FIFA World Cup
-# Type: FOOTBALL
-# Teams: New Zealand vs Egypt (1 - 2)
-# Hot: Yes
-# Top: Yes
-# BLV: BLV TRẠNG TÍ
-# Quality: HD2
-https://pull.asynccdn.com/live/f8a1a083830d481fadf4d684b59e45d7/index.m3u8
