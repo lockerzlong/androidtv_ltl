@@ -1,7 +1,7 @@
 {
   "TieulamTV": {
                 "url": "https://sv1.tieulam2.xyz",
-                "worker": "https://lively-cake-4a83.lockerzlong.workers.dev",
+                "workerUrl": "https://lively-cake-4a83.lockerzlong.workers.dev",
                 "api": "https://api.tlap17062026.com/matches/graph",
                 "blv_only": true
                }
