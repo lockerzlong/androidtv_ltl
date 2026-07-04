@@ -769,7 +769,7 @@ https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 https://s129135.cdn.mytvnet.vn/pkg20/live_dzones/tlc.smil/manifest.mpd
 #-----------------------KÊNH WC-------------------------------#
 
-XTI#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2e2ec6721545fb4ceaa95fba18202359.png!w80" group-title="Cola TV" group-logo="https://colatv99.live/assets/images/logo.png" , 🟢 12:20 04/07 ⚽ Canberra White Eagles vs Tigers FC (BLV BÍ ĐAO) [flv]
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2e2ec6721545fb4ceaa95fba18202359.png!w80" group-title="Cola TV" group-logo="https://colatv99.live/assets/images/logo.png" , 🟢 12:20 04/07 ⚽ Canberra White Eagles vs Tigers FC (BLV BÍ ĐAO) [flv]
 https://live05.koepgd.app/live/99121525.flv
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2e2ec6721545fb4ceaa95fba18202359.png!w80" group-title="Cola TV" , 🟢 12:20 04/07 ⚽ Canberra White Eagles vs Tigers FC (BLV BÍ ĐAO) [hls]
