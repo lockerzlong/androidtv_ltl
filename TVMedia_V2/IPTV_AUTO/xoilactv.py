@@ -164,6 +164,32 @@ def get_live_status_from_title(title):
 
 
 # ============================================
+# HÀM LẤY THỜI GIAN TỪ TITLE (HH:MM)
+# ============================================
+def extract_time_from_title(title):
+    try:
+        time_match = re.search(r'lúc\s+(\d{2}):(\d{2})', title)
+        if time_match:
+            return f"{time_match.group(1)}:{time_match.group(2)}"
+        return "00:00"
+    except Exception:
+        return "00:00"
+
+
+# ============================================
+# HÀM LẤY NGÀY TỪ TITLE (DD/MM/YYYY)
+# ============================================
+def extract_date_from_title(title):
+    try:
+        date_match = re.search(r'ngày\s+(\d{2})/(\d{2})/(\d{4})', title)
+        if date_match:
+            return f"{date_match.group(1)}/{date_match.group(2)}/{date_match.group(3)}"
+        return ""
+    except Exception:
+        return ""
+
+
+# ============================================
 # HÀM PARSE 1 MATCH
 # ============================================
 def parse_match_from_element(item):
@@ -305,8 +331,46 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
             for key in link_keys:
                 stream_url = match[key]
                 if stream_url and stream_url.startswith('http'):
+                    # Lấy thời gian và ngày từ title
+                    time_str = extract_time_from_title(match['title'])
+                    date_str = extract_date_from_title(match['title'])
+                    
+                    # Tạo tiêu đề mới: 🔥⏳03:00 Brazil vs Na Uy ngày 06/07/2026
+                    display_title = match['title']
+                    
+                    # Thay thế "lúc HH:MM" và "ngày DD/MM/YYYY" bằng format mới
+                    # Xóa phần "lúc HH:MM" và "ngày DD/MM/YYYY" khỏi title
+                    clean_title = re.sub(r'lúc\s+\d{2}:\d{2}\s+', '', display_title)
+                    clean_title = re.sub(r'ngày\s+\d{2}/\d{2}/\d{4}', '', clean_title).strip()
+                    
+                    # Xây dựng tiêu đề mới
+                    new_title = ""
+                    
+                    # Thêm icon live
+                    #if match['live'] == 'living':
+                    #    new_title = "🔴"
+                    #elif match['live'] == 'end':
+                    #    new_title = "✅"
+                    #elif match['live'] == 'comming':
+                    #    new_title = "⏳"
+                    
+                    # Thêm hot
+                    if match['hot']:
+                        new_title += "🔥"
+                    
+                    # Thêm thời gian
+                    if time_str:
+                        new_title += time_str + " "
+                    
+                    # Thêm tên trận và ngày
+                    new_title += clean_title
+                    
+                    # Nếu chưa có ngày trong title, thêm vào
+                    if date_str and date_str not in new_title:
+                        new_title += f" ngày {date_str}"
+                    
                     all_streams.append({
-                        'title': match['title'],
+                        'title': new_title,
                         'url': stream_url,
                         'fid': match['fid'],
                         'hot': match['hot'],
@@ -317,25 +381,13 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
             print("❌ No stream links found!")
             return False
         
-        m3u_content = "\n"
+        m3u_content = "#EXTM3U\n"
         m3u_content += "# Xôi Lạc TV Playlist\n"
         m3u_content += f"# Total streams: {len(all_streams)}\n"
         m3u_content += f"# Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
         
         for stream in all_streams:
-            title = stream['title']
-            
-            if stream['live'] == 'living':
-                title = "🔴 " + title
-            elif stream['live'] == 'end':
-                title = "✅ " + title
-            elif stream['live'] == 'comming':
-                title = "⏳ " + title
-            
-            if stream['hot']:
-                title = "🔥 " + title
-            
-            m3u_content += f'#EXTINF:-1 group-title="Xôi Lạc Z TV",{title}\n'
+            m3u_content += f'#EXTINF:-1 group-title="Xôi Lạc Z TV",{stream["title"]}\n'
             m3u_content += '#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36\n'
             m3u_content += '#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/\n'
             m3u_content += f'{stream["url"]}\n\n'
