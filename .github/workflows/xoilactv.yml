@@ -11,4 +11,4 @@ jobs:
       - name: Run XoilacTV
         run: |
           cd TVMedia_V2/IPTV_AUTO
-          python xoilacztv.py
+          python xoilactv.py
