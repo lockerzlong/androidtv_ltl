@@ -1,5 +1,14 @@
-- name: Run XoilacTV
-  run: |
-    cd TVMedia_V2/IPTV_AUTO
-    python xoilacztv.py
-    ls -lh xoilactv.m3u
+name: Manual Run
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run XoilacTV
+        run: |
+          cd TVMedia_V2/IPTV_AUTO
+          python xoilacztv.py
