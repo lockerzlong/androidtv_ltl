@@ -3,6 +3,9 @@ name: Manual Run
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write  # 👈 THÊM DÒNG NÀY
+
 jobs:
   build:
     runs-on: ubuntu-latest
