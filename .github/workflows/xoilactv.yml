@@ -2,9 +2,11 @@ name: Manual Run
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [trigger-xoilac-from-cronjob]  # 👈 THÊM DÒNG NÀY ĐỂ NHẬN TRIGGER TỪ CRON-JOB.ORG
 
 permissions:
-  contents: write  # 👈 THÊM DÒNG NÀY
+  contents: write
 
 jobs:
   build:
