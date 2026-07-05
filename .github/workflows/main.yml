@@ -1,0 +1,5 @@
+- name: Run XoilacTV
+  run: |
+    cd TVMedia_V2/IPTV_AUTO
+    python xoilacztv.py
+    ls -lh xoilactv.m3u
