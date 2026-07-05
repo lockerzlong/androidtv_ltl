@@ -317,7 +317,7 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
             print("❌ No stream links found!")
             return False
         
-        m3u_content = "#EXTM3U\n"
+        m3u_content = "\n"
         m3u_content += "# Xôi Lạc TV Playlist\n"
         m3u_content += f"# Total streams: {len(all_streams)}\n"
         m3u_content += f"# Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
