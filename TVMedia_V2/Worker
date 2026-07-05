@@ -8,5 +8,8 @@
                },
   "XoilacTV": {
                 "url": "https://xoilacz.vip"
+               },
+  "Khandai": {
+                "api": "https://sv.khandai-a.xyz/api/v1/external/fixtures/unfinished"
                }
 }
