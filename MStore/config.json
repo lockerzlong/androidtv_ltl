@@ -918,13 +918,13 @@
             "name": "Netflix",
             "category": "Xem Phim",
             "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Netflix/logo.png",
-            "version": "10.1.0",
-            "versionCode": 18316,
+            "version": "8.2.0 build 3915",
+            "versionCode": 3915,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Netflix/Netflix.apk",
             "description": "Xem trực tiếp phim có bản quyền chất lượng cao độ phân giải 4K sống động.",
             "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Netflix/banner.png",
-            "sha256": "263fc446d636f3fe4eb7bfb77b6dd71b628188d5d23daf0c20336aad03637d3b"
+            "sha256": "1a94fdc19e1c74152ccca01a1a45a0fdb617a33a7011390d3db8e03f0d094e87"
         }
     ],
     "ls": [
