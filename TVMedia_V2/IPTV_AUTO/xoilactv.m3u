@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 12
-# Generated: 2026-07-07 23:01:38
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 GV San Jose vs Real Tomayapo ngày 08/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel23.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 GV San Jose vs Real Tomayapo ngày 08/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783465289-0-0-7da9f5d7093555a58b8e38e6024385e6
+# Total streams: 10
+# Generated: 2026-07-07 23:31:31
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Athletic Club vs Operario PR ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel27.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Athletic Club vs Operario PR ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783465291-0-0-a8fbe28c930be20bf24c143e2d3843e6
+https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783467083-0-0-723293f8f590fef1ffc1d9566a160ad1
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Deportiva Aucas vs Guayaquil City ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel9.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Deportiva Aucas vs Guayaquil City ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783465292-0-0-9e6e9671679cb1cc9238508f3a717e99
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783467085-0-0-0d6442db56a07d2957d41d4c2a1d5155
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Vancouver Whitecaps II vs Ventura County FC ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +31,7 @@ https://live2.pro2cdnlive.com/live/channel8.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Vancouver Whitecaps II vs Ventura County FC ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783465294-0-0-fb6d697e0df2120d5bb06c3860419985
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783467087-0-0-51fbc8f254bb57dc7a0caa0c2592737d
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 SJ Earthquakes (R) vs Sporting Kansas (R) ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +41,7 @@ https://live2.pro2cdnlive.com/live/channel22.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 SJ Earthquakes (R) vs Sporting Kansas (R) ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783465296-0-0-389fc642d5ab60f5aa3dc0a096e1f429
+https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783467089-0-0-f2af60f9c2f846cce2ccba5fbf346938
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Tacoma Stars vs Midlakes United ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,5 +51,5 @@ https://live2.pro2cdnlive.com/live/channel17.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Tacoma Stars vs Midlakes United ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783465297-0-0-f1b837b81c1eb4b1a4202242d7ca7be9
+https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783467090-0-0-50ef410727ec70ba56b77f2f8e64fc74
 
