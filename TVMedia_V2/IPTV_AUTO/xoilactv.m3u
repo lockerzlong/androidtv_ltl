@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
 # Total streams: 18
-# Generated: 2026-07-08 02:31:32
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Vancouver Whitecaps II vs Ventura County FC ngày 08/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel8.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Vancouver Whitecaps II vs Ventura County FC ngày 08/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783477882-0-0-2cbc99657ec4648d1097c5cab328216a
+# Generated: 2026-07-08 03:01:45
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 SJ Earthquakes (R) vs Sporting Kansas (R) ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel22.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 SJ Earthquakes (R) vs Sporting Kansas (R) ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783477883-0-0-5eaad0d73ca0ac10d3eb15865b06ded6
+https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783479691-0-0-1835ab3d93a5bbbe77f2aea77b8fcd40
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Tacoma Stars vs Midlakes United ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel17.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Tacoma Stars vs Midlakes United ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783477885-0-0-cbadd7a62490f698c95f8e02460e39b6
+https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783479693-0-0-3cb22f65fd497aabe2894e2702e033dd
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Xian Ronghai FC vs Dalian Kewei ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +31,7 @@ https://live2.pro2cdnlive.com/live/channel13.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Xian Ronghai FC vs Dalian Kewei ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783477886-0-0-5bb86a89222eb74c73f83c46900f0db2
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783479695-0-0-a2b14342b5d21b549cc5ecb892248129
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Yongin FC vs Việt Nam ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +41,7 @@ https://live2.pro2cdnlive.com/live/channel6.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Yongin FC vs Việt Nam ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783477887-0-0-b72adbe3007de161b4151d0c8236900b
+https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783479696-0-0-f3f79aaa39c3a5f5822d2c82b381493c
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:30 Lyon vs Macon ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,7 +51,7 @@ https://live2.pro2cdnlive.com/live/channel12.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:30 Lyon vs Macon ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783477888-0-0-823fa093ec96074e2c4ad8866dc72c44
+https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783479698-0-0-3ce6f8010c29845cff5c165eba9f7f13
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 BAA Macau vs Chongqing Handa ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -71,7 +61,7 @@ https://live2.pro2cdnlive.com/live/channel10.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 BAA Macau vs Chongqing Handa ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783477889-0-0-5158236d7aa0fae161fea48bdd0ba3c6
+https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783479699-0-0-c97ecb7c888c6318b5c63a668667217a
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",16:30 Pogon Szczecin vs Chrobry Glogow ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -81,7 +71,7 @@ https://live2.pro2cdnlive.com/live/channel20.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",16:30 Pogon Szczecin vs Chrobry Glogow ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783477890-0-0-f68db7faab927a95a8e6c5f5a6c1f22d
+https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783479701-0-0-ee78b4113eadc8ee27f39e3d31ed1e04
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:00 Aalborg vs Randers FC ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -91,5 +81,15 @@ https://live2.pro2cdnlive.com/live/channel28.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:00 Aalborg vs Randers FC ngày 08/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783477891-0-0-c2a66a8604944875334115f32e8dc05c
+https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783479703-0-0-ee5e42b364a493a4992ce277f03c160e
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Nữ G. Coast Knights  vs Nữ Souths Utd ngày 08/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel4.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Nữ G. Coast Knights  vs Nữ Souths Utd ngày 08/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783479705-0-0-c66715a9dc68faa7cfceb5a14e4bb605
 
