@@ -21,6 +21,7 @@ jobs:
         run: sleep 30
 
       # --- BƯỚC 1: DỌN CACHE CHO TẤT CẢ FILE THAY ĐỔI TRONG COMMIT ---
+      # --- BƯỚC 1: DỌN CACHE CHO TẤT CẢ FILE THAY ĐỔI TRONG COMMIT ---
       - name: Detect All Changed Files and Purge jsDelivr
         id: purge_step
         run: |
@@ -39,13 +40,14 @@ jobs:
           
           IS_BG_CHANGED=false
           
-          # Duyệt qua từng file để dọn cache
-          echo "$CHANGED_FILES" | while read -r FILE; do
+          # Đổi cách lặp: Sử dụng <<< và Process Substitution để tránh bị lỗi Subshell mất biến
+          while read -r FILE; do
             [ -z "$FILE" ] && continue
             
-            # Kiểm tra xem có file background.png thay đổi hay không
+            # Kiểm tra chính xác file background.png
             if [ "$FILE" = "LauncherCustomizer/background.png" ]; then
               IS_BG_CHANGED=true
+              echo "🎯 Đã nhận diện thấy background.png thay đổi!"
             fi
             
             echo "⚡ Đang gửi yêu cầu dọn cache cho file: $FILE"
@@ -53,9 +55,10 @@ jobs:
             RESPONSE=$(curl -s -X GET "$PURGE_URL")
             echo "📥 Phản hồi: $RESPONSE"
             echo "----------------------------------------"
-          done
+          done <<< "$CHANGED_FILES"
           
-          # Xuất trạng thái kiểm tra background.png ra cho bước sau sử dụng
+          # Kiểm tra lại giá trị biến trước khi xuất ra GitHub Actions
+          echo "📝 Kết quả kiểm tra cuối cùng: IS_BG_CHANGED = $IS_BG_CHANGED"
           echo "bg_changed=$IS_BG_CHANGED" >> $GITHUB_OUTPUT
 
       # --- BƯỚC 2: KIỂM TRA ĐIỀU KIỆN BACKGROUND VÀ CẬP NHẬT CONFIG.JSON ---
