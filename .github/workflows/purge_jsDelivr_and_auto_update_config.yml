@@ -1,0 +1,103 @@
+name: Unified Purge jsDelivr Cache and Auto Update Config
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  purge-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Cấp quyền cho Bot ghi đè file config.json và push lên lại
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # Lấy 2 commit để so sánh git diff
+
+      - name: Wait for GitHub CDN to sync
+        run: sleep 30
+
+      # --- BƯỚC 1: DỌN CACHE CHO TẤT CẢ FILE THAY ĐỔI TRONG COMMIT ---
+      - name: Detect All Changed Files and Purge jsDelivr
+        id: purge_step
+        run: |
+          echo "🔍 Đang quét toàn bộ các file được Add hoặc Edit..."
+          CHANGED_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD || true)
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "✨ Không có file nào thay đổi."
+            echo "bg_changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          echo "📋 Danh sách file cần xóa cache:"
+          echo "$CHANGED_FILES"
+          echo "----------------------------------------"
+          
+          IS_BG_CHANGED=false
+          
+          # Duyệt qua từng file để dọn cache
+          echo "$CHANGED_FILES" | while read -r FILE; do
+            [ -z "$FILE" ] && continue
+            
+            # Kiểm tra xem có file background.png thay đổi hay không
+            if [ "$FILE" = "LauncherCustomizer/background.png" ]; then
+              IS_BG_CHANGED=true
+            fi
+            
+            echo "⚡ Đang gửi yêu cầu dọn cache cho file: $FILE"
+            PURGE_URL="https://purge.jsdelivr.net/gh/lockerzlong/androidtv_ltl@main/$FILE"
+            RESPONSE=$(curl -s -X GET "$PURGE_URL")
+            echo "📥 Phản hồi: $RESPONSE"
+            echo "----------------------------------------"
+          done
+          
+          # Xuất trạng thái kiểm tra background.png ra cho bước sau sử dụng
+          echo "bg_changed=$IS_BG_CHANGED" >> $GITHUB_OUTPUT
+
+      # --- BƯỚC 2: KIỂM TRA ĐIỀU KIỆN BACKGROUND VÀ CẬP NHẬT CONFIG.JSON ---
+      - name: Update timestamp in config.json (If background changed)
+        # Chỉ chạy bước này nếu bước 1 xác nhận có file background.png thay đổi
+        if: steps.purge_step.outputs.bg_changed == 'true'
+        id: update_step
+        run: |
+          echo "📸 Phát hiện background.png thay đổi! Tiến hành cập nhật config.json..."
+          
+          TIMESTAMP=$(date +%s)
+          DATE=$(TZ='Asia/Ho_Chi_Minh' date '+%d/%m/%Y %H:%M:%S')
+          
+          jq --arg ts "$TIMESTAMP" --arg dt "$DATE" \
+            '.timestamp = $ts | .date = $dt' \
+            LauncherCustomizer/config.json > temp.json
+          
+          sed -i -E "s|content://tvlauncher.config/background/[0-9]+|content://tvlauncher.config/background/$TIMESTAMP|g" temp.json
+          mv temp.json LauncherCustomizer/config.json
+          
+          echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+          echo "✅ Đã cập nhật xong config.json mới."
+
+      # --- BƯỚC 3: COMMIT FILE CONFIG.JSON MỚI LÊN REPO ---
+      - name: Commit and Push config.json
+        if: steps.purge_step.outputs.bg_changed == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add LauncherCustomizer/config.json
+          git commit -m "Bot: Update background timestamp ${{ steps.update_step.outputs.timestamp }}" || exit 0
+          git push
+
+      # --- BƯỚC 4: DỌN CACHE RIÊNG CHO FILE CONFIG.JSON VỪA ĐƯỢC ĐẨY LÊN ---
+      - name: Purge jsDelivr Cache for config.json
+        if: steps.purge_step.outputs.bg_changed == 'true'
+        run: |
+          echo "⏳ Chờ GitHub CDN đồng bộ file config.json mới..."
+          sleep 15
+          
+          echo "⚡ Đang ép jsDelivr dọn cache cho LauncherCustomizer/config.json..."
+          PURGE_URL="https://purge.jsdelivr.net/gh/lockerzlong/androidtv_ltl@main/LauncherCustomizer/config.json"
+          RESPONSE=$(curl -s -X GET "$PURGE_URL")
+          echo "📥 Phản hồi: $RESPONSE"
