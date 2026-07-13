@@ -925,6 +925,20 @@
             "description": "Xem trực tiếp phim có bản quyền chất lượng cao độ phân giải 4K sống động.",
             "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Netflix/banner.png",
             "sha256": "1a94fdc19e1c74152ccca01a1a45a0fdb617a33a7011390d3db8e03f0d094e87"
+        },
+        {
+            "id": "youtube3",
+            "packageName": "com.google.android.youtube.tv",
+            "name": "YouTube No Update",
+            "category": "Giải trí",
+            "iconUrl": "https://lh3.googleusercontent.com/d/1cWIGVS-4sMv901_KyhM5uY1VsGlh1Acr",
+            "version": "1.10.0-LTL",
+            "versionCode": 2147483647,
+            "isActived": true,
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/youtube3/youtube3.apk",
+            "description": "Ứng dụng Yotube không quảng cáo.",
+            "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0",
+            "sha256": "ad3ff0a8e65dea49621894928274121cb23180369fa439738227b5de17825f30"
         }
     ],
     "ls": [
