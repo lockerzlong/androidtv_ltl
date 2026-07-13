@@ -887,16 +887,16 @@
         {
             "id": "youtube2",
             "packageName": "com.google.android.youtube.tv",
-            "name": "Youtube Mod",
+            "name": "YouTube",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1cWIGVS-4sMv901_KyhM5uY1VsGlh1Acr",
-            "version": "2.11.0",
-            "versionCode": 20260325,
+            "version": "1.10.0",
+            "versionCode": 20260307,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/youtube2/youtube2.apk",
             "description": "Ứng dụng Yotube không quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0",
-            "sha256": "0a55e97db97eec8e6f860b072c26e1c9f0d0dc628ba0aa7146e7f6cba85ba0e7"
+            "sha256": "0726410395c96e5a3011ee70330eded3697843f256989e7029bc5fd21d918fbe"
         },
         {
             "id": "Vuagiaitri",
