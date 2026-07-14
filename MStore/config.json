@@ -303,12 +303,12 @@
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1gyy-iR0bCY_Z0vyNktXfQIYhC0KJO3on",
             "version": "2.0.2",
-            "versionCode": 1,
+            "versionCode": 202,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TiZenTubeMod/TiZenTubeMod.apk",
             "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo, không update (Cần xoá youtube gốc).",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1XycZbgkhOOpzZHFEEUDaWndNmGtljQof",
-            "sha256": "a0c955ed9d9ebb89acbf5a2c241d8e79d328270593cba638d610097ec79235f8"
+            "sha256": "5366a65494f49def6e4fae0313a5f65c16aebecfbaa32c776632e2abe7dfd769"
         },
         {
             "id": "TiZenTube",
