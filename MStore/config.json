@@ -312,17 +312,17 @@
         },
         {
             "id": "TiZenTube",
-            "packageName": "com.cobalt.youtube.tv",
+            "packageName": "io.gh.reisxd.tizentube.cobalt",
             "name": "TiZenTube",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1gyy-iR0bCY_Z0vyNktXfQIYhC0KJO3on",
-            "version": "1.04",
+            "version": "Luôn mới nhất",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TiZenTube/TiZenTube.apk",
+            "downloadUrl": "https://github.com/reisxd/TizenTubeCobalt/releases/latest/download/cobalt-arm.apk",
             "description": "TizenTube ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1H57yVU39Mj80ZhtPTJg_GTab52FyfmF_",
-            "sha256": "e711d1b87b146767df35e80fa91913094b3699704e0072d0fff3213a12c47fb3"
+            "sha256": "latest"
         },
         {
             "id": "Chophim",
