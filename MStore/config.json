@@ -299,16 +299,16 @@
         {
             "id": "TiZenTubeMod",
             "packageName": "com.google.android.youtube.tv",
-            "name": "TiZenTube No Update",
+            "name": "TizenTube No Update",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1gyy-iR0bCY_Z0vyNktXfQIYhC0KJO3on",
-            "version": "2.0.2",
+            "version": "2.0.2-LTL",
             "versionCode": 202,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TiZenTubeMod/TiZenTubeMod.apk",
             "description": "TizenTube mod gióng youtube gốc ứng dụng giải trí nghe nhạc ,xem phim,vv...được loại bỏ quảng cáo, không update (Cần xoá youtube gốc).",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1XycZbgkhOOpzZHFEEUDaWndNmGtljQof",
-            "sha256": "5366a65494f49def6e4fae0313a5f65c16aebecfbaa32c776632e2abe7dfd769"
+            "sha256": "4b2e2681c33bba3ee4d192a3b8a76232bf9b6906555f45738d284e9d83298fe8"
         },
         {
             "id": "TiZenTube",
@@ -885,18 +885,18 @@
             "sha256": ""
         },
         {
-            "id": "YoutubeCobalt",
+            "id": "youtube2",
             "packageName": "com.google.android.youtube.tv",
-            "name": "YouTube No Ads",
+            "name": "YouTube",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1cWIGVS-4sMv901_KyhM5uY1VsGlh1Acr",
-            "version": "Luôn mới nhất",
-            "versionCode": 20260325,
+            "version": "1.10.0",
+            "versionCode": 20260307,
             "isActived": true,
-            "downloadUrl": "https://github.com/JackieDo/Cobalt-Tube/releases/latest/download/cobalttube-arm.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/youtube2/youtube2.apk",
             "description": "Ứng dụng Yotube không quảng cáo.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0",
-            "sha256": "latest"
+            "sha256": "0726410395c96e5a3011ee70330eded3697843f256989e7029bc5fd21d918fbe"
         },
         {
             "id": "Vuagiaitri",
@@ -927,9 +927,9 @@
             "sha256": "1a94fdc19e1c74152ccca01a1a45a0fdb617a33a7011390d3db8e03f0d094e87"
         },
         {
-            "id": "YoutubeCobaltMod",
+            "id": "youtube3",
             "packageName": "com.google.android.youtube.tv",
-            "name": "YouTube No Ads/Update",
+            "name": "YouTube No Update",
             "category": "Giải trí",
             "iconUrl": "https://lh3.googleusercontent.com/d/1cWIGVS-4sMv901_KyhM5uY1VsGlh1Acr",
             "version": "1.10.0-LTL",
