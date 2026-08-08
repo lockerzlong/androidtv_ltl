@@ -947,74 +947,29 @@
     ],
     "app_autoinstall": [
         {
-            "id": "TVMedia",
             "packageName": "com.androidtv.tvmedia",
             "name": "TVMedia",
-            "category": "Truyền hình",
-            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/TVMedia/logo.png",
-            "version": "09.09.2021",
-            "versionCode": 2021,
-            "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TVMedia/TVMedia.apk",
-            "description": "Ứng dụng xem truyền hình trực tuyến Việt Nam.",
-            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/TVMedia/banner.png",
-            "sha256": "d04515e680ecfbbb763e30fbfe5c2bbbff9b763074c90bdb088ee0afe41293ec"
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TVMedia/TVMedia.apk"
         },
         {
-            "id": "VietPlayTV",
             "packageName": "com.nghenhin24h.vietplaytv",
             "name": "VietPlay TV",
-            "category": "Truyền hình",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1zKZ1TsLjq7rpVwcTLGnZIR0QLmVSFROG",
-            "version": "2.3",
-            "versionCode": 1,
-            "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/VietPlayTV/VietPlayTV.apk",
-            "description": "Ứng dụng xem truyền hình trực tuyến chính thức của Đài Truyền hình Việt Nam.",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/14Fxn-maa_7MQl3qaqOBTG-jMcBrvHdFU",
-            "sha256": "77662cbab484958f22cd53b15d40fc6723cfe821ae1641dcc385fb13f26b6144"
+            "downloadUrl": "https://github.com/tvbox360123-bot/active/releases/download/v1.0/VietPlayTV_2.5.apk"
         },
         {
-            "id": "iMediaTV",
             "packageName": "com.kt.apps.media.xemtv.beta",
             "name": "iMediaTV",
-            "category": "Truyền hình",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1tKga1m7Vg7UeevzAmy-bmfdT5YF44qad",
-            "version": "25.04.06.B",
-            "versionCode": 25,
-            "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/iMediaTV/iMediaTV.apk",
-            "description": "Truyền hình trực tuyến",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/1kaAxJK0l5umTlPU0tp3kCZrS1_gDdA0w",
-            "sha256": "680a89f9da4e84aed3a7c1e8e01dc385abbde0d66fb03efe0444cf19cc860962"
+            "downloadUrl": "https://github.com/youtube09042026-debug/APK/releases/download/1/00.1.iMedia-25.04.06.B.apk"
         },
         {
-            "id": "youtube3",
             "packageName": "com.google.android.youtube.tv",
             "name": "YouTube No Update",
-            "category": "Giải trí",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1cWIGVS-4sMv901_KyhM5uY1VsGlh1Acr",
-            "version": "1.10.0-LTL",
-            "versionCode": 20260307,
-            "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/youtube3/youtube3.apk",
-            "description": "Ứng dụng Yotube không quảng cáo, không auto update.",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0",
-            "sha256": "d3f3c44bec99ac4e998abd18373a95754bbf8dbd59c9fcda39a70833d0c4becd"
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/youtube3/youtube3.apk"
         },
         {
-            "id": "Getout",
             "packageName": "com.linor.vn.getout",
             "name": "Get Out",
-            "category": "Thể Thao",
-            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Getout/logo.png",
-            "version": "2.0",
-            "versionCode": 4,
-            "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Getout/Getout.apk",
-            "description": "Trực tiếp thể thao vv....",
-            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Getout/banner.png",
-            "sha256": "9c8a9d6adc378f88ffd80472b95b1018defec463f335d9865a1856a36df4b4bc"
+            "downloadUrl": "https://github.com/tvbox360123-bot/active/releases/download/v1.0/com.linor.vn.getout.apk"
         }
     ]
 }
