@@ -947,11 +947,6 @@
     ],
     "app_autoinstall": [
         {
-            "packageName": "com.androidtv.tvmedia",
-            "name": "TVMedia",
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/TVMedia/TVMedia.apk"
-        },
-        {
             "packageName": "com.nghenhin24h.vietplaytv",
             "name": "VietPlay TV",
             "downloadUrl": "https://github.com/tvbox360123-bot/active/releases/download/v1.0/VietPlayTV_2.5.apk"
@@ -960,11 +955,6 @@
             "packageName": "com.kt.apps.media.xemtv.beta",
             "name": "iMediaTV",
             "downloadUrl": "https://github.com/youtube09042026-debug/APK/releases/download/1/00.1.iMedia-25.04.06.B.apk"
-        },
-        {
-            "packageName": "com.google.android.youtube.tv",
-            "name": "YouTube No Update",
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/youtube3/youtube3.apk"
         },
         {
             "packageName": "com.linor.vn.getout",
