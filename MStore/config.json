@@ -982,10 +982,6 @@
             {
                 "packageName": "com.google.android.tvlauncher",
                 "status": true
-            },
-            {
-                "packageName": "com.google.android.gms",
-                "status": true
             }
         ]
     }
