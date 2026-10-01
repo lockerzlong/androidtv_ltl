@@ -971,5 +971,18 @@
             "name": "Get Out",
             "downloadUrl": "https://github.com/tvbox360123-bot/active/releases/download/v1.0/com.linor.vn.getout.apk"
         }
-    ]
+    ],
+    "no_auto_update_app": {
+        "active": true,
+        "applications": [
+            {
+                "packageName": "com.google.android.katniss",
+                "status": true
+            },
+            {
+                "packageName": "com.google.android.tvlauncher",
+                "status": true
+            }
+        ]
+    }
 }
