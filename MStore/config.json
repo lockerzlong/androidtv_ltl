@@ -974,6 +974,7 @@
     ],
     "no_auto_update_app": {
         "active": true,
+        "help_device":"no_help",
         "applications": [
             {
                 "packageName": "com.google.android.katniss",
