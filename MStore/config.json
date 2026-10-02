@@ -974,7 +974,7 @@
     ],
     "no_auto_update_app": {
         "active": true,
-        "help_device":"WC6KX73L",
+        "help_device":"no_device",
         "applications": [
             {
                 "packageName": "com.google.android.katniss",
