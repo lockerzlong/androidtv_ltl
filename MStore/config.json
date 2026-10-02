@@ -978,12 +978,12 @@
         "applications": [
             {
                 "packageName": "com.google.android.katniss",
-                "versionCode": 7200019
+                "versionCode": 7200019,
                 "status": true
             },
             {
                 "packageName": "com.google.android.tvlauncher",
-                "versionCode": 1010807100
+                "versionCode": 1010807100,
                 "status": true
             }
         ]
