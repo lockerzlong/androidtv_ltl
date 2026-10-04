@@ -985,6 +985,21 @@
                 "packageName": "com.google.android.tvlauncher",
                 "versionCode": 1010807100,
                 "status": true
+            },
+            {
+                "packageName": "com.google.android.tv.remote.service",
+                "versionCode": 95855272,
+                "status": true
+            },
+            {
+                "packageName": "com.google.android.tungsten.setupwraith",
+                "versionCode": 2018112566,
+                "status": true
+            },
+            {
+                "packageName": "com.google.android.tvrecommendations",
+                "versionCode": 1010907001,
+                "status": true
             }
         ]
     }
