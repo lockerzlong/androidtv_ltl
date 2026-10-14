@@ -523,7 +523,7 @@
         {
             "id": "SendFilestoTV",
             "packageName": "com.yablio.sendfilestotv",
-            "name": "Send Files to TV",
+            "name": "Send Files To TV",
             "category": "Quản lý file",
             "iconUrl": "https://lh3.googleusercontent.com/d/1wHIW89YYIMS-p2rRlk1OebkTcpcyyq0a",
             "version": "1.4.1",
@@ -532,7 +532,7 @@
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SendFilestoTV/SendFilestoTV.apk",
             "description": "Send Files to TV là một ứng dụng đơn giản giúp bạn gửi và nhận tệp tin như phim, ảnh, nhạc, tài liệu, tệp APK giữa các thiết bị Android.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/16Yvo3p1MSThEMSm8RtayyuFV_E8jA1-f",
-            "sha256": ""
+            "sha256": "c8819f49eefea689b639fc2f7921081ee952ce5fbb1159bcf4374d3f9691ecbd"
         },
         {
             "id": "GoogleTV",
