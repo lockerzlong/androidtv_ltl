@@ -498,10 +498,10 @@
             "name": "File Manager Plus",
             "category": "Quản lý file",
             "iconUrl": "https://lh3.googleusercontent.com/d/1rkFBLNZEm_nlJGZ2iUbvukXxMaCRQ9BS",
-            "version": "3.2.2",
-            "versionCode": 1,
+            "version": "3.8.3",
+            "versionCode": 2103083,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/FileManager_Plus_3.2.2.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/FileManagerPlus/FileManagerPlus.apk",
             "description": "Thực hiện các thao tác cơ bản như tạo, sao chép, dán, di chuyển, đổi tên, xóa tệp và thư mục một cách hiệu quả.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1TgxeyvGrtHL3dAuzjllSmzGeg_FrtbzV",
             "sha256": ""
