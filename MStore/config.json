@@ -509,16 +509,16 @@
         {
             "id": "Filemanager",
             "packageName": "com.hitv.explore",
-            "name": "Filemanager",
+            "name": "File Manager",
             "category": "Quản lý file",
             "iconUrl": "https://lh3.googleusercontent.com/d/1SsmOeivqfW1LvRAuJcYKfZGSRoMWf3ab",
-            "version": "1.0.3",
+            "version": "explore_1.0.3_HMD_0119_release",
             "versionCode": 100030119,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Filemanager/Filemanager.apk",
             "description": "File manager là một ứng dụng hoặc công cụ giúp người dùng quản lý tệp và thư mục trên AndroidTV.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1c1XvlDe58pQKC1aC9peZzC84aIymVJ6x",
-            "sha256": ""
+            "sha256": "6993f3831625d99951daf82485b2e6454cd48e0f20ecc991bf1162632daa66b8"
         },
         {
             "id": "SendFilestoTV",
