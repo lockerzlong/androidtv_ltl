@@ -540,10 +540,10 @@
             "name": "Google",
             "category": "Tìm kiếm giọng nói",
             "iconUrl": "https://lh3.googleusercontent.com/d/18WKENXbVVT2Zi5BRUfRQRdKDckxL91Oi",
-            "version": "7.9.2023",
-            "versionCode": 1,
+            "version": "7.9.20231101.2",
+            "versionCode": 15000463,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Google.v.7.9.20231101.2.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/GoogleTV/GoogleTV.apk",
             "description": "Tích hợp tính năng điều khiển bằng giọng nói thông qua Google Assistant.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1TaiI_MSc9oRaDZ0Su5nGRFZpMxwC-JmT",
             "sha256": ""
