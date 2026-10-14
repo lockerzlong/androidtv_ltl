@@ -513,9 +513,9 @@
             "category": "Quản lý file",
             "iconUrl": "https://lh3.googleusercontent.com/d/1SsmOeivqfW1LvRAuJcYKfZGSRoMWf3ab",
             "version": "1.0.3",
-            "versionCode": 1,
+            "versionCode": 100030119,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/Filemanager.v.3.2.2.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Filemanager/Filemanager.apk",
             "description": "File manager là một ứng dụng hoặc công cụ giúp người dùng quản lý tệp và thư mục trên AndroidTV.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1c1XvlDe58pQKC1aC9peZzC84aIymVJ6x",
             "sha256": ""
