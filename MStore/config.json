@@ -484,10 +484,10 @@
             "name": "SmartKaraoke",
             "category": "KaRaoKe",
             "iconUrl": "https://lh3.googleusercontent.com/d/1Eydojwu9sUt_8y0hv-r7KdbMOmeTdxVl",
-            "version": "3.52",
+            "version": "3.60",
             "versionCode": 1,
             "isActived": true,
-            "downloadUrl": "https://github.com/anhbaotv/pl/releases/download/ungdung/SmartKaraokePlayerPRO_v3.52_RTD.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SmartKaraoke/SmartKaraoke.apk",
             "description": "Smart Karaoke Player là phần mềm karaoke chuyên nghiệp dành cho các đầu HD – 4K, Android Box.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1shIWB4PGGgiDR1oV_xwq2L2pO0W6w7NZ",
             "sha256": ""
@@ -638,7 +638,7 @@
     ],
     "no_auto_update_app": {
         "active": true,
-        "help_device":"no_device",
+        "help_device": "no_device",
         "applications": [
             {
                 "packageName": "com.google.android.katniss",
