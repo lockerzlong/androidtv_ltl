@@ -495,7 +495,7 @@
         {
             "id": "FileManagerPlus",
             "packageName": "com.alphainventor.filemanager",
-            "name": "File Manager Plus",
+            "name": "File Manager +",
             "category": "Quản lý file",
             "iconUrl": "https://lh3.googleusercontent.com/d/1rkFBLNZEm_nlJGZ2iUbvukXxMaCRQ9BS",
             "version": "3.8.3",
@@ -504,7 +504,7 @@
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/FileManagerPlus/FileManagerPlus.apk",
             "description": "Thực hiện các thao tác cơ bản như tạo, sao chép, dán, di chuyển, đổi tên, xóa tệp và thư mục một cách hiệu quả.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1TgxeyvGrtHL3dAuzjllSmzGeg_FrtbzV",
-            "sha256": ""
+            "sha256": "75e02de10ca39656213563fa2dcbae3df6f27201d7d5c900ee97edad725ac718"
         },
         {
             "id": "Filemanager",
