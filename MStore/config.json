@@ -481,16 +481,16 @@
         {
             "id": "SmartKaraoke",
             "packageName": "com.smartkaraoke.playerpro",
-            "name": "SmartKaraoke",
+            "name": "KaraBox",
             "category": "KaRaoKe",
             "iconUrl": "https://lh3.googleusercontent.com/d/1Eydojwu9sUt_8y0hv-r7KdbMOmeTdxVl",
             "version": "3.60",
-            "versionCode": 1,
+            "versionCode": 423,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/SmartKaraoke/SmartKaraoke.apk",
             "description": "Smart Karaoke Player là phần mềm karaoke chuyên nghiệp dành cho các đầu HD – 4K, Android Box.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/1shIWB4PGGgiDR1oV_xwq2L2pO0W6w7NZ",
-            "sha256": ""
+            "sha256": "f366af2a1add1dc4c7969b3787701e26de06913e6c9bc7fe1530b6d7debb7cb8"
         },
         {
             "id": "FileManagerPlus",
