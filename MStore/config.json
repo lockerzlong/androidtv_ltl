@@ -326,8 +326,8 @@
         },
         {
             "id": "Cinema4KTV",
-            "packageName": "com.jakendis.streambox",
-            "name": "Cinema4KTV",
+            "packageName": "com.cinema.tv4k",
+            "name": "Cinema 4K TV",
             "category": "Xem Phim",
             "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Cinema4KTV/logo.png",
             "version": "1.0.0",
@@ -336,7 +336,7 @@
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Cinema4KTV/Cinema4KTV.apk",
             "description": "Xem phim online miễn phí với chất lượng.",
             "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Cinema4KTV/banner.png",
-            "sha256": "89508b6b2baa76ef17f3538135b2e0340e34843c15fc07bfa8e629987d71ae0d"
+            "sha256": "5aada11b80bd88606ba85aa696b0a14a64de91e5a8bcaaacb482c3a72d7e586a"
         },
         {
             "id": "MonPlayerTV",
