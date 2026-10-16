@@ -603,6 +603,20 @@
             "description": "Ứng dụng Yotube không quảng cáo, không auto update.",
             "bannerUrl": "https://lh3.googleusercontent.com/d/140MJ407y6XHX3ab42TC9IJzC4KmNz2O0",
             "sha256": "d3f3c44bec99ac4e998abd18373a95754bbf8dbd59c9fcda39a70833d0c4becd"
+        },
+        {
+            "id": "DownloaderAFTV",
+            "packageName": "com.esaba.downloader",
+            "name": "Downloader AFTV",
+            "category": "Quản lý file",
+            "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DownloaderAFTV/logo.png",
+            "version": "1.5.3",
+            "versionCode": 67,
+            "isActived": true,
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DownloaderAFTV/DownloaderAFTV.apk",
+            "description": "Kho tải ứng dụng thông qua mã code",
+            "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DownloaderAFTV/banner.png",
+            "sha256": ""
         }
     ],
     "ls": [
