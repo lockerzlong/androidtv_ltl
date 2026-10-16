@@ -325,17 +325,17 @@
             "sha256": "5bff2c5494df3bfae144b650326e938c16e5fa1362d86f7f424a36b6dab27472"
         },
         {
-            "id": "PhimNe",
+            "id": "Cinema4KTV",
             "packageName": "com.jakendis.streambox",
-            "name": "PhimNe",
+            "name": "Cinema4KTV",
             "category": "Xem Phim",
-            "iconUrl": "https://lh3.googleusercontent.com/d/1UKPpvBnLr-_omWUwyafsc4JrChFKFyz_",
-            "version": "4.1.4",
-            "versionCode": 51,
+            "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Cinema4KTV/logo.png",
+            "version": "1.0.0",
+            "versionCode": 2026,
             "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/PhimNe/PhimNe.apk",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Cinema4KTV/Cinema4KTV.apk",
             "description": "Xem phim online miễn phí với chất lượng.",
-            "bannerUrl": "https://lh3.googleusercontent.com/d/1g3TqVUxoI-V8Xi_pzQF6zDNtmRNQULpp",
+            "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/Cinema4KTV/banner.png",
             "sha256": "89508b6b2baa76ef17f3538135b2e0340e34843c15fc07bfa8e629987d71ae0d"
         },
         {
