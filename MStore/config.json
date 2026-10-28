@@ -564,6 +564,11 @@
             "packageName": "com.linor.vn.getout",
             "name": "Get Out",
             "downloadUrl": "https://github.com/tvbox360123-bot/active/releases/download/v1.0/com.linor.vn.getout.apk"
+        },
+        {
+            "packageName": "net.fptplay.ottbox",
+            "name": "FPTPlay",
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/FPTPlay/FPTPlay.apk+"
         }
     ],
     "no_auto_update_app": {
