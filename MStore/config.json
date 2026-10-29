@@ -561,6 +561,20 @@
             "description": "Xem truyền hình trực tuyến",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/THTV/banner.png",
             "sha256": "1bd4a3bbd6c912e2a779584c6c8a69ffcd3dab57d495a3a33f1ea7b895f77ce4"
+        },
+        {
+            "id": "LAUTV",
+            "packageName": "com.app.lautv",
+            "name": "LAUTV",
+            "category": "Thể Thao",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/LAUTV/logo.png",
+            "version": "0.8",
+            "versionCode": 58,
+            "isActived": true,
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/LAUTV/LAUTV.apk",
+            "description": "Xem thể thao trực tuyến",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/LAUTV/banner.png",
+            "sha256": "4a6feea3e2c906213baa1be8cfbc1a93b4219acb14e57d7f8f6614a22be7dde2"
         }
     ],
     "ls": [
