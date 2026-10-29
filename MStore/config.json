@@ -557,7 +557,7 @@
             "version": "1.1.9",
             "versionCode": 12,
             "isActived": true,
-            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/THTV/THTV.png",
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/THTV/THTV.apk",
             "description": "Xem truyền hình trực tuyến",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/THTV/banner.png",
             "sha256": "1bd4a3bbd6c912e2a779584c6c8a69ffcd3dab57d495a3a33f1ea7b895f77ce4"
