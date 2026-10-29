@@ -580,7 +580,7 @@
             "id": "HSTV",
             "packageName": "com.example.hstivi",
             "name": "HSTV",
-            "category": "Thể Thao",
+            "category": "Truyền hình",
             "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/logo.png",
             "version": "99.9.9",
             "versionCode": 9999,
