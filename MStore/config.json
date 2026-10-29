@@ -547,6 +547,20 @@
             "description": "Xem tivi Online",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/XemTV365/banner.png",
             "sha256": "e7f71181dcb6a219af41fd0f86c1871de4d2d5caa9ca701dd8bc3b63d5eceba6"
+        },
+        {
+            "id": "THTV",
+            "packageName": "com.haidaklak.iptv",
+            "name": "THTV",
+            "category": "Truyền hình",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/THTV/logo.png",
+            "version": "1.1.9",
+            "versionCode": 12,
+            "isActived": true,
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/THTV/THTV.png",
+            "description": "Xem truyền hình trực tuyến",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/THTV/banner.png",
+            "sha256": "1bd4a3bbd6c912e2a779584c6c8a69ffcd3dab57d495a3a33f1ea7b895f77ce4"
         }
     ],
     "ls": [
