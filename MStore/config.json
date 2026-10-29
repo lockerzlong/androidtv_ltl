@@ -575,6 +575,20 @@
             "description": "Xem thể thao trực tuyến",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/LAUTV/banner.png",
             "sha256": "4a6feea3e2c906213baa1be8cfbc1a93b4219acb14e57d7f8f6614a22be7dde2"
+        },
+        {
+            "id": "HSTV",
+            "packageName": "com.example.hstivi",
+            "name": "HSTV",
+            "category": "Thể Thao",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/logo.png",
+            "version": "99.9.9",
+            "versionCode": 9999,
+            "isActived": true,
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/HSTV.apk",
+            "description": "Xem tivi trực tuyến",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/banner.png",
+            "sha256": "03d31174d2b91ff84ecb425754400f08d4e6949dfdffc0e6c9c83da51ca7d8af"
         }
     ],
     "ls": [
