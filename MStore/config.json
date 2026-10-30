@@ -589,20 +589,6 @@
             "description": "Xem tivi trực tuyến",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/banner.png",
             "sha256": "03d31174d2b91ff84ecb425754400f08d4e6949dfdffc0e6c9c83da51ca7d8af"
-        },
-        {
-            "id": "GeeSports",
-            "packageName": "com.live.geesports",
-            "name": "GeeSports",
-            "category": "Thể Thao",
-            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/logo.png",
-            "version": "3.8",
-            "versionCode": 11,
-            "isActived": true,
-            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/GeeSports.apk",
-            "description": "Xem thể thao trực tuyến",
-            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/banner.png",
-            "sha256": "eda61be4d73cfd5e1753327889b5f95802c1b2b444d4471cde3ee8a722262130"
         }
     ],
     "ls": [
