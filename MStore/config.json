@@ -543,7 +543,7 @@
             "version": "3.8",
             "versionCode": 11,
             "isActived": true,
-            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/GeeSports.apk",
+            "downloadUrl": "https://media.githubusercontent.com/media/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/GeeSports.apk",
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/banner.png",
             "sha256": "eda61be4d73cfd5e1753327889b5f95802c1b2b444d4471cde3ee8a722262130"
