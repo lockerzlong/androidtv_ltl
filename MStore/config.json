@@ -603,6 +603,20 @@
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/XemTV365/banner.png",
             "sha256": "e7f71181dcb6a219af41fd0f86c1871de4d2d5caa9ca701dd8bc3b63d5eceba6"
+        },
+        {
+            "id": "Coccoc_Lite",
+            "packageName": "com.coccoc.trinhduyet_tvlite",
+            "name": "Cốc Cốc TV Browser Lite",
+            "category": "Trình duyệt",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Coccoc_Lite/logo.png",
+            "version": "1.6",
+            "versionCode": 6,
+            "isActived": true,
+            "downloadUrl": "https://media.githubusercontent.com/media/lockerzlong/androidtv_ltl/main/MStore/app/Coccoc_Lite/Coccoc_Lite.apk",
+            "description": "",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Coccoc_Lite/banner.png",
+            "sha256": "76303f53ae27ba70fd61ae7fda3ab15bbeca685673245d7b18f9660f6f933c58"
         }
     ],
     "ls": [
