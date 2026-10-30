@@ -533,6 +533,20 @@
             "description": "Kho tải ứng dụng thông qua mã code",
             "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DownloaderAFTV/banner.png",
             "sha256": "a7eacae3e972efdccedfde6c4acb7310ef391ed63d4a5803bb9277ecfdd6bb04"
+        },
+        {
+            "id": "GeeSports",
+            "packageName": "com.live.geesports",
+            "name": "GeeSports",
+            "category": "Thể Thao",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/logo.png",
+            "version": "3.8",
+            "versionCode": 11,
+            "isActived": true,
+            "downloadUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/GeeSports.apk",
+            "description": "",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/banner.png",
+            "sha256": "eda61be4d73cfd5e1753327889b5f95802c1b2b444d4471cde3ee8a722262130"
         }
     ],
     "ls": [
