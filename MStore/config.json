@@ -547,6 +547,20 @@
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/GeeSports/banner.png",
             "sha256": "eda61be4d73cfd5e1753327889b5f95802c1b2b444d4471cde3ee8a722262130"
+        },
+        {
+            "id": "HSTV",
+            "packageName": "com.example.hstivi",
+            "name": "HS TIVI",
+            "category": "Truyền hình",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/logo.png",
+            "version": "99.9.9",
+            "versionCode": 9999,
+            "isActived": true,
+            "downloadUrl": "https://media.githubusercontent.com/media/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/HSTV.apk",
+            "description": "",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/HSTV/banner.png",
+            "sha256": "03d31174d2b91ff84ecb425754400f08d4e6949dfdffc0e6c9c83da51ca7d8af"
         }
     ],
     "ls": [
