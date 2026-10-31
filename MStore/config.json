@@ -526,7 +526,7 @@
             "name": "Downloader",
             "category": "Quản lý file",
             "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DownloaderAFTV/logo.png",
-            "version": "1.4.5 ForAndroidTV",
+            "version": "1.4.5-AndroidTV",
             "versionCode": 52,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/releases/download/mstore/DownloaderAFTV.apk",
