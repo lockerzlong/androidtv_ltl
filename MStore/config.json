@@ -526,13 +526,13 @@
             "name": "Downloader",
             "category": "Quản lý file",
             "iconUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DownloaderAFTV/logo.png",
-            "version": "1.5.3-ForGoogleAndroidDevices",
-            "versionCode": 67,
+            "version": "1.4.5-ForGoogleAndroidTV",
+            "versionCode": 52,
             "isActived": true,
             "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/releases/download/mstore/DownloaderAFTV.apk",
             "description": "Kho tải ứng dụng thông qua mã code",
             "bannerUrl": "https://github.com/lockerzlong/androidtv_ltl/raw/main/MStore/app/DownloaderAFTV/banner.png",
-            "sha256": "a7eacae3e972efdccedfde6c4acb7310ef391ed63d4a5803bb9277ecfdd6bb04"
+            "sha256": "e2337dbdf9049a7922ce1c9f9dc81c4c1bf5b6b0d1e76c1adfdcca77835e7c2b"
         },
         {
             "id": "GeeSports",
