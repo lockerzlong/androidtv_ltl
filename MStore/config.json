@@ -617,6 +617,20 @@
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Coccoc_Lite/banner.png",
             "sha256": "76303f53ae27ba70fd61ae7fda3ab15bbeca685673245d7b18f9660f6f933c58"
+        },
+        {
+            "id": "SmartTV_Store",
+            "packageName": "com.quan.clienttvstore",
+            "name": "SMART TV STORE",
+            "category": "Kho Ứng Dụng",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/SmartTV_Store/logo.png",
+            "version": "2.0",
+            "versionCode": 2,
+            "isActived": true,
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/releases/download/mstore/SmartTV_Store.apk",
+            "description": "Kho Ứng Dụng SmartTV",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/SmartTV_Store/banner.png",
+            "sha256": "03613f36ee52bd9e844d2ea5f90afe8f6742d301a186bdb68190722d3ccc4a2f"
         }
     ],
     "ls": [
