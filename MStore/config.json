@@ -631,6 +631,20 @@
             "description": "Kho Ứng Dụng SmartTV",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/SmartTV_Store/banner.png",
             "sha256": "03613f36ee52bd9e844d2ea5f90afe8f6742d301a186bdb68190722d3ccc4a2f"
+        },
+        {
+            "id": "DL_Store",
+            "packageName": "com.dinhlap.dlstore",
+            "name": "DL Store",
+            "category": "Kho Ứng Dụng",
+            "iconUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/DL_Store/logo.png",
+            "version": "16.0.5",
+            "versionCode": 42,
+            "isActived": true,
+            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/releases/download/mstore/DL_Store.apk",
+            "description": "Kho Ứng Dụng DLStore",
+            "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/DL_Store/banner.png",
+            "sha256": "dba7c71c1ff6b44d4c98c0f31854f21d01f32406ffb148976dee9b38789a39fd"
         }
     ],
     "ls": [
