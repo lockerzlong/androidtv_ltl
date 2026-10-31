@@ -617,20 +617,6 @@
             "description": "",
             "bannerUrl": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/MStore/app/Coccoc_Lite/banner.png",
             "sha256": "76303f53ae27ba70fd61ae7fda3ab15bbeca685673245d7b18f9660f6f933c58"
-        },
-        {
-            "id": "test_cloundflare",
-            "packageName": "test_cloundflare",
-            "name": "test_cloundflare",
-            "category": "test_cloundflare",
-            "iconUrl": "test_cloundflare",
-            "version": "1.1.9",
-            "versionCode": 12,
-            "isActived": true,
-            "downloadUrl": "https://github.com/lockerzlong/androidtv_ltl/releases/download/mstore/test_cloundflare.apk",
-            "description": "test_cloundflare",
-            "bannerUrl": "test_cloundflare",
-            "sha256": "1bd4a3bbd6c912e2a779584c6c8a69ffcd3dab57d495a3a33f1ea7b895f77ce4"
         }
     ],
     "ls": [
